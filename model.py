@@ -40,6 +40,7 @@ class Book(db.Model):
         "Subject", secondary="books_subjects", back_populates="books")
     shelves = db.relationship(
         "Shelf", secondary="books_shelves", back_populates="books")
+    covers = db.relationship("Cover", back_populates="book")
 
     def __repr__(self):
         return f"<Book book_id={self.book_id} title={self.title} isbn10={self.primary_isbn10} isbn13={self.primary_isbn13}>"
