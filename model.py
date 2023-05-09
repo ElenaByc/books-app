@@ -1,8 +1,11 @@
-"""Models for movie ratings app."""
+"""Models for books app."""
 
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
+
+
+# Main tables
 
 
 class User(db.Model):
@@ -54,7 +57,7 @@ class Author(db.Model):
         "Book", secondary="books_authors", back_populates="authors")
 
     def __repr__(self):
-        return f"<User author_id={self.author_id} name={self.name} about={self.about}>"
+        return f"<Author author_id={self.author_id} name={self.name} about={self.about}>"
 
 
 class Shelf(db.Model):
@@ -70,10 +73,9 @@ class Shelf(db.Model):
     user = db.relationship("User", back_populates="shelves")
     books = db.relationship(
         "Book", secondary="books_shelves", back_populates="shelves")
-   
 
     def __repr__(self):
-        return f"<Book book_id={self.shelf_id} title={self.title}>"
+        return f"<Shelf shelf_id={self.shelf_id} user_id={self.user_id} shelf_type={self.shelf_type}>"
 
 
 class Genre(db.Model):
@@ -83,9 +85,13 @@ class Genre(db.Model):
 
     genre_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     genre = db.Column(db.String(50), unique=True)
+    description = db.Column(db.Text, nullable=True)
 
     books = db.relationship(
         "Book", secondary="books_genres", back_populates="genres")
+
+    def __repr__(self):
+        return f"<Genre genre_id={self.genre_id} genre={self.genre} description={self.description}>"
 
 
 class Cover(db.Model):
@@ -100,6 +106,12 @@ class Cover(db.Model):
 
     book = db.relationship(
         "Book", back_populates="covers")
+
+    def __repr__(self):
+        return f"<Cover cover_id={self.cover_id} book_id={self.book_id} img_url={self.img_url}>"
+
+
+# Associations tables
 
 
 class BookGenre(db.Model):
