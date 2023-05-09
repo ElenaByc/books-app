@@ -85,6 +85,7 @@ class Genre(db.Model):
 
     genre_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     genre = db.Column(db.String(50), unique=True)
+    # fiction = db.Column(db.Boolean, nullable=False)
     description = db.Column(db.Text, nullable=True)
 
     books = db.relationship(
@@ -102,13 +103,13 @@ class Cover(db.Model):
     cover_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     book_id = db.Column(db.Integer, db.ForeignKey(
         "books.book_id"), nullable=False)
-    img_url = db.Column(db.String, nullable=False)
+    cover_url = db.Column(db.String, nullable=False)
 
     book = db.relationship(
         "Book", back_populates="covers")
 
     def __repr__(self):
-        return f"<Cover cover_id={self.cover_id} book_id={self.book_id} img_url={self.img_url}>"
+        return f"<Cover cover_id={self.cover_id} book_id={self.book_id} cover_url={self.cover_url}>"
 
 
 # Associations tables
