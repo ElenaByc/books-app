@@ -30,6 +30,8 @@ class Book(db.Model):
 
     book_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     title = db.Column(db.String, nullable=False)
+    primary_isbn10 = db.Column(db.String(20), nullable=False)
+    primary_isbn13 = db.Column(db.String(20), nullable=False)
     overview = db.Column(db.Text, nullable=True)
 
     authors = db.relationship(
@@ -40,7 +42,7 @@ class Book(db.Model):
         "Shelf", secondary="books_shelves", back_populates="books")
 
     def __repr__(self):
-        return f"<Book book_id={self.book_id} title={self.title}>"
+        return f"<Book book_id={self.book_id} title={self.title} isbn10={self.primary_isbn10} isbn13={self.primary_isbn13}>"
 
 
 class Author(db.Model):
@@ -119,7 +121,8 @@ class BookSubject(db.Model):
 
     __tablename__ = "books_subjects"
 
-    book_subject_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    book_subject_id = db.Column(
+        db.Integer, autoincrement=True, primary_key=True)
     book_id = db.Column(db.Integer, db.ForeignKey(
         "books.book_id"), nullable=False)
     subject_id = db.Column(db.Integer, db.ForeignKey(

@@ -11,10 +11,10 @@ def create_user(email, password):
     return User(email=email, password=password)
 
 
-def create_book(title, overview):
+def create_book(title, isbn10, isbn13, overview):
     """Create and return a new book."""
 
-    return Book(title=title, overview=overview)
+    return Book(title=title, primary_isbn10=isbn10, primary_isbn13=isbn13, overview=overview)
 
 
 def create_subject(subject, nyt_list_name):
