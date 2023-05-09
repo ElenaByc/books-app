@@ -14,7 +14,7 @@ class User(db.Model):
     email = db.Column(db.String, unique=True, nullable=False)
     password = db.Column(db.String, nullable=False)
 
-    # ratings = db.relationship("Rating", back_populates="user")
+    shelves = db.relationship("Shelf", back_populates="user")
 
     def __repr__(self):
         return f"<User user_id={self.user_id} email={self.email} password={self.password}>"
@@ -29,11 +29,17 @@ class Book(db.Model):
     title = db.Column(db.String, nullable=False)
     overview = db.Column(db.Text, nullable=True)
 
-    # ratings = db.relationship("Rating", back_populates="movie")
+    authors = db.relationship(
+        "Author", secondary="books_authors", back_populates="books")
+    genres = db.relationship(
+        "Genre", secondary="books_genres", back_populates="books")
+    shelves = db.relationship(
+        "Shelf", secondary="books_shelves", back_populates="books")
 
     def __repr__(self):
         return f"<Book book_id={self.book_id} title={self.title}>"
-    
+
+
 class Author(db.Model):
     """An author."""
 
@@ -44,27 +50,94 @@ class Author(db.Model):
     picture_url = db.Column(db.String, nullable=True)
     about = db.Column(db.Text, nullable=True)
 
-    # ratings = db.relationship("Rating", back_populates="user")
+    books = db.relationship(
+        "Book", secondary="books_authors", back_populates="authors")
 
     def __repr__(self):
         return f"<User author_id={self.author_id} name={self.name} about={self.about}>"
 
 
-# class Rating(db.Model):
-#     """A movie rating."""
+class Shelf(db.Model):
+    """A bookshelf."""
 
-#     __tablename__ = "ratings"
+    __tablename__ = "shelves"
 
-#     rating_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-#     score = db.Column(db.Integer)
-#     movie_id = db.Column(db.Integer, db.ForeignKey("movies.movie_id"))
-#     user_id = db.Column(db.Integer, db.ForeignKey("users.user_id"))
+    shelf_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey(
+        "users.user_id"), nullable=False)
+    shelf_type = db.Column(db.String, nullable=False)
 
-#     movie = db.relationship("Movie", back_populates="ratings")
-#     user = db.relationship("User", back_populates="ratings")
+    user = db.relationship("User", back_populates="shelves")
+    books = db.relationship(
+        "Book", secondary="books_shelves", back_populates="shelves")
+   
 
-#     def __repr__(self):
-#         return f"<Rating rating_id={self.rating_id} score={self.score}>"
+    def __repr__(self):
+        return f"<Book book_id={self.shelf_id} title={self.title}>"
+
+
+class Genre(db.Model):
+    """Genre of book."""
+
+    __tablename__ = "genres"
+
+    genre_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    genre = db.Column(db.String(50), unique=True)
+
+    books = db.relationship(
+        "Book", secondary="books_genres", back_populates="genres")
+
+
+class Cover(db.Model):
+    """A bookcover."""
+
+    __tablename__ = "covers"
+
+    cover_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    book_id = db.Column(db.Integer, db.ForeignKey(
+        "books.book_id"), nullable=False)
+    img_url = db.Column(db.String, nullable=False)
+
+    book = db.relationship(
+        "Book", back_populates="covers")
+
+
+class BookGenre(db.Model):
+    """Genre of a specific book."""
+
+    __tablename__ = "books_genres"
+
+    book_genre_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    book_id = db.Column(db.Integer, db.ForeignKey(
+        "books.book_id"), nullable=False)
+    genre_id = db.Column(db.Integer, db.ForeignKey(
+        "genres.genre_id"), nullable=False)
+
+
+class BookAuthor(db.Model):
+    """Author of a specific book."""
+
+    __tablename__ = "books_authors"
+
+    book_author_id = db.Column(
+        db.Integer, autoincrement=True, primary_key=True)
+    book_id = db.Column(db.Integer, db.ForeignKey(
+        "books.book_id"), nullable=False)
+    author_id = db.Column(db.Integer, db.ForeignKey(
+        "authors.author_id"), nullable=False)
+
+
+class BookShelf(db.Model):
+    """Book on a specific shelf."""
+
+    __tablename__ = "books_shelves"
+
+    book_shelf_id = db.Column(
+        db.Integer, autoincrement=True, primary_key=True)
+    book_id = db.Column(db.Integer, db.ForeignKey(
+        "books.book_id"), nullable=False)
+    shelf_id = db.Column(db.Integer, db.ForeignKey(
+        "shelves.shelf_id"), nullable=False)
 
 
 def connect_to_db(flask_app, db_uri="postgresql:///books", echo=True):
