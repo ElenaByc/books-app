@@ -1,7 +1,7 @@
 """CRUD operations."""
 
-from model import (User, Book, Shelf, Author, Genre, Cover,
-                   BookGenre, BookAuthor, BookShelf,
+from model import (User, Book, Shelf, Author, Subject, Cover,
+                   BookSubject, BookAuthor, BookShelf,
                    db, connect_to_db)
 
 
@@ -17,10 +17,10 @@ def create_book(title, overview):
     return Book(title=title, overview=overview)
 
 
-def create_genre(genre, description):
-    """Create and return a new genre."""
+def create_subject(subject, nyt_list_name):
+    """Create and return a new subject."""
 
-    return Genre(genre=genre, description=description)
+    return Subject(subject=subject, nyt_list_name_encoded=nyt_list_name)
 
 
 def create_author(name, about, picture):
@@ -41,10 +41,10 @@ def create_cover(book, img_url):
     return Cover(book=book, img_url=img_url)
 
 
-def create_book_genre(book, genre):
-    """Create and return a new book-genre association."""
+def create_book_subject(book, subject):
+    """Create and return a new book-subject association."""
 
-    return BookGenre(book=book, genre=genre)
+    return BookSubject(book=book, subject=subject)
 
 
 def create_book_author(book, author):

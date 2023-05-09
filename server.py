@@ -18,13 +18,11 @@ def homepage():
     return render_template('homepage.html')
 
 
-@app.route("/genres")
-def all_movies():
-    """View all genres."""
+@app.route("/subjects")
+def all_genres():
+    """View all book subjects."""
 
-    # movies = crud.get_movies()
-
-    return render_template("all_genres.html")
+    return render_template("all_subjects.html")
 
 
 if __name__ == "__main__":

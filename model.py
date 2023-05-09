@@ -34,8 +34,8 @@ class Book(db.Model):
 
     authors = db.relationship(
         "Author", secondary="books_authors", back_populates="books")
-    genres = db.relationship(
-        "Genre", secondary="books_genres", back_populates="books")
+    subjects = db.relationship(
+        "Subject", secondary="books_subjects", back_populates="books")
     shelves = db.relationship(
         "Shelf", secondary="books_shelves", back_populates="books")
 
@@ -78,21 +78,20 @@ class Shelf(db.Model):
         return f"<Shelf shelf_id={self.shelf_id} user_id={self.user_id} shelf_type={self.shelf_type}>"
 
 
-class Genre(db.Model):
-    """Genre of book."""
+class Subject(db.Model):
+    """Subject of book."""
 
-    __tablename__ = "genres"
+    __tablename__ = "subjects"
 
-    genre_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    genre = db.Column(db.String(50), unique=True)
-    # fiction = db.Column(db.Boolean, nullable=False)
-    description = db.Column(db.Text, nullable=True)
+    subject_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    subject = db.Column(db.String(100), unique=True, nullable=False)
+    nyt_list_name_encoded = db.Column(db.String(100), nullable=False)
 
     books = db.relationship(
-        "Book", secondary="books_genres", back_populates="genres")
+        "Book", secondary="books_subjects", back_populates="subjects")
 
     def __repr__(self):
-        return f"<Genre genre_id={self.genre_id} genre={self.genre} description={self.description}>"
+        return f"<Subject subject_id={self.subject_id} subject={self.subject} nyt_list_name={self.nyt_list_name_encoded}>"
 
 
 class Cover(db.Model):
@@ -115,16 +114,16 @@ class Cover(db.Model):
 # Associations tables
 
 
-class BookGenre(db.Model):
-    """Genre of a specific book."""
+class BookSubject(db.Model):
+    """Subject of a specific book."""
 
-    __tablename__ = "books_genres"
+    __tablename__ = "books_subjects"
 
-    book_genre_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    book_subject_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     book_id = db.Column(db.Integer, db.ForeignKey(
         "books.book_id"), nullable=False)
-    genre_id = db.Column(db.Integer, db.ForeignKey(
-        "genres.genre_id"), nullable=False)
+    subject_id = db.Column(db.Integer, db.ForeignKey(
+        "subjects.subject_id"), nullable=False)
 
 
 class BookAuthor(db.Model):
