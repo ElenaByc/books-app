@@ -11,7 +11,7 @@ def create_user(email, password):
     return User(email=email, password=password)
 
 
-def create_book(title, isbn10, isbn13, overview):
+def create_book(title, isbn10, isbn13, overview=""):
     """Create and return a new book."""
 
     return Book(title=title, primary_isbn10=isbn10, primary_isbn13=isbn13, overview=overview)
@@ -57,6 +57,16 @@ def create_book_shelf(book, shelf):
     """Create and return a new book-shelf association."""
 
     return BookShelf(book=book, shelf=shelf)
+
+
+def get_book_by_isbn10(isbn10):
+    """Return a book by isbn10."""
+    return Book.query.filter(Book.primary_isbn10 == isbn10).first()
+
+
+def get_book_by_isbn13(isbn13):
+    """Return a book by isbn13."""
+    return Book.query.filter(Book.primary_isbn13 == isbn13).first()
 
 
 if __name__ == '__main__':
