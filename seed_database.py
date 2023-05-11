@@ -65,6 +65,11 @@ model.db.session.commit()
 # TODO: for each book added to the db get additional data such as
 # book covers, authors, and subjects/topics from Open Lobrary API
 for subject in subjects_in_db:
+    # There are two rate limits per API:
+    # 500 requests per day and 5 requests per minute.
+    # You should sleep 12 seconds between calls to avoid hitting the per minute rate limit
+    # from https://developer.nytimes.com/faq
+    sleep(12)
     url = f"https://api.nytimes.com/svc/books/v3/lists/current/{subject.nyt_list_name_encoded}.json"
     payload = {}
     payload["api-key"] = NYT_API_KEY
@@ -95,11 +100,6 @@ for subject in subjects_in_db:
             # Add the book to the SQLAlchemy session and commit it to db
             model.db.session.add(db_book)
             model.db.session.commit()
-    # There are two rate limits per API:
-    # 500 requests per day and 5 requests per minute.
-    # You should sleep 12 seconds between calls to avoid hitting the per minute rate limit
-    # from https://developer.nytimes.com/faq
-    sleep(12)
 
 
 # Create 10 test users

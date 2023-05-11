@@ -30,7 +30,7 @@ class Book(db.Model):
 
     book_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     title = db.Column(db.String, nullable=False)
-    primary_isbn10 = db.Column(db.String(20), unique=True, nullable=False)
+    primary_isbn10 = db.Column(db.String(20), nullable=False)
     primary_isbn13 = db.Column(db.String(20), unique=True, nullable=False)
     overview = db.Column(db.Text, nullable=True)
 

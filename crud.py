@@ -61,11 +61,13 @@ def create_book_shelf(book, shelf):
 
 def get_book_by_isbn10(isbn10):
     """Return a book by isbn10."""
+
     return Book.query.filter(Book.primary_isbn10 == isbn10).first()
 
 
 def get_book_by_isbn13(isbn13):
     """Return a book by isbn13."""
+    
     return Book.query.filter(Book.primary_isbn13 == isbn13).first()
 
 
