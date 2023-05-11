@@ -25,7 +25,7 @@ model.db.create_all()
 
 
 # get all Best Sellers Lists from New York Times Books API
-# and create subjects data based on this lists
+# and create categories data based on this lists
 url = "https://api.nytimes.com/svc/books/v3/lists/names.json"
 payload = {}
 payload["api-key"] = NYT_API_KEY
@@ -34,43 +34,43 @@ res = requests.get(url, params=payload)
 data = res.json()
 total_items = data["num_results"]
 if total_items != 0:
-    subjects = data["results"]
+    categories = data["results"]
 else:
-    subjects = []
+    categories = []
 
-subjects_in_db = []
+categories_in_db = []
 
-for subject in subjects:
+for category in categories:
     # Get the display_name and list_name_encoded, and
-    display_name = subject["display_name"]
-    list_name_encoded = subject["list_name_encoded"]
+    display_name = category["display_name"]
+    list_name_encoded = category["list_name_encoded"]
     # Get newest_published_date and convert it to a datetime object
     newest_published_date = datetime.strptime(
-        subject["newest_published_date"], "%Y-%m-%d")
+        category["newest_published_date"], "%Y-%m-%d")
     published_year = newest_published_date.year
     current_year = datetime.now().year
     # Select only recently published lists, and not audio
     if published_year == current_year and not "audio" in list_name_encoded:
-        # Create a subject and append it to subjects_in_db
-        db_subject = crud.create_subject(
-            subject=display_name, nyt_list_name=list_name_encoded)
-        subjects_in_db.append(db_subject)
+        # Create a category and append it to categories_in_db
+        db_category = crud.create_category(
+            category=display_name, nyt_list_name=list_name_encoded)
+        categories_in_db.append(db_category)
 
-# Add all subjects to the SQLAlchemy session and commit them to db
-model.db.session.add_all(subjects_in_db)
+# Add all categories to the SQLAlchemy session and commit them to db
+model.db.session.add_all(categories_in_db)
 model.db.session.commit()
 
 
-# Get books for each list/subject from New York Times Best Sellers Lists
+# Get books for each category from New York Times Best Sellers Lists
 # TODO: for each book added to the db get additional data such as
-# book covers, authors, and subjects/topics from Open Lobrary API
-for subject in subjects_in_db:
+# book covers, authors, and subjects/topics from Open Library API
+for category in categories_in_db:
     # There are two rate limits per API:
     # 500 requests per day and 5 requests per minute.
     # You should sleep 12 seconds between calls to avoid hitting the per minute rate limit
     # from https://developer.nytimes.com/faq
     sleep(12)
-    url = f"https://api.nytimes.com/svc/books/v3/lists/current/{subject.nyt_list_name_encoded}.json"
+    url = f"https://api.nytimes.com/svc/books/v3/lists/current/{category.nyt_list_name_encoded}.json"
     payload = {}
     payload["api-key"] = NYT_API_KEY
     res = requests.get(url, params=payload)
@@ -100,6 +100,12 @@ for subject in subjects_in_db:
             # Add the book to the SQLAlchemy session and commit it to db
             model.db.session.add(db_book)
             model.db.session.commit()
+        else:
+            db_book = crud.get_book_by_isbn13(primary_isbn13)
+        db_book_category = crud.create_book_category(
+            db_book.book_id, category.category_id)
+        model.db.session.add(db_book_category)
+        model.db.session.commit()
 
 
 # Create 10 test users

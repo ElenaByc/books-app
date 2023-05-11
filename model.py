@@ -38,6 +38,8 @@ class Book(db.Model):
         "Author", secondary="books_authors", back_populates="books")
     subjects = db.relationship(
         "Subject", secondary="books_subjects", back_populates="books")
+    categories = db.relationship(
+        "Category", secondary="books_categories", back_populates="books")
     shelves = db.relationship(
         "Shelf", secondary="books_shelves", back_populates="books")
     covers = db.relationship("Cover", back_populates="book")
@@ -88,13 +90,28 @@ class Subject(db.Model):
 
     subject_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     subject = db.Column(db.String(100), unique=True, nullable=False)
-    nyt_list_name_encoded = db.Column(db.String(100), nullable=False)
 
     books = db.relationship(
         "Book", secondary="books_subjects", back_populates="subjects")
 
     def __repr__(self):
-        return f"<Subject subject_id={self.subject_id} subject={self.subject} nyt_list_name={self.nyt_list_name_encoded}>"
+        return f"<Subject subject_id={self.subject_id} subject={self.subject} >"
+
+
+class Category(db.Model):
+    """New York Times Best Sellers Category of book."""
+
+    __tablename__ = "categories"
+
+    category_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    category = db.Column(db.String(100), unique=True, nullable=False)
+    nyt_list_name_encoded = db.Column(db.String(100), nullable=False)
+
+    books = db.relationship(
+        "Book", secondary="books_categories", back_populates="categories")
+
+    def __repr__(self):
+        return f"<Category category_id={self.category_id} category={self.category} nyt_list_name={self.nyt_list_name_encoded}>"
 
 
 class Cover(db.Model):
@@ -128,6 +145,19 @@ class BookSubject(db.Model):
         "books.book_id"), nullable=False)
     subject_id = db.Column(db.Integer, db.ForeignKey(
         "subjects.subject_id"), nullable=False)
+
+
+class BookCategory(db.Model):
+    """Category of a specific book."""
+
+    __tablename__ = "books_categories"
+
+    book_category_id = db.Column(
+        db.Integer, autoincrement=True, primary_key=True)
+    book_id = db.Column(db.Integer, db.ForeignKey(
+        "books.book_id"), nullable=False)
+    category_id = db.Column(db.Integer, db.ForeignKey(
+        "categories.category_id"), nullable=False)
 
 
 class BookAuthor(db.Model):
