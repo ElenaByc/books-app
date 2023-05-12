@@ -1,19 +1,21 @@
 {% extends 'base.html' %}
 {% block title %}All Categories{% endblock %}
 
-{% block body %}
+{% block content %}
 <h1>All Categories</h1>
 
 {% for category in categories %}
-<h3>Category: {{ category.category }}</h3>
-<p>Id = {{ category.category_id }}</p>
-<p>New York Times list name: {{ category.nyt_list_name_encoded }}</p>
-<p> {{ category.books|length }} books in this category</p>
-<ul>
-    {% for book in category.books %}
-    <li>{{ book.title }}</li>
-    {% endfor %}
-</ul>
+<div>
+    <h3>Category: {{ category.category }}</h3>
+    <h4>Id = {{ category.category_id }}</h4>
+    <h4>New York Times list name: {{ category.nyt_list_name_encoded }}</h4>
+    <h4> {{ category.books|length }} books in this category</h4>
+    <ul>
+        {% for book in category.books %}
+        <li>{{ book.title }}</li>
+        {% endfor %}
+    </ul>
+</div>
 
 {% endfor %}
 {% endblock %}
