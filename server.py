@@ -27,6 +27,15 @@ def all_categories():
     return render_template("all_categories.html", categories=categories)
 
 
+@app.route("/books")
+def all_books():
+    """View all books."""
+
+    books = crud.get_all_books()
+
+    return render_template("all_books.html", books=books)
+
+
 if __name__ == "__main__":
     connect_to_db(app)
     app.run(host="0.0.0.0", debug=True)
