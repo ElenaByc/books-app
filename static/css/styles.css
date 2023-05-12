@@ -96,7 +96,7 @@ p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
     color: var(--color-dark);
     margin: 0;
@@ -130,9 +130,9 @@ p {
 }
 
 .header__logo-img {
-    flex: 0 0 70px;
-    height: 80px;
-    width: 70px;
+    flex: 0 0 60px;
+    height: 60px;
+    width: 60px;
 }
 
 /* .header__title {
@@ -141,8 +141,8 @@ p {
 
 .header__title h1 {
     font-family: "Literata Bold";
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 38px;
+    line-height: 44px;
     letter-spacing: 0.02em;
     text-align: center;
 }
@@ -153,6 +153,18 @@ p {
     line-height: 24px;
     text-align: center;
     color: var(--color-brown);
+}
+
+.header__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__login-icon {
+    flex: 0 0 40px;
+    height: 40px;
+    width: 40px;
 }
 
 /* ---------- Main ---------- */
