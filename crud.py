@@ -83,7 +83,7 @@ def get_book_by_isbn13(isbn13):
     return Book.query.filter(Book.primary_isbn13 == isbn13).first()
 
 
-def get_categories():
+def get_all_categories():
     """Return all categories."""
 
     return Category.query.all()

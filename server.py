@@ -19,10 +19,10 @@ def homepage():
 
 
 @app.route("/categories")
-def all_genres():
+def all_categories():
     """View all book categories."""
 
-    categories = crud.get_categories()
+    categories = crud.get_all_categories()
 
     return render_template("all_categories.html", categories=categories)
 
