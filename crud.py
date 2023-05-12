@@ -41,10 +41,10 @@ def create_shelf(name, about, picture):
     return Shelf(name=name, about=about, picture_url=picture)
 
 
-def create_cover(book, img_url):
+def create_cover(book, cover_url):
     """Create and return a new book cover."""
 
-    return Cover(book=book, img_url=img_url)
+    return Cover(book=book, cover_url=cover_url)
 
 
 def create_book_subject(book, subject):

@@ -100,6 +100,10 @@ for category in categories_in_db:
             # Add the book to the SQLAlchemy session and commit it to db
             model.db.session.add(db_book)
             model.db.session.commit()
+            db_cover = crud.create_cover(db_book, book["book_image"])
+            # Add the cover to the SQLAlchemy session and commit it to db
+            model.db.session.add(db_cover)
+            model.db.session.commit()
         else:
             db_book = crud.get_book_by_isbn13(primary_isbn13)
         db_book_category = crud.create_book_category(

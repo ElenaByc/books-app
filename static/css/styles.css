@@ -176,6 +176,15 @@ p {
     row-gap: 20px;
 }
 
+.book_details {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.book_details__cover {
+    flex: 0 0 40%;
+}
 
 
 .search-container {
