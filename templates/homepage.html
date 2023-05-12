@@ -8,4 +8,43 @@
     <li><a href="/categories">View all categories</a></li>
     <li><a href="/books">View all books</a></li>
 </ul>
+
+<div class="search-container">
+    <h2>Search for Books</h2>
+    <form class="search-form" action="/search-result" method="GET">
+        <div>
+            <label for="author">Author</label>
+            <input id="author" type="text" name="author">
+        </div>
+
+        <div>
+            <label for="title">Title</label>
+            <input id="title" type="text" name="title">
+        </div>
+
+        <div>
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" name="subject">
+        </div>
+
+        <div>
+            <label for="category">Category</label>
+            <select name="category" id="category">
+                <option disabled selected value> -- select a category -- </option>
+                {% for category in categories %}
+                <option value="{{ category.category_id }}">{{ category.category }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox" id="read" name="read" value="no">
+            <label for="read">Do not recommend me books I already read</label>
+        </div>
+
+
+        <input type="submit" />
+    </form>
+
+</div>
 {% endblock %}

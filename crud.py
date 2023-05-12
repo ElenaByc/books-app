@@ -29,10 +29,10 @@ def create_category(category, nyt_list_name):
     return Category(category=category, nyt_list_name_encoded=nyt_list_name)
 
 
-def create_author(name, about, picture):
+def create_author(ol_id, name, about, picture):
     """Create and return a new author."""
 
-    return Author(name=name, about=about, picture_url=picture)
+    return Author(author_ol_id=ol_id, name=name, about=about, picture_url=picture)
 
 
 def create_shelf(name, about, picture):
@@ -41,10 +41,10 @@ def create_shelf(name, about, picture):
     return Shelf(name=name, about=about, picture_url=picture)
 
 
-def create_cover(book, cover_url):
+def create_cover(book_id, cover_url, source):
     """Create and return a new book cover."""
 
-    return Cover(book=book, cover_url=cover_url)
+    return Cover(book_id=book_id, cover_url=cover_url, source=source)
 
 
 def create_book_subject(book, subject):
@@ -59,10 +59,10 @@ def create_book_category(book_id, category_id):
     return BookCategory(book_id=book_id, category_id=category_id)
 
 
-def create_book_author(book, author):
+def create_book_author(book_id, author_id):
     """Create and return a new book-author association."""
 
-    return BookAuthor(book=book, author=author)
+    return BookAuthor(book_id=book_id, author_id=author_id)
 
 
 def create_book_shelf(book, shelf):
@@ -83,6 +83,20 @@ def get_book_by_isbn13(isbn13):
     return Book.query.filter(Book.primary_isbn13 == isbn13).first()
 
 
+def get_books_by_category(category_id):
+    """Return all book by category."""
+
+    # return Book.query.filter(Book.categories.contains(get_category_by_id)).all()
+
+    result = []
+    book_category_list = BookCategory.query.filter(
+        BookCategory.category_id == category_id).all()
+    for bc in book_category_list:
+        result.append(get_book_by_id(bc.book_id))
+
+    return result
+
+
 def get_all_books():
     """Return all books."""
 
@@ -99,6 +113,18 @@ def get_all_categories():
     """Return all categories."""
 
     return Category.query.all()
+
+
+def get_category_by_id(category_id):
+    """Return a category by primary key."""
+
+    return Category.query.get(category_id)
+
+
+def get_author_by_ol_id(ol_id):
+    """Return an author by Open Library Id"""
+
+    return Author.query.filter(Author.author_ol_id == ol_id).first()
 
 
 if __name__ == '__main__':

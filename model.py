@@ -30,7 +30,7 @@ class Book(db.Model):
 
     book_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     title = db.Column(db.String, nullable=False)
-    primary_isbn10 = db.Column(db.String(20), nullable=False)
+    primary_isbn10 = db.Column(db.String(20), nullable=True)
     primary_isbn13 = db.Column(db.String(20), unique=True, nullable=False)
     overview = db.Column(db.Text, nullable=True)
 
@@ -54,7 +54,8 @@ class Author(db.Model):
     __tablename__ = "authors"
 
     author_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    name = db.Column(db.String, unique=True, nullable=False)
+    author_ol_id = db.Column(db.String, unique=True, nullable=False)
+    name = db.Column(db.String, nullable=False)
     picture_url = db.Column(db.String, nullable=True)
     about = db.Column(db.Text, nullable=True)
 
@@ -123,16 +124,16 @@ class Cover(db.Model):
     book_id = db.Column(db.Integer, db.ForeignKey(
         "books.book_id"), nullable=False)
     cover_url = db.Column(db.String, nullable=False)
+    source = db.Column(db.String(10), nullable=False)
 
     book = db.relationship(
         "Book", back_populates="covers")
 
     def __repr__(self):
-        return f"<Cover cover_id={self.cover_id} book_id={self.book_id} cover_url={self.cover_url}>"
+        return f"<Cover cover_id={self.cover_id} book_id={self.book_id} source={self.source} cover_url={self.cover_url}>"
 
 
 # Associations tables
-
 
 class BookSubject(db.Model):
     """Subject of a specific book."""

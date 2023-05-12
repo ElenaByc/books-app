@@ -4,6 +4,7 @@ from flask import (Flask, render_template, request, flash, session, redirect)
 from model import connect_to_db, db
 import crud
 from jinja2 import StrictUndefined
+from random import sample
 
 app = Flask(__name__)
 app.app_context().push()
@@ -15,7 +16,30 @@ app.jinja_env.undefined = StrictUndefined
 def homepage():
     """View homepage."""
 
-    return render_template('homepage.html')
+    categories = crud.get_all_categories()
+
+    return render_template('homepage.html', categories=categories)
+
+
+@app.route('/search-result')
+def show_searching_result():
+    """Show event search form"""
+
+    author = request.args.get('author', '')
+    title = request.args.get('title', '')
+    subject = request.args.get('subject', '')
+    category_id = request.args.get('category', '')
+
+    if category_id != '':
+        books = crud.get_books_by_category(category_id)
+        category = crud.get_category_by_id(category_id).category
+        print("!!!!!!!!!!!!!!!!!!!!!!!")
+        print(sample(books, 3))
+    else:
+        books = []
+        category = ''
+
+    return render_template("all_books.html", books=books, category=category)
 
 
 @app.route("/categories")
@@ -33,7 +57,7 @@ def all_books():
 
     books = crud.get_all_books()
 
-    return render_template("all_books.html", books=books)
+    return render_template("all_books.html", books=books, category='')
 
 
 @app.route("/books/<book_id>")

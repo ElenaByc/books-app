@@ -46,6 +46,7 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--color-light);
+    font-size: 18px;
 }
 
 *,
@@ -85,8 +86,8 @@ h3 {
 
 h4 {
     font-family: 'Inter Bold';
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 24px;
     color: var(--color-dark);
     margin: 0;
 }
@@ -95,7 +96,7 @@ p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     color: var(--color-dark);
     margin: 0;
@@ -186,9 +187,15 @@ p {
     flex: 0 0 40%;
 }
 
+.book_details__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
 
 .search-container {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,8 +209,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 30px;
-    padding: 30px;
+    row-gap: 10px;
+    padding: 10px;
 }
 
 .search-form input[type=text] {

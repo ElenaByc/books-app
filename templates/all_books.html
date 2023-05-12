@@ -2,11 +2,15 @@
 {% block title %}All Books{% endblock %}
 
 {% block content %}
+{% if category == '' %}
 <h2>All Books</h2>
+{% else %}
+<h2>{{ category }}</h2>
+{% endif %}
 
 {% for book in books %}
 <div>
-    <h3>Book Title: {{ book.title }}</h3>
+    <h3><a href="/books/{{ book.book_id }}">Book Title: {{ book.title }}</a></h3>
     <h4>Id = {{ book.book_id }}</h4>
     <h4>NEW YORK TIMES BESTSELLER in {{ book.categories|length }}
         {% if book.categories|length > 1 -%} categories:
