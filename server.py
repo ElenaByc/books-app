@@ -36,6 +36,15 @@ def all_books():
     return render_template("all_books.html", books=books)
 
 
+@app.route("/books/<book_id>")
+def show_movie(book_id):
+    """Show details on a particular book."""
+
+    book = crud.get_book_by_id(book_id)
+
+    return render_template("book_details.html", book=book)
+
+
 if __name__ == "__main__":
     connect_to_db(app)
     app.run(host="0.0.0.0", debug=True)

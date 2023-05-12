@@ -2,7 +2,7 @@
 {% block title %}All Categories{% endblock %}
 
 {% block content %}
-<h1>All Categories</h1>
+<h2>All Categories</h2>
 
 {% for category in categories %}
 <div>
@@ -12,7 +12,7 @@
     <h4> {{ category.books|length }} books in this category</h4>
     <ul>
         {% for book in category.books %}
-        <li>{{ book.title }}</li>
+        <li><a href="/books/{{ book.book_id }}">{{ book.title }}</a></li>
         {% endfor %}
     </ul>
 </div>

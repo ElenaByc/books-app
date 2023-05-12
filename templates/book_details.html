@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Book Details Page{% endblock %}
+
+{% block content %}
+<h2>Book Title: {{ book.title }}</h2>
+
+<div class="book_details">
+    {% if book.covers|length > 0 %}
+    <img class="book_cover" src="{{ book.covers[0] }}" alt="{{ book.title }} cover">
+    {% endif %}
+    <h4>{% if book.authors|length > 1 -%}Authors:
+        {% else -%}Author{% endif %}
+        {% for author in book.authors %}
+        {{ author.name }}
+        {% endfor %}
+    </h4>
+
+    <h4>ISBN10 = {{ book.primary_isbn10}}</h4>
+    <h4>ISBN13 = {{ book.primary_isbn13}}</h4>
+    <h4>NEW YORK TIMES BESTSELLER in {{ book.categories|length }}
+        {% if book.categories|length > 1 -%} categories:
+        {% else -%}
+        category
+        {% endif %}</h4>
+    <ul>
+        {% for category in book.categories %}
+        <li>{{ category.category }}</li>
+        {% endfor %}
+    </ul>
+    <p>Overview: {{ book.overview }}</p>
+</div>
+
+{% endblock %}
