@@ -11,8 +11,8 @@
     <div class="book_details__content">
         <h4>{% if book.authors|length > 1 -%}Authors:
             {% else -%}Author{% endif %}
-            {% for author in book.authors %}
-            {{ author.name }}
+            {% for i in range(book.authors|length) %}
+            {{ book.authors[i].name}}{% if i != book.authors|length - 1 %}, {% endif %}
             {% endfor %}
         </h4>
 

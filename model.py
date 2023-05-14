@@ -54,7 +54,7 @@ class Author(db.Model):
     __tablename__ = "authors"
 
     author_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    author_ol_id = db.Column(db.String, unique=True, nullable=False)
+    author_ol_id = db.Column(db.String, unique=True, nullable=True)
     name = db.Column(db.String, nullable=False)
     picture_url = db.Column(db.String, nullable=True)
     about = db.Column(db.Text, nullable=True)

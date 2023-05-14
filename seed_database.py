@@ -13,21 +13,27 @@ import server
 
 
 NYT_API_KEY = os.environ["NYT_KEY"]
+GOOGLE_BOOKS_KEY = os.environ["GOOGLE_BOOKS_KEY"]
 
 
-def get_book_authors(isbn13, book_id):
+def get_book_authors_ol(isbn13, book_id):
     url = f"https://openlibrary.org/isbn/{isbn13}.json"
     res = requests.get(url)
     if (res.status_code != 200):
         # not all book have data at Open Library
-        print(f"ERROR! NO BOOK DATA! book_id = {book_id} isbn13 = {isbn13}")
-        return
+        print(
+            f"ERROR! NO BOOK DATA FROM OP! book_id = {book_id} isbn13 = {isbn13}")
+        return False
     data = res.json()
     # not all books have author's data, for example isbn13 = 9781982185824
     # https://openlibrary.org/isbn/9781982185824.json
+    #
+    # HARRY POTTER does not have "authors", but here is J. K. Rowling page
+    # https://openlibrary.org/authors/OL23919A.json
+    # /authors/OL23919A
     if not "authors" in data:
         print(f"ERROR! NO AUTHORS DATA! book_id = {book_id} isbn13 = {isbn13}")
-        return
+        return False
     authors_keys = data["authors"]
     print(authors_keys)
     for author_key in authors_keys:
@@ -62,6 +68,39 @@ def get_book_authors(isbn13, book_id):
                 book_id, db_author.author_id)
             model.db.session.add(db_book_author)
             model.db.session.commit()
+    return True
+
+
+def get_book_authors_google(isbn13, book_id):
+    url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn13}"
+    payload = {"key": GOOGLE_BOOKS_KEY}
+    res = requests.get(url, params=payload)
+    if (res.status_code != 200):
+        print(
+            f"ERROR! NO BOOK DATA FROM GOOGLE BOOKS! book_id = {book_id} isbn13 = {isbn13}")
+        # return False
+    data = res.json()
+    if not "items" in data:
+        return False
+    if len(data["items"]) == 0:
+        return False
+    if not "volumeInfo" in data["items"][0]:
+        return False
+    if not "authors" in data["items"][0]["volumeInfo"]:
+        return False
+    authors = data["items"][0]["volumeInfo"]["authors"]
+    for author in authors:
+        # create author
+        db_author = crud.create_author(
+            ol_id=None, name=author, about=None, picture=None)
+        model.db.session.add(db_author)
+        model.db.session.commit()
+        # create book to author assotiation
+        db_book_author = crud.create_book_author(
+            book_id, db_author.author_id)
+        model.db.session.add(db_book_author)
+        model.db.session.commit()
+    return True
 
 
 # re-create a database
@@ -158,9 +197,25 @@ for category in categories_in_db:
             model.db.session.commit()
             print("**************** COVER WAS ADDED**********", db_book.book_id)
             # Get book author with Open Library API
-            get_book_authors(db_book.primary_isbn13, db_book.book_id)
+            success = get_book_authors_ol(
+                db_book.primary_isbn13, db_book.book_id)
+            if not success:
+                # Get book author with Google Books API
+                success = get_book_authors_google(
+                    db_book.primary_isbn13, db_book.book_id)
+                if not success:
+                    # create author from NYT data
+                    db_author = crud.create_author(
+                        ol_id=None, name=book["author"], about=None, picture=None)
+                    model.db.session.add(db_author)
+                    model.db.session.commit()
+                    # create book to author assotiation
+                    db_book_author = crud.create_book_author(
+                        db_book.book_id, db_author.author_id)
+                    model.db.session.add(db_book_author)
+                    model.db.session.commit()
         else:
-            # the booi is already in db => need to add category to this book
+            # the book is already in db => need to add category to this book
             db_book = crud.get_book_by_isbn13(primary_isbn13)
         db_book_category = crud.create_book_category(
             db_book.book_id, category.category_id)

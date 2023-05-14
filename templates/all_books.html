@@ -12,6 +12,12 @@
 <div>
     <h3><a href="/books/{{ book.book_id }}">Book Title: {{ book.title }}</a></h3>
     <h4>Id = {{ book.book_id }}</h4>
+    <h4>{% if book.authors|length > 1 -%}Authors:
+        {% else -%}Author:{% endif %}
+        {% for i in range(book.authors|length) %}
+        {{ book.authors[i].name}}{% if i != book.authors|length - 1 %}, {% endif %}
+        {% endfor %}
+    </h4>
     <h4>NEW YORK TIMES BESTSELLER in {{ book.categories|length }}
         {% if book.categories|length > 1 -%} categories:
         {% else -%}
