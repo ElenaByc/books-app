@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Author Details Page{% endblock %}
+
+{% block content %}
+<h2>{{ author.name}}</h2>
+
+<div class="author_details">
+    {% if author.picture_url %}
+    <img class="author_details__picture" src="{{ author.picture_url }}" alt="{{ author.name }} photo">
+    {% endif %}
+    <div class="author_details__content">
+        <p>About: {{ author.about }}</p>
+    </div>
+</div>
+
+{% endblock %}

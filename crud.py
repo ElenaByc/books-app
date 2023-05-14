@@ -121,6 +121,12 @@ def get_category_by_id(category_id):
     return Category.query.get(category_id)
 
 
+def get_author_by_id(author_id):
+    """Return a author by primary key."""
+
+    return Author.query.get(author_id)
+
+
 def get_author_by_ol_id(ol_id):
     """Return an author by Open Library Id"""
 

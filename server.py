@@ -61,12 +61,21 @@ def all_books():
 
 
 @app.route("/books/<book_id>")
-def show_movie(book_id):
+def show_book(book_id):
     """Show details on a particular book."""
 
     book = crud.get_book_by_id(book_id)
 
     return render_template("book_details.html", book=book)
+
+
+@app.route("/authors/<author_id>")
+def show_author(author_id):
+    """Show details on a particular author."""
+
+    author = crud.get_author_by_id(author_id)
+
+    return render_template("author_details.html", author=author)
 
 
 if __name__ == "__main__":
