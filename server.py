@@ -33,8 +33,8 @@ def show_searching_result():
     if category_id != '':
         books = crud.get_books_by_category(category_id)
         category = crud.get_category_by_id(category_id).category
-        print("!!!!!!!!!!!!!!!!!!!!!!!")
-        print(sample(books, 3))
+        # print("!!!!!!!!!!!!!!!!!!!!!!!")
+        # print(sample(books, 3))
     else:
         books = []
         category = ''
@@ -67,15 +67,6 @@ def show_book(book_id):
     book = crud.get_book_by_id(book_id)
 
     return render_template("book_details.html", book=book)
-
-
-@app.route("/authors/<author_id>")
-def show_author(author_id):
-    """Show details on a particular author."""
-
-    author = crud.get_author_by_id(author_id)
-
-    return render_template("author_details.html", author=author)
 
 
 if __name__ == "__main__":

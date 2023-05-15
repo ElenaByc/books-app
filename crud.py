@@ -11,10 +11,10 @@ def create_user(email, password):
     return User(email=email, password=password)
 
 
-def create_book(title, isbn10, isbn13, overview=""):
+def create_book(title, isbn10, isbn13, overview="", contributor_note=""):
     """Create and return a new book."""
 
-    return Book(title=title, primary_isbn10=isbn10, primary_isbn13=isbn13, overview=overview)
+    return Book(title=title, primary_isbn10=isbn10, primary_isbn13=isbn13, overview=overview, contributor_note=contributor_note)
 
 
 def create_subject(subject):
@@ -29,10 +29,10 @@ def create_category(category, nyt_list_name):
     return Category(category=category, nyt_list_name_encoded=nyt_list_name)
 
 
-def create_author(ol_id, name, about, picture):
+def create_author(name, ol_id=None, about=None, picture=None):
     """Create and return a new author."""
 
-    return Author(author_ol_id=ol_id, name=name, about=about, picture_url=picture)
+    return Author(name=name, author_ol_id=ol_id, about=about, picture_url=picture)
 
 
 def create_shelf(name, about, picture):

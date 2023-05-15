@@ -33,6 +33,7 @@ class Book(db.Model):
     primary_isbn10 = db.Column(db.String(20), nullable=True)
     primary_isbn13 = db.Column(db.String(20), unique=True, nullable=False)
     overview = db.Column(db.Text, nullable=True)
+    contributor_note = db.Column(db.String(100), nullable=True)
 
     authors = db.relationship(
         "Author", secondary="books_authors", back_populates="books")

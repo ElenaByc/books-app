@@ -78,7 +78,7 @@ def get_book_authors_google(isbn13, book_id):
     if (res.status_code != 200):
         print(
             f"ERROR! NO BOOK DATA FROM GOOGLE BOOKS! book_id = {book_id} isbn13 = {isbn13}")
-        # return False
+        return False
     data = res.json()
     if not "items" in data:
         return False
@@ -89,6 +89,18 @@ def get_book_authors_google(isbn13, book_id):
     if not "authors" in data["items"][0]["volumeInfo"]:
         return False
     authors = data["items"][0]["volumeInfo"]["authors"]
+
+    # get rid of duplicates
+    to_remove = []
+    for i in range(len(authors)):
+        temp_list = [a for j, a in enumerate(authors) if j != i]
+        for a in temp_list:
+            if authors[i] in a:
+                to_remove.append(i)
+    to_remove.reverse()
+    for index in to_remove:
+        del authors[index]
+
     for author in authors:
         # create author
         db_author = crud.create_author(
@@ -103,6 +115,17 @@ def get_book_authors_google(isbn13, book_id):
     return True
 
 
+def get_book_authors_nyt(author_name, book_id):
+    db_author = crud.create_author(name=author_name)
+    model.db.session.add(db_author)
+    model.db.session.commit()
+    # create book to author assotiation
+    db_book_author = crud.create_book_author(
+        book_id, db_author.author_id)
+    model.db.session.add(db_book_author)
+    model.db.session.commit()
+
+
 # re-create a database
 os.system("dropdb books")
 os.system("createdb books")
@@ -113,10 +136,9 @@ model.db.create_all()
 
 
 # get all Best Sellers Lists from New York Times Books API
-# and create categories data based on this lists
+# and create categories in db
 url = "https://api.nytimes.com/svc/books/v3/lists/names.json"
-payload = {}
-payload["api-key"] = NYT_API_KEY
+payload = {"api-key": NYT_API_KEY}
 
 res = requests.get(url, params=payload)
 data = res.json()
@@ -150,8 +172,8 @@ model.db.session.commit()
 
 
 # Get books for each category from New York Times Best Sellers Lists
-# TODO: for each book added to the db get additional data such as
-# book covers, authors, and subjects/topics from Open Library API
+# for each book added to the db get additional data such as
+# book covers, authors, and subjects/topics from Google Books API
 for category in categories_in_db:
     # There are two rate limits per API:
     # 500 requests per day and 5 requests per minute.
@@ -165,9 +187,7 @@ for category in categories_in_db:
     print(res.url)
     print("res:", res)
     data = res.json()
-    # print("data:", data)
     total_items = data["num_results"]
-    print(total_items)
     if total_items != 0:
         books = data["results"]["books"]
     else:
@@ -177,46 +197,38 @@ for category in categories_in_db:
         # Get book data
         title = book["title"]
         primary_isbn10 = book["primary_isbn10"]
-        # TODO:primary_isbn10 can be empty!!! => get it from another API
+        # primary_isbn10 can be empty!!!
         primary_isbn13 = book["primary_isbn13"]
 
-        # Check that the book is not in db
-        if crud.get_book_by_isbn13(primary_isbn13) == None:
+        # Check that the book is already in db
+        db_book = crud.get_book_by_isbn13(primary_isbn13)
+        if db_book == None:
             description = book["description"]
+            contributor_note = book["contributor_note"]
             db_book = crud.create_book(
-                title=title, isbn10=primary_isbn10, isbn13=primary_isbn13, overview=description)
+                title=title,
+                isbn10=primary_isbn10,
+                isbn13=primary_isbn13,
+                overview=description,
+                contributor_note=contributor_note)
             # Add the book to the SQLAlchemy session and commit it to db
             model.db.session.add(db_book)
             model.db.session.commit()
             # Get book cover
             db_cover = crud.create_cover(
                 db_book.book_id, book["book_image"], 'NYT')
-            print("**************** ADDING COVER **********", db_book.book_id)
             # Add the cover to the SQLAlchemy session and commit it to db
             model.db.session.add(db_cover)
             model.db.session.commit()
-            print("**************** COVER WAS ADDED**********", db_book.book_id)
-            # Get book author with Open Library API
-            success = get_book_authors_ol(
+            # Get book authors with Google Books API
+            # TODO: update book description from Google Books API
+            # TODO get book categories/subject from Google Books API
+            success = get_book_authors_google(
                 db_book.primary_isbn13, db_book.book_id)
             if not success:
-                # Get book author with Google Books API
-                success = get_book_authors_google(
-                    db_book.primary_isbn13, db_book.book_id)
-                if not success:
-                    # create author from NYT data
-                    db_author = crud.create_author(
-                        ol_id=None, name=book["author"], about=None, picture=None)
-                    model.db.session.add(db_author)
-                    model.db.session.commit()
-                    # create book to author assotiation
-                    db_book_author = crud.create_book_author(
-                        db_book.book_id, db_author.author_id)
-                    model.db.session.add(db_book_author)
-                    model.db.session.commit()
-        else:
-            # the book is already in db => need to add category to this book
-            db_book = crud.get_book_by_isbn13(primary_isbn13)
+                # create author from NYT data
+                get_book_authors_nyt(book["author"], db_book.book_id)
+        # add book-category association
         db_book_category = crud.create_book_category(
             db_book.book_id, category.category_id)
         model.db.session.add(db_book_category)

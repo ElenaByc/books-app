@@ -10,12 +10,21 @@
     {% endif %}
     <div class="book_details__content">
         <h4>{% if book.authors|length > 1 -%}Authors:
-            {% else -%}Author{% endif %}
+            {% else %}Author:{% endif %}
+            {% if book.authors|length == 2 -%}
+            {{ book.authors[0].name }} and {{ book.authors[1].name }}
+            {% else %}
             {% for i in range(book.authors|length) %}
-            {{ book.authors[i].name}}{% if i != book.authors|length - 1 %}, {% endif %}
+            {{ book.authors[i].name -}}
+            {% if i != book.authors|length - 1 %},
+            {% if i == book.authors|length - 2 %}and {% endif %}
+            {% endif %}
             {% endfor %}
+            {% endif %}
         </h4>
-
+        {% if book.contributor_note != "" %}
+        <h4>{{ book.contributor_note }}</h4>
+        {% endif %}
         <h4>ISBN10 = {{ book.primary_isbn10}}</h4>
         <h4>ISBN13 = {{ book.primary_isbn13}}</h4>
         <h4>NEW YORK TIMES BESTSELLER in {{ book.categories|length }}
