@@ -180,6 +180,7 @@ p {
 .book_details {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     column-gap: 50px;
 }
 

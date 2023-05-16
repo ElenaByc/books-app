@@ -37,7 +37,8 @@
             <li>{{ l.list_name }}</li>
             {% endfor %}
         </ul>
-        <p>Description: {{ book.description }}</p>
+        <h4>Description:</h4>
+        {{ book.description|safe }}
     </div>
 </div>
 

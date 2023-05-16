@@ -71,13 +71,14 @@ def get_book_authors_ol(isbn13, book_id):
     return True
 
 
-def get_book_authors_google(isbn13, book_id):
-    url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn13}"
+def get_book_data_from_google_books_api(db_book):
+    """Get book's authors, description and categories from Google Books API"""
+    url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{db_book.primary_isbn13}"
     payload = {"key": GOOGLE_BOOKS_KEY}
     res = requests.get(url, params=payload)
     if (res.status_code != 200):
         print(
-            f"ERROR! NO BOOK DATA FROM GOOGLE BOOKS! book_id = {book_id} isbn13 = {isbn13}")
+            f"ERROR! NO BOOK DATA FROM GOOGLE BOOKS! book_id = {db_book.book_id} isbn13 = {db_book.primary_isbn13}")
         return False
     data = res.json()
     if not "items" in data:
@@ -86,6 +87,15 @@ def get_book_authors_google(isbn13, book_id):
         return False
     if not "volumeInfo" in data["items"][0]:
         return False
+    if "description" in data["items"][0]["volumeInfo"]:
+        url = data["items"][0]["selfLink"]
+        res = requests.get(url)
+        data2 = res.json()
+        db_book.description = data2["volumeInfo"]["description"]  # html
+        # https://stackoverflow.com/questions/3206344/passing-html-to-template-using-flask-jinja2
+        # https://css-tricks.com/snippets/javascript/inject-html-from-a-string-of-html/
+        # db_book.description = data["items"][0]["volumeInfo"]["description"] # plain text
+        model.db.session.commit()
     if not "authors" in data["items"][0]["volumeInfo"]:
         return False
     authors = data["items"][0]["volumeInfo"]["authors"]
@@ -109,7 +119,7 @@ def get_book_authors_google(isbn13, book_id):
         model.db.session.commit()
         # create book to author assotiation
         db_book_author = crud.create_book_author(
-            book_id, db_author.author_id)
+            db_book.book_id, db_author.author_id)
         model.db.session.add(db_book_author)
         model.db.session.commit()
     return True
@@ -223,8 +233,7 @@ for db_list in lists_in_db:
             # Get book authors with Google Books API
             # TODO: update book description from Google Books API
             # TODO get book categories/subject from Google Books API
-            success = get_book_authors_google(
-                db_book.primary_isbn13, db_book.book_id)
+            success = get_book_data_from_google_books_api(db_book)
             if not success:
                 # create author from NYT data
                 get_book_authors_nyt(book["author"], db_book.book_id)
