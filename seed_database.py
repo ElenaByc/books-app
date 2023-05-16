@@ -7,13 +7,14 @@ from random import choice, randint
 from datetime import datetime
 from time import sleep
 
+from utilites import format_uppercase_string
 import crud
 import model
 import server
 
 
 NYT_API_KEY = os.environ["NYT_KEY"]
-GOOGLE_BOOKS_KEY = os.environ["GOOGLE_BOOKS_KEY"]
+GOOGLE_BOOKS_KEY = os.environ["GOOGLE_BOOKS_KEY2"]
 
 
 def get_book_authors_ol(isbn13, book_id):
@@ -71,7 +72,7 @@ def get_book_authors_ol(isbn13, book_id):
     return True
 
 
-def get_book_data_from_google_books_api(db_book):
+def get_book_data_google_books_api(db_book):
     """Get book's authors, description and categories from Google Books API"""
     url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{db_book.primary_isbn13}"
     payload = {"key": GOOGLE_BOOKS_KEY}
@@ -96,6 +97,31 @@ def get_book_data_from_google_books_api(db_book):
         # https://css-tricks.com/snippets/javascript/inject-html-from-a-string-of-html/
         # db_book.description = data["items"][0]["volumeInfo"]["description"] # plain text
         model.db.session.commit()
+
+    # get categories
+    if "categories" in data["items"][0]["volumeInfo"]:
+        categories = data["items"][0]["volumeInfo"]["categories"]
+        for category in categories:
+            print("***********************************************")
+            print("category: ", category)
+            print("***********************************************")
+            if category.isupper():
+                category = format_uppercase_string(category)
+            db_category = crud.get_category_by_name(category)
+            print("db_category: ", db_category)
+            print("***********************************************")
+            if db_category == None:
+                db_category = crud.create_category(category)
+                print("CREATING DB CATEGORY - ", category)
+                model.db.session.add(db_category)
+                model.db.session.commit()
+            # create book to category assotiation
+            db_book_category = crud.create_book_category(
+                db_book.book_id, db_category.category_id)
+            model.db.session.add(db_book_category)
+            model.db.session.commit()
+
+    # get authors
     if not "authors" in data["items"][0]["volumeInfo"]:
         return False
     authors = data["items"][0]["volumeInfo"]["authors"]
@@ -112,6 +138,8 @@ def get_book_data_from_google_books_api(db_book):
         del authors[index]
 
     for author in authors:
+        if author.isupper():
+            author = format_uppercase_string(author)
         # create author
         db_author = crud.create_author(
             ol_id=None, name=author, about=None, picture=None)
@@ -183,7 +211,7 @@ model.db.session.commit()
 
 # Get books for each list from the New York Times Best Sellers Lists
 # for each book added to the db get additional data such as
-# book covers, authors, and subjects/topics from Google Books API
+# book covers, authors, descriptions, and categories from Google Books API
 for db_list in lists_in_db:
     # There are two rate limits per API:
     # 500 requests per day and 5 requests per minute.
@@ -214,7 +242,7 @@ for db_list in lists_in_db:
         db_book = crud.get_book_by_isbn13(primary_isbn13)
         if db_book == None:
             description = book["description"]
-            contributor_note = book["contributor_note"]
+            contributor_note = book["contributor_note"].capitalize()
             db_book = crud.create_book(
                 title=title,
                 isbn10=primary_isbn10,
@@ -230,10 +258,8 @@ for db_list in lists_in_db:
             # Add the cover to the SQLAlchemy session and commit it to db
             model.db.session.add(db_cover)
             model.db.session.commit()
-            # Get book authors with Google Books API
-            # TODO: update book description from Google Books API
-            # TODO get book categories/subject from Google Books API
-            success = get_book_data_from_google_books_api(db_book)
+            # Get book authors, description, and categories from Google Books API
+            success = get_book_data_google_books_api(db_book)
             if not success:
                 # create author from NYT data
                 get_book_authors_nyt(book["author"], db_book.book_id)

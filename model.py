@@ -37,8 +37,8 @@ class Book(db.Model):
 
     authors = db.relationship(
         "Author", secondary="books_authors", back_populates="books")
-    subjects = db.relationship(
-        "Subject", secondary="books_subjects", back_populates="books")
+    categories = db.relationship(
+        "Category", secondary="books_categories", back_populates="books")
     lists = db.relationship(
         "List", secondary="books_lists", back_populates="books")
     shelves = db.relationship(
@@ -85,19 +85,19 @@ class Shelf(db.Model):
         return f"<Shelf shelf_id={self.shelf_id} user_id={self.user_id} shelf_type={self.shelf_type}>"
 
 
-class Subject(db.Model):
-    """Subject of book."""
+class Category(db.Model):
+    """Category of book."""
 
-    __tablename__ = "subjects"
+    __tablename__ = "categories"
 
-    subject_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    subject = db.Column(db.String(100), unique=True, nullable=False)
+    category_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    category_name = db.Column(db.String(100), unique=True, nullable=False)
 
     books = db.relationship(
-        "Book", secondary="books_subjects", back_populates="subjects")
+        "Book", secondary="books_categories", back_populates="categories")
 
     def __repr__(self):
-        return f"<Subject subject_id={self.subject_id} subject={self.subject} >"
+        return f"<Category category_id={self.category_id} category={self.category_name} >"
 
 
 class List(db.Model):
@@ -136,17 +136,17 @@ class Cover(db.Model):
 
 # Associations tables
 
-class BookSubject(db.Model):
-    """Subject of a specific book."""
+class BookCategory(db.Model):
+    """Category of a specific book."""
 
-    __tablename__ = "books_subjects"
+    __tablename__ = "books_categories"
 
-    book_subject_id = db.Column(
+    book_category_id = db.Column(
         db.Integer, autoincrement=True, primary_key=True)
     book_id = db.Column(db.Integer, db.ForeignKey(
         "books.book_id"), nullable=False)
-    subject_id = db.Column(db.Integer, db.ForeignKey(
-        "subjects.subject_id"), nullable=False)
+    category_id = db.Column(db.Integer, db.ForeignKey(
+        "categories.category_id"), nullable=False)
 
 
 class BookList(db.Model):

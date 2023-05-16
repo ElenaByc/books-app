@@ -1,7 +1,7 @@
 """CRUD operations."""
 
-from model import (User, Book, Shelf, Author, Subject, List, Cover,
-                   BookSubject, BookList, BookAuthor, BookShelf,
+from model import (User, Book, Shelf, Author, Category, List, Cover,
+                   BookCategory, BookList, BookAuthor, BookShelf,
                    db, connect_to_db)
 
 
@@ -17,10 +17,10 @@ def create_book(title, isbn10, isbn13, description="", contributor_note=""):
     return Book(title=title, primary_isbn10=isbn10, primary_isbn13=isbn13, description=description, contributor_note=contributor_note)
 
 
-def create_subject(subject):
-    """Create and return a new subject."""
+def create_category(category_name):
+    """Create and return a new category."""
 
-    return Subject(subject=subject)
+    return Category(category_name=category_name)
 
 
 def create_list(list_name, nyt_list_name_encoded):
@@ -47,10 +47,10 @@ def create_cover(book_id, cover_url, source):
     return Cover(book_id=book_id, cover_url=cover_url, source=source)
 
 
-def create_book_subject(book, subject):
-    """Create and return a new book-subject association."""
+def create_book_category(book_id, category_id):
+    """Create and return a new book-category association."""
 
-    return BookSubject(book=book, subject=subject)
+    return BookCategory(book_id=book_id, category_id=category_id)
 
 
 def create_book_list(book_id, list_id):
@@ -98,7 +98,8 @@ def get_books_by_list(list_id):
 def get_all_books():
     """Return all books."""
 
-    return Book.query.all()
+    # return Book.query.all()
+    return db.session.query(Book).order_by("book_id").all()
 
 
 def get_book_by_id(book_id):
@@ -129,6 +130,12 @@ def get_author_by_ol_id(ol_id):
     """Return an author by Open Library Id"""
 
     return Author.query.filter(Author.author_ol_id == ol_id).first()
+
+
+def get_category_by_name(category_name):
+    """Return a category by its name."""
+
+    return Category.query.filter(Category.category_name == category_name).first()
 
 
 if __name__ == '__main__':

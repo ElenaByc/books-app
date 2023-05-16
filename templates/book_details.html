@@ -37,6 +37,12 @@
             <li>{{ l.list_name }}</li>
             {% endfor %}
         </ul>
+        <h4>Categories:</h4>
+        <ul>
+            {% for category in book.categories %}
+            <li>{{ category.category_name }}</li>
+            {% endfor %}
+        </ul>
         <h4>Description:</h4>
         {{ book.description|safe }}
     </div>
