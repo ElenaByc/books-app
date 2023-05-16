@@ -7,14 +7,17 @@ from random import choice, randint
 from datetime import datetime
 from time import sleep
 
-from utilites import format_uppercase_string
+from utilites import format_uppercase_string, split_categories
 import crud
 import model
 import server
 
 
 NYT_API_KEY = os.environ["NYT_KEY"]
-GOOGLE_BOOKS_KEY = os.environ["GOOGLE_BOOKS_KEY2"]
+GOOGLE_BOOKS_KEY = os.environ["GOOGLE_BOOKS_KEY3"]
+
+
+NUM_OF_REQUESTS = 0
 
 
 def get_book_authors_ol(isbn13, book_id):
@@ -72,14 +75,42 @@ def get_book_authors_ol(isbn13, book_id):
     return True
 
 
+def add_categories_to_db(categories, book_id):
+    for category in categories:
+        print("***********************************************")
+        print("category: ", category)
+        print("***********************************************")
+        if category.isupper():
+            category = format_uppercase_string(category)
+        db_category = crud.get_category_by_name(category)
+        print("db_category: ", db_category)
+        print("***********************************************")
+        if db_category == None:
+            # create db_category
+            db_category = crud.create_category(category)
+            print("CREATING DB CATEGORY - ", category)
+            model.db.session.add(db_category)
+            model.db.session.commit()
+
+        # create book to category assotiation
+        print("CREATE BOOK+CATEGORY, BOOK_ID=", book_id)
+        db_book_category = crud.create_book_category(
+            book_id, db_category.category_id)
+        model.db.session.add(db_book_category)
+        model.db.session.commit()
+
+
 def get_book_data_google_books_api(db_book):
     """Get book's authors, description and categories from Google Books API"""
+
     url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{db_book.primary_isbn13}"
     payload = {"key": GOOGLE_BOOKS_KEY}
     res = requests.get(url, params=payload)
+    global NUM_OF_REQUESTS
+    NUM_OF_REQUESTS += 1
     if (res.status_code != 200):
         print(
-            f"ERROR! NO BOOK DATA FROM GOOGLE BOOKS! book_id = {db_book.book_id} isbn13 = {db_book.primary_isbn13}")
+            f"ERROR! STATUS_CODE != 200! book_id = {db_book.book_id} isbn13 = {db_book.primary_isbn13}")
         return False
     data = res.json()
     if not "items" in data:
@@ -88,38 +119,33 @@ def get_book_data_google_books_api(db_book):
         return False
     if not "volumeInfo" in data["items"][0]:
         return False
-    if "description" in data["items"][0]["volumeInfo"]:
+    if "selfLink" in data["items"][0]:
         url = data["items"][0]["selfLink"]
         res = requests.get(url)
+        NUM_OF_REQUESTS += 1
         data2 = res.json()
-        db_book.description = data2["volumeInfo"]["description"]  # html
-        # https://stackoverflow.com/questions/3206344/passing-html-to-template-using-flask-jinja2
-        # https://css-tricks.com/snippets/javascript/inject-html-from-a-string-of-html/
-        # db_book.description = data["items"][0]["volumeInfo"]["description"] # plain text
+        if "description" in data2["volumeInfo"]:
+            db_book.description = data2["volumeInfo"]["description"]  # html
+            # https://stackoverflow.com/questions/3206344/passing-html-to-template-using-flask-jinja2
+            # https://css-tricks.com/snippets/javascript/inject-html-from-a-string-of-html/
+            model.db.session.commit()
+
+        # get categories from selflink
+        if "categories" in data2["volumeInfo"]:
+            print("??????? categories = ", data2["volumeInfo"]["categories"])
+            categories = split_categories(data2["volumeInfo"]["categories"])
+            print("!!!!!!! categories = ", categories)
+            add_categories_to_db(categories, db_book.book_id)
+
+    elif "description" in data["items"][0]["volumeInfo"]:
+        # plain text
+        db_book.description = data["items"][0]["volumeInfo"]["description"]
         model.db.session.commit()
 
     # get categories
     if "categories" in data["items"][0]["volumeInfo"]:
         categories = data["items"][0]["volumeInfo"]["categories"]
-        for category in categories:
-            print("***********************************************")
-            print("category: ", category)
-            print("***********************************************")
-            if category.isupper():
-                category = format_uppercase_string(category)
-            db_category = crud.get_category_by_name(category)
-            print("db_category: ", db_category)
-            print("***********************************************")
-            if db_category == None:
-                db_category = crud.create_category(category)
-                print("CREATING DB CATEGORY - ", category)
-                model.db.session.add(db_category)
-                model.db.session.commit()
-            # create book to category assotiation
-            db_book_category = crud.create_book_category(
-                db_book.book_id, db_category.category_id)
-            model.db.session.add(db_book_category)
-            model.db.session.commit()
+        add_categories_to_db(categories, db_book.book_id)
 
     # get authors
     if not "authors" in data["items"][0]["volumeInfo"]:
@@ -180,6 +206,7 @@ payload = {"api-key": NYT_API_KEY}
 
 res = requests.get(url, params=payload)
 data = res.json()
+NUM_OF_REQUESTS += 1
 total_items = data["num_results"]
 if total_items != 0:
     lists = data["results"]
@@ -278,3 +305,6 @@ for n in range(10):
     user = crud.create_user(email, password)
     model.db.session.add(user)
 model.db.session.commit()
+
+
+print("NUM_OF_REQUESTS = ", NUM_OF_REQUESTS)

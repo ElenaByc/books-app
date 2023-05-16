@@ -11,3 +11,13 @@ def format_uppercase_string(str):
             formatted_name = str.capitalize()
 
         return formatted_name
+
+
+def split_categories(categories):
+    result = []
+    for c_str in categories:
+        result.extend(c_str.split(" / "))
+    result = list(set(result))
+    if "General" in result:
+        result.remove("General")
+    return result
