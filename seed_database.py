@@ -91,13 +91,25 @@ def add_categories_to_db(categories, book_id):
             print("CREATING DB CATEGORY - ", category)
             model.db.session.add(db_category)
             model.db.session.commit()
-
-        # create book to category assotiation
-        print("CREATE BOOK+CATEGORY, BOOK_ID=", book_id)
-        db_book_category = crud.create_book_category(
-            book_id, db_category.category_id)
-        model.db.session.add(db_book_category)
-        model.db.session.commit()
+            # create book to category assotiation
+            print("CREATE BOOK+CATEGORY, BOOK_ID=", book_id)
+            db_book_category = crud.create_book_category(
+                book_id, db_category.category_id)
+            model.db.session.add(db_book_category)
+            model.db.session.commit()
+        else:
+            # check if this book-category pair already exists in db
+            db_book_category = crud.get_book_category(
+                book_id, db_category.category_id)
+            if db_book_category == None:
+                # create book to category assotiation
+                print("CREATE BOOK+CATEGORY, BOOK_ID=", book_id)
+                db_book_category = crud.create_book_category(
+                    book_id, db_category.category_id)
+                model.db.session.add(db_book_category)
+                model.db.session.commit()
+            else:
+                print("ATTENTION! ALREADY EXISTS", db_book_category)
 
 
 def get_book_data_google_books_api(db_book):

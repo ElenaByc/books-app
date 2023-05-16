@@ -148,6 +148,9 @@ class BookCategory(db.Model):
     category_id = db.Column(db.Integer, db.ForeignKey(
         "categories.category_id"), nullable=False)
 
+    def __repr__(self):
+        return f"<BookCategory id={self.book_category_id} book_id={self.book_id} category_id={self.category_id}>"
+
 
 class BookList(db.Model):
     """List of a specific book."""

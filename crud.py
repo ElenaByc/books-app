@@ -138,6 +138,14 @@ def get_category_by_name(category_name):
     return Category.query.filter(Category.category_name == category_name).first()
 
 
+def get_book_category(book_id, category_id):
+    """Return a book_category by book_id and category_id."""
+
+    return BookCategory.query.filter(
+        BookCategory.book_id == book_id,
+        BookCategory.category_id == category_id).first()
+
+
 if __name__ == '__main__':
     from server import app
     connect_to_db(app)
