@@ -16,39 +16,39 @@ app.jinja_env.undefined = StrictUndefined
 def homepage():
     """View homepage."""
 
-    categories = crud.get_all_categories()
+    lists = crud.get_all_lists()
 
-    return render_template('homepage.html', categories=categories)
+    return render_template("homepage.html", lists=lists)
 
 
-@app.route('/search-result')
+@app.route("/search-result")
 def show_searching_result():
     """Show event search form"""
 
-    author = request.args.get('author', '')
-    title = request.args.get('title', '')
-    subject = request.args.get('subject', '')
-    category_id = request.args.get('category', '')
+    author = request.args.get("author", "")
+    # title = request.args.get("title", "")
+    subject = request.args.get("subject", "")
+    list_id = request.args.get("list", "")
 
-    if category_id != '':
-        books = crud.get_books_by_category(category_id)
-        category = crud.get_category_by_id(category_id).category
+    if list_id != '':
+        books = crud.get_books_by_list(list_id)
+        list_name = crud.get_list_by_id(list_id).list_name
         # print("!!!!!!!!!!!!!!!!!!!!!!!")
         # print(sample(books, 3))
     else:
         books = []
-        category = ''
+        list_name = ""
 
-    return render_template("all_books.html", books=books, category=category)
+    return render_template("all_books.html", books=books, list_name=list_name)
 
 
-@app.route("/categories")
-def all_categories():
-    """View all book categories."""
+@app.route("/lists")
+def all_lists():
+    """View all The New York Times Best Sellers lists"""
 
-    categories = crud.get_all_categories()
+    lists = crud.get_all_lists()
 
-    return render_template("all_categories.html", categories=categories)
+    return render_template("all_lists.html", lists=lists)
 
 
 @app.route("/books")
@@ -57,7 +57,7 @@ def all_books():
 
     books = crud.get_all_books()
 
-    return render_template("all_books.html", books=books, category='')
+    return render_template("all_books.html", books=books, list_name='')
 
 
 @app.route("/books/<book_id>")

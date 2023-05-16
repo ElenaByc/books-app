@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}All Lists{% endblock %}
+
+{% block content %}
+<h2>All Lists</h2>
+
+{% for l in lists %}
+<div>
+    <h3>List Name: {{ l.list_name }}</h3>
+    <h4>Id = {{ l.list_id }}</h4>
+    <h4>New York Times list name: {{ l.nyt_list_name_encoded }}</h4>
+    <h4> {{ l.books|length }} books in this list</h4>
+    <ul>
+        {% for book in l.books %}
+        <li><a href="/books/{{ book.book_id }}">{{ book.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endfor %}
+{% endblock %}

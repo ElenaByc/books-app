@@ -27,17 +27,17 @@
         {% endif %}
         <h4>ISBN10 = {{ book.primary_isbn10}}</h4>
         <h4>ISBN13 = {{ book.primary_isbn13}}</h4>
-        <h4>NEW YORK TIMES BESTSELLER in {{ book.categories|length }}
-            {% if book.categories|length > 1 -%} categories:
+        <h4>NEW YORK TIMES BESTSELLER in {{ book.lists|length }}
+            {% if book.lists|length > 1 -%} lists:
             {% else -%}
-            category
+            list
             {% endif %}</h4>
         <ul>
-            {% for category in book.categories %}
-            <li>{{ category.category }}</li>
+            {% for l in book.lists %}
+            <li>{{ l.list_name }}</li>
             {% endfor %}
         </ul>
-        <p>Overview: {{ book.overview }}</p>
+        <p>Description: {{ book.description }}</p>
     </div>
 </div>
 

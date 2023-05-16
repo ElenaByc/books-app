@@ -1,7 +1,7 @@
 """CRUD operations."""
 
-from model import (User, Book, Shelf, Author, Subject, Category, Cover,
-                   BookSubject, BookCategory, BookAuthor, BookShelf,
+from model import (User, Book, Shelf, Author, Subject, List, Cover,
+                   BookSubject, BookList, BookAuthor, BookShelf,
                    db, connect_to_db)
 
 
@@ -11,10 +11,10 @@ def create_user(email, password):
     return User(email=email, password=password)
 
 
-def create_book(title, isbn10, isbn13, overview="", contributor_note=""):
+def create_book(title, isbn10, isbn13, description="", contributor_note=""):
     """Create and return a new book."""
 
-    return Book(title=title, primary_isbn10=isbn10, primary_isbn13=isbn13, overview=overview, contributor_note=contributor_note)
+    return Book(title=title, primary_isbn10=isbn10, primary_isbn13=isbn13, description=description, contributor_note=contributor_note)
 
 
 def create_subject(subject):
@@ -23,10 +23,10 @@ def create_subject(subject):
     return Subject(subject=subject)
 
 
-def create_category(category, nyt_list_name):
-    """Create and return a new category."""
+def create_list(list_name, nyt_list_name_encoded):
+    """Create and return a new list."""
 
-    return Category(category=category, nyt_list_name_encoded=nyt_list_name)
+    return List(list_name=list_name, nyt_list_name_encoded=nyt_list_name_encoded)
 
 
 def create_author(name, ol_id=None, about=None, picture=None):
@@ -53,10 +53,10 @@ def create_book_subject(book, subject):
     return BookSubject(book=book, subject=subject)
 
 
-def create_book_category(book_id, category_id):
-    """Create and return a new book-category association."""
+def create_book_list(book_id, list_id):
+    """Create and return a new book-list association."""
 
-    return BookCategory(book_id=book_id, category_id=category_id)
+    return BookList(book_id=book_id, list_id=list_id)
 
 
 def create_book_author(book_id, author_id):
@@ -83,15 +83,13 @@ def get_book_by_isbn13(isbn13):
     return Book.query.filter(Book.primary_isbn13 == isbn13).first()
 
 
-def get_books_by_category(category_id):
-    """Return all book by category."""
-
-    # return Book.query.filter(Book.categories.contains(get_category_by_id)).all()
+def get_books_by_list(list_id):
+    """Return all book in list."""
 
     result = []
-    book_category_list = BookCategory.query.filter(
-        BookCategory.category_id == category_id).all()
-    for bc in book_category_list:
+    book_list_list = BookList.query.filter(
+        BookList.list_id == list_id).all()
+    for bc in book_list_list:
         result.append(get_book_by_id(bc.book_id))
 
     return result
@@ -109,16 +107,16 @@ def get_book_by_id(book_id):
     return Book.query.get(book_id)
 
 
-def get_all_categories():
-    """Return all categories."""
+def get_all_lists():
+    """Return all lists."""
 
-    return Category.query.all()
+    return List.query.all()
 
 
-def get_category_by_id(category_id):
-    """Return a category by primary key."""
+def get_list_by_id(list_id):
+    """Return a list by primary key."""
 
-    return Category.query.get(category_id)
+    return List.query.get(list_id)
 
 
 def get_author_by_id(author_id):

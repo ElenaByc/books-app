@@ -5,7 +5,7 @@
 <h2>Welcome!</h2>
 
 <ul>
-    <li><a href="/categories">View all categories</a></li>
+    <li><a href="/lists">View all The New York Times Best Sellers lists.</a></li>
     <li><a href="/books">View all books</a></li>
 </ul>
 
@@ -28,18 +28,18 @@
         </div>
 
         <div>
-            <label for="category">Category</label>
-            <select name="category" id="category">
-                <option disabled selected value> -- select a category -- </option>
-                {% for category in categories %}
-                <option value="{{ category.category_id }}">{{ category.category }}</option>
+            <label for="list">List Name</label>
+            <select name="list" id="list">
+                <option disabled selected value> -- select a list -- </option>
+                {% for l in lists %}
+                <option value="{{ l.list_id }}">{{ l.list_name }}</option>
                 {% endfor %}
             </select>
         </div>
 
         <div>
             <input type="checkbox" id="read" name="read" value="no">
-            <label for="read">Do not recommend me books I already read</label>
+            <label for="read">Do not recommend me books that already on my bookshelf</label>
         </div>
 
 

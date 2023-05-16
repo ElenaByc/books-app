@@ -32,15 +32,15 @@ class Book(db.Model):
     title = db.Column(db.String, nullable=False)
     primary_isbn10 = db.Column(db.String(20), nullable=True)
     primary_isbn13 = db.Column(db.String(20), unique=True, nullable=False)
-    overview = db.Column(db.Text, nullable=True)
+    description = db.Column(db.Text, nullable=True)
     contributor_note = db.Column(db.String(100), nullable=True)
 
     authors = db.relationship(
         "Author", secondary="books_authors", back_populates="books")
     subjects = db.relationship(
         "Subject", secondary="books_subjects", back_populates="books")
-    categories = db.relationship(
-        "Category", secondary="books_categories", back_populates="books")
+    lists = db.relationship(
+        "List", secondary="books_lists", back_populates="books")
     shelves = db.relationship(
         "Shelf", secondary="books_shelves", back_populates="books")
     covers = db.relationship("Cover", back_populates="book")
@@ -100,20 +100,20 @@ class Subject(db.Model):
         return f"<Subject subject_id={self.subject_id} subject={self.subject} >"
 
 
-class Category(db.Model):
-    """New York Times Best Sellers Category of book."""
+class List(db.Model):
+    """New The New York Times Best Sellers List of book."""
 
-    __tablename__ = "categories"
+    __tablename__ = "lists"
 
-    category_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    category = db.Column(db.String(100), unique=True, nullable=False)
+    list_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    list_name = db.Column(db.String(100), unique=True, nullable=False)
     nyt_list_name_encoded = db.Column(db.String(100), nullable=False)
 
     books = db.relationship(
-        "Book", secondary="books_categories", back_populates="categories")
+        "Book", secondary="books_lists", back_populates="lists")
 
     def __repr__(self):
-        return f"<Category category_id={self.category_id} category={self.category} nyt_list_name={self.nyt_list_name_encoded}>"
+        return f"<List list_id={self.list_id} list_name={self.list_name} nyt_list_name={self.nyt_list_name_encoded}>"
 
 
 class Cover(db.Model):
@@ -149,17 +149,17 @@ class BookSubject(db.Model):
         "subjects.subject_id"), nullable=False)
 
 
-class BookCategory(db.Model):
-    """Category of a specific book."""
+class BookList(db.Model):
+    """List of a specific book."""
 
-    __tablename__ = "books_categories"
+    __tablename__ = "books_lists"
 
-    book_category_id = db.Column(
+    book_list_id = db.Column(
         db.Integer, autoincrement=True, primary_key=True)
     book_id = db.Column(db.Integer, db.ForeignKey(
         "books.book_id"), nullable=False)
-    category_id = db.Column(db.Integer, db.ForeignKey(
-        "categories.category_id"), nullable=False)
+    list_id = db.Column(db.Integer, db.ForeignKey(
+        "lists.list_id"), nullable=False)
 
 
 class BookAuthor(db.Model):
