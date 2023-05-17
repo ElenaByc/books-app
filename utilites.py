@@ -21,3 +21,21 @@ def split_categories(categories):
     if "General" in result:
         result.remove("General")
     return result
+
+
+def get_categories_for_list(list_name):
+    categories_dict = {
+        "Fiction": "Fiction",
+        "Nonfiction": "Nonfiction",
+        "Business": "Business",
+        "Children": "Children's Books",
+        "Young Adult": "Young Adult Books",
+        "Middle Grade": "Middle Grade Books",
+        "Graphic Books": "Graphic Books",
+    }
+    result = []
+    for key, value in categories_dict.items():
+        if key in list_name:
+            result.append(value)
+
+    return result

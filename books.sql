@@ -702,7 +702,7 @@ COPY public.books (book_id, title, primary_isbn10, primary_isbn13, description, 
 28	CASTE	None	9780593230268	<b>#1 <i>NEW YORK TIMES </i>BESTSELLER • OPRAH’S BOOK CLUB PICK • “An instant American classic and almost certainly the keynote nonfiction book of the American century thus far.”—Dwight Garner, <i>The New York Times</i></b><br><br><b>The Pulitzer Prize–winning, bestselling author of <i>The Warmth of Other Suns</i> examines the unspoken caste system that has shaped America and shows how our lives today are still defined by a hierarchy of human divisions.</b><br><br><b>#1 NONFICTION BOOK OF THE YEAR: <i>Time<br></i>ONE OF THE BEST BOOKS OF THE YEAR: <i>The Washington Post, The New York Times, Los Angeles Times, The Boston Globe, O: The Oprah Magazine,</i> NPR, <i>Bloomberg, The Christian Science Monitor, New York Post,</i> The New York Public Library, <i>Fortune, Smithsonian Magazine, Marie Claire, Slate, Library Journal, Kirkus Reviews</i></b><br><br><b>Winner of the Carl Sandberg Literary Award • Winner of the Los Angeles Times Book Prize • National Book Award Longlist • National Book Critics Circle Award Finalist • Dayton Literary Peace Prize Finalist • PEN/John Kenneth Galbraith Award for Nonfiction Finalist • PEN/Jean Stein Book Award Longlist • Kirkus Prize Finalist</b><br><br><i>“As we go about our daily lives, caste is the wordless usher in a darkened theater, flashlight cast down in the aisles, guiding us to our assigned seats for a performance. The hierarchy of caste is not about feelings or morality. It is about power—which groups have it and which do not.”</i><br> <br>In this brilliant book, Isabel Wilkerson gives us a masterful portrait of an unseen phenomenon in America as she explores, through an immersive, deeply researched, and beautifully written narrative and stories about real people, how America today and throughout its history has been shaped by a hidden caste system, a rigid hierarchy of human rankings.<br> <br>Beyond race, class, or other factors, there is a powerful caste system that influences people’s lives and behavior and the nation’s fate. Linking the caste systems of America, India, and Nazi Germany, Wilkerson explores eight pillars that underlie caste systems across civilizations, including divine will, bloodlines, stigma, and more. Using riveting stories about people—including Martin Luther King, Jr., baseball’s Satchel Paige, a single father and his toddler son, Wilkerson herself, and many others—she shows the ways that the insidious undertow of caste is experienced every day. She documents how the Nazis studied the racial systems in America to plan their outcasting of the Jews; she discusses why the cruel logic of caste requires that there be a bottom rung for those in the middle to measure themselves against; she writes about the surprising health costs of caste, in depression and life expectancy, and the effects of this hierarchy on our culture and politics. Finally, she points forward to ways America can move beyond the artificial and destructive separations of human divisions, toward hope in our common humanity.<br><br>Original and revealing, <i>Caste: The Origins of Our Discontents</i> is an eye-opening story of people and history, and a reexamination of what lies under the surface of ordinary lives and of American life today.	
 15	HELLO BEAUTIFUL	0593243730	9780593243732	<b><b><i>NEW YORK TIMES </i>BESTSELLER • </b>OPRAH’S BOOK CLUB PICK • From the author of <i>Dear Edward</i> comes a “powerfully affecting” (<i>People</i>) family story that asks: Can love make a broken person whole?</b><br><br><b>“Another tender tearjerker . . . Napolitano chronicles life’s highs and lows with aching precision.”—<i>The Washington Post</i></b><br><br>William Waters grew up in a house silenced by tragedy, where his parents could hardly bear to look at him, much less love him—so when he meets the spirited and ambitious Julia Padavano in his freshman year of college, it’s as if the world has lit up around him. With Julia comes her family, as she and her three sisters are inseparable: Sylvie, the family’s dreamer, is happiest with her nose in a book; Cecelia is a free-spirited artist; and Emeline patiently takes care of them all. With the Padavanos, William experiences a newfound contentment; every moment in their house is filled with loving chaos.<br><br>But then darkness from William’s past surfaces, jeopardizing not only Julia’s carefully orchestrated plans for their future, but the sisters’ unshakeable devotion to one another. The result is a catastrophic family rift that changes their lives for generations. Will the loyalty that once rooted them be strong enough to draw them back together when it matters most?<br><br>An exquisite homage to Louisa May Alcott’s timeless classic, <i>Little Women</i>, <i>Hello Beautiful</i> is a profoundly moving portrait of what is possible when we choose to love someone not in spite of who they are, but because of it.	
 16	THE WAGER	0385534264	9780385534260	<b>From the #1 <i>New York Times</i> bestselling author of <i>Killers of the Flower Moon</i>, a page-turning story of shipwreck, survival, and savagery, culminating in a court martial that reveals a shocking truth. With the twists and turns of a thriller Grann unearths the deeper meaning of the events on the <i>Wager</i>, showing that it was not only the captain and crew who ended up on trial, but the very idea of empire.</b><br><br>On January 28, 1742, a ramshackle vessel of patched-together wood and cloth washed up on the coast of Brazil. Inside were thirty emaciated men, barely alive, and they had an extraordinary tale to tell. They were survivors of His Majesty’s Ship the Wager, a British vessel that had left England in 1740 on a secret mission during an imperial war with Spain. While the Wager had been chasing a Spanish treasure-filled galleon known as “the prize of all the oceans,” it had wrecked on a desolate island off the coast of Patagonia. The men, after being marooned for months and facing starvation, built the flimsy craft and sailed for more than a hundred days, traversing 2500 miles of storm-wracked seas. They were greeted as heroes.<br><br>But then ... six months later, another, even more decrepit craft landed on the coast of Chile. This boat contained just three castaways, and they told a very different story. The thirty sailors who landed in Brazil were not heroes – they were mutineers. The first group responded with countercharges of their own, of a tyrannical and murderous senior officer and his henchmen. It became clear that while stranded on the island the crew had fallen into anarchy, with warring factions fighting for dominion over the barren wilderness. As accusations of treachery and murder flew, the Admiralty convened a court martial to determine who was telling the truth. The stakes were life-and-death—for whomever the court found guilty could hang.<br><br><i>The Wager</i> is a grand tale of human behavior at the extremes told by one of our greatest nonfiction writers. Grann’s recreation of the hidden world on a British warship rivals the work of Patrick O’Brian, his portrayal of the castaways’ desperate straits stands up to the classics of survival writing such as <i>The Endurance</i>, and his account of the court martial has the savvy of a Scott Turow thriller. As always with Grann’s work, the incredible twists of the narrative hold the reader spellbound.	
-17	THE LIGHT WE CARRY	0593237463	9780593237465	<b>In an inspiring follow-up to her critically acclaimed, #1 bestselling memoir <i>Becoming, </i>former First Lady Michelle Obama shares practical wisdom and powerful strategies for staying hopeful and balanced in today’s highly uncertain world. </b><br>  <br>There may be no tidy solutions or pithy answers to life’s big challenges, but Michelle Obama believes that we can all locate and lean on a set of tools to help us better navigate change and remain steady within flux. In<i> The Light We Carry,</i> she opens a frank and honest dialogue with readers, considering the questions many of us wrestle with: How do we build enduring and honest relationships? How can we discover strength and community inside our differences? What tools do we use to address feelings of self-doubt or helplessness? What do we do when it all starts to feel like too much?<br> <br>Michelle Obama offers readers a series of fresh stories and insightful reflections on change, challenge, and power, including her belief that when we light up for others, we can illuminate the richness and potential of the world around us, discovering deeper truths and new pathways for progress. Drawing from her experiences as a mother, daughter, spouse, friend, and First Lady, she shares the habits and principles she has developed to successfully adapt to change and overcome various obstacles—the earned wisdom that helps her continue to “become.” She details her most valuable practices, like “starting kind,” “going high,” and assembling a “kitchen table” of trusted friends and mentors. With trademark humor, candor, and compassion, she also explores issues connected to race, gender, and visibility, encouraging readers to work through fear, find strength in community, and live with boldness.<br> <br>“When we are able to recognize our own light, we become empowered to use it,” writes Michelle Obama. A rewarding blend of powerful stories and profound advice that will ignite conversation, <i>The Light We Carry</i> inspires readers to examine their own lives, identify their sources of gladness, and connect meaningfully in a turbulent world.	
+17	THE LIGHT WE CARRY	0593237463	9780593237465	<b><b>#1 <i>NEW YORK TIMES </i>AND <i>USA TODAY</i> BESTSELLER • ONE OF <i>TIME</i>’S 100 MUST-READ BOOKS OF 2022 • </b>In an inspiring follow-up to her critically acclaimed, #1 bestselling memoir <i>Becoming, </i>former First Lady Michelle Obama shares practical wisdom and powerful strategies for staying hopeful and balanced in today’s highly uncertain world. </b><br>  <br>There may be no tidy solutions or pithy answers to life’s big challenges, but Michelle Obama believes that we can all locate and lean on a set of tools to help us better navigate change and remain steady within flux. In<i> The Light We Carry,</i> she opens a frank and honest dialogue with readers, considering the questions many of us wrestle with: How do we build enduring and honest relationships? How can we discover strength and community inside our differences? What tools do we use to address feelings of self-doubt or helplessness? What do we do when it all starts to feel like too much?<br> <br>Michelle Obama offers readers a series of fresh stories and insightful reflections on change, challenge, and power, including her belief that when we light up for others, we can illuminate the richness and potential of the world around us, discovering deeper truths and new pathways for progress. Drawing from her experiences as a mother, daughter, spouse, friend, and First Lady, she shares the habits and principles she has developed to successfully adapt to change and overcome various obstacles—the earned wisdom that helps her continue to “become.” She details her most valuable practices, like “starting kind,” “going high,” and assembling a “kitchen table” of trusted friends and mentors. With trademark humor, candor, and compassion, she also explores issues connected to race, gender, and visibility, encouraging readers to work through fear, find strength in community, and live with boldness.<br> <br>“When we are able to recognize our own light, we become empowered to use it,” writes Michelle Obama. A rewarding blend of powerful stories and profound advice that will ignite conversation, <i>The Light We Carry</i> inspires readers to examine their own lives, identify their sources of gladness, and connect meaningfully in a turbulent world.	
 18	LOOK FOR ME THERE	0785291814	9780785291817	<p>In Look for Me There, Luke Russert traverses terrain both physical and deeply personal. On his journey to some of the world's most stunning destinations, he visits the internal places of grief, family, faith, ambition, and purpose--with intense self-reflection, honesty, and courage."--Savannah Guthrie, coanchor of Today</p><p>"Look for me there," news legend Tim Russert would tell his son, Luke, when confirming a pickup spot at an airport, sporting event, or rock concert. After Tim died unexpectedly, Luke kept looking for his father, following in Tim's footsteps and carving out a highly successful career at NBC News. After eight years covering politics on television, Luke realized he had no good answer as to why he was chasing his father's legacy. As the son of two accomplished parents--his mother is journalist Maureen Orth of Vanity Fair--Luke felt the pressure of high expectations but suddenly decided to leave the familiar path behind.</p><p>Instead, Luke set out on his own to find answers. What began as several open-ended months of travel to decompress and reassess morphed into a three-plus-year odyssey across six continents to discover the world and, ultimately, to find himself.</p><p>Chronicling the important lessons and historical understandings Luke discovered from his travels, Look for Me There is both the vivid narrative of that journey and the emotional story of a young man taking charge of his life, reexamining his relationship with his parents, and finally grieving his larger-than-life father, who died too young. </p><p>For anyone uncertain about the direction of their life or unsure of how to move forward after a loss, Look for Me There is a poignant reflection that offers encouragement to examine our choices, take risks, and discover our truest selves.</p>	
 19	OUTLIVE	0593236599	9780593236598	<b>#1 <i>NEW YORK TIMES </i>BESTSELLER • A groundbreaking manifesto on living better and longer that challenges the conventional medical thinking on aging and reveals a new approach to preventing chronic disease and extending long-term health, from a visionary physician and leading longevity expert</b><br> <br><b>“One of the most important books you’ll ever read.”—Steven D. Levitt, <i>New York Times </i>bestselling author of <i>Freakonomics</i></b><br> <br>Wouldn’t you like to live longer? And better? In this operating manual for longevity, Dr. Peter Attia draws on the latest science to deliver innovative nutritional interventions, techniques for optimizing exercise and sleep, and tools for addressing emotional and mental health.<br> <br>For all its successes, mainstream medicine has failed to make much progress against the diseases of aging that kill most people: heart disease, cancer, Alzheimer’s disease, and type 2 diabetes. Too often, it intervenes with treatments too late to help, prolonging lifespan at the expense of healthspan, or quality of life. Dr. Attia believes we must replace this outdated framework with a personalized, proactive strategy for longevity, one where we take action now, rather than waiting.<br> <br>This is not “biohacking,” it’s science: a well-founded strategic and tactical approach to extending lifespan while also improving our physical, cognitive, and emotional health. Dr. Attia’s aim is less to tell you <i>what to do</i> and more to help you learn <i>how to think</i> about long-term health, in order to create the best plan for you as an individual. In <i>Outlive</i>, readers will discover:<br> <br>• Why the cholesterol test at your annual physical doesn’t tell you enough about your actual risk of dying from a heart attack.<br>• That you may already suffer from an extremely common yet underdiagnosed liver condition that could be a precursor to the chronic diseases of aging.<br>• Why exercise is the most potent pro-longevity “drug”—and how to begin training for the “Centenarian Decathlon.”<br>• Why you should forget about diets, and focus instead on <i>nutritional biochemistry, </i>using technology and data to personalize your eating pattern.<br>• Why striving for physical health and longevity, but ignoring emotional health, could be the ultimate curse of all.<br> <br>Aging and longevity are far more malleable than we think; our fate is not set in stone. With the right roadmap, you can plot a different path for your life, one that lets you outlive your genes to make each decade better than the one before.	
 20	THE BODY KEEPS THE SCORE	0143127748	9780143127741	<b>#1 <i>New York Times </i>bestseller<br><br>“Essential reading for anyone interested in understanding and treating traumatic stress and the scope of its impact on society.” —Alexander McFarlane, Director of the Centre for Traumatic Stress Studies<br><br>A pioneering researcher transforms our understanding of trauma and offers a bold new paradigm for healing in this <b><b><b><i>New York Times</i> bestseller</b></b></b></b><br> <br>Trauma is a fact of life. Veterans and their families deal with the painful aftermath of combat; one in five Americans has been molested; one in four grew up with alcoholics; one in three couples have engaged in physical violence. Dr. Bessel van der Kolk, one of the world’s foremost experts on trauma, has spent over three decades working with survivors. In <i>The Body Keeps the Score</i>, he uses recent scientific advances to show how trauma literally reshapes both body and brain, compromising sufferers’ capacities for pleasure, engagement, self-control, and trust. He explores innovative treatments—from neurofeedback and meditation to sports, drama, and yoga—that offer new paths to recovery by activating the brain’s natural neuroplasticity. Based on Dr. van der Kolk’s own research and that of other leading specialists, <i>The Body Keeps the Score </i>exposes the tremendous power of our relationships both to hurt and to heal—and offers new hope for reclaiming lives.	
@@ -729,7 +729,7 @@ COPY public.books (book_id, title, primary_isbn10, primary_isbn13, description, 
 41	YOU CAN'T JOKE ABOUT THAT	0063270420	9780063270428	<p>What happens when we can't joke about some of the most important stuff in life?</p> <p>In a 2019 study, 40% of people reported censoring themselves out of fear that voicing their views would alienate them from the people they care about most. Those people should probably not read this book in public.</p> <p>In You Can't Joke About That, Kat Timpf shows why much of the way we talk about sensitive subjects is wrong. We've created all the wrong rules. We push ourselves into unnecessary conflicts when we should feel like we're all in this together. When someone says "you can't joke about that," what they really mean is "this is a subject that makes people sad or angry."</p> <p>Hilariously and movingly, Timpf argues that those subjects are actually the most important to joke about. She shows us we can find healing through humor regarding things you probably don't want to bring up in polite conversation, like traumatic break-ups, cancer, being broke, Dave Chappelle, rape jokes, aging, ostomy bags, religion, body image, dead moms, religion, the lab leak theory, transgender swimmers, gushing wounds, campus censorship, and bad Christmas presents. </p> <p>This book is Kat Timpf with her hair down, except since hers is mostly extensions, this book is Kat Timpf with her hair out. Read it because you want to get to know her better. Read it because it's the best book on free speech and comedy in a generation. Read it because you want to laugh out loud... even at the kind of stuff we're afraid to say out loud. Just read it, and you'll be glad you did.</p>	
 42	HONEY, BABY, MINE	153872037X	9781538720370	<b>"As actors, Dern and Ladd have spent decades peeling back layers to reveal their characters' fears and desires. It's when they turn that focus to each other and themselves that something remarkable emerges."--<i>New York Times</i> <p> A collection of deeply personal conversations from award-winning actress and activist Laura Dern and the woman she admires most, her mother--legendary actress Diane Ladd. <br> </b> <br><i>What happens when we are brave enough to speak our truths to the ones we love the most?</i> <p> Laura Dern and Diane Ladd always had a close relationship, but the stakes were raised when Diane developed a sudden life-threatening illness. Diane's doctor prescribed long walks to build back her lung capacity. The exertion was challenging, and Laura soon learned the best way to distract her mom was to get her talking and telling stories. <p> Their conversations along the way began to break down the traditional barriers between mothers and daughters. They discussed the most personal topics: love, sex, marriage, divorce, art, ambition, and legacy. In <i>Honey, Baby, Mine</i>, Laura and Diane share these conversations, as well as reflections and anecdotes, taking readers on an intimate tour of their lives. Complementing these candid exchanges, they have included photos, family recipes, and other mementos. The result is a celebration of the power of leaving nothing unsaid that will make you want to call the people you love the most and start talking.	
 43	QUANTUM SUPREMACY	0385548362	9780385548366	<b>An exhilarating tour of humanity's next great technological achievement—quantum computing—which may eventually unravel the deepest mysteries of science and solve some of humanity's biggest problems, like global warming, world hunger, and incurable disease, by the bestselling author of <i>The God Equation.</i></b><br><br>The runaway success of the microchip processor may be reaching its end. Running up against the physical constraints of smaller and smaller sizes, traditional silicon chips are not likely to prove useful in solving humanity’s greatest challenges, from climate change, to global starvation, to incurable diseases. But the quantum computer, which harnesses the power and complexity of the atomic realm, already promises to be every bit as revolutionary as the transistor and microchip once were. Its unprecedented gains in computing power herald advancements that could change every aspect of our daily lives. <br><br>Automotive companies, medical researchers, and consulting firms are betting on quantum computing, hoping to exploit its power to design more efficient vehicles, create life-saving new drugs, and streamline industries to revolutionize the economy. But this is only the beginning. Quantum computers could allow us to finally create nuclear fusion reactors that create clean, renewable energy without radioactive waste or threats of meltdown. They could help us crack the biological processes that generate natural, cheap fertilizer and enable us to feed the world’s growing populations. And they could unravel the fiendishly difficult protein folding that lies at the heart of previously incurable diseases like Alzheimer’s, ALS, and Parkinson’s, helping us to live longer, healthier lives. There is not a single problem humanity faces that couldn’t be addressed by quantum computing. Told with Kaku’s signature clarity and enthusiasm, <i>Quantum Supremacy</i> is the story of this exciting frontier and the race to claim humanity’s future.	
-89	REPEAT AFTER ME	0593426975	9780593426975	<b>From parents and actors Jazmyn Simon and Dulé Hill comes a picture book filled with beautiful, inspiring affirmations reminding kiddos of their infinite wonder. Perfect for children of any age!</b><br><br><i>I am worthy. I am loved. I am enough.</i><br><i> </i>Every child, no matter their age, needs to know how loved they are and, more importantly, should love themselves. In this gorgeously illustrated book of affirmations, young readers are told how cherished, deserving, and gifted they are.<br><br>In their tender picture book, actors Jazmyn Simon and Dulé Hill tell children about the magic of self-love and standing firm, regardless of outside voices and doubt. Children will feel their confidence grow as they repeat the encouraging words on the page, take in the warm illustrations, and learn to believe in themselves!	Illustrated by shamar knight-justice
+97	HARRY POTTER	059035342X	9780590353427	Harry Potter has never been the star of a Quidditch team, scoring points while riding a broom far above the ground. He knows no spells, has never helped to hatch a dragon, and has never worn a cloak of invisibility.All he knows is a miserable life with the Dursleys, his horrible aunt and uncle, and their abominable son, Dudley - a great big swollen spoiled bully. Harry's room is a tiny closet at the foot of the stairs, and he hasn't had a birthday party in eleven years.But all that is about to change when a mysterious letter arrives by owl messenger: a letter with an invitation to an incredible place that Harry - and anyone who reads about him - will find unforgettable.For it's there that he finds not only friends, aerial sports, and magic in everything from classes to meals, but a great destiny that's been waiting for him... if Harry can survive the encounter.	
 45	THE HOUSEMAID	1538742578	9781538742570	<b>Don't miss the <i>USA Today</i> bestseller and addictive psychological thriller with a jaw-dropping twist that's burning up Instagram--Freida McFadden's <i>The Housemaid</i> is perfect for fans of Ruth Ware, Lisa Jewell, and</b> <i><b>Verity.</b></i><br> <br> <br> <br> <b>"Welcome to the family," Nina Winchester says as I shake her elegant, manicured hand. I smile politely, gazing around the marble hallway. Working here is my last chance to start fresh. I can pretend to be whoever I like. But I'll soon learn that the Winchesters' secrets are far more dangerous than my own...</b><br> <br> <br> <br> Every day I clean the Winchesters' beautiful house top to bottom. I collect their daughter from school. And I cook a delicious meal for the whole family before heading up to eat alone in my tiny room on the top floor.<br> <br> <br> <br> I try to ignore how Nina makes a mess just to watch me clean it up. How she tells strange lies about her own daughter. And how her husband Andrew seems more broken every day. But as I look into Andrew's handsome brown eyes, so full of pain, it's hard not to imagine what it would be like to live Nina's life. The walk-in closet, the fancy car, the perfect husband.<br> <br> <br> <br> I only try on one of Nina's pristine white dresses once. Just to see what it's like. But she soon finds out... and by the time I realize my attic bedroom door only locks from the outside, it's far too late.<br> <br> <br> <br> But I reassure myself: the Winchesters don't know who I really am.<br> <br> <br> <br> They don't know what I'm capable of...	
 46	UGLY LOVE	1476753180	9781476753188	<b>From Colleen Hoover, the #1 <i>New York Times</i> bestselling author of <i>It Starts with Us</i> and <i>It Ends with Us, </i>a<i> </i>heart-wrenching love story that proves attraction at first sight can be messy. </b><br><br>When Tate Collins meets airline pilot Miles Archer, she doesn't think it's love at first sight. They wouldn’t even go so far as to consider themselves friends. The only thing Tate and Miles have in common is an undeniable mutual attraction. Once their desires are out in the open, they realize they have the perfect set-up. He doesn’t want love, she doesn’t have time for love, so that just leaves the sex. Their arrangement could be surprisingly seamless, as long as Tate can stick to the only two rules Miles has for her.<br> <br>Never ask about the past. <br> Don’t expect a future.<br> <br>They think they can handle it, but realize almost immediately they can’t handle it at all.<br> <br>Hearts get infiltrated. <br> Promises get broken. <br> Rules get shattered.<br> Love gets ugly.	
 47	ICEBREAKER	1668026031	9781668026038	<b><i>NEW YORK TIMES </i>BESTSELLER</b><br> <br><b>A TikTok sensation! Sparks fly when a competitive figure skater and hockey team captain are forced to share a rink.</b><b> </b><br><br>Anastasia Allen has worked her entire life for a shot at Team USA. It looks like everything is going according to plan when she gets a full scholarship to the University of California, Maple Hills and lands a place on their competitive figure skating team.<br> <br>Nothing will stand in her way, not even the captain of the hockey team, Nate Hawkins.<br> <br>Nate’s focus as team captain is on keeping his team on the ice. Which is tricky when a facilities mishap means they are forced to share a rink with the figure skating team—including Anastasia, who clearly can’t stand him. <br> <br>But when Anastasia’s skating partner faces an uncertain future, she may have to look to Nate to take her shot. <br> <br>Sparks fly, but Anastasia isn’t worried…because she could never like a hockey player, right?	
@@ -741,7 +741,6 @@ COPY public.books (book_id, title, primary_isbn10, primary_isbn13, description, 
 52	BRAIDING SWEETGRASS	1571313567	9781571313560	"An inspired weaving of indigenous knowledge, plant science, and personal narrative from a distinguished professor of science and a Native American whose previous book, Gathering Moss, was awarded the John Burroughs Medal for outstanding nature writing. As a botanist and professor of plant ecology, Robin Wall Kimmerer has spent a career learning how to ask questions of nature using the tools of science. As a Potawatomi woman, she learned from elders, family, and history that the Potawatomi, as well as a majority of other cultures indigenous to this land, consider plants and animals to be our oldest teachers. In Braiding Sweetgrass, Kimmerer brings these two lenses of knowing together to reveal what it means to see humans as "the younger brothers of creation." As she explores these themes she circles toward a central argument: the awakening of a wider ecological consciousness requires the acknowledgement and celebration of our reciprocal relationship with the world. Once we begin to listen for the languages of other beings, we can begin to understand the innumerable life-giving gifts the world provides us and learn to offer our thanks, our care, and our own gifts in return"--	
 53	ALL ABOUT LOVE	0060959479	9780060959470	<p>"The word "love" is most often defined as a noun, yet...we would all love to better if we used it as a verb," writes bell hooks as she comes out fighting and on fire in <i>All About Love</i>. Here, at her most provacative and intensely personel, the renowned scholar, cultural critic, and feminist skewers our view of love as romance. In its place she offers a proactive new ethic for a people and a society bereft with lovelessness.</p><p>As bell hooks uses her incisive mind and razor-sharp pen to explode th question "What is love?" her answers strike at both the mind and heart. In thirteen concise chapters, hooks examines her own search for emotional connection and society's failure to provide a model for learning to love. Razing the cultural paradigm that the ideal love is infused with sex and desire, she provides a new path to love that is sacred, redemptive, and healing for the individuals and for a nation. <i>The Utne Reader </i>declared bell hooks one of the "100 Visionaries Who Can Change Your Life." <i>All About Love</i> is a powerful affirmation of just how profoundly she can.</p>	
 80	ODDER	1250147425	9781250147424	<p><b>Now a #1 <i>New York Times</i> bestseller! A touching and lyrical tale about a remarkable sea otter, from Newbery Medalist Katherine Applegate, author of <i>Wishtree</i>. <br></b><br>Meet Odder, the Queen of Play: <br><br><i>Nobody has her moves.</i><br><i>She doesn’t just swim to the bottom,</i><br><i>she dive-bombs.</i><br><i>She doesn’t just somersault,</i><br><i>she triple-doughnuts.</i><br><i>She doesn’t just ride the waves,</i><br><i>she makes them.</i><br><br>Odder spends her days off the coast of central California, practicing her underwater acrobatics and spinning the quirky stories for which she’s known. She’s a fearless daredevil, curious to a fault. But when Odder comes face-to-face with a hungry great white shark, her life takes a dramatic turn, one that will challenge everything she believes about herself—and about the humans who hope to save her.<br><br>Inspired by the true story of a Monterey Bay Aquarium program that pairs orphaned otter pups with surrogate mothers, this poignant and humorous tale told in free verse examines bravery and healing through the eyes of one of nature’s most beloved and charming animals.</p>	Illustrated by charles santoso
-90	I LOVE MOM WITH THE VERY HUNGRY CATERPILLAR	0451533461	9780451533463	<b>Celebrate Mom's special day with The Very Hungry Caterpillar in this colorful book featuring Eric Carle's joyful illustrations.<br><br></b>Show Mom just how much she means with this colorful book from the World of Eric Carle. Join The Very Hungry Caterpillar as he honors Mother's Day and celebrates incredible parents everywhere. With joyful illustrations and colorful creatures, this charming keepsake is a great way to show parents, grandparents, soon-to-be mothers, aunts, friends, or whomever you call "Mom" just how much you care.	
 54	FINDING ME	006303736X	9780063037366	<p>OPRAH'S BOOK CLUB PICK * A HARPERS BAZAAR BEST BOOK OF 2022 * A PARADE MOST ANTICIPATED BOOK * A MARIE CLAIRE MOST ANTICIPATED BOOK</p> <p>"It's clear from the first page that Davis is going to serve a more intimate, unpolished account than is typical of the average (often ghost-written) celebrity memoir; Finding Me reads like Davis is sitting you down for a one-on-one conversation about her life, warts and all."--USA Today</p> <p>"[A] fulfilling narrative of struggle and success....Her gorgeous storytelling will inspire anyone wishing to shed old labels."--Los Angeles Times</p> <br> <br> <p>In my book, you will meet a little girl named Viola who ran from her past until she made a life-changing decision to stop running forever.</p> <p>This is my story, from a crumbling apartment in Central Falls, Rhode Island, to the stage in New York City, and beyond. This is the path I took to finding my purpose but also my voice in a world that didn't always see me.</p> <p>As I wrote Finding Me, my eyes were open to the truth of how our stories are often not given close examination. We are forced to reinvent them to fit into a crazy, competitive, judgmental world. So I wrote this for anyone running through life untethered, desperate and clawing their way through murky memories, trying to get to some form of self-love. For anyone who needs reminding that a life worth living can only be born from radical honesty and the courage to shed facades and be . . . you.</p> <p>Finding Me is a deep reflection, a promise, and a love letter of sorts to self. My hope is that my story will inspire you to light up your own life with creative expression and rediscover who you were before the world put a label on you.</p>	
 55	THINKING, FAST AND SLOW	0374533555	9780374533557	When we can and cannot trust our intuitions in making business and personal decisions.	
 56	EDUCATED	0399590528	9780399590528	<b>#1 <i>NEW YORK TIMES, WALL STREET JOURNAL,</i> AND <i>BOSTON GLOBE</i> BESTSELLER • One of the most acclaimed books of our time: an unforgettable memoir about a young woman who, kept out of school, leaves her survivalist family and goes on to earn a PhD from Cambridge University</b><br> <br><b>“Extraordinary . . . an act of courage and self-invention.”—<i>The New York Times</i></b><br> <br><b>NAMED ONE OF THE TEN BEST BOOKS OF THE YEAR BY <i>THE NEW YORK TIMES BOOK REVIEW</i> • ONE OF PRESIDENT BARACK OBAMA’S FAVORITE BOOKS OF THE YEAR • BILL GATES’S HOLIDAY READING LIST • FINALIST: National Book Critics Circle’s Award In Autobiography and John Leonard Prize For Best First Book • PEN/Jean Stein Book Award • <i>Los Angeles Times</i> Book Prize</b><br> <br>Born to survivalists in the mountains of Idaho, Tara Westover was seventeen the first time she set foot in a classroom. Her family was so isolated from mainstream society that there was no one to ensure the children received an education, and no one to intervene when one of Tara’s older brothers became violent. When another brother got himself into college, Tara decided to try a new kind of life. Her quest for knowledge transformed her, taking her over oceans and across continents, to Harvard and to Cambridge University. Only then would she wonder if she’d traveled too far, if there was still a way home.<br> <br><b>“Beautiful and propulsive . . . Despite the singularity of [Westover’s] childhood, the questions her book poses are universal: How much of ourselves should we give to those we love? And how much must we betray them to grow up?”—<i>Vogue</i></b><br><b><br>ONE OF THE BEST BOOKS OF THE YEAR: <i>The Washington Post, O: The Oprah Magazine, Time,</i> NPR, <i>Good Morning America, San Francisco Chronicle, The Guardian, The Economist, Financial Times</i>,<i> Newsday, New York Post, theSkimm, Refinery29, Bloomberg, Self, Real Simple, Town & Country, Bustle, Paste, Publishers Weekly</i>,<i> Library Journal, LibraryReads, Book Riot,</i> Pamela Paul, KQED, New York Public Library</b>	
@@ -760,11 +759,13 @@ COPY public.books (book_id, title, primary_isbn10, primary_isbn13, description, 
 67	THE BOY, THE MOLE, THE FOX AND THE HORSE	0062976583	9780062976581	<p>Charlie Mackesy's beloved The Boy, the Mole, the Fox and the Horse has been adapted into an Academy Award(R) winning animated short film, now available to stream on Apple TV+</p><p>#1 NEW YORK TIMES BESTSELLER - WALL STREET JOURNAL BESTSELLER - USA TODAY BESTSELLER</p><p>"The Boy, the Mole, the Fox and the Horse is not only a thought-provoking, discussion-worthy story, the book itself is an object of art."- Elizabeth Egan, The New York Times</p><p>From British illustrator, artist, and author Charlie Mackesy comes a journey for all ages that explores life's universal lessons, featuring 100 color and black-and-white drawings.</p><p>"What do you want to be when you grow up?" asked the mole.</p><p>"Kind," said the boy.</p><p>Charlie Mackesy offers inspiration and hope in uncertain times in this beautiful book, following the tale of a curious boy, a greedy mole, a wary fox and a wise horse who find themselves together in sometimes difficult terrain, sharing their greatest fears and biggest discoveries about vulnerability, kindness, hope, friendship and love. The shared adventures and important conversations between the four friends are full of life lessons that have connected with readers of all ages. </p>	
 68	I WILL TEACH YOU TO BE RICH, SECOND EDITION	1523505745	9781523505746	<b>The groundbreaking <i>NEW YORK TIMES</i> and <i>WALL STREET JOURNAL</i> BESTSELLER that taught a generation how to earn more, save more, and live a rich life—now in a revised 2nd edition.</b><br>  <br> Buy as many lattes as you want. Choose the right accounts and investments so your money grows for you—automatically. Best of all, spend guilt-free on the things you love.<br>  <br> Personal finance expert Ramit Sethi has been called a “wealth wizard” by <i>Forbes</i> and the “new guru on the block” by <i>Fortune</i>. Now he’s updated and expanded his modern money classic for a new age, delivering a simple, powerful, no-BS 6-week program that just works.<br>  <br><i>I Will Teach You to Be Rich</i> will show you:<br> • How to crush your debt and student loans faster than you thought possible<br> • How to set up no-fee, high-interest bank accounts that won’t gouge you for every penny<br> • How Ramit automates his finances so his money goes exactly where he wants it to—and how you can do it too<br> • How to talk your way out of late fees (with word-for-word scripts)<br> • How to save hundreds or even thousands per month (and still buy what you love)<br> • A set-it-and-forget-it investment strategy that’s dead simple and beats financial advisors at their own game<br> • How to handle buying a car or a house, paying for a wedding, having kids, and other big expenses—stress free<br> • The exact words to use to negotiate a big raise at work<br>  <br><b>Plus, this 10th anniversary edition features over 80 new pages, including:</b><br> • New tools<br> • New insights on money and psychology<br> • Amazing stories of how previous readers used the book to create their rich lives<br>  <br> Master your money—and then get on with your life.<br><br>  	
 83	BECAUSE I HAD A TEACHER	1943200084	9781943200085	We all remember our favorite teacher.<p>Where would we be without them - those special people who inspire us, support us, and encourage us? Whether they're an educator, a coach, or a mentor, this book is for them. To celebrate the worlds they open up for us and to thank them for the difference they make.<p>This heartwarming book is a thank you gift for great teachers everywhere. Perfect for National Teacher Day, Teacher Appreciation Week, the end of the school year, or just because.	Illustrated by natalie russell
+89	REPEAT AFTER ME	0593426975	9780593426975	<b>From parents and actors Jazmyn Simon and Dulé Hill comes a picture book filled with beautiful, inspiring affirmations reminding kiddos of their infinite wonder. Perfect for children of any age!</b><br><br><i>I am worthy. I am loved. I am enough.</i><br><i> </i>Every child, no matter their age, needs to know how loved they are and, more importantly, should love themselves. In this gorgeously illustrated book of affirmations, young readers are told how cherished, deserving, and gifted they are.<br><br>In their tender picture book, actors Jazmyn Simon and Dulé Hill tell children about the magic of self-love and standing firm, regardless of outside voices and doubt. Children will feel their confidence grow as they repeat the encouraging words on the page, take in the warm illustrations, and learn to believe in themselves!	Illustrated by shamar knight-justice
 69	Y'ALL EAT YET?	0063087782	9780063087781	<p>From country music sensation Miranda Lambert, comes a gorgeous cookbook sharing a wide array of tasty favorite recipes, straight outta Texas and collected from all the fabulous women who helped make Miranda who she is today. </p> <p>If you're going to have a Bitchin Kitchen, you're going to need a few things--plenty of room, plenty of good food for sharing, high spirits (in both senses) and all the friends and family you can fit. For Miranda Lambert, a good time means sharing a great meal with the women who helped raise her back in Texas--her mom and a colorful bunch of best friends who could raise the roof, come through in a pinch, celebrate, cry, and really, really cook. Miranda Lambert invites readers into this special circle of sisterhood with collection of recipes and stories. Y'all Eat Yet? is full of recipes for meals that fill your belly, and your soul, food meant to be shared, meant to be eaten with your fingers off of paper plates, or on your fanciest antique China. Some were handed down to Miranda from her mom and grandma, some come from the circle of cherished friends who helped raise her, and all of them are meant to be easy to prepare and shared with those you love. True to Miranda's personality, Y'all Eat Yet? is sassy and inviting. Whether she's cooking up omelets in her tricked-out Airstream to serve with Mimosas or laying out the Whiskey cupcakes next to Nonny's Banana pudding, Y'all Eat Yet? delivers food you want to make alongside charming stories that show just why Miranda Lambert is one of the most beloved artists in country music today.</p>	
 70	SERENITY IN THE STORM	1637587295	9781637587294	<b>Kayleigh McEnany brings to life the key cultural and political issues of our time, from the fall of Afghanistan to the Supreme Court’s abortion decision, analyzing world events through the lens of faith and providing readers with <i>Serenity in the Storm</i>.</b><br><br>Our world, without question, is experiencing aberrational times. The ravages and life-altering realities of COVID-19 that I worked through as White House press secretary were just the start of it. What followed was a series of history-defining events. From the fall of Afghanistan to the nationwide crime wave, we’ve all endured painful images of death, destruction, and chaos.<br> <br> Meanwhile, radical teachings on gender and race have infiltrated our nation’s schools, poisoning the minds of our children—all at a time when our country feels more divided than ever before. Along with these twenty-first century realities can come a feeling of despair and discouragement. Indeed, I hear it all the time as I crisscross the country: Americans feel disheartened and seek hope.<br> <br> <i>Serenity in the Storm </i>provides that hope. Despite the challenges we face, there is cause for great optimism for men and women of faith. In Afghanistan, the underground church is thriving. On the key issues of life and liberty, the Supreme Court of the United States has delivered enormous and consequential victories. In our schools, voters have spoken unmistakably against the insidious doctrines of critical race and gender theory. There is no doubt that God is at work as He hears the prayers of the faithful!<br> <br> Taking a similar format to my <i>New York Times</i> bestselling book, <i>For Such a Time as This</i>, I analyze our domestic and international challenges through the lens of faith. Though we have lived through dark times and unsettled waters, the storms we face have prompted many great leaders to rise to the moment and have left a yearning in the human heart for a Savior, Jesus Christ, who is walking alongside us every step of the way.	
 71	THE WISDOM OF THE BULLFROG	1538707942	9781538707944	<b>THE INSTANT #1 <i>New York Times</i> BESTSELLER<br> <br> <br> <br> From the acclaimed, bestselling author of <i>Make Your Bed</i>--a short, inspirational book of advice and leadership lessons that Admiral McRaven collected over his four decades as a Navy SEAL.</b><br> <br> <br> <br> The title "Bullfrog" is given to the Navy SEAL who has served the longest on active duty. Admiral McRaven was honored to receive this honor in 2011 when he took charge of the United States Special Operations Command. When McRaven retired in 2014, he had 37 years as a Navy SEAL under his belt, leading men and women at every level of the special operations community. In the ensuing four years, he served as Chancellor to the entire University of Texas System, with its 230,000 students and 100,000 faculty and health care workers.<br> <br> <br> <br> During those four decades, Admiral McRaven dealt with every conceivable leadership challenge, from commanding combat operations--including the capture of Saddam Hussein, the rescue of Captain Phillips, and the raid for Osama bin Laden. <br> <br> <br> <br> THE WISDOM OF THE BULLFROG draws on these and countless other experiences from Admiral McRaven's incredible life, including crisis situations, management debates, organizational transitions, and ethical dilemmas, to provide readers with the most important leadership lessons he has learned over the course of his forty years of service. Each chapter provides a <i>Make Your Bed</i>-like parable, rich with insights like those featured in his bestselling memoir, <i>Sea Stories</i>, about the specific leadership traits required to be at the top of your game, including: <ul> <li>Who Dares, Wins</li> <li>Run to the Sound of the Guns</li> <li>No Plan Survives First Contact with the Enemy</li> </ul> THE WISDOM OF THE BULLFROG is Admiral McRaven's clear-eyed treatise on the leadership qualities that separate the good from the truly great.	
 72	SOUL BOOM	0306828278	9780306828270	"The trauma that our world experienced in recent years--as result of both the pandemic and societal tensions that threaten to overwhelm us-has been unprecedented and is not going away anytime soon. It is clear that existing political and economic systems are not enough to bring the change that the world needs. In this book, Rainn Wilson explores the possibility and hope for a spiritual revolution, a 'Soul Boom' in order to address today's greatest issues--mental health, racism and sexism, climate change, and economic injustice. For Wilson, this is very serious and essential pursuit, but he brings great humor and his own unique perspective to the conversation. He feels that, culturally, we've thrown the baby out with the bathwater--and that bathwater is spirituality, Faith and the Sacred. The baby is us, and we are in need of profound healing and a unifying understanding of the world that religion provides. Sharing his experience of losing his father during the summer of 2020 as well as his personal struggles with addiction and mental health, Wilson is an empathetic narrator and thinker who readers will appreciate and trust. Wilson's approach to spirituality--the non-physical, eternal aspects of ourselves--is relatable and will apply to people of all beliefs, even the skeptics. Filled with genuine insight--not to mention enlightening Kung Fu and Star Trek references--the book offers the keys to delving into ancient wisdom and seeking out practical, transformative answers to life's biggest questions"--	
 73	THE SUN AND THE STAR	1368081150	9781368081153	<b>Demigods Nico di Angelo and Will Solace must endure the terrors of Tartarus to rescue an old friend in this thrilling adventure co-written by <i>New York Times</i> #1 best-selling author Rick Riordan and award-winning author Mark Oshiro.</b><br><br>Percy Jackson fans, rejoice! Nico and Will have a book of their own!<br><br>As the son of Hades, Nico di Angelo has been through so much, from the premature deaths of his mother and sister, to being outed against his will, to losing his friend Jason during the trials of Apollo. But there <i>is </i>a ray of sunshine in his life—literally: his boyfriend, Will Solace, the son of Apollo. Together the two demigods can overcome any obstacle or foe. At least, that's been the case so far...<br><br>Now Nico is being plagued by a voice calling out to him from Tartarus, the lowest part of the Underworld. He thinks he knows who it is: a reformed Titan named Bob whom Percy and Annabeth had to leave behind when they escaped Hades's realm. Nico's dreams and Rachel Dare's latest prophecy leave little doubt in Nico's mind that Bob is in some kind of trouble. Nico has to go on this quest, whether Mr. D and Chiron like it or not. And of course Will insists on coming with. But can a being made of light survive in the darkest part of the world? and what does the prophecy mean that Nico will have to "leave something of equal value behind?" <br><br><b>Nico will have to face demons both internal and external as his relationship with Will is tested to the core in this standalone adventure featuring two of the most popular characters in the Percy Jackson saga.</b><br><br>Complete your Nico di Angelo collection with these series by Rick Riordan: Percy Jackson and the Olympians • The Heroes of Olympus • The Trials of Apollo	
+90	I LOVE MOM WITH THE VERY HUNGRY CATERPILLAR	0451533461	9780451533463	<b>Celebrate Mom's special day with The Very Hungry Caterpillar in this colorful book featuring Eric Carle's joyful illustrations.<br><br></b>Show Mom just how much she means with this colorful book from the World of Eric Carle. Join The Very Hungry Caterpillar as he honors Mother's Day and celebrates incredible parents everywhere. With joyful illustrations and colorful creatures, this charming keepsake is a great way to show parents, grandparents, soon-to-be mothers, aunts, friends, or whomever you call "Mom" just how much you care.	
 74	WONDER	0375869026	9780375869020	<b>#1 <i>NEW YORK TIMES</i> BESTSELLER •</b> <b>Millions of people have fallen in love with Auggie Pullman, an ordinary boy with an extraordinary face</b>—<b>who shows us that kindness brings us together no matter how far apart we are.</b> <b>Read the book that inspired the Choose Kind movement, a major motion picture, and the critically acclaimed graphic novel <i>White Bird.</i><br><br>And don't miss R.J. Palacio's highly anticipated new novel, <i>Pony, </i>available now!<br> </b><br><i>I won't describe what I look like. Whatever you're thinking, it's probably worse.</i> <br> <br>August Pullman was born with a facial difference that, up until now, has prevented him from going to a mainstream school. Starting 5th grade at Beecher Prep, he wants nothing more than to be treated as an ordinary kid—but his new classmates can’t get past Auggie’s extraordinary face. Beginning from Auggie’s point of view and expanding to include his classmates, his sister, her boyfriend, and others, the perspectives converge to form a portrait of one community’s struggle with empathy, compassion, and acceptance. In a world where bullying among young people is an epidemic, this is a refreshing new narrative full of heart and hope.<br> <br>R.J. Palacio has called her debut novel “a meditation on kindness” —indeed, every reader will come away with a greater appreciation for the simple courage of friendship. Auggie is a hero to root for, a diamond in the rough who proves that you can’t blend in when you were born to stand out. <i><br></i>	
 75	SKANDAR AND THE PHANTOM RIDER	1665912766	9781665912761	<b>Skandar’s adventure among the warrior unicorns continues in this spectacular sequel to the instant <i>New York Times</i> and international bestseller <i>Skandar and the Unicorn Thief.</i></b><br><br>Skandar Smith has achieved his dream: to train as a unicorn rider. But as Skandar and his friends enter their second year at the Eyrie, a new threat arises. Immortal wild unicorns are somehow being killed, a prophecy warns of terrible danger, and elemental destruction begins to ravage the Island.<br> <br>Meanwhile, Skandar’s sister, Kenna, longs to join him, and Skandar is determined to help her, no matter what. As the storm gathers, can Skandar find the key to stop the Island tearing itself apart before it’s too late for them all?	
 76	REFUGEE	0545880831	9780545880831	A tour de force from acclaimed author Alan Gratz (<i>Prisoner B-3087</i>), this timely -- and timeless -- novel tells the powerful story of three different children seeking refuge.<p></p><b>A <i>New York Times</i> bestseller!</b>JOSEF is a Jewish boy living in 1930s Nazi Germany. With the threat of concentration camps looming, he and his family board a ship bound for the other side of the world . . .ISABEL is a Cuban girl in 1994. With riots and unrest plaguing her country, she and her family set out on a raft, hoping to find safety in America . . .MAHMOUD is a Syrian boy in 2015. With his homeland torn apart by violence and destruction, he and his family begin a long trek toward Europe . . .All three kids go on harrowing journeys in search of refuge. All will face unimaginable dangers -- from drownings to bombings to betrayals. But there is always the hope of <i>tomorrow</i>. And although Josef, Isabel, and Mahmoud are separated by continents and decades, shocking connections will tie their stories together in the end.This action-packed novel tackles topics both timely and timeless: courage, survival, and the quest for home.	
@@ -777,7 +778,6 @@ COPY public.books (book_id, title, primary_isbn10, primary_isbn13, description, 
 94	THE HUNGER GAMES	1338635174	9781338635171	<b>Ambition will fuel him.</b><b>Competition will drive him.</b><b>But power has its price.</b><p></p>It is the morning of the reaping that will kick off the tenth annual Hunger Games. In the Capitol, eighteen-year-old Coriolanus Snow is preparing for his one shot at glory as a mentor in the Games. The once-mighty house of Snow has fallen on hard times, its fate hanging on the slender chance that Coriolanus will be able to outcharm, outwit, and outmaneuver his fellow students to mentor the winning tribute. The odds are against him. He's been given the humiliating assignment of mentoring the female tribute from District 12, the lowest of the low. Their fates are now completely intertwined -- every choice Coriolanus makes could lead to favor or failure, triumph or ruin. Inside the arena, it will be a fight to the death. Outside the arena, Coriolanus starts to feel for his doomed tribute... and must weigh his need to follow the rules against his desire to survive no matter what it takes.	
 95	DIARY OF A WIMPY KID	141976294X	9781419762949	<b>In <i>Diper Överlöde</i>, book 17 of the Diary of a Wimpy Kid series from #1 international bestselling author Jeff Kinney, Greg Heffley is finding out that the road to fame and glory comes with some hard knocks.</b><br> <br> <br> <br> When he decides to tag along with his brother Rodrick's band, Löded Diper, Greg doesn't realize what he's getting into. But he soon learns that late nights, unpaid gigs, fighting between band members, and money troubles are all part of the rock 'n' roll lifestyle.<br> <br> <br> <br> Can Greg help Löded Diper become the legends they think they are? Or will too much time with Rodrick's band be a diper överlöde?	Written and illustrated by jeff kinney
 96	A GOOD GIRL'S GUIDE TO MURDER	1984896393	9781984896391	<b>THE MUST-READ MULTIMILLION BESTSELLING MYSTERY SERIES • Everyone is talking about <i>A Good Girl's Guide to Murder</i>! With shades of Serial and Making a Murderer this is the story about an investigation turned obsession, full of twists and turns and with an ending you'll never expect.</b><br><br>Everyone in Fairview knows the story.<br><br>Pretty and popular high school senior Andie Bell was murdered by her boyfriend, Sal Singh, who then killed himself. It was all anyone could talk about. And five years later, Pip sees how the tragedy still haunts her town.<br><br>But she can't shake the feeling that there was more to what happened that day. She knew Sal when she was a child, and he was always so kind to her. How could he possibly have been a killer?<br><br>Now a senior herself, Pip decides to reexamine the closed case for her final project, at first just to cast doubt on the original investigation. But soon she discovers a trail of dark secrets that might actually prove Sal innocent . . . and the line between past and present begins to blur. Someone in Fairview doesn't want Pip digging around for answers, and now her own life might be in danger.<br><br><br><b>And don't miss the sequel, </b><i><b>Good Girl, Bad Blood!</b> </i><br><br><b>"The perfect nail-biting mystery." —Natasha Preston, #1 <i>New York Times </i>bestselling author</b>	
-97	HARRY POTTER	059035342X	9780590353427	Harry Potter has never been the star of a Quidditch team, scoring points while riding a broom far above the ground. He knows no spells, has never helped to hatch a dragon, and has never worn a cloak of invisibility.All he knows is a miserable life with the Dursleys, his horrible aunt and uncle, and their abominable son, Dudley - a great big swollen spoiled bully. Harry's room is a tiny closet at the foot of the stairs, and he hasn't had a birthday party in eleven years.But all that is about to change when a mysterious letter arrives by owl messenger: a letter with an invitation to an incredible place that Harry - and anyone who reads about him - will find unforgettable.For it's there that he finds not only friends, aerial sports, and magic in everything from classes to meals, but a great destiny that's been waiting for him... if Harry can survive the encounter.	
 98	THE SUMMER I TURNED PRETTY TRILOGY	1416968296	9781416968290	<b><b>Now an Original Series on Prime Video!</b><br> <br><b>Belly has an unforgettable summer in this stunning start to the Summer I Turned Pretty series from the <i>New York Times</i> bestselling author of <i>To All the Boys I’ve Loved Before</i> (now a major motion picture!), Jenny Han.</b></b><br><br><i>Some summers are just destined to be pretty.</i><br> <br>Belly measures her life in summers. Everything good, everything magical happens between the months of June and August. Winters are simply a time to count the weeks until the next summer, a place away from the beach house, away from Susannah, and most importantly, away from Jeremiah and Conrad. They are the boys that Belly has known since her very first summer—they have been her brother figures, her crushes, and everything in between. But one summer, one wonderful and terrible summer, the more everything changes, the more it all ends up just the way it should have been all along.	
 99	CAPTAIN UNDERPANTS	1338865390	9781338865394	<b>Celebrate the 25th and a half anniversary of THE ADVENTURES OF CAPTAIN UNDERPANTS with a special edition featuring a BRAND NEW 32-page DOG MAN comic!</b><p></p><p>George and Harold are best friends who enjoy making their own comic books. Together they've created the greatest superhero in the history of their elementary school: Captain Underpants! His true identity is SO secret, even HE doesn't know who he is! Tra-la-laaaaa! It's can't-miss fun!</p><p>After the Captain Underpants adventure, join George and Harold as they share their never-before-seen bonus comics: <i>Captain Underpants Meets Dog Man</i> and <i>Dog Man and the League of Misfits</i>.</p><p><i>The Adventures of Captain Underpants</i> is the first book in the worldwide bestselling Captain Underpants series by Dav Pilkey. Dive into the newest graphic novel in the Dog Man series: <b>Dog Man: Twenty Thousand Fleas Under the Sea</b>. For even more adventures, creativity, and humor, join Flippy and Li'l Petey in the <b>Cat Kid Comic Club</b> series. Reading gives you superpowers!</p>	Written and illustrated by dav pilkey
 100	PERCY JACKSON & THE OLYMPIANS	0786838655	9780786838653	A boy battles mythological monsters.	
@@ -785,13 +785,14 @@ COPY public.books (book_id, title, primary_isbn10, primary_isbn13, description, 
 102	THE INHERITANCE GAMES	0759555400	9780759555402	<b>2 MILLION COPIES SOLD OF THE #1 BESTSELLING SERIES!<br> <br> <br> <br> Don't miss this <i>New York Times</i> bestselling "impossible to put down" (Buzzfeed) novel with deadly stakes, thrilling twists, and juicy secrets -- perfect for fans of <i>One of Us is Lying</i> and <i>Knives Out</i>.</b><br> <br> <br> <br> Avery Grambs has a plan for a better future: survive high school, win a scholarship, and get out. But her fortunes change in an instant when billionaire Tobias Hawthorne dies and leaves Avery virtually his entire fortune. The catch? Avery has no idea why -- or even who Tobias Hawthorne is.<br> <br> <br> <br> To receive her inheritance, Avery must move into sprawling, secret passage-filled Hawthorne House, where every room bears the old man's touch -- and his love of puzzles, riddles, and codes. Unfortunately for Avery, Hawthorne House is also occupied by the family that Tobias Hawthorne just dispossessed. This includes the four Hawthorne grandsons: dangerous, magnetic, brilliant boys who grew up with every expectation that one day, they would inherit billions. Heir apparent Grayson Hawthorne is convinced that Avery must be a conwoman, and he's determined to take her down. His brother, Jameson, views her as their grandfather's last hurrah: a twisted riddle, a puzzle to be solved. Caught in a world of wealth and privilege with danger around every turn, Avery will have to play the game herself just to survive.<br> <br> <br> <br> **<i>Avery's story continues in</i> The Hawthorne Legacy <i>and</i> The Final Gambit	
 103	SOLITAIRE	None	9781339016238	Tori Spring is determined to find out who's behind the blog called Solitaire, which has caused serious pranks at her school.	
 104	WARRIOR GIRL UNEARTHED	1250766583	9781250766588	<p><b>#1 New York Times bestselling author of Firekeeper's Daughter Angeline Boulley takes us back to Sugar Island in this high-stakes thriller about the power of discovering your stolen history.</b><br><br>Perry Firekeeper-Birch has always known who she is - the laidback twin, the troublemaker, the best fisher on Sugar Island. Her aspirations won't ever take her far from home, and she wouldn't have it any other way. But as the rising number of missing Indigenous women starts circling closer to home, as her family becomes embroiled in a high-profile murder investigation, and as greedy grave robbers seek to profit off of what belongs to her Anishinaabe tribe, Perry begins to question everything. <br><br>In order to reclaim this inheritance for her people, Perry has no choice but to take matters into her own hands. She can only count on her friends and allies, including her overachieving twin and a charming new boy in town with unwavering morals. Old rivalries, sister secrets, and botched heists cannot - will not - stop her from uncovering the mystery before the ancestors and missing women are lost forever.<br><br><b>Sometimes, the truth shouldn't stay buried.</b></p>	
+123	KAIJU NO. 8, VOL. 6	1974736334	9781974736331	<b>Kafka wants to clean up kaiju, but not literally! Will a sudden metamorphosis stand in the way of his dream?</b><br><br>With the highest kaiju-emergence rates in the world, Japan is no stranger to attack by deadly monsters. Enter the Japan Defense Force, a military organization tasked with the neutralization of kaiju. Kafka Hibino, a kaiju-corpse cleanup man, has always dreamed of joining the force. But when he gets another shot at achieving his childhood dream, he undergoes an unexpected transformation. How can he fight kaiju now that he’s become one himself?!<br><br>Kafka has encountered Kaiju No. 9, but he finds himself unable to transform. Luckily, Kikoru comes to the rescue and goes head-to-head with it. Meanwhile, the Kaiju No. 9 that Captain Narumi encountered undergoes an evolution during battle! With the pressure on, Director General Shinomiya is left with no choice but to act!	
 105	IMOGEN, OBVIOUSLY	0063045877	9780063045873	<p>With humor and insight, #1 New York Times bestseller Becky Albertalli explores the nuances of sexuality, identity, and friendship in this timely new novel.</p> <p>Imogen Scott may be hopelessly heterosexual, but she's got the World's Greatest Ally title locked down.</p> <p>She's never missed a Pride Alliance meeting. She knows more about queer media discourse than her very queer little sister. She even has two queer best friends. There's Gretchen, a fellow high school senior, who helps keep Imogen's biases in check. And then there's Lili--newly out and newly thriving with a cool new squad of queer college friends.</p> <p>Imogen's thrilled for Lili. Any ally would be. And now that she's finally visiting Lili on campus, she's bringing her ally A game. Any support Lili needs, Imogen's all in.</p> <p>Even if that means bending the truth, just a little.</p> <p>Like when Lili drops a tiny queer bombshell: she's told all her college friends that Imogen and Lili used to date. And none of them know that Imogen is a raging hetero--not even Lili's best friend, Tessa.</p> <p>Of course, the more time Imogen spends with chaotic, freckle-faced Tessa, the more she starts to wonder if her truth was ever all that straight to begin with. . .</p>	
 106	MILES MORALES SUSPENDED	1665918462	9781665918466	<b>From #1 <i>New York Times</i> bestselling author Jason Reynolds comes the high-flying sequel to his groundbreaking young adult novel <i>Miles Morales: Spider-Man</i> about the adventures of the unassuming, everyday kid who just so happens to be Spider-Man.</b><br><br>Miles Morales is still just your average teenager. He has unexpectedly become totally obsessed with poetry and can never seem to do much more than babble around his crush. Nothing too weird. Oh! Except, just yesterday, he used his spidey superpowers to save the world (no biggie) from an evil mastermind called The Warden. And the grand prize Miles gets for that is…<br> <br>Suspension.<br> <br>But what begins as a long boring day of in-school suspension is interrupted by a little <i>bzzz</i> in his mind. His spidey-sense is telling him there’s something not quite right here, and soon he finds himself in a fierce battle with an insidious…termite?! His unexpected foe is hiding a secret, one that could lead to the destruction of the world’s history—especially Black and Brown history—and only Miles can stop him. Yeah, just a typical day in the life of your friendly neighborhood Spider-Man.	Illustrated by zeke peña
 107	FIVE SURVIVE	0593374169	9780593374160	<b>Eight hours. Six friends. Five survive. A road trip turns deadly in this addictive YA thriller from the bestselling author of the worldwide phenomenon A GOOD GIRL'S GUIDE TO MURDER. </b><br><br>Red Kenny is on a road trip for spring break with five friends: Her best friend - the older brother - his perfect girlfriend - a secret crush - a classmate - and a killer. <br><br>When their RV breaks down in the middle of nowhere with no cell service, they soon realize this is no accident. They have been trapped by someone out there in the dark, someone who clearly wants one of them dead.<br><br>With eight hours until dawn, the six friends must escape, or figure out which of them is the target. But is there a liar among them? Buried secrets will be forced to light and tensions inside the RV will reach deadly levels. Not all of them will survive the night. . . .	
 108	NICK AND CHARLIE	1338885103	9781338885101	<p>From the mega-bestselling creator of <i>Heartstopper</i>, a must-have novella in which <i>Heartstopper's</i> lead characters, Nick and Charlie, face one of their biggest challenges yet.</p><p></p><p><i>Absence makes the heart grow fonder... right? </i></p><p>Everyone knows that Nick and Charlie love their nearly inseparable life together. But soon Nick will be leaving for university, and Charlie, a year younger, will be left behind. Everyone's asking if they're staying together, which is a stupid question... or at least that's what Nick and Charlie assume at first.</p><p>As the time to say goodbye gets inevitably closer, both Nick and Charlie start to question whether their love is strong enough to survive being apart. Charlie is sure he's holding Nick back... and Nick can't tell what Charlie's thinking.</p><p>Things spiral from there.</p><p>Everyone knows that first loves rarely last forever. What will it take for Nick and Charlie to defy the odds?</p>	
 109	THE FIRST TO DIE AT THE END	0063240807	9780063240803	<p>In this prequel to the bestselling phenomenon They Both Die at the End, two new strangers spend a life-changing day together after Death-Cast first makes their fateful calls. #1 New York Times bestseller!</p> <p>It's the night before Death-Cast goes live, and there's one question on everyone's mind: Can Death-Cast actually predict when someone will die, or is it just an elaborate hoax?</p> <p>Orion Pagan has waited years for someone to tell him that he's going to die. He has a serious heart condition, and he signed up for Death-Cast so he could know what's coming.</p> <p>Valentino Prince is restarting his life in New York. He has a long and promising future ahead and he only registered for Death-Cast after his twin sister nearly died in a car accident.</p> <p>Orion and Valentino cross paths in Times Square and immediately feel a deep connection. But when the first round of End Day calls goes out, their lives are changed forever--one of them receives a call, and the other doesn't. Though neither boy is certain how the day will end, they know they want to spend it together...even if that means their goodbye will be heartbreaking.</p> <p>Told with acclaimed author Adam Silvera's signature bittersweet touch, this story celebrates the lasting impact that people have on each other and proves that life is always worth living to the fullest. </p> <p>* A Publishers Weekly Best Book of the Year *</p>	
-123	KAIJU NO. 8, VOL. 6	1974736334	9781974736331	<b>Kafka wants to clean up kaiju, but not literally! Will a sudden metamorphosis stand in the way of his dream?</b><br><br>With the highest kaiju-emergence rates in the world, Japan is no stranger to attack by deadly monsters. Enter the Japan Defense Force, a military organization tasked with the neutralization of kaiju. Kafka Hibino, a kaiju-corpse cleanup man, has always dreamed of joining the force. But when he gets another shot at achieving his childhood dream, he undergoes an unexpected transformation. How can he fight kaiju now that he’s become one himself?!<br><br>Kafka has encountered Kaiju No. 9, but he finds himself unable to transform. Luckily, Kikoru comes to the rescue and goes head-to-head with it. Meanwhile, the Kaiju No. 9 that Captain Narumi encountered undergoes an evolution during battle! With the pressure on, Director General Shinomiya is left with no choice but to act!	
 124	FOR WHOM THE BALL ROLLS	1338236598	9781338236590	The Supa Buddies have been working hard to help Dog Man overcome his bad habits. But when his obsessions turn to fears, Dog Man finds himself the target of an all-new supervillain! Meanwhile, Petey the Cat has been released from jail and starts a new life with Li'l Petey. But when Petey's own father arrives, Petey must face his past to understand the difference between being good and doing good. <p>Dav Pilkey's wildly popular Dog Man series appeals to readers of all ages and explores universally positive themes, including empathy, kindness, persistence, and the importance of being true to one's self.	
+125	MARY ANNE'S BAD LUCK MYSTERY	1338616102	9781338616101	<b>A brand-new Baby-sitters Club graphic novel adapted by newcomer Cynthia Yuan Cheng!</b><p></p><p>Mary Anne should never have thrown away that chain letter she got in the mail. Ever since she did, bad things have been happening to everyone in The Baby-sitters Club. With Halloween coming up, Mary Anne's even more worried -- what kind of spooky thing will happen next?</p><p>Then Mary Anne finds a new note in her mailbox: <i>Wear this bad-luck charm</i>, it says. <i>OR ELSE.</i> Mary Anne has to follow the note's instructions. But who sent the charm? And why did they send it to Mary Anne?</p><p>The BSC might never see an end to their bad luck if they don't solve this mystery soon!</p>	Illustrated by cynthia yuan cheng
 110	THE LITTLE MERMAID: AGAINST THE TIDE	1368077226	9781368077224	<b>An original novel written by <i>New York Times</i> best-selling author J. Elle inspired by Disney upcoming live action reimagining of <i>The Little Mermaid</i>.</b><br> <br> After the death of Ariel's mother, the queen of the sea, the seven daughters of King Triton have grown estranged at best. It's been years since Ariel's older sisters have visited home. But this year's Coral Moon is fast approaching, and it's a special one for Ariel. Finally fifteen, she will be dubbed the Protector of her very own ocean territory as is tradition, and her sisters have agreed to visit for the celebration.<br> <br> But the ceremony is halted when Mala, one of the most renowned daughters of Triton, is abducted. The only clue to where she might have been taken is a hastily scribbled seaweed note, which says, "What could have saved Mother could save me, too." To rescue Mala, Ariel must work together with her siblings, traveling to various seas, outsmarting dangerous ocean creatures, and delving into forbidden waters to find the truth of what happened to their mother. But as Ariel and her sisters begin uncovering new secrets about their family and their kingdom, Ariel will have to face the loss of a mother she never had a chance to know and discover what it means to be both a good sister and a strong leader.<br> <br> And the clock is ticking, because on the day of the festival, when the moon turns a true shade of coral, her sister will be lost, like her mother, forever.	
 111	SILVER IN THE BONE	0593481658	9780593481653	<b><b>INSTANT #1 <i>NEW YORK TIMES</i> BESTSELLER • From the critically acclaimed author of <i>Lore</i> comes a stunning new Arthurian fantasy—the tale of a teenage girl who seeks her destiny in the cursed ruins of Avalon, driven by love, revenge, and pure adrenaline!</b><br><br>"<b>Simmering with magic, peril, romance, and heartbreak</b>."<b> </b></b>—Leigh Bardugo, #1 <i>New York Times</i> bestselling author of <i>Shadow and Bone</i><br><br>Born without a trace of magic, Tamsin Lark is no match for the sorceresses and Hollowers who populate the magical underground of Boston. But when the only parent she’s ever known disappears without so much as a goodbye, she has no choice but to join in their cutthroat pursuit of enchanted relics to keep herself—and her brother, Cabell—alive.<br><br>Ten years later, rumors are swirling that her guardian found a powerful ring from Arthurian legend just before he vanished. A run-in with her rival Emrys ignites Tamsin’s hope that the ring could free Cabell from a curse that threatens both of them. But they aren’t the only ones who covet the ring.<br><br>As word spreads, greedy Hollowers start circling, and many would kill to have it for themselves. While Emrys is the last person Tamsin would choose to partner with, she needs all the help she can get to edge out her competitors in the race for the ring. Together, they dive headfirst into a vipers’ nest of dark magic, exposing a deadly secret with the power to awaken ghosts of the past and shatter her last hope of saving her brother. . . .<br><i><br></i>	
 112	LIGHTLARK	1419760866	9781419760860	<b>An instant #1 National Bestselle</b><b>r--so</b><b>on to be a major motion picture. #BookTok phenomenon and award-winning author Alex Aster delivers readers a masterfully written, utterly gripping YA fantasy novel </b> <p> Welcome to the Centennial. <p> Every 100 years, the island of Lightlark appears to host the Centennial, a deadly game that only the rulers of six realms are invited to play. The invitation is a summons--a call to embrace victory and ruin, baubles and blood. The Centennial offers the six rulers one final chance to break the curses that have plagued their realms for centuries. Each ruler has something to hide. Each realm's curse is uniquely wicked. To destroy the curses, one ruler must die. <p> Isla Crown is the young ruler of Wildling--a realm of temptresses cursed to kill anyone they fall in love with. They are feared and despised, and are counting on Isla to end their suffering by succeeding at the Centennial. <p> To survive, Isla must lie, cheat, and betray...even as love complicates everything. <p><b>Filled with secrets, deception, romance, and twists worthy of the darkest thrillers, <i>Lightlark </i>is a must-read for fans of legendary fantasy writers Marie Lu, Marissa Meyer, and Leigh Bardugo. </b>	
@@ -805,21 +806,21 @@ COPY public.books (book_id, title, primary_isbn10, primary_isbn13, description, 
 120	GRIME AND PUNISHMENT	1338535625	9781338535624	<b>The next great Dog Man adventure from the worldwide bestselling author and artist Dav Pilkey. You'll howl with laughter </b><br><br> The Supa Buddies bamboozled the baddies, but all's not right in the world. Dog Man has a new problem to pound, and he's going to need his entire pack to help him. Will he go barking up the wrong tree?<br><br> Dav Pilkey's wildly popular Dog Man series appeals to readers of all ages and explores universally positive themes, including empathy, kindness, persistence, and the importance of doing good.	
 121	SCHOOL TRIP	0062885537	9780062885531	<p>New York Times bestselling author Jerry Craft is back with the newest adventures of Jordan, Drew, Liam, and all the characters that fans first met in New Kid, winner of the Newbery Award and the Coretta Scott King Author Award! In this full-color contemporary graphic novel, the gang from Riverdale Academy Day is heading to Paris, for an international education like you've never seen before ...</p><p>Jordan, Drew, Liam, Maury, and their friends from Riverdale Academy Day School are heading out on a school trip to Paris. As an aspiring artist himself, Jordan can't wait to see all the amazing art in the famous City of Lights.</p><p>But when their trusted faculty guides are replaced at the last minute, the school trip takes an unexpected--and hilarious--turn. Especially when trying to find their way around a foreign city ends up being almost as tricky as navigating the same friendships, fears, and differences that they struggle with at home.</p><p>Will Jordan and his friends embrace being exposed to a new language, unfamiliar food, and a different culture? Or will they all end up feeling like the "new kid"?</p><p>Don't miss the two hilarious and powerful companion novels by Jerry Craft, New Kid and Class Act!</p>	
 122	ONE PIECE, VOL. 102	1974736555	9781974736553	<b>Join Monkey D. Luffy and his swashbuckling crew in their search for the ultimate treasure, One Piece!</b><br><br>As a child, Monkey D. Luffy dreamed of becoming King of the Pirates. But his life changed when he accidentally gained the power to stretch like rubber...at the cost of never being able to swim again! Years later, Luffy sets off in search of the One Piece, said to be the greatest treasure in the world...<br><br>Luffy is back to face Kaido once again, but does he stand any more of a chance in this rematch against the strongest man alive? And on other parts of the island, Sanji and Zolo go up against Kaido’s strongest warriors. Both will need to raise their fighting skills in order to overcome these adversaries!	
-125	MARY ANNE'S BAD LUCK MYSTERY	1338616102	9781338616101	<b>A brand-new Baby-sitters Club graphic novel adapted by newcomer Cynthia Yuan Cheng!</b><p></p><p>Mary Anne should never have thrown away that chain letter she got in the mail. Ever since she did, bad things have been happening to everyone in The Baby-sitters Club. With Halloween coming up, Mary Anne's even more worried -- what kind of spooky thing will happen next?</p><p>Then Mary Anne finds a new note in her mailbox: <i>Wear this bad-luck charm</i>, it says. <i>OR ELSE.</i> Mary Anne has to follow the note's instructions. But who sent the charm? And why did they send it to Mary Anne?</p><p>The BSC might never see an end to their bad luck if they don't solve this mystery soon!</p>	Illustrated by cynthia yuan cheng
+138	TOM CLANCY: ZERO HOUR	0593422740	9780593422748	<b><b>Jack Ryan, Jr. is the one man who can prevent a second Korean War in the latest thrilling entry in the #1 <i>New York Times</i> bestselling series.</b></b><br><br>When the leader of North Korea is catastrophically injured, his incapacitation inadvertently triggers a “dead-man’s switch,” activating an army of sleeper agents in South Korea and precipitating a struggle for succession. <br> <br>Jack Ryan, Jr. is in Seoul to interview a potential addition to the Campus.  But his benign trip takes a deadly turn when a wave of violence perpetrated by North Korean operatives grips South Korea’s capital.  A mysterious voice from North Korea offers Jack a way to stop the peninsula’s rush to war, but her price may be more than he can afford to pay.	
 126	TEENAGE MUTANT NINJA TURTLES: THE LAST RONIN	1684058414	9781684058419	<b>A <i>New York Times</i> Bestseller!Who is the Last Ronin? In a future, battle-ravaged New York City, a lone surviving Turtle embarks on a seemingly hopeless mission seeking justice for the family he lost. From legendary TMNT co-creators Kevin Eastman and Peter Laird, get ready for the final story of the Teenage Mutant Ninja Turtles three decades in the making!</b><br><br>What terrible events destroyed his family and left New York a crumbling, post-apocalyptic nightmare? All will be revealed in this climactic Turtle tale that sees longtime friends becoming enemies and new allies emerging in the most unexpected places. Can the surviving Turtle triumph?<br><br>Eastman and Laird are joined by writer <b>Tom Waltz</b>, who penned the first 100 issues of IDW's ongoing TMNT series, and artists <b>Esau & Isaac Escorza</b> (<i>Heavy Metal</i>) and <b>Ben Bishop</b> (<i>The Far Side of the Moon</i>) with an Introduction by filmmaker <b>Robert Rodriguez</b>!<br><br>Collects the complete five-issue miniseries in a new graphic novel, an adventure as fulfilling for longtime Turtles fans as it is accessible for readers just discovering the heroes in a half shell.	
 127	FETCH-22	1338323210	9781338323214	<b>Li'l Petey gets caught in some family drama in the eighth Dog Man book from worldwide bestselling author and artist Dav Pilkey.</b><br></br>Petey the Cat is out of jail, and he has a brand-new lease on life. While Petey's reevaluated what matters most, Li'l Petey is struggling to find the good in the world. Can Petey and Dog Man stop fighting like cats and dogs long enough to put their paws together and work as a team? They need each other now more than ever -- Li'l Petey (and the world) is counting on them! <p>Dav Pilkey's wildly popular Dog Man series appeals to readers of all ages and explores universally positive themes, including empathy, kindness, persistence, and the importance of doing good.	
 128	SPY X FAMILY, VOL. 9	1974736288	9781974736287	<b>An action-packed comedy about a fake family that includes a spy, an assassin and a telepath!</b><br><br>Master spy Twilight is unparalleled when it comes to going undercover on dangerous missions for the betterment of the world. But when he receives the ultimate assignment—to get married and have a kid—he may finally be in over his head!<br><br>Yor’s on assignment and finds herself up against a gang of assassins on board a luxury cruiser. Meanwhile, Loid and Anya each discover that bombs have been planted throughout the ship! Will their best efforts be enough to save the vessel?	
 129	LORD OF THE FLEAS	1338741071	9781338741070	<b>The Supa Buddies convene to deal with some new villains in the fifth Dog Man book from worldwide bestselling author and artist Dav Pilkey.</b><br></br>When a fresh bunch of baddies bust up the town, Dog Man is called into action -- and this time he isn't alone. With a cute kitten and a remarkable robot by his side, our heroes must save the day by joining forces with an unlikely ally: Petey, the World's Most Evil Cat. But can the villainous Petey avoid vengeance and venture into virtue? <p>Dav Pilkey's wildly popular Dog Man series appeals to readers of all ages and explores universally positive themes, including empathy, kindness, persistence, and the importance of being true to one's self.	
 130	SPY CAMP	1534499377	9781534499379	<b>The second book in the <i>New York Times</i> bestselling Spy School series continues in graphic novel form as aspiring spy Ben Ripley must spend his summer in top-secret training—and is thrown back into danger.</b><br><br>Ben Ripley is a middle schooler whose school is not exactly average—he’s spent the last year training to be a top-level spy and dodging all sorts of associated danger. So now that summer’s finally here, Ben would like to have some fun and relax. But that’s not going to happen during required spy survival training at a rustic wilderness camp, where SPYDER, an enemy spy organization, has infiltrated the spies’ ranks. Can Ben root out the enemy before it takes him out—for good?	Illustrated by anjan sarkar
 131	THE RUSSIAN	1538703580	9781538703588	<b>When a serial killer crashes Detective Michael Bennett's wedding, he and his new partner uncover a gruesome string of cold-case homicides across the country.<br> <br> ​</b><br> <br> Weeks before NYPD Detective Michael Bennett is to marry his longtime love, Mary Catherine, an assassin announces his presence in the city with a string of grisly murders. Each victim is a young woman. And each has been killed in a manner as precise as it was gruesome.<br> <br> <br> <br> Tasked with working alongside the FBI, Bennett and his gung-ho new partner uncover multiple cold-case homicides across the country that fit the same distinctive pattern--proving the perpetrator they seek is as experienced at ending lives as he is at evading detection.<br> <br> <br> <br> Bennett promises Mary Catherine that the case won't affect their upcoming wedding. But as Bennett prepares to make a lifetime commitment, the killer has a lethal vow of his own to fulfill.	
-138	TOM CLANCY: ZERO HOUR	0593422740	9780593422748	<b><b>Jack Ryan, Jr. is the one man who can prevent a second Korean War in the latest thrilling entry in the #1 <i>New York Times</i> bestselling series.</b></b><br><br>When the leader of North Korea is catastrophically injured, his incapacitation inadvertently triggers a “dead-man’s switch,” activating an army of sleeper agents in South Korea and precipitating a struggle for succession. <br> <br>Jack Ryan, Jr. is in Seoul to interview a potential addition to the Campus.  But his benign trip takes a deadly turn when a wave of violence perpetrated by North Korean operatives grips South Korea’s capital.  A mysterious voice from North Korea offers Jack a way to stop the peninsula’s rush to war, but her price may be more than he can afford to pay.	
-139	SAVE IT FOR SUNDAY	078604957X	9780786049578	<b><i>From the greatest western writers of the 21st century, the second adventure featuring circuit rider Taylor Callahan. a mysterious man in black who rides from town to town with a bible in hand and guns in his holsters, delivering the word of God and hard-fought justice…</i></b><br><br><b>From Confederate marauder to rebel gunfighter to repentant preacherman, circuit rider Taylor Callahan’s road to perdition has been a hellish ride. Sinners beware.</b><br><b> </b><br>After riding with Missouri bushwhackers, Taylor Callahan vowed to never take another life. He’s making good on it in Peaceful Valley. By day, swamping a saloon. By night, preaching the Good Book. But this little settlement is about to become anything but peaceable. When the marshal takes a bullet in a sheepman-cattleman skirmish he pins a badge on Taylor leaving the circuit rider open to whole new world of hell . . .<b> </b><br><b> </b><br>A railroad engineer building a line from Laramie to Denver is cutting across Arapaho land starting a war on Peace Treaty Peak. If that’s not enough to set the county on fire, Taylor’s trigger-happy past comes calling. The revenge-seeking Harris boys are hot on his tail. With the marshal down, Peaceful Valley is ripe for the taking—and blasting Taylor to kingdom come is part of the deal. If keeping the peace means breaking Taylor’s vow so be it. He’s looking forward to strapping on his Colt .45 again. That’s the gospel truth.	
+155	WHEN YOU TRAP A TIGER	1524715735	9781524715731	<b>WINNER OF THE NEWBERY MEDAL • WINNER OF THE ASIAN/PACIFIC AMERICAN AWARD FOR CHILDREN'S LITERATURE • #1 <i>NEW YORK TIMES</i> BESTSELLER<br><br>Would you make a deal with a magical tiger? This uplifting story brings Korean folklore to life as a girl goes on a quest to unlock the power of stories and save her grandmother.</b><br><br><i>Some stories refuse to stay bottled up...</i><br><br>When Lily and her family move in with her sick grandmother, a magical tiger straight out of her halmoni's Korean folktales arrives, prompting Lily to unravel a secret family history. Long, long ago, Halmoni stole something from the tigers. Now they want it back. And when one of the tigers approaches Lily with a deal--return what her grandmother stole in exchange for Halmoni's health--Lily is tempted to agree. But deals with tigers are never what they seem! With the help of her sister and her new friend Ricky, Lily must find her voice...and the courage to face a tiger.<br><br>Tae Keller, the award-winning author of <i>The Science of Breakable Things</i>, shares a sparkling tale about the power of stories and the magic of family. Think <i>Walk Two Moons </i>meets <i>Where the Mountain Meets the Moon</i>!<br><br>"If stories were written in the stars ... this wondrous tale would be one of the brightest." <i>--Booklist</i>, Starred Review	
 132	SUSPECTS	1984821709	9781984821706	<b><b><i>NEW YORK TIMES </i>BESTSELLER • A dedicated CIA agent becomes an unexpected ally to a woman haunted by the kidnapping of her family, in this thrilling novel from #1 <i>New York Times</i> bestselling author Danielle Steel.</b></b><br><br>Theodora Morgan is fashion royalty. Founder of a wildly popular online shopping service, she is one of the most successful businesswomen in the world, although she prefers to keep a low profile, especially over the last months. It was a year ago when the unthinkable struck her family, and her husband, industry mogul Matthieu Pasquier, and their son were kidnapped and held for ransom—a nightmare that ended in tragedy.<br> <br>The case has gone cold, despite evidence linking the crime to Matthieu’s Russian competitors. Theo has reluctantly gone back to work running her company. On the flight to a launch party for one of her highly anticipated pop-up shops in New York City, she crosses paths with high-society networker Pierre de Vaumont. Theo politely invites him to her event—unaware that Pierre has been flagged by the CIA.<br> <br>Senior supervising CIA operative Mike Andrews investigates Pierre’s suspicious Russian contacts and clears him to enter the country, but when he realizes that Theodora Morgan is on the same flight, he becomes concerned for her safety. Posing as a lawyer, Mike begins a covert mission—starting with Theo’s opening party. When Mike and Theo meet, their connection is instant, but Theo is completely unaware of Mike’s true objective or identity… or that the life she is rebuilding is in grave danger.	
 133	TWO ALONE	0778334449	9780778334446	The only way to stay alive is to stick together.<br> <br> When their plane crashes in the remote reaches of the Northwest Territories, confident businesswoman Rusty Carlson finds herself hurt and alone with a man she can't stand to be around. Vietnam vet Cooper Landry holds a deep-rooted grudge against beautiful women, but he's survived far worse and he'll be damned if he lets them both die in the wilderness.<br> <br> The ex-soldier's training has prepared him with the skills to defend against the predators in the dense woods--both animal and human--but that's not all that awaits the couple. What Rusty and Cooper couldn't have expected is their shared desire for more than just survival...<br> <br>	
 134	LEGACY	1250775000	9781250775009	<p><b>#1 <i>New York Times</i> bestselling author Nora Roberts presents <i>Legacy</i>, a new novel of a mother and a daughter, of ambition and romance, and of a traumatic past reawakened by a terrifying threat...</b><br><br>Adrian Rizzo was seven when she met her father for the first time. That was the day he nearly killed her—before her mother, Lina, stepped in.<br><br>Soon after, Adrian was dropped off at her grandparents’ house in Maryland, where she spent a long summer drinking lemonade, playing with dogs, making a new best friend—and developing the stirrings of a crush on her friend’s ten-year-old brother. Lina, meanwhile, traveled the country promoting her fitness brand and turning it into a billion-dollar business. There was no point in dwelling on the past.<br><br>A decade later, Adrian has created her own line of yoga and workout videos, following in Lina’s footsteps but intent on maintaining creative control. And she’s just as cool-headed and ambitious as her mother. They aren’t close, but they’re cordial—as long as neither crosses the other.<br><br>But while Lina dismisses the death threats that Adrian starts getting as a routine part of her daughter’s growing celebrity, Adrian can’t help but find the vicious rhymes unsettling. Year after year, they keep arriving—the postmarks changing, but the menacing tone the same. They continue after she returns to Maryland and becomes reacquainted with Raylan, her childhood crush, all grown up and as gorgeously green-eyed as ever. Sometimes it even seems like the terrifying messages are indeed routine, like nothing will come of them. Until the murders start, and the escalation begins...</p>	
 135	DEATH OF THE BLACK WIDOW	1538753081	9781538753088	<b>She destroys the men she loves--and escapes every time. The most dangerous killer James Patterson has ever created is also his most seductive.</b><br> <br> <br> <br> On his first night with Detroit PD, Officer Walter O'Brien is called to a murder scene. A terrified twenty-year-old has bludgeoned her kidnapper with skill that shocks even O'Brien's veteran partner. The young woman is also a brilliant escape artist. Her bold flight from police custody makes the case impossible to solve--and, for Walter, even more impossible to forget.<br> <br> <br> <br> By the time Walter's promoted to detective, his fascination with the missing, gray-eyed woman is approaching obsession. And when Walter discovers that he's not alone in his search, one truth is certain. This deadly string of secrets didn't begin in his home city--but he's going to make sure it ends there. <br> <br>	
 136	MERCY	1538719711	9781538719718	<b>FBI Agent Atlee Pine's harrowing search for her long-lost sister Mercy reaches a boiling point in this breakneck thriller from #1 <i>New York Times</i> bestselling author David Baldacci. </b><br> <br> <br> <br> For her entire life, FBI agent Atlee Pine has been searching for her twin sister, Mercy, who was abducted at the age of six and never seen again. Mercy's disappearance left behind a damaged family that later shattered beyond repair when Atlee's parents inexplicably abandoned her.<br> <br> <br> <br> Now, after a perilous investigation that nearly proved fatal, Atlee has finally discovered not only the reason behind her parents' abandonment and Mercy's kidnapping, but also the most promising breakthrough yet: proof that Mercy survived her abduction and then escaped her captors many years ago. <br> <br> <br> <br> Though Atlee is tantalizingly close to her family at last, the final leg of her long road to Mercy will be the most treacherous yet. Mercy left at least one dead body behind before fleeing her captors years before. Atlee has no idea if her sister is still alive, and if so, how she has been surviving all this time. When the truth is finally revealed, Atlee Pine will face the greatest danger yet, and it may well cost her everything.	
 137	THE JENSENS OF COLORADO	0786050136	9780786050130	<b>THE FIRST FAMILY OF THE AMERICAN FRONTIER<br> <br><i>The national bestselling novels of William W. and J.A. Johnstone bring the American West to crackling life. Now together in one omnibus for the first time, three epic sagas of the fearless—and ever-growing—Jensen clan—pioneers willing to fight for justice.</i></b><br><br><b>THOSE JENSEN BOYS</b><br>Ace and Chance are as reckless and wild as the frontier itself. Their father is Luke Jensen, thought killed in the Civil War. Their uncle Smoke is one of the fiercest gunfighters in the West. It’s no surprise the twins have a knack for taking risks—and blasting their way out of them.<br><br><b>THE JENSEN BRAND</b><br>Smoke is injured swapping bullets with cow thieves on the Sugarloaf Ranch and Sally puts out a call for help to the rest of the Jensen clan. Just back from studying in Europe, Denise Jensen can ride like a man, shoot like her daddy, and face down the deadliest outlaws like nobody’s business.<br><br><b>HEART OF THE MOUNTAIN MAN </b><br>Smoke has no choice but to come down off the mountain and go head-to-head with outlaw Big Jim Slaughter to save his friend Monte Carson. A fiery clash of courage, fury, and guns is on the docket, and only one man will be left standing after the dust settles.	
+139	SAVE IT FOR SUNDAY	078604957X	9780786049578	<b><i>From the greatest western writers of the 21st century, the second adventure featuring circuit rider Taylor Callahan. a mysterious man in black who rides from town to town with a bible in hand and guns in his holsters, delivering the word of God and hard-fought justice…</i></b><br><br><b>From Confederate marauder to rebel gunfighter to repentant preacherman, circuit rider Taylor Callahan’s road to perdition has been a hellish ride. Sinners beware.</b><br><b> </b><br>After riding with Missouri bushwhackers, Taylor Callahan vowed to never take another life. He’s making good on it in Peaceful Valley. By day, swamping a saloon. By night, preaching the Good Book. But this little settlement is about to become anything but peaceable. When the marshal takes a bullet in a sheepman-cattleman skirmish he pins a badge on Taylor leaving the circuit rider open to whole new world of hell . . .<b> </b><br><b> </b><br>A railroad engineer building a line from Laramie to Denver is cutting across Arapaho land starting a war on Peace Treaty Peak. If that’s not enough to set the county on fire, Taylor’s trigger-happy past comes calling. The revenge-seeking Harris boys are hot on his tail. With the marshal down, Peaceful Valley is ripe for the taking—and blasting Taylor to kingdom come is part of the deal. If keeping the peace means breaking Taylor’s vow so be it. He’s looking forward to strapping on his Colt .45 again. That’s the gospel truth.	
 140	THE LAST HOUSE GUEST	1668012790	9781668012796	<b>**A Reese Witherspoon x Hello Sunshine Book Club Pick and <i>New York Times </i>bestseller<i>**</i></b><br> <br><b>A year after a summer guest dies under suspicious circumstances, her best friend lives under a cloud of grief and suspicion in this “fast-paced and gripping” (<i>People</i>) thriller filled with “dizzying plot twists and multiple surprise endings” (<i>The New York Times Book Review).</i></b><br><br>Littleport, Maine, has always felt like two separate towns: an ideal vacation enclave for the wealthy, whose summer homes line the coastline; and a simple harbor community for the year-round residents whose livelihoods rely on service to the visitors.<br> <br>Typically, fierce friendships never develop between a local and a summer girl—but that’s just what happens with visitor Sadie Loman and Littleport resident Avery Greer. Each summer for almost a decade, the girls are inseparable—until Sadie is found dead. While the police rule the death a suicide, Avery can’t help but feel there are those in the community, including a local detective and Sadie’s brother, Parker, who blame her. Someone knows more than they’re saying, and Avery is intent on clearing her name, before the facts get twisted against her.<br> <br>“A riveting read…from master of suspense, Megan Miranda,” (Mary Kubica, <i>New York Times </i>bestselling author of <i>The Good Girl</i>) <i>The Last House Guest</i> is a clever, twisty mystery that brilliantly explores the elusive nature of memory and the complexities of female friendships.	
 141	ONE NIGHT	006108185X	9780061081859	<p>From #1 <i>New York Times</i> bestselling author Debbie Macomber comes a remarkable story of dreams awakened and lives transformed in . . . One Night </p> <p>Carrie Jamison has the success part of "having it all" down pat—but "love/marriage/family" seem just out of reach. Still, she enjoys the admiration of everyone at KUTE radio . . . well, <i>almost</i> everyone. Serious, straightlaced newscaster Kyle Harris disapproves of Carrie, which leads to tension, confrontation . . . and then, inexplicably, to one extraordinary night! </p> <p>Now Kyle's determined to make an honest woman out of her! But though her dreams seem merely an "I do" away, Carrie needs to <i>really</i> know if love or guilt is inflaming Kyle's ardor. Because if it isn't true love, this happily-ever-after is never going to happen. </p>	
 142	GETTING EVEN	1420155547	9781420155549	<b>Who doesn’t fantasize about a little payback? Revenge is a timeless, all-too-human desire, and it’s a common thread in <i>Yesterday’s Lies </i>and <i>Zachary’s Law – </i>two classic, fan-favorite novels by #1 <i>New York Times</i> bestselling author Lisa Jackson that are now available in one thrilling romantic suspense omnibus of revenge, obsession, and deception…</b><br><br><i>“Trask McFadden is back.”</i> Those are words that Tory has been waiting to hear, half in dread, half with longing. It’s been five years since Trask landed her father behind bars for horse swindling, using things she’d told him in confidence. Her father died there, but now Trask insists he has information that could help prove who was really responsible for the crime, not to mention his own brother’s death. Trask needs <i>her</i> help. But he won’t get it, not after destroying her family, her ranch, and the love they shared.<br><br>Lauren Regis’s ex-husband has kidnapped her children. There’s nothing she won’t do to get them back, including hiring Zachary Winters. The unconventional attorney has made a name for himself by locating people—especially those who don’t want to be found. But he’s got a darker reputation too, and there are rumors swirling about the fate of his ex-wife. How much is Lauren willing to trust him—or to lose?	
@@ -835,13 +836,12 @@ COPY public.books (book_id, title, primary_isbn10, primary_isbn13, description, 
 152	FISH IN A TREE	0142426423	9780142426425	<b>"Fans of R.J. Palacio’s <i>Wonder</i> will appreciate this feel-good story of friendship and unconventional smarts.” —<i>Kirkus Reviews</i></b><br><br>Ally has been smart enough to fool a lot of smart people. Every time she lands in a new school, she is able to hide her inability to read by creating clever yet disruptive distractions.  She is afraid to ask for help; after all, how can you cure dumb? However, her newest teacher Mr. Daniels sees the bright, creative kid underneath the trouble maker. With his help, Ally learns not to be so hard on herself and that dyslexia is nothing to be ashamed of. As her confidence grows, Ally feels free to be herself and the world starts opening up with possibilities. She discovers that there’s a lot more to her—and to everyone—than a label, and that great minds don’t always think alike.<br><br>The author of the beloved <i>One for the Murphys</i> gives readers an emotionally-charged, uplifting novel that will speak to anyone who’s ever thought there was something wrong with them because they didn’t fit in. This paperback edition includes The Sketchbook of Impossible Things and discussion questions.<br><br><b>A <i>New York Times</i> Bestseller! </b><br><br>* “Unforgettable and uplifting.”<b>—<i>School Library Connection</i>, <b>starred review</b><br><br></b>* "Offering hope to those who struggle academically and demonstrating that a disability does not equal stupidity, this is as unique as its heroine.”<b>—<i>Booklist</i>, <b>starred review</b><br><br></b>* “Mullaly Hunt again paints a nuanced portrayal of a sensitive, smart girl struggling with circumstances beyond her control." <b>—<i>School Library Journal</i>, <b>starred review</b> </b>	
 153	A WOLF CALLED WANDER	006289594X	9780062895943	<p>A New York Times bestseller! "Don't miss this dazzling tour de force."--Katherine Applegate, Newbery Medal winning author of The One and Only Ivan</p><p>This gripping novel about survival and family is based on the real story of one wolf's incredible journey to find a safe place to call home. Illustrated throughout, this irresistible tale by award-winning author Rosanne Parry is for fans of Sara Pennypacker's Pax and Katherine Applegate's The One and Only Ivan. </p><p>Swift, a young wolf cub, lives with his pack in the mountains learning to hunt, competing with his brothers and sisters for hierarchy, and watching over a new litter of cubs. Then a rival pack attacks, and Swift and his family scatter.</p><p>Alone and scared, Swift must flee and find a new home. His journey takes him a remarkable one thousand miles across the Pacific Northwest. The trip is full of peril, and Swift encounters forest fires, hunters, highways, and hunger before he finds his new home. </p><p>Inspired by the extraordinary true story of a wolf named OR-7 (or Journey), this irresistible tale of survival invites readers to experience and imagine what it would be like to be one of the most misunderstood animals on earth. This gripping and appealing novel about family, courage, loyalty, and the natural world is for fans of Fred Gipson's Old Yeller and Katherine Applegate's Endling. </p><p>Includes black-and-white illustrations throughout and a map as well as information about the real wolf who inspired the novel.</p><p>Plus don't miss Rosanne Parry's stand-alone companion novel, A Whale of the Wild.</p>	Illustrated by mónica armiño
 154	OUT OF MY MIND	1416971718	9781416971719	<b>A <i>New York Times</i> bestseller for three years and counting!</b><br> <br><b>“A gutsy, candid, and compelling story. It speaks volumes.” —<i>School Library Journal </i>(starred review)</b><br> <b>“Unflinching and realistic.” —<i>Kirkus</i><i> </i><i>Reviews</i> (starred review)</b><br> <br><b>From award-winning author Sharon Draper comes a story that will forever change how we all look at anyone with a disability, perfect for fans of RJ Palacio’s <i>Wonder</i>.</b><br><br>Eleven-year-old Melody is not like most people. She can’t walk. She can’t talk. She can’t write. All because she has cerebral palsy. But she also has a photographic memory; she can remember every detail of everything she has ever experienced. She’s the smartest kid in her whole school, but NO ONE knows it. Most people—her teachers, her doctors, her classmates—dismiss her as mentally challenged because she can’t tell them otherwise. But Melody refuses to be defined by her disability. And she’s determined to let everyone know it…somehow.	
-155	WHEN YOU TRAP A TIGER	1524715735	9781524715731	<b>WINNER OF THE NEWBERY MEDAL • WINNER OF THE ASIAN/PACIFIC AMERICAN AWARD FOR CHILDREN'S LITERATURE • #1 <i>NEW YORK TIMES</i> BESTSELLER<br><br>Would you make a deal with a magical tiger? This uplifting story brings Korean folklore to life as a girl goes on a quest to unlock the power of stories and save her grandmother.</b><br><br><i>Some stories refuse to stay bottled up...</i><br><br>When Lily and her family move in with her sick grandmother, a magical tiger straight out of her halmoni's Korean folktales arrives, prompting Lily to unravel a secret family history. Long, long ago, Halmoni stole something from the tigers. Now they want it back. And when one of the tigers approaches Lily with a deal--return what her grandmother stole in exchange for Halmoni's health--Lily is tempted to agree. But deals with tigers are never what they seem! With the help of her sister and her new friend Ricky, Lily must find her voice...and the courage to face a tiger.<br><br>Tae Keller, the award-winning author of <i>The Science of Breakable Things</i>, shares a sparkling tale about the power of stories and the magic of family. Think <i>Walk Two Moons </i>meets <i>Where the Mountain Meets the Moon</i>!<br><br>"If stories were written in the stars ... this wondrous tale would be one of the brightest." <i>--Booklist</i>, Starred Review	
+161	THE ISLAND	0593481496	9780593481493	<b>Hot on the heels of the <i>New York Times </i>bestseller<i>s The Twin </i>and<i> The Lake</i>, another pulse-pounding read from the undisputed queen of YA thrillers!<br><br>They said goodbye to their friends and family for the weekend. They weren’t counting on forever.</b><br><br>Jagged Island: a private amusement park for the very rich—or the very influential. Liam, James, Will, Ava, Harper, and Paisley—social media influencers with millions of followers—have been invited for an exclusive weekend before the park opens. They’ll make posts and videos for their channels and report every second of their VIP treatment. <br><br>When the teens arrive, they're stunned: the resort is even better than they’d imagined. Their hotel rooms are unreal, the park’s themed rides are incredible, and the island is hauntingly beautiful. They’re given a jam-packed itinerary for the weekend. <br><br>But soon they'll discover that something's missing from their schedule: getting off the island alive.	
 156	IF HE HAD BEEN WITH ME	1728205484	9781728205489	<p>A New York Times Bestseller</p><p>*A BookTok Viral Sensation* </p><p>An achingly authentic and raw portrait of love, regret, and the life-altering impact of the relationships we hold closest to us, this YA romance bestseller is perfect for fans of Colleen Hoover, Jenny Han, and You've Reached Sam. </p><p>If he had been with me, everything would have been different...</p><p>Autumn and Finn used to be inseparable. But then something changed. Or they changed. Now, they do their best to ignore each other.</p><p>Autumn has her boyfriend Jamie, and her close-knit group of friends. And Finn has become that boy at school, the one everyone wants to be around.</p><p>That still doesn't stop the way Autumn feels every time she and Finn cross paths, and the growing, nagging thought that maybe things could have been different. Maybe they should be together.</p><p>But come August, things will change forever. And as time passes, Autumn will be forced to confront how else life might have been different if they had never parted ways...</p><p>Captivating and heartbreaking, If He Had Been with Me is perfect for readers looking for: </p><ul><li>Contemporary teen romance books</li><li>Unputdownable & bingeworthy novels</li><li>Complex emotional YA stories</li><li>TikTok Books</li><li>Jenny Han meets Dear Even Hanson</li><li>Colleen Hover fans</li></ul>	
 157	GIRL IN PIECES	1101934743	9781101934746	<b><b>#1 <i>NEW YORK TIMES</i> BESTSELLER</b><br><br></b>"<b>A haunting, beautiful, and necessary book.</b>"<i>—</i>Nicola Yoon<i>, #1 <i>New York Times</i></i> bestselling author of <i><i>Everything, Everything<br></i></i> <br>Charlotte Davis is in pieces. At seventeen she’s already lost more than most people do in a lifetime. But she’s learned how to forget. The broken glass washes away the sorrow until there is nothing but calm. You don’t have to think about your father and the river. Your best friend, who is gone forever. Or your mother, who has nothing left to give you. <br><br>Every new scar hardens Charlie’s heart just a little more, yet it still hurts so much. It hurts enough to not care anymore, which is sometimes what has to happen before you can find your way back from the edge. <br><br>A deeply moving portrait of a girl in a world that owes her nothing, and has taken so much, and the journey she undergoes to put herself back together. Kathleen Glasgow's debut is heartbreakingly real and unflinchingly honest. It’s a story you won’t be able to look away from.<i><i><br></i></i> <br>And don’t miss Kathleen Glasgow's novels <b><i>You’d Be Home Now </i></b>and <b><i>How to Make Friends with the Dark</i></b>, both raw and powerful stories of life.	
 158	BETTER THAN THE MOVIES	1534467637	9781534467637	<b>A <i>USA TODAY</i> and <i>New York Times</i> bestseller</b><br> <br><b>Perfect for fans of Kasie West and Jenn Bennett, this “sweet and funny” (Kerry Winfrey, author of <i>Waiting for Tom Hanks</i>) teen rom-com follows a hopelessly romantic teen girl and her cute yet obnoxious neighbor as they scheme to get her noticed by her untouchable crush.</b><br><br>Perpetual daydreamer Liz Buxbaum gave her heart to Michael a long time ago. But her cool, aloof forever crush never really saw her before he moved away. Now that he’s back in town, Liz will do whatever it takes to get on his radar—and maybe snag him as a prom date—even befriend Wes Bennet.<br> <br>The annoyingly attractive next-door neighbor might seem like a prime candidate for romantic comedy fantasies, but Wes has only been a pain in Liz’s butt since they were kids. Pranks involving frogs and decapitated lawn gnomes do not a potential boyfriend make. Yet, somehow, Wes and Michael are hitting it off, which means Wes is Liz’s in.<br> <br>But as Liz and Wes scheme to get Liz noticed by Michael so she can have her magical prom moment, she’s shocked to discover that she likes being around Wes. And as they continue to grow closer, she must reexamine everything she thought she knew about love—and rethink her own ideas of what Happily Ever After should look like.	
 159	THE WAY I USED TO BE	1481449362	9781481449366	<b><i>New York Times </i>bestseller! In the tradition of <i>Speak, </i>Amber Smith's extraordinary debut novel “</b><b>is a heart-twisting, but ultimately hopeful, exploration of how pain can lead to strength” (<i>The Boston Globe</i>).</b><br><br>Eden was always good at being good. Starting high school didn’t change who she was. But the night her brother’s best friend rapes her, Eden’s world capsizes.<br> <br>What was once simple, is now complex. What Eden once loved—who she once loved—she now hates. What she thought she knew to be true, is now lies. Nothing makes sense anymore, and she knows she’s supposed to tell someone what happened but she can’t. So she buries it instead. And she buries the way she used to be.<br> <br>Told in four parts—freshman, sophomore, junior, and senior year—this provocative debut reveals the deep cuts of trauma. But it also demonstrates one young woman’s strength as she navigates the disappointment and unbearable pains of adolescence, of first love and first heartbreak, of friendships broken and rebuilt, all while learning to embrace the power of survival she never knew she had hidden within her heart.	
 160	ONE OF US IS LYING	1524714755	9781524714758	<b>#1 <i>NEW YORK TIMES</i> BESTSELLER • NAMED ONE OF THE TEN BEST BOOKS OF THE YEAR BY <i>ENTERTAINMENT WEEKLY • BUZZFEED • POPCRUSH</i></b><br><b><br>“Pretty Little Liars meets The Breakfast Club” (<i>Entertainment Weekly</i>) in this addictive mystery about what happens when five strangers walk into detention and only four walk out alive. </b><br> <br>Pay close attention and you might solve this.<br>On Monday afternoon, five students at Bayview High walk into detention.<br><br>    Bronwyn, <b>the brain</b>, is Yale-bound and never breaks a rule.<br>    Addy,<b> the beauty</b>, is the picture-perfect homecoming princess.<br>    Nate, <b>the criminal</b>, is already on probation for dealing.<br>    Cooper, <b>the athlete</b>, is the all-star baseball pitcher.<br>    And Simon, <b>the outcast</b>, is the creator of Bayview High’s notorious gossip app.<br> <br>Only, Simon never makes it out of that classroom. Before the end of detention Simon's dead. And according to investigators, his death wasn’t an accident. On Monday, he died. But on Tuesday, he’d planned to post juicy reveals about all four of his high-profile classmates, which makes all four of them suspects in his murder. Or are they the perfect patsies for a killer who’s still on the loose?<br><br>Everyone has secrets, right? What really matters is how far you would go to protect them.<br><br><b><b>All the secrets of the Bayview Four will be revealed in the TV series now streaming on NBC's Peacock! <br><br><b>And don’t miss the #1 <i>New York Times </i>bestselling sequel, <i>One of Us is Next</i>!</b></b></b>	
-161	THE ISLAND	0593481496	9780593481493	<b>Hot on the heels of the <i>New York Times </i>bestseller<i>s The Twin </i>and<i> The Lake</i>, another pulse-pounding read from the undisputed queen of YA thrillers!<br><br>They said goodbye to their friends and family for the weekend. They weren’t counting on forever.</b><br><br>Jagged Island: a private amusement park for the very rich—or the very influential. Liam, James, Will, Ava, Harper, and Paisley—social media influencers with millions of followers—have been invited for an exclusive weekend before the park opens. They’ll make posts and videos for their channels and report every second of their VIP treatment. <br><br>When the teens arrive, they're stunned: the resort is even better than they’d imagined. Their hotel rooms are unreal, the park’s themed rides are incredible, and the island is hauntingly beautiful. They’re given a jam-packed itinerary for the weekend. <br><br>But soon they'll discover that something's missing from their schedule: getting off the island alive.	
 162	THEY BOTH DIE AT THE END	0062457802	9780062457806	<p>Adam Silvera reminds us that there’s no life without death and no love without loss in this devastating yet uplifting story about two people whose lives change over the course of one unforgettable day.</p><p>New York Times bestseller * 4 starred reviews * A School Library Journal Best Book of the Year * A Kirkus Best Book of the Year * A Booklist Editors' Choice of 2017 * A Bustle Best YA Novel of 2017 * A Paste Magazine Best YA Book of 2017 * A Book Riot Best Queer Book of 2017 * A Buzzfeed Best YA Book of the Year * A BookPage Best YA Book of the Year </p><p>On September 5, a little after midnight, Death-Cast calls Mateo Torrez and Rufus Emeterio to give them some bad news: They’re going to die today.</p><p>Mateo and Rufus are total strangers, but, for different reasons, they’re both looking to make a new friend on their End Day. The good news: There’s an app for that. It’s called the Last Friend, and through it, Rufus and Mateo are about to meet up for one last great adventure—to live a lifetime in a single day.</p><p>In the tradition of Before I Fall and If I Stay, They Both Die at the End is a tour de force from acclaimed author Adam Silvera, whose debut, More Happy Than Not, the New York Times called “profound.”</p><p>Featuring a map of the novel’s characters and their connections, an exclusive essay by the author, and a behind-the-scenes look at the early outlines for this critically acclaimed bestseller. </p>	
 163	SIX OF CROWS	125007696X	9781250076960	<p><b>See the Grishaverse com</b><b>e to life on screen with <i>Shadow and Bone</i>, now a Netflix original series. </b><br><br><b>Discover what comes next for heist trio Kaz, Inej, and Jesper -- and the star-crossed Nina and Matthias -- in the</b><b> #1 <i>New York Times</i> bestseller <i>Six of Crows, </i></b><b>Book One of the Six of Crows Duology</b><b>.</b><br><br>Ketterdam: a bustling hub of international trade where anything can be had for the right price—and no one knows that better than criminal prodigy Kaz Brekker. Kaz is offered a chance at a deadly heist that could make him rich beyond his wildest dreams. But he can't pull it off alone. . . .<br><br> <i>A convict with a thirst for revenge.<br><br> A sharpshooter who can't walk away from a wager.<br><br> A runaway with a privileged past.<br><br> A spy known as the Wraith.<br><br> A Heartrender using her magic to survive the slums. <br><br> A thief with a gift for unlikely escapes. </i><br><br> Six dangerous outcasts. One impossible heist. Kaz's crew is the only thing that might stand between the world and destruction—if they don't kill each other first.<br><br> <i>Six of Crows</i> by Leigh Bardugo returns to the breathtaking world of the Grishaverse in this unforgettable tale about the opportunity—and the adventure—of a lifetime.<br><br> <b>Praise for <i>Six of Crows</i>:</b><br><br>“<i>Six of Crows</i> is <b>a twisty and elegantly crafted masterpiece </b>that thrilled me from the beginning to end.” –<i>New York Times</i>-bestselling author Holly Black<br><br> “<i>Six of Crows</i> [is] one of those <b>all-too-rare, unputdownable </b>books that keeps your eyes glued to the page and your brain scrambling to figure out what’s going to happen next.” –Michael Dante DiMartino, co-creator of <i>Avatar: The Last Airbender</i> and <i>The Legend of Korra</i><br><br> “There's conflict between morality and amorality and an appetite for sometimes grimace-inducing violence that recalls the Game of Thrones series. But for every bloody exchange there are pages of <b>crackling dialogue and sumptuous description</b>. Bardugo dives deep into this world, with full color and sound. If you're not careful, <b>it'll steal all your time</b>.” —<i>The New York Times Book Review</i><br><br> Read all the books in the Grishaverse!<br><br><b>The Shadow and Bone Trilogy </b><br> (previously published as The Grisha Trilogy)<br> <i>Shadow and Bone</i><br> <i>Siege and Storm</i><br> <i>Ruin and Rising</i><br><br> <b>The Six of Crows Duology</b><br> <i>Six of Crows</i><br> <i>Crooked Kingdom</i><br><br><b>The King of Scars Duology</b><br><i>King of Scars</i><br><br> <i>The Language of Thorns: Midnight Tales and Dangerous Magic</i><br><i>The Severed Moon: A Year-Long Journal of Magic</i><br><br><b>Praise for the Grishaverse</b><br><br> “A master of fantasy.” —<i>The Huffington Post</i><br> “Utterly, extremely bewitching.” —<i>The Guardian</i><br> “This is what fantasy is for.” —<i>The New York Times Book Review</i><br> “[A] world that feels real enough to have its own passport stamp.” —NPR<br> “The darker it gets for the good guys, the better.” —<i>Entertainment Weekly</i><br> “Sultry, sweeping and picturesque. . . . Impossible to put down.” —<i>USA Today</i><br> “There’s a level of emotional and historical sophistication within Bardugo’s original epic fantasy that sets it apart.” —<i>Vanity Fair</i><br> “Unlike anything I’ve ever read.” —Veronica Roth, bestselling author of <i>Divergent</i><br> “Bardugo crafts a first-rate adventure, a poignant romance, and an intriguing mystery!” —Rick Riordan, bestselling author of the Percy Jackson series</p>	
 164	THE BOOK THIEF	0375842209	9780375842207	<b>#1 <i>NEW YORK TIMES</i> BESTSELLER • ONE OF <i>TIME</i> MAGAZINE’S 100 BEST YA BOOKS OF ALL TIME<br><br>The extraordinary, beloved novel about the ability of books to feed the soul even in the darkest of times.</b><br><br><i>When Death has a story to tell, you listen.</i><br><br> It is 1939. Nazi Germany. The country is holding its breath. Death has never been busier, and will become busier still.<br><br> Liesel Meminger is a foster girl living outside of Munich, who scratches out a meager existence for herself by stealing when she encounters something she can’t resist–books. With the help of her accordion-playing foster father, she learns to read and shares her stolen books with her neighbors during bombing raids as well as with the Jewish man hidden in her basement. <br><br> In superbly crafted writing that burns with intensity, award-winning author Markus Zusak, author of <i>I Am the Messenger,</i> has given us one of the most enduring stories of our time.<br>  <br> “The kind of book that can be life-changing.” —<i>The New York Times</i><br>  <br> “Deserves a place on the same shelf with <i>The Diary of a Young Girl </i>by Anne Frank.” —<i>USA Today</i><br><br><b>DON’T MISS <i>BRIDGE OF CLAY</i>, MARKUS ZUSAK’S FIRST NOVEL SINCE <i>THE BOOK THIEF.</i></b>	
@@ -1050,73 +1050,73 @@ COPY public.books_categories (book_category_id, book_id, category_id) FROM stdin
 5	1	5
 6	1	6
 7	1	7
-8	2	3
-9	2	8
+8	2	8
+9	2	2
 10	2	9
 11	2	10
 12	2	11
-13	3	3
-14	3	8
-15	3	10
+13	3	8
+14	3	2
+15	3	9
 16	3	11
-17	4	3
-18	4	12
+17	4	12
+18	4	2
 19	4	13
 20	4	14
 21	5	15
-22	5	3
-23	5	16
+22	5	16
+23	5	2
 24	5	17
 25	5	18
-26	6	3
-27	6	8
-28	6	10
-29	6	11
-30	6	14
-31	7	3
-32	7	8
-33	7	19
-34	7	10
+26	6	8
+27	6	12
+28	6	2
+29	6	9
+30	6	11
+31	7	8
+32	7	19
+33	7	2
+34	7	9
 35	7	11
-36	8	3
-37	8	20
-38	8	21
-39	8	12
-40	9	1
-41	9	3
+36	8	20
+37	8	2
+38	8	14
+39	8	21
+40	9	2
+41	9	17
 42	9	4
-43	9	7
-44	9	18
-45	10	3
-46	10	8
-47	10	19
-48	10	10
-49	10	11
-50	11	1
-51	11	3
-52	11	4
-53	11	10
-54	11	14
-55	12	1
-56	12	3
-57	12	8
-58	12	4
+43	9	3
+44	9	7
+45	10	8
+46	10	2
+47	10	9
+48	10	11
+49	10	19
+50	11	8
+51	11	12
+52	11	2
+53	11	4
+54	11	7
+55	12	22
+56	12	2
+57	12	4
+58	12	9
 59	12	11
-60	12	22
-61	13	11
-62	13	23
-63	13	3
-64	13	24
-65	14	3
-66	14	8
-67	14	25
+60	12	7
+61	13	23
+62	13	24
+63	13	9
+64	13	2
+65	14	8
+66	14	25
+67	14	2
 68	14	24
-69	14	10
+69	14	9
 70	14	11
-71	15	3
+71	15	8
 72	15	12
-73	15	26
-74	15	10
+73	15	2
+74	15	26
 75	15	14
 76	16	27
 77	16	28
@@ -1126,790 +1126,909 @@ COPY public.books_categories (book_category_id, book_id, category_id) FROM stdin
 81	16	32
 82	16	33
 83	16	34
-84	17	35
-85	17	36
-86	17	37
-87	17	38
-88	17	10
-89	18	39
-90	18	36
+84	16	35
+85	17	8
+86	17	36
+87	17	37
+88	17	38
+89	17	39
+90	17	35
 91	18	40
-92	18	37
-93	18	41
+92	18	41
+93	18	36
 94	18	42
 95	18	43
-96	19	44
-97	19	45
-98	19	46
-99	19	47
-100	19	38
-101	19	48
-102	19	49
-103	20	50
-104	20	51
-105	20	52
-106	20	53
-107	20	54
-108	20	55
-109	20	56
-110	20	13
-111	20	57
-112	20	58
-113	21	28
-114	21	36
-115	21	31
-116	21	37
-117	21	59
-118	21	34
-119	22	39
-120	22	60
-121	22	36
-122	22	37
-123	22	61
-124	23	62
-125	23	39
-126	23	63
-127	23	36
-128	23	64
-129	23	65
-130	23	66
-131	24	36
-132	24	67
-133	24	68
-134	24	69
-135	24	70
-136	24	71
-137	25	72
-138	25	73
-139	25	74
-140	25	75
-141	25	76
-142	25	34
-143	26	73
-144	26	27
-145	26	77
-146	26	33
-147	26	34
-148	26	78
-149	27	36
-150	27	37
-151	27	61
-152	27	10
-153	28	79
-154	28	75
-155	28	80
-156	28	81
-157	28	34
-158	28	82
-159	29	83
-160	29	10
-161	29	34
-162	29	84
-163	30	35
-164	30	36
-165	30	85
-166	30	86
-167	30	87
-168	30	38
-169	30	88
-170	31	1
-171	31	2
-172	31	3
-173	31	4
-174	31	6
-175	31	5
-176	32	73
-177	32	89
-178	32	3
-179	32	90
-180	32	12
-181	32	10
-182	33	91
-183	33	12
-184	33	92
-185	33	3
-186	34	73
-187	34	93
-188	34	89
-189	34	3
-190	34	12
-191	34	94
-192	35	95
-193	35	1
-194	35	96
-195	35	3
-196	35	4
-197	35	97
-198	36	3
-199	36	8
-200	36	19
-201	36	10
-202	36	11
-203	37	3
-204	37	98
-205	37	92
-206	37	99
-207	37	10
-208	37	14
-209	38	100
-210	38	12
-211	38	3
-212	38	14
-213	38	101
-214	39	102
-215	39	79
-216	39	103
-217	39	104
-218	39	105
-219	39	82
-220	40	106
-221	40	107
-222	40	34
-223	40	108
-224	41	105
-225	41	109
-226	41	110
-227	41	111
-228	41	112
-229	41	113
-230	41	114
-231	42	39
-232	42	36
-233	42	37
-234	42	61
-235	42	115
-236	42	42
-237	43	45
-238	43	116
-239	43	117
-240	43	118
-241	43	119
-242	43	120
-243	43	121
-244	44	1
-245	44	3
-246	44	122
-247	44	4
-248	44	19
-249	44	11
-250	45	1
-251	45	3
-252	45	4
-253	45	123
-254	45	22
-255	46	3
-256	46	8
-257	46	19
-258	46	10
-259	46	11
-260	47	3
-261	47	8
-262	47	9
-263	47	124
-264	47	11
-265	48	3
-266	48	8
-267	48	19
-268	48	10
-269	48	11
-270	49	1
-271	49	4
-272	49	22
-273	49	3
-274	50	3
-275	50	8
-276	50	9
-277	50	10
-278	50	11
-279	51	3
-280	51	8
-281	51	9
-282	51	11
-283	51	125
-284	52	68
-285	52	126
-286	53	39
-287	53	79
-288	53	127
-289	53	128
-290	53	129
-291	53	114
-292	54	35
-293	54	36
-294	54	130
-295	54	37
-296	54	38
-297	54	10
-298	56	36
-299	56	37
-300	56	131
-301	56	10
-302	57	132
-303	57	63
-304	57	36
-305	57	133
-306	57	134
-307	57	77
-308	57	135
-309	57	34
-310	57	78
-311	58	45
-312	58	136
-313	58	75
-314	58	79
-315	58	47
-316	58	137
-317	58	34
-318	58	138
-319	58	139
-320	59	35
-321	59	140
-322	59	141
-323	59	38
-324	59	50
-325	60	36
-326	60	12
-327	60	10
-328	60	37
-329	61	142
-330	61	143
-331	61	144
-332	61	145
-333	61	50
-334	62	36
-335	62	79
-336	62	37
-337	62	67
-338	62	68
-339	63	146
-340	63	36
-341	63	147
-342	63	66
-343	63	148
-344	64	35
-345	64	149
-346	64	150
-347	64	143
-348	64	38
-349	64	50
-350	65	151
-351	65	152
-352	65	153
-353	65	154
-354	65	66
-355	65	48
-356	65	155
-357	66	156
-358	66	157
-359	66	87
-360	66	38
-361	66	88
-362	67	35
-363	67	158
-364	67	159
-365	67	38
-366	67	12
-367	67	160
-368	67	161
-369	68	149
-370	68	162
-371	69	163
-372	69	164
-373	69	157
-374	69	165
-375	69	166
-376	69	167
-377	69	168
-378	69	66
-379	69	114
-380	70	169
-381	70	79
-382	70	170
-383	70	171
-384	70	172
-385	70	105
-386	71	38
-387	71	140
-388	72	173
-389	73	174
-390	73	175
-391	73	176
-392	73	177
-393	73	178
-394	74	179
-395	74	180
-396	74	177
-397	74	181
-398	74	182
-399	75	175
-400	75	183
-401	75	177
-402	75	100
-403	75	18
-404	76	89
-405	76	184
-406	76	185
-407	76	177
-408	76	186
-409	76	3
-410	76	187
-411	76	18
-412	77	63
-413	77	188
-414	77	36
-415	77	189
-416	77	190
-417	77	191
-418	78	179
-419	78	192
-420	78	188
-421	78	193
-422	78	194
-423	79	175
-424	79	195
-425	79	177
-426	79	92
-427	79	186
-428	79	196
-429	80	197
-430	80	177
-431	80	100
-432	80	92
-433	80	186
-434	80	198
-435	81	177
-436	81	92
-437	81	186
-438	82	177
-439	83	180
-440	83	199
-441	83	177
-442	83	100
-443	83	186
-444	83	189
-445	83	200
-446	83	201
-447	84	202
-448	84	183
-449	84	177
-450	84	100
-451	84	196
-452	85	180
-453	85	177
-454	85	203
-455	85	204
-456	85	186
-457	86	177
-458	86	205
-459	86	206
-460	86	200
-461	86	207
-462	87	208
-463	87	177
-464	87	189
-465	87	186
-466	87	193
-467	88	177
-468	88	203
-469	88	204
-470	88	209
-471	88	186
-472	88	206
-473	88	210
-474	89	211
-475	89	177
-476	89	98
-477	89	189
-478	89	186
-479	89	77
-480	89	206
-481	90	128
-482	90	177
-483	90	100
-484	90	206
-485	91	212
-486	91	202
-487	91	177
-488	91	204
-489	91	186
-490	91	201
-491	92	177
-492	92	204
-493	92	189
-494	92	186
-495	92	213
-496	94	95
-497	94	214
-498	94	186
-499	94	187
-500	94	215
-501	94	18
-502	95	159
-503	95	177
-504	95	202
-505	96	216
-506	96	186
-507	96	217
-508	96	218
-509	96	215
-510	97	175
-511	97	177
-512	98	8
-513	98	177
-514	98	92
-515	98	186
-516	98	219
-517	98	206
-518	98	11
-519	98	220
-520	98	215
-521	98	191
-522	99	202
-523	99	221
-524	99	177
-525	99	92
-526	99	186
-527	101	16
-528	101	17
-529	101	215
-530	102	8
-531	102	222
-532	102	186
-533	102	223
-534	102	206
-535	102	215
-536	102	11
-537	102	191
-538	102	18
-539	104	216
-540	104	224
-541	104	211
-542	104	186
-543	104	135
-544	104	215
-545	104	191
-546	105	8
-547	105	9
-548	105	92
-549	105	186
-550	105	11
-551	105	215
-552	106	208
-553	106	221
-554	106	186
-555	106	213
-556	106	215
-557	107	216
-558	107	186
-559	107	217
-560	107	218
-561	107	215
-562	108	211
-563	108	176
-564	108	122
-565	108	204
-566	108	31
-567	108	186
-568	108	215
-569	108	11
-570	109	62
-571	109	176
-572	109	204
-573	109	92
-574	109	186
-575	109	215
-576	109	225
-577	110	197
-578	110	195
-579	110	226
-580	110	100
-581	110	196
-582	110	215
-583	111	174
-584	111	227
-585	111	17
-586	111	228
-587	111	11
-588	111	215
-589	112	227
-590	112	17
-591	112	215
-592	112	11
-593	113	35
-594	113	149
-595	113	143
-596	113	38
-597	113	229
-598	113	50
-599	114	35
-600	114	36
-601	114	149
-602	114	85
-603	114	230
-604	114	231
-605	114	229
-606	115	88
-607	115	87
-608	115	61
-609	115	157
-610	115	36
-611	115	232
-612	116	202
-613	116	20
-614	116	221
-615	116	177
-616	116	159
-617	116	18
-618	117	202
-619	117	20
-620	117	221
-621	117	177
-622	117	159
-623	118	20
-624	118	221
-625	118	177
-626	118	159
-627	118	18
-628	119	183
-629	119	177
-630	119	100
-631	119	159
-632	119	18
-633	120	20
-634	120	221
-635	120	177
-636	120	159
-637	120	18
-638	121	180
-639	121	233
-640	121	211
-641	121	20
-642	121	177
-643	121	98
-644	121	31
-645	121	186
-646	121	159
-647	121	77
-648	121	225
-649	122	159
-650	122	234
-651	122	17
-652	122	235
-653	122	18
-654	123	20
-655	123	159
-656	123	234
-657	123	97
-658	123	18
-659	124	202
-660	124	20
-661	124	177
-662	124	221
-663	124	159
-664	124	18
-665	125	177
-666	125	92
-667	125	186
-668	125	159
-669	125	220
-670	126	159
-671	126	97
-672	126	235
-673	126	95
-674	127	20
-675	127	221
-676	127	177
-677	127	159
-678	127	18
-679	128	20
-680	128	159
-681	128	234
-682	128	236
-683	128	18
-684	129	20
-685	129	221
-686	129	177
-687	129	159
-688	129	18
-689	130	20
-690	130	177
-691	130	222
-692	130	5
-693	130	159
-694	130	18
-695	131	1
-696	131	2
-697	131	3
-698	131	4
-699	131	5
-700	131	7
-701	132	1
-702	132	3
-703	132	8
-704	132	4
-705	132	10
-706	132	11
-707	133	1
-708	133	11
-709	133	4
-710	133	3
-711	134	11
-712	134	4
-713	134	3
-714	134	10
-715	135	1
-716	135	3
-717	135	4
-718	135	5
-719	135	237
-720	135	22
-721	135	238
-722	136	1
-723	136	3
-724	136	239
-725	136	4
-726	136	5
-727	136	18
-728	137	89
-729	137	3
-730	137	240
-731	137	18
-732	138	1
-733	138	3
-734	138	4
-735	138	230
-736	138	241
-737	139	89
-738	139	3
-739	139	240
-740	139	18
-741	140	1
-742	140	3
-743	140	4
-744	140	10
-745	140	125
-746	141	11
-747	141	3
-748	142	1
-749	142	3
-750	142	4
-751	142	123
-752	142	22
-753	143	3
-754	143	8
-755	143	59
-756	143	10
-757	143	11
-758	144	3
-759	144	242
-760	144	8
-761	144	11
-762	144	125
-763	145	1
-764	145	4
-765	145	243
-766	145	3
-767	146	177
-768	146	100
-769	146	92
-770	146	186
-771	146	244
-772	146	245
-773	147	246
-774	147	199
-775	147	177
-776	147	100
-777	147	247
-778	147	187
-779	147	18
-780	148	248
-781	148	177
-782	148	100
-783	148	92
-784	148	186
-785	148	206
-786	150	180
-787	150	177
-788	150	92
-789	150	186
-790	150	249
-791	151	248
-792	151	177
-793	151	100
-794	151	92
-795	151	186
-796	151	206
-797	151	26
-798	152	180
-799	152	177
-800	152	181
-801	152	92
-802	152	186
-803	153	177
-804	153	250
-805	153	100
-806	153	206
-807	153	187
-808	153	18
-809	154	179
-810	154	188
-811	154	177
-812	154	181
-813	154	186
-814	154	206
-815	154	251
-816	155	62
-817	155	174
-818	155	252
-819	155	253
-820	155	177
-821	155	186
-822	155	206
-823	156	122
-824	156	215
-825	157	214
-826	157	204
-827	157	186
-828	157	215
-829	157	191
-830	158	9
-831	158	177
-832	158	204
-833	158	92
-834	158	186
-835	158	11
-836	158	215
-837	159	204
-838	159	189
-839	159	254
-840	159	186
-841	159	255
-842	159	215
-843	159	191
-844	160	216
-845	160	222
-846	160	92
-847	160	186
-848	160	215
-849	161	216
-850	161	256
-851	161	215
-852	161	18
-853	162	62
-854	162	176
-855	162	92
-856	162	186
-857	162	215
-858	163	17
-859	163	215
-860	163	18
-861	164	62
-862	164	89
-863	164	74
-864	164	257
-865	164	186
-866	164	206
-867	164	215
+96	18	44
+97	18	38
+98	18	35
+99	19	45
+100	19	46
+101	19	47
+102	19	48
+103	19	49
+104	19	39
+105	19	50
+106	19	35
+107	20	51
+108	20	52
+109	20	53
+110	20	54
+111	20	55
+112	20	56
+113	20	57
+114	20	58
+115	20	13
+116	20	59
+117	20	35
+118	21	60
+119	21	36
+120	21	29
+121	21	30
+122	21	38
+123	21	32
+124	21	35
+125	22	40
+126	22	61
+127	22	36
+128	22	62
+129	22	38
+130	22	35
+131	23	40
+132	23	36
+133	23	63
+134	23	64
+135	23	65
+136	23	66
+137	23	67
+138	23	35
+139	24	36
+140	24	68
+141	24	69
+142	24	70
+143	24	71
+144	24	72
+145	24	35
+146	25	73
+147	25	74
+148	25	75
+149	25	32
+150	25	76
+151	25	77
+152	25	35
+153	26	27
+154	26	78
+155	26	75
+156	26	79
+157	26	32
+158	26	33
+159	26	35
+160	27	38
+161	27	8
+162	27	36
+163	27	62
+164	27	35
+165	28	80
+166	28	81
+167	28	82
+168	28	83
+169	28	32
+170	28	77
+171	28	35
+172	29	84
+173	29	8
+174	29	85
+175	29	32
+176	29	35
+177	30	36
+178	30	86
+179	30	87
+180	30	88
+181	30	89
+182	30	37
+183	30	39
+184	30	35
+185	31	1
+186	31	2
+187	31	5
+188	31	4
+189	31	6
+190	31	7
+191	32	8
+192	32	75
+193	32	90
+194	32	91
+195	32	2
+196	32	14
+197	33	92
+198	33	14
+199	33	93
+200	33	2
+201	34	94
+202	34	75
+203	34	91
+204	34	2
+205	34	14
+206	34	95
+207	35	96
+208	35	97
+209	35	98
+210	35	2
+211	35	4
+212	35	7
+213	36	8
+214	36	2
+215	36	9
+216	36	11
+217	36	19
+218	37	8
+219	37	12
+220	37	99
+221	37	2
+222	37	92
+223	37	100
+224	38	12
+225	38	2
+226	38	14
+227	38	101
+228	38	102
+229	39	103
+230	39	104
+231	39	81
+232	39	105
+233	39	83
+234	39	106
+235	39	35
+236	40	107
+237	40	32
+238	40	108
+239	40	109
+240	40	35
+241	41	110
+242	41	111
+243	41	112
+244	41	105
+245	41	113
+246	41	114
+247	41	115
+248	41	35
+249	42	40
+250	42	36
+251	42	43
+252	42	62
+253	42	116
+254	42	38
+255	42	35
+256	43	117
+257	43	118
+258	43	119
+259	43	46
+260	43	120
+261	43	121
+262	43	122
+263	43	35
+264	44	2
+265	44	4
+266	44	9
+267	44	123
+268	44	7
+269	44	19
+270	45	22
+271	45	2
+272	45	4
+273	45	124
+274	45	7
+275	46	8
+276	46	2
+277	46	9
+278	46	11
+279	46	19
+280	47	125
+281	47	2
+282	47	9
+283	47	10
+284	47	11
+285	48	8
+286	48	2
+287	48	9
+288	48	11
+289	48	19
+290	49	4
+291	49	22
+292	49	7
+293	49	2
+294	50	8
+295	50	2
+296	50	9
+297	50	10
+298	50	11
+299	51	126
+300	51	2
+301	51	9
+302	51	10
+303	51	11
+304	52	127
+305	52	71
+306	52	35
+307	53	40
+308	53	128
+309	53	111
+310	53	129
+311	53	83
+312	53	130
+313	53	35
+314	54	8
+315	54	36
+316	54	37
+317	54	38
+318	54	39
+319	54	131
+320	54	35
+321	55	35
+322	56	38
+323	56	132
+324	56	8
+325	56	36
+326	56	35
+327	57	78
+328	57	36
+329	57	133
+330	57	134
+331	57	63
+332	57	135
+333	57	79
+334	57	32
+335	57	136
+336	57	35
+337	58	137
+338	58	46
+339	58	138
+340	58	47
+341	58	139
+342	58	140
+343	58	83
+344	58	32
+345	58	77
+346	58	35
+347	59	141
+348	59	37
+349	59	39
+350	59	59
+351	59	142
+352	59	35
+353	60	38
+354	60	14
+355	60	8
+356	60	36
+357	60	35
+358	61	143
+359	61	144
+360	61	145
+361	61	146
+362	61	59
+363	61	35
+364	62	36
+365	62	71
+366	62	83
+367	62	69
+368	62	38
+369	62	35
+370	63	147
+371	63	148
+372	63	36
+373	63	149
+374	63	67
+375	64	144
+376	64	150
+377	64	37
+378	64	39
+379	64	59
+380	64	151
+381	65	152
+382	65	153
+383	65	154
+384	65	49
+385	65	155
+386	65	67
+387	65	156
+388	66	157
+389	66	158
+390	66	87
+391	66	89
+392	66	39
+393	67	159
+394	67	160
+395	67	37
+396	67	161
+397	67	162
+398	67	39
+399	67	14
+400	68	151
+401	68	163
+402	69	164
+403	69	157
+404	69	165
+405	69	111
+406	69	166
+407	69	167
+408	69	168
+409	69	169
+410	69	67
+411	70	170
+412	70	171
+413	70	105
+414	70	172
+415	70	83
+416	70	173
+417	71	39
+418	71	142
+419	72	174
+420	73	175
+421	73	176
+422	73	177
+423	73	178
+424	73	179
+425	73	180
+426	73	181
+427	74	182
+428	74	183
+429	74	184
+430	74	177
+431	74	185
+432	74	180
+433	74	181
+434	75	186
+435	75	17
+436	75	177
+437	75	178
+438	75	101
+439	75	180
+440	75	181
+441	76	187
+442	76	188
+443	76	91
+444	76	17
+445	76	177
+446	76	189
+447	76	2
+448	76	190
+449	76	180
+450	76	181
+451	77	191
+452	77	192
+453	77	36
+454	77	63
+455	77	193
+456	77	194
+457	77	180
+458	77	181
+459	78	195
+460	78	191
+461	78	184
+462	78	196
+463	78	197
+464	78	180
+465	78	181
+466	79	198
+467	79	177
+468	79	199
+469	79	92
+470	79	190
+471	79	178
+472	79	180
+473	79	181
+474	80	200
+475	80	201
+476	80	177
+477	80	92
+478	80	190
+479	80	101
+480	80	180
+481	80	181
+482	81	177
+483	81	190
+484	81	92
+485	81	180
+486	81	181
+487	82	177
+488	82	180
+489	82	181
+490	83	202
+491	83	203
+492	83	177
+493	83	204
+494	83	183
+495	83	190
+496	83	194
+497	83	101
+498	83	180
+499	84	186
+500	84	198
+501	84	177
+502	84	205
+503	84	101
+504	84	180
+505	85	206
+506	85	177
+507	85	183
+508	85	207
+509	85	190
+510	85	180
+511	86	208
+512	86	209
+513	86	177
+514	86	204
+515	86	210
+516	86	180
+517	87	190
+518	87	211
+519	87	177
+520	87	194
+521	87	197
+522	87	180
+523	88	208
+524	88	212
+525	88	213
+526	88	206
+527	88	177
+528	88	207
+529	88	190
+530	88	180
+531	89	214
+532	89	208
+533	89	190
+534	89	99
+535	89	79
+536	89	177
+537	89	194
+538	89	180
+539	90	208
+540	90	177
+541	90	130
+542	90	101
+543	90	180
+544	91	215
+545	91	206
+546	91	177
+547	91	205
+548	91	190
+549	91	202
+550	91	180
+551	92	190
+552	92	206
+553	92	216
+554	92	177
+555	92	194
+556	92	180
+557	93	180
+558	94	217
+559	94	97
+560	94	188
+561	94	218
+562	94	17
+563	94	190
+564	94	180
+565	95	177
+566	95	205
+567	95	161
+568	95	180
+569	96	219
+570	96	220
+571	96	218
+572	96	221
+573	96	190
+574	96	180
+575	97	177
+576	97	178
+577	97	180
+578	98	208
+579	98	222
+580	98	192
+581	98	218
+582	98	177
+583	98	11
+584	98	9
+585	98	92
+586	98	223
+587	98	190
+588	98	180
+589	99	224
+590	99	177
+591	99	205
+592	99	92
+593	99	190
+594	99	180
+595	100	180
+596	101	16
+597	101	15
+598	101	218
+599	101	180
+600	102	208
+601	102	190
+602	102	192
+603	102	218
+604	102	17
+605	102	225
+606	102	9
+607	102	11
+608	102	226
+609	102	180
+610	103	227
+611	104	214
+612	104	228
+613	104	192
+614	104	219
+615	104	134
+616	104	218
+617	104	190
+618	104	227
+619	105	190
+620	105	92
+621	105	218
+622	105	9
+623	105	10
+624	105	11
+625	105	227
+626	106	224
+627	106	211
+628	106	216
+629	106	218
+630	106	190
+631	106	227
+632	107	219
+633	107	220
+634	107	218
+635	107	221
+636	107	190
+637	107	227
+638	108	214
+639	108	29
+640	108	206
+641	108	218
+642	108	9
+643	108	123
+644	108	190
+645	108	179
+646	108	227
+647	109	229
+648	109	206
+649	109	218
+650	109	65
+651	109	92
+652	109	190
+653	109	179
+654	109	227
+655	110	201
+656	110	218
+657	110	198
+658	110	230
+659	110	199
+660	110	101
+661	110	227
+662	111	175
+663	111	16
+664	111	231
+665	111	218
+666	111	232
+667	111	9
+668	111	227
+669	112	16
+670	112	218
+671	112	232
+672	112	9
+673	112	227
+674	113	233
+675	113	144
+676	113	37
+677	113	39
+678	113	59
+679	113	151
+680	113	234
+681	114	233
+682	114	36
+683	114	88
+684	114	235
+685	114	236
+686	114	37
+687	114	151
+688	114	234
+689	115	87
+690	115	237
+691	115	62
+692	115	36
+693	115	89
+694	115	157
+695	115	234
+696	116	224
+697	116	17
+698	116	177
+699	116	205
+700	116	161
+701	116	21
+702	116	238
+703	117	224
+704	117	177
+705	117	205
+706	117	161
+707	117	21
+708	117	238
+709	118	224
+710	118	17
+711	118	177
+712	118	161
+713	118	21
+714	118	238
+715	119	186
+716	119	17
+717	119	177
+718	119	161
+719	119	101
+720	119	238
+721	120	224
+722	120	17
+723	120	177
+724	120	161
+725	120	21
+726	120	238
+727	121	214
+728	121	229
+729	121	183
+730	121	29
+731	121	239
+732	121	99
+733	121	79
+734	121	177
+735	121	161
+736	121	190
+737	121	21
+738	121	238
+739	122	240
+740	122	16
+741	122	17
+742	122	161
+743	122	241
+744	122	238
+745	123	240
+746	123	98
+747	123	17
+748	123	161
+749	123	21
+750	123	238
+751	124	224
+752	124	17
+753	124	177
+754	124	205
+755	124	161
+756	124	21
+757	124	238
+758	125	92
+759	125	177
+760	125	161
+761	125	223
+762	125	190
+763	125	238
+764	126	241
+765	126	97
+766	126	98
+767	126	161
+768	126	238
+769	127	224
+770	127	17
+771	127	177
+772	127	161
+773	127	21
+774	127	238
+775	128	240
+776	128	17
+777	128	161
+778	128	242
+779	128	21
+780	128	238
+781	129	224
+782	129	17
+783	129	177
+784	129	161
+785	129	21
+786	129	238
+787	130	225
+788	130	17
+789	130	177
+790	130	6
+791	130	161
+792	130	21
+793	130	238
+794	131	1
+795	131	2
+796	131	3
+797	131	4
+798	131	6
+799	131	7
+800	132	8
+801	132	2
+802	132	4
+803	132	9
+804	132	11
+805	132	7
+806	133	4
+807	133	7
+808	133	9
+809	133	2
+810	134	7
+811	134	8
+812	134	9
+813	134	2
+814	135	22
+815	135	2
+816	135	4
+817	135	6
+818	135	243
+819	135	7
+820	135	244
+821	136	2
+822	136	17
+823	136	4
+824	136	245
+825	136	6
+826	136	7
+827	137	246
+828	137	91
+829	137	2
+830	137	17
+831	138	247
+832	138	2
+833	138	4
+834	138	236
+835	138	7
+836	139	246
+837	139	91
+838	139	2
+839	139	17
+840	140	8
+841	140	126
+842	140	2
+843	140	4
+844	140	7
+845	141	9
+846	141	2
+847	142	22
+848	142	2
+849	142	4
+850	142	124
+851	142	7
+852	143	8
+853	143	60
+854	143	2
+855	143	9
+856	143	11
+857	144	248
+858	144	126
+859	144	2
+860	144	9
+861	144	11
+862	145	4
+863	145	7
+864	145	249
+865	145	2
+866	146	250
+867	146	177
+868	146	92
+869	146	190
+870	146	251
+871	146	101
+872	146	181
+873	147	252
+874	147	203
+875	147	253
+876	147	188
+877	147	17
+878	147	177
+879	147	101
+880	147	181
+881	148	208
+882	148	254
+883	148	177
+884	148	92
+885	148	190
+886	148	101
+887	148	181
+888	149	181
+889	150	183
+890	150	177
+891	150	92
+892	150	190
+893	150	255
+894	150	181
+895	151	208
+896	151	254
+897	151	177
+898	151	26
+899	151	92
+900	151	190
+901	151	101
+902	151	181
+903	152	185
+904	152	183
+905	152	177
+906	152	92
+907	152	190
+908	152	181
+909	153	208
+910	153	256
+911	153	188
+912	153	17
+913	153	177
+914	153	101
+915	153	181
+916	154	191
+917	154	257
+918	154	208
+919	154	184
+920	154	177
+921	154	185
+922	154	190
+923	154	181
+924	155	175
+925	155	208
+926	155	258
+927	155	177
+928	155	65
+929	155	190
+930	155	259
+931	155	181
+932	156	123
+933	156	218
+934	156	227
+935	157	217
+936	157	192
+937	157	206
+938	157	218
+939	157	190
+940	157	227
+941	158	92
+942	158	206
+943	158	218
+944	158	177
+945	158	9
+946	158	10
+947	158	190
+948	158	227
+949	159	260
+950	159	192
+951	159	261
+952	159	206
+953	159	218
+954	159	190
+955	159	194
+956	159	227
+957	160	219
+958	160	225
+959	160	218
+960	160	92
+961	160	190
+962	160	227
+963	161	219
+964	161	218
+965	161	17
+966	161	262
+967	161	227
+968	162	218
+969	162	65
+970	162	92
+971	162	190
+972	162	179
+973	162	227
+974	163	16
+975	163	17
+976	163	218
+977	163	227
+978	164	208
+979	164	73
+980	164	91
+981	164	218
+982	164	65
+983	164	263
+984	164	190
+985	164	227
+986	165	227
 \.
 
 
@@ -2134,263 +2253,269 @@ COPY public.books_shelves (book_shelf_id, book_id, shelf_id) FROM stdin;
 --
 
 COPY public.categories (category_id, category_name) FROM stdin;
-1	Thrillers
-2	Police Procedural
-3	Fiction
-4	Suspense
-5	Mystery & Detective
-6	Women Sleuths
-7	Crime
-8	Contemporary
-9	Romantic Comedy
-10	Women
-11	Romance
-12	Literary
+1	Police Procedural
+2	Fiction
+3	Crime
+4	Thrillers
+5	Women Sleuths
+6	Mystery & Detective
+7	Suspense
+8	Women
+9	Romance
+10	Romantic Comedy
+11	Contemporary
+12	Family Life
 13	Medical
-14	Family Life
-15	Dragons & Mythical Creatures
-16	Epic
-17	Fantasy
-18	Action & Adventure
+14	Literary
+15	Epic
+16	Fantasy
+17	Action & Adventure
+18	Dragons & Mythical Creatures
 19	New Adult
-20	Humorous
-21	Feminist
+20	Feminist
+21	Humorous
 22	Psychological
 23	Gay
 24	Lgbtq+
 25	Bisexual
 26	Siblings
 27	Murder
-28	Great Britain
-29	Georgian Era (1714-1837)
-30	Maritime History & Piracy
-31	Europe
-32	Mass Murder
+28	Mass Murder
+29	Europe
+30	Great Britain
+31	Maritime History & Piracy
+32	History
 33	True Crime
-34	History
-35	Personal Growth
+34	Georgian Era (1714-1837)
+35	Nonfiction
 36	Biography & Autobiography
-37	Personal Memoirs
-38	Self-Help
-39	Family & Relationships
-40	Fatherhood
-41	Travel
-42	Parenting
-43	Essays & Travelogues
-44	Human Anatomy & Physiology
-45	Science
-46	Aging
+37	Personal Growth
+38	Personal Memoirs
+39	Self-Help
+40	Family & Relationships
+41	Essays & Travelogues
+42	Travel
+43	Parenting
+44	Fatherhood
+45	Longevity
+46	Science
 47	Life Sciences
-48	Health & Fitness
-49	Longevity
-50	Psychology
-51	Schizophrenia
-52	Psychotherapy
-53	Psychiatry
-54	Psychopathology
+48	Human Anatomy & Physiology
+49	Health & Fitness
+50	Aging
+51	Psychotherapy
+52	Psychopathology
+53	Schizophrenia
+54	Mental Health
 55	Depression
 56	Post-Traumatic Stress Disorder (PTSD)
-57	Mental Illness
-58	Mental Health
-59	Royalty
-60	Dysfunctional Families
-61	Entertainment & Performing Arts
-62	Death, Grief, Bereavement
+57	Psychiatry
+58	Mental Illness
+59	Psychology
+60	Royalty
+61	Dysfunctional Families
+62	Entertainment & Performing Arts
 63	Cultural, Ethnic & Regional
 64	Asian & Asian American
-65	Essays & Narratives
-66	Cooking
-67	Literary Collections
-68	Essays
-69	Teacher & Student Mentoring
-70	Educators
-71	Education
-72	Modern
-73	20th Century
-74	Holocaust
-75	Social History
+65	Death, Grief, Bereavement
+66	Essays & Narratives
+67	Cooking
+68	Teacher & Student Mentoring
+69	Literary Collections
+70	Education
+71	Essays
+72	Educators
+73	Holocaust
+74	Modern
+75	20th Century
 76	Jewish
-77	United States
+77	Social History
 78	Indigenous Peoples in the Americas
-79	Social Science
-80	Social Theory
-81	Sociology
-82	Social Classes & Economic Disparity
-83	Art
+79	United States
+80	Sociology
+81	Social Classes & Economic Disparity
+82	Social Theory
+83	Social Science
 84	Women Artists
-85	Success
+85	Art
 86	Rich & Famous
 87	Body, Mind & Spirit
-88	Inspiration & Personal Growth
-89	Historical
+88	Success
+89	Inspiration & Personal Growth
 90	World War II
-91	Cultural Heritage
+91	Historical
 92	Friendship
-93	Sagas
+93	Cultural Heritage
 94	Biographical
-95	Dystopian
+95	Sagas
 96	Apocalyptic & Post-Apocalyptic
-97	Science Fiction
-98	African American & Black
-99	Marriage & Divorce
-100	Animals
-101	Human-animal relationships
-102	Poverty & Homelessness
+97	Dystopian
+98	Science Fiction
+99	African American & Black
+100	Marriage & Divorce
+101	Animals
+102	Human-animal relationships
 103	Social Policy
 104	Public Policy
 105	Political Science
-106	Sports & Recreation
-107	Statistics
+106	Poverty & Homelessness
+107	Sports & Recreation
 108	Baseball
-109	Censorship
-110	Literary Criticism
-111	Humor
-112	Politics
-113	Topic
-114	American
-115	Motherhood
-116	Physics
-117	Quantum Computing
-118	Technology & Engineering
-119	Computers
-120	Quantum Theory
-121	Social Aspects
-122	Coming of Age
-123	Domestic
-124	Sports
-125	Small Town & Rural
-126	Nature
-127	Ethnic Studies
-128	Love & Romance
-129	African American & Black Studies
-130	Self-Esteem
-131	Religious
-132	Southwest (AZ, NM, OK, TX)
-133	State & Local
-134	19th Century
-135	Indigenous
-136	Evolution
-137	Anthropology
-138	Civilization
-139	Cultural & Social
-140	Motivational & Inspirational
+109	Statistics
+110	Humor
+111	American
+112	Literary Criticism
+113	Politics
+114	Topic
+115	Censorship
+116	Motherhood
+117	Physics
+118	Social Aspects
+119	Quantum Computing
+120	Computers
+121	Quantum Theory
+122	Technology & Engineering
+123	Coming of Age
+124	Domestic
+125	Sports
+126	Small Town & Rural
+127	Nature
+128	African American & Black Studies
+129	Ethnic Studies
+130	Love & Romance
+131	Self-Esteem
+132	Religious
+133	19th Century
+134	Indigenous
+135	State & Local
+136	Southwest (AZ, NM, OK, TX)
+137	Civilization
+138	Anthropology
+139	Evolution
+140	Cultural & Social
 141	Cognitive Psychology & Cognition
-142	Interpersonal Relations
-143	Social Psychology
-144	Language Arts & Disciplines
-145	Communication Studies
-146	Entertaining
+142	Motivational & Inspirational
+143	Interpersonal Relations
+144	Social Psychology
+145	Language Arts & Disciplines
+146	Communication Studies
 147	Seasonal
 148	Culinary
-149	Business & Economics
+149	Entertaining
 150	Organizational Behavior
-151	Diabetic & Sugar-Free
-152	Weight Loss
-153	Diets
-154	Diet & Nutrition
-155	Health & Healing
-156	Creativity
+151	Business & Economics
+152	Diets
+153	Health & Healing
+154	Weight Loss
+155	Diet & Nutrition
+156	Diabetic & Sugar-Free
 157	Music
-158	Philosophy
-159	Comics & Graphic Novels
-160	Happiness
-161	Ethics & Moral Philosophy
-162	Personal Finance
-163	Genres & Styles
-164	Courses & Dishes
-165	Sandwiches
-166	Southern States
-167	Country & Bluegrass
-168	Regional & Ethnic
-169	Political Process
-170	Christian Living
-171	Religion
-172	Commentary & Opinion
-173	Religions
-174	Legends, Myths, Fables
-175	Fantasy & Magic
-176	Lgbtq
+158	Creativity
+159	Happiness
+160	Philosophy
+161	Comics & Graphic Novels
+162	Ethics & Moral Philosophy
+163	Personal Finance
+164	Sandwiches
+165	Courses & Dishes
+166	Country & Bluegrass
+167	Regional & Ethnic
+168	Genres & Styles
+169	Southern States
+170	Commentary & Opinion
+171	Christian Living
+172	Religion
+173	Political Process
+174	Religions
+175	Legends, Myths, Fables
+176	Greek & Roman
 177	Juvenile Fiction
-178	Greek & Roman
-179	Health & Daily Living
-180	School & Education
-181	Disabilities
+178	Fantasy & Magic
+179	Lgbtq
+180	Children's Books
+181	Middle Grade Books
 182	Diseases, Illnesses & Injuries
-183	Dragons, Unicorns & Mythical
-184	Military & Wars
-185	Emigration & Immigration
-186	Social Themes
-187	Survival Stories
-188	Juvenile Nonfiction
-189	Self-Esteem & Self-Reliance
-190	Social Topics
-191	Girls & Women
-192	Daily Activities
-193	Cooking & Food
-194	Crafts & Hobbies
-195	Adaptations
-196	Fairy Tales & Folklore
-197	Marine Life
-198	Mammals
-199	Bears
-200	Imagination & Play
-201	Concepts
-202	Humorous Stories
-203	Holidays & Celebrations
-204	Emotions & Feelings
-205	Bedtime & Dreams
-206	Family
-207	New Baby
-208	Values & Virtues
-209	Mother's Day
-210	Parents
-211	People & Places
-212	Colors
-213	Diversity & Multicultural
-214	Physical & Emotional Abuse
-215	Young Adult Fiction
-216	Thrillers & Suspense
-217	Law & Crime
-218	Prejudice & Racism
-219	Dating & Sex
-220	Adolescence & Coming of Age
-221	Superheroes
-222	Mysteries & Detective Stories
-223	Class Differences
-224	Activism & Social Justice
-225	Boys & Men
-226	Mermaids & Mermen
-227	Dark Fantasy
-228	Arthurian
-229	Leadership
-230	Military
-231	Self-help
-232	Individual Composer & Musician
-233	New Experience
-234	Manga
-235	Media Tie-In
-236	Crime & Mystery
-237	Amateur Sleuth
-238	Detective and mystery stories
-239	International Crime & Mystery
-240	Westerns
-241	War & Military
-242	Clean & Wholesome
-243	Legal
-244	Zoos
-245	Apes, Monkeys, etc
-246	Robots
-247	Ducks, Geese, etc
-248	Dogs
-249	Bullying
-250	Wolves, Coyotes & Wild Dogs
-251	Physical Impairments
-252	Asian
-253	Multigenerational
-254	Sexual Abuse
-255	Violence
-256	Horror
-257	Orphans & Foster Homes
+183	School & Education
+184	Health & Daily Living
+185	Disabilities
+186	Dragons, Unicorns & Mythical
+187	Emigration & Immigration
+188	Survival Stories
+189	Military & Wars
+190	Social Themes
+191	Juvenile Nonfiction
+192	Girls & Women
+193	Social Topics
+194	Self-Esteem & Self-Reliance
+195	Daily Activities
+196	Crafts & Hobbies
+197	Cooking & Food
+198	Fairy Tales & Folklore
+199	Adaptations
+200	Mammals
+201	Marine Life
+202	Concepts
+203	Bears
+204	Imagination & Play
+205	Humorous Stories
+206	Emotions & Feelings
+207	Holidays & Celebrations
+208	Family
+209	Bedtime & Dreams
+210	New Baby
+211	Values & Virtues
+212	Mother's Day
+213	Parents
+214	People & Places
+215	Colors
+216	Diversity & Multicultural
+217	Physical & Emotional Abuse
+218	Young Adult Fiction
+219	Thrillers & Suspense
+220	Law & Crime
+221	Prejudice & Racism
+222	Dating & Sex
+223	Adolescence & Coming of Age
+224	Superheroes
+225	Mysteries & Detective Stories
+226	Class Differences
+227	Young Adult Books
+228	Activism & Social Justice
+229	Boys & Men
+230	Mermaids & Mermen
+231	Arthurian
+232	Dark Fantasy
+233	Leadership
+234	Business
+235	Self-help
+236	Military
+237	Individual Composer & Musician
+238	Graphic Books
+239	New Experience
+240	Manga
+241	Media Tie-In
+242	Crime & Mystery
+243	Amateur Sleuth
+244	Detective and mystery stories
+245	International Crime & Mystery
+246	Westerns
+247	War & Military
+248	Clean & Wholesome
+249	Legal
+250	Zoos
+251	Apes, Monkeys, etc
+252	Ducks, Geese, etc
+253	Robots
+254	Dogs
+255	Bullying
+256	Wolves, Coyotes & Wild Dogs
+257	Physical Impairments
+258	Multigenerational
+259	Asian
+260	Sexual Abuse
+261	Violence
+262	Horror
+263	Orphans & Foster Homes
 \.
 
 
@@ -2642,7 +2767,7 @@ SELECT pg_catalog.setval('public.books_book_id_seq', 165, true);
 -- Name: books_categories_book_category_id_seq; Type: SEQUENCE SET; Schema: public; Owner: linuxuser
 --
 
-SELECT pg_catalog.setval('public.books_categories_book_category_id_seq', 867, true);
+SELECT pg_catalog.setval('public.books_categories_book_category_id_seq', 986, true);
 
 
 --
@@ -2663,7 +2788,7 @@ SELECT pg_catalog.setval('public.books_shelves_book_shelf_id_seq', 1, false);
 -- Name: categories_category_id_seq; Type: SEQUENCE SET; Schema: public; Owner: linuxuser
 --
 
-SELECT pg_catalog.setval('public.categories_category_id_seq', 257, true);
+SELECT pg_catalog.setval('public.categories_category_id_seq', 263, true);
 
 
 --

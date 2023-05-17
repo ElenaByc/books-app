@@ -7,7 +7,11 @@ from random import choice, randint
 from datetime import datetime
 from time import sleep
 
-from utilites import format_uppercase_string, split_categories
+from utilites import (
+    format_uppercase_string, 
+    split_categories, 
+    get_categories_for_list)
+
 import crud
 import model
 import server
@@ -302,6 +306,9 @@ for db_list in lists_in_db:
             if not success:
                 # create author from NYT data
                 get_book_authors_nyt(book["author"], db_book.book_id)
+            # get category for list name
+            categories = get_categories_for_list(db_list.list_name)
+            add_categories_to_db(categories, db_book.book_id)
         # add book-list association
         db_book_list = crud.create_book_list(
             db_book.book_id, db_list.list_id)
