@@ -98,16 +98,14 @@ def get_books_by_list(list_id):
     return result
 
 
-# def get_books_by_author(author_name):
-#     """Return all books that have author_name in their authors."""
+def get_books_by_author(author_name):
+    """Return all books that have author_name in their authors."""
 
-#     authors =
-#     book_list_list = BookList.query.filter(
-#         BookList.list_id == list_id).all()
-#     for bc in book_list_list:
-#         result.append(get_book_by_id(bc.book_id))
-
-#     return result
+    result = []
+    authors = get_authors_by_name(author_name)
+    for author in authors:
+        result.extend(author.books)
+    return result
 
 
 def get_all_books():
