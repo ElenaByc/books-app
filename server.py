@@ -26,20 +26,23 @@ def show_searching_result():
     """Show event search form"""
 
     author = request.args.get("author", "")
-    # title = request.args.get("title", "")
+    title = request.args.get("title", "")
     subject = request.args.get("subject", "")
     list_id = request.args.get("list", "")
 
-    if list_id != '':
+    if list_id != "":
         books = crud.get_books_by_list(list_id)
-        list_name = crud.get_list_by_id(list_id).list_name
+        header = f"Best Sellers List: {crud.get_list_by_id(list_id).list_name}"
         # print("!!!!!!!!!!!!!!!!!!!!!!!")
         # print(sample(books, 3))
+    elif author != "":
+        books = crud.get_books_by_author_name(author)
+        header = f"results for author = \'{author}\'"
     else:
         books = []
-        list_name = ""
+        header = ""
 
-    return render_template("all_books.html", books=books, list_name=list_name)
+    return render_template("all_books.html", books=books, header=header)
 
 
 @app.route("/lists")

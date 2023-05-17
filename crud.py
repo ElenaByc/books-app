@@ -98,14 +98,14 @@ def get_books_by_list(list_id):
     return result
 
 
-def get_books_by_author(author_name):
+def get_books_by_author_name(author_name):
     """Return all books that have author_name in their authors."""
 
     result = []
     authors = get_authors_by_name(author_name)
     for author in authors:
         result.extend(author.books)
-    return result
+    return list(set(result))
 
 
 def get_all_books():

@@ -2,10 +2,10 @@
 {% block title %}All Books{% endblock %}
 
 {% block content %}
-{% if list_name == '' %}
+{% if header == '' %}
 <h2>All Books</h2>
 {% else %}
-<h2>{{ list_name }}</h2>
+<h2>{{ header }}</h2>
 {% endif %}
 
 <div class="books__cards-container">
