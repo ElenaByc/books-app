@@ -114,6 +114,16 @@ def get_books_by_author_name(author_name):
     return list(set(result))
 
 
+def get_books_by_category(search_phrase):
+    """Return all books that have search_phrase in their categories."""
+
+    result = []
+    categories = get_categories_by_name(search_phrase)
+    for category in categories:
+        result.extend(category.books)
+    return list(set(result))
+
+
 def get_all_books():
     """Return all books."""
 
@@ -161,10 +171,19 @@ def get_authors_by_name(author_name):
     return Author.query.filter(Author.name.ilike(f"%{author_name}%")).all()
 
 
+#  Getting categories
+
+
 def get_category_by_name(category_name):
     """Return a category by its name."""
 
     return Category.query.filter(Category.category_name == category_name).first()
+
+
+def get_categories_by_name(search_phrase):
+    """Return categories with search_phrase in theri names"""
+
+    return Category.query.filter(Category.category_name.ilike(f"%{search_phrase}%")).all()
 
 
 def get_book_category(book_id, category_id):

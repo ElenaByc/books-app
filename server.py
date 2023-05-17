@@ -27,23 +27,28 @@ def show_searching_result():
 
     author = request.args.get("author", "")
     title = request.args.get("title", "")
-    subject = request.args.get("subject", "")
+    category = request.args.get("category", "")
     list_id = request.args.get("list", "")
 
     if list_id != "":
         books = crud.get_books_by_list(list_id)
         header = f"Best Sellers List: {crud.get_list_by_id(list_id).list_name}"
-        # print("!!!!!!!!!!!!!!!!!!!!!!!")
-        # print(sample(books, 3))
     elif author != "":
         books = crud.get_books_by_author_name(author)
         header = f"results for \'{author}\' in book's authors"
     elif title != "":
         books = crud.get_books_by_title(title)
         header = f"results for \'{title}\' in book's title"
+    elif category != "":
+        books = crud.get_books_by_category(category)
+        header = f"results for \'{category}\' in book's categories"
     else:
         books = []
         header = ""
+
+        # print("!!!!!!!!!!!!!!!!!!!!!!!")
+        # if len(books) > 3:
+        #   print(sample(books, 3))
 
     return render_template("all_books.html", books=books, header=header)
 
