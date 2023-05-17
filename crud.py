@@ -71,6 +71,9 @@ def create_book_shelf(book, shelf):
     return BookShelf(book=book, shelf=shelf)
 
 
+# Getting books
+
+
 def get_book_by_isbn10(isbn10):
     """Return a book by isbn10."""
 
@@ -84,7 +87,7 @@ def get_book_by_isbn13(isbn13):
 
 
 def get_books_by_list(list_id):
-    """Return all book in list."""
+    """Return all books in list."""
 
     result = []
     book_list_list = BookList.query.filter(
@@ -93,6 +96,18 @@ def get_books_by_list(list_id):
         result.append(get_book_by_id(bc.book_id))
 
     return result
+
+
+# def get_books_by_author(author_name):
+#     """Return all books that have author_name in their authors."""
+
+#     authors =
+#     book_list_list = BookList.query.filter(
+#         BookList.list_id == list_id).all()
+#     for bc in book_list_list:
+#         result.append(get_book_by_id(bc.book_id))
+
+#     return result
 
 
 def get_all_books():
@@ -108,6 +123,8 @@ def get_book_by_id(book_id):
     return Book.query.get(book_id)
 
 
+#  Getting lists
+
 def get_all_lists():
     """Return all lists."""
 
@@ -120,6 +137,8 @@ def get_list_by_id(list_id):
     return List.query.get(list_id)
 
 
+#  Getting authors
+
 def get_author_by_id(author_id):
     """Return a author by primary key."""
 
@@ -130,6 +149,12 @@ def get_author_by_ol_id(ol_id):
     """Return an author by Open Library Id"""
 
     return Author.query.filter(Author.author_ol_id == ol_id).first()
+
+
+def get_authors_by_name(author_name):
+    """Return list of authors by author_name"""
+
+    return Author.query.filter(Author.name.ilike(f"%{author_name}%")).all()
 
 
 def get_category_by_name(category_name):
