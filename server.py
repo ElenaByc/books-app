@@ -37,7 +37,10 @@ def show_searching_result():
         # print(sample(books, 3))
     elif author != "":
         books = crud.get_books_by_author_name(author)
-        header = f"results for author = \'{author}\'"
+        header = f"results for \'{author}\' in book's authors"
+    elif title != "":
+        books = crud.get_books_by_title(title)
+        header = f"results for \'{title}\' in book's title"
     else:
         books = []
         header = ""
@@ -60,7 +63,7 @@ def all_books():
 
     books = crud.get_all_books()
 
-    return render_template("all_books.html", books=books, list_name='')
+    return render_template("all_books.html", books=books, header='')
 
 
 @app.route("/books/<book_id>")

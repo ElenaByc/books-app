@@ -98,6 +98,12 @@ def get_books_by_list(list_id):
     return result
 
 
+def get_books_by_title(search_phrase):
+    """Return all books that have search_phrase in their titles"""
+
+    return Book.query.filter(Book.title.ilike(f"%{search_phrase}%")).all()
+
+
 def get_books_by_author_name(author_name):
     """Return all books that have author_name in their authors."""
 
