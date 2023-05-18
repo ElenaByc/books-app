@@ -8,8 +8,8 @@ from datetime import datetime
 from time import sleep
 
 from utilites import (
-    format_uppercase_string, 
-    split_categories, 
+    format_uppercase_string,
+    split_categories,
     get_categories_for_list)
 
 import crud
@@ -319,9 +319,10 @@ for db_list in lists_in_db:
 # Create 10 test users
 for n in range(10):
     email = f"user{n}@test.com"
+    name = f"Test User {n}"
     password = "test"
 
-    user = crud.create_user(email, password)
+    user = crud.create_user(name, email, password)
     model.db.session.add(user)
 model.db.session.commit()
 

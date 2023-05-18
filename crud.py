@@ -5,10 +5,10 @@ from model import (User, Book, Shelf, Author, Category, List, Cover,
                    db, connect_to_db)
 
 
-def create_user(email, password):
+def create_user(name, email, password):
     """Create and return a new user."""
 
-    return User(email=email, password=password)
+    return User(user_name=name, email=email, password=password)
 
 
 def create_book(title, isbn10, isbn13, description="", contributor_note=""):
@@ -192,6 +192,15 @@ def get_book_category(book_id, category_id):
     return BookCategory.query.filter(
         BookCategory.book_id == book_id,
         BookCategory.category_id == category_id).first()
+
+
+# Getting users
+
+
+def get_user_by_email(email):
+    """Return a user by email."""
+
+    return User.query.filter(User.email == email).first()
 
 
 if __name__ == '__main__':
