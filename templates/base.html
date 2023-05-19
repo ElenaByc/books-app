@@ -22,14 +22,32 @@
                 </div>
             </div>
             <nav>
-
+                {% if session.get('user_email') %}
+                <a href="/bookshelf" class="header__bookshelf">
+                    <!-- <img class="header__bookshelf-icon" src="/static/img/books-on-bookshelf.svg"> -->
+                    <img class="header__bookshelf-icon" src="/static/img/bookshelf1.png">
+                    <h3>My Bookshelf</h3>
+                </a>
+                {% endif %}
             </nav>
-            <a href="#" class="header__login">
+            {% if session.get('user_email') %}
+            <a href="/logout" class="header__login">
+                <img class="header__login-icon" src="/static/img/exit_icon.svg">
+                <h3>Log Out</h3>
+            </a>
+            {% else %}
+            <a href="/login" class="header__login">
                 <img class="header__login-icon" src="/static/img/enter_icon.svg">
                 <h3>Log In</h3>
             </a>
+            {% endif %}
         </header>
         <main class="main">
+            {% for msg in get_flashed_messages() %}
+            <p class="flash-msg">
+                {{ msg }}
+            </p>
+            {% endfor %}
             {% block content %}{% endblock %}
         </main>
     </div>

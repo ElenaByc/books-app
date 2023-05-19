@@ -8,7 +8,7 @@ from random import sample
 
 app = Flask(__name__)
 app.app_context().push()
-app.secret_key = "dev"
+app.secret_key = "book_app_secret_key"
 app.jinja_env.undefined = StrictUndefined
 
 
@@ -78,6 +78,70 @@ def show_book(book_id):
     book = crud.get_book_by_id(book_id)
 
     return render_template("book_details.html", book=book)
+
+
+@app.route("/login")
+def login_form():
+    """Show user login form."""
+
+    return render_template("login_form.html")
+
+
+@app.route("/login", methods=["POST"])
+def process_login():
+    """Process user login."""
+
+    email = request.form.get("email")
+    password = request.form.get("password")
+
+    user = crud.get_user_by_email(email)
+    if not user or user.password != password:
+        flash("The email or password you entered was incorrect.")
+        return redirect("/login")
+    else:
+        # Log in user by storing the user's email in session
+        session["user_email"] = user.email
+        flash(f"Welcome, {user.user_name}!")
+
+    return redirect("/")
+
+
+@app.route("/register")
+def register_form():
+    """Show user register form."""
+
+    return render_template("register_form.html")
+
+
+@app.route("/register", methods=["POST"])
+def register_user():
+    """Register/Create a new user."""
+
+    email = request.form.get("email")
+    name = request.form.get("name")
+    password = request.form.get("password")
+
+    user = crud.get_user_by_email(email)
+    if user:
+        flash("Cannot create an account with that email. Try again.")
+    else:
+        user = crud.create_user(name, email, password)
+        db.session.add(user)
+        db.session.commit()
+        flash("Account created! Please log in.")
+
+    return redirect("/login")
+
+
+@app.route("/logout")
+def process_logout():
+    """Process user logout."""
+
+    session.pop("user_email", None)
+
+    flash(f"Goodbye!")
+
+    return redirect("/")
 
 
 if __name__ == "__main__":

@@ -320,7 +320,7 @@ for db_list in lists_in_db:
 for n in range(10):
     email = f"user{n}@test.com"
     name = f"Test User {n}"
-    password = "test"
+    password = f"testB00kUser{n}"
 
     user = crud.create_user(name, email, password)
     model.db.session.add(user)
