@@ -324,7 +324,19 @@ for n in range(10):
 
     user = crud.create_user(name, email, password)
     model.db.session.add(user)
+    model.db.session.commit()
+
+    # For every user create three bookshelves
+    shelf = crud.create_shelf(user.user_id, "To Read")
+    model.db.session.add(shelf)
+    shelf = crud.create_shelf(user.user_id, "Already Read")
+    model.db.session.add(shelf)
+    shelf = crud.create_shelf(user.user_id, "Favorites")
+    model.db.session.add(shelf)
 model.db.session.commit()
+
+
+# Create books to shelves random associations?
 
 
 print("NUM_OF_REQUESTS = ", NUM_OF_REQUESTS)

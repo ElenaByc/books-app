@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% block title %}Bookshelf{% endblock %}
+
+
+{% block content %}
+<h2>My bookshelf</h2>
+
+<h3>To Read</h3>
+<div class="books__cards-container">
+    {% if to_read_books|length == 0 %}
+    <h4>Your <span class="shelf-type">To Read</span> bookshelf is empty</h4>
+    {% endif %}
+    {% for book in to_read_books %}
+    <div class="card">
+        <div class="card_img">
+            <img src="{{ book.covers[0].cover_url }}" alt="book cover">
+        </div>
+
+        <div class="card_content">
+            <h3><a href="/books/{{ book.book_id }}">{{ book.title }}</a></h3>
+            <h4>Id = {{ book.book_id }}</h4>
+            <h4>{% if book.authors|length > 1 -%}Authors:
+                {% else %}Author:{% endif %}
+                {% if book.authors|length == 2 -%}
+                {{ book.authors[0].name }} and {{ book.authors[1].name }}
+                {% else %}
+                {% for i in range(book.authors|length) %}
+                {{ book.authors[i].name -}}
+                {% if i != book.authors|length - 1 %},
+                {% if i == book.authors|length - 2 %}and {% endif %}
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+            </h4>
+            {% if book.contributor_note != "" %}
+            <h4>{{ book.contributor_note }}</h4>
+            {% endif %}
+            <h4>NEW YORK TIMES BESTSELLER in {{ book.lists|length }}
+                {% if book.lists|length > 1 -%} lists:
+                {% else -%}
+                list
+                {% endif %}</h4>
+            {% for l in book.lists %}
+            <div>{{ l.list_name }}</div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+    {% endfor %}
+</div>
+
+<h3>Already Read</h3>
+<div class="books__cards-container">
+    {% if already_read_books|length == 0 %}
+    <h4>Your <span class="shelf-type">Already Read</span> bookshelf is empty</h4>
+    {% endif %}
+    {% for book in already_read_books %}
+    <div class="card">
+        <div class="card_img">
+            <img src="{{ book.covers[0].cover_url }}" alt="book cover">
+        </div>
+
+        <div class="card_content">
+            <h3><a href="/books/{{ book.book_id }}">{{ book.title }}</a></h3>
+            <h4>Id = {{ book.book_id }}</h4>
+            <h4>{% if book.authors|length > 1 -%}Authors:
+                {% else %}Author:{% endif %}
+                {% if book.authors|length == 2 -%}
+                {{ book.authors[0].name }} and {{ book.authors[1].name }}
+                {% else %}
+                {% for i in range(book.authors|length) %}
+                {{ book.authors[i].name -}}
+                {% if i != book.authors|length - 1 %},
+                {% if i == book.authors|length - 2 %}and {% endif %}
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+            </h4>
+            {% if book.contributor_note != "" %}
+            <h4>{{ book.contributor_note }}</h4>
+            {% endif %}
+            <h4>NEW YORK TIMES BESTSELLER in {{ book.lists|length }}
+                {% if book.lists|length > 1 -%} lists:
+                {% else -%}
+                list
+                {% endif %}</h4>
+            {% for l in book.lists %}
+            <div>{{ l.list_name }}</div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+    {% endfor %}
+</div>
+
+<h3>Favorites</h3>
+<div class="books__cards-container">
+    {% if favorite_books|length == 0 -%}
+    <h4>Your <span class="shelf-type">Favorites</span> bookshelf is empty</h4>
+    {% endif %}
+    {% for book in favorite_books %}
+    <div class="card">
+        <div class="card_img">
+            <img src="{{ book.covers[0].cover_url }}" alt="book cover">
+        </div>
+
+        <div class="card_content">
+            <h3><a href="/books/{{ book.book_id }}">{{ book.title }}</a></h3>
+            <h4>Id = {{ book.book_id }}</h4>
+            <h4>{% if book.authors|length > 1 -%}Authors:
+                {% else %}Author:{% endif %}
+                {% if book.authors|length == 2 -%}
+                {{ book.authors[0].name }} and {{ book.authors[1].name }}
+                {% else %}
+                {% for i in range(book.authors|length) %}
+                {{ book.authors[i].name -}}
+                {% if i != book.authors|length - 1 %},
+                {% if i == book.authors|length - 2 %}and {% endif %}
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+            </h4>
+            {% if book.contributor_note != "" %}
+            <h4>{{ book.contributor_note }}</h4>
+            {% endif %}
+            <h4>NEW YORK TIMES BESTSELLER in {{ book.lists|length }}
+                {% if book.lists|length > 1 -%} lists:
+                {% else -%}
+                list
+                {% endif %}</h4>
+            {% for l in book.lists %}
+            <div>{{ l.list_name }}</div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock %}

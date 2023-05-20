@@ -35,10 +35,10 @@ def create_author(name, ol_id=None, about=None, picture=None):
     return Author(name=name, author_ol_id=ol_id, about=about, picture_url=picture)
 
 
-def create_shelf(name, about, picture):
+def create_shelf(user_id, shelf_type):
     """Create and return a new shelf."""
 
-    return Shelf(name=name, about=about, picture_url=picture)
+    return Shelf(user_id=user_id, shelf_type=shelf_type)
 
 
 def create_cover(book_id, cover_url, source):
@@ -127,7 +127,6 @@ def get_books_by_category(search_phrase):
 def get_all_books():
     """Return all books."""
 
-    # return Book.query.all()
     return db.session.query(Book).order_by("book_id").all()
 
 
@@ -135,6 +134,32 @@ def get_book_by_id(book_id):
     """Return a book by primary key."""
 
     return Book.query.get(book_id)
+
+
+def get_books_by_shelf_id(shelf_id):
+    """Return books by shelf_id."""
+
+    return get_shelf_by_id(shelf_id).books
+
+
+def get_users_books(user, shelf_type):
+    """Return books by user and shelf_type."""
+
+    shelves = user.shelves
+    for shelf in shelves:
+        if shelf.shelf_type == shelf_type:
+            shelf_id = shelf.shelf_id
+            return get_books_by_shelf_id(shelf_id)
+
+    return None
+
+
+# Getting shelves
+
+def get_shelf_by_id(shelf_id):
+    """Return a shelf by primary key."""
+
+    return Shelf.query.get(shelf_id)
 
 
 #  Getting lists

@@ -128,6 +128,15 @@ def register_user():
         user = crud.create_user(name, email, password)
         db.session.add(user)
         db.session.commit()
+
+        # For every user create three bookshelves
+        shelf = crud.create_shelf(user.user_id, "To Read")
+        db.session.add(shelf)
+        shelf = crud.create_shelf(user.user_id, "Already Read")
+        db.session.add(shelf)
+        shelf = crud.create_shelf(user.user_id, "Favorites")
+        db.session.add(shelf)
+        db.session.commit()
         flash("Account created! Please log in.")
 
     return redirect("/login")
@@ -142,6 +151,24 @@ def process_logout():
     flash(f"Goodbye!")
 
     return redirect("/")
+
+
+@app.route("/bookshelf")
+def show_user_bookshelf():
+    """Show user bookshelf"""
+
+    email = session.get('user_email')
+    user = crud.get_user_by_email(email)
+    to_read_books = crud.get_users_books(user=user, shelf_type="To Read")
+    already_read_books = crud.get_users_books(
+        user=user, shelf_type="Already Read")
+    favorite_books = crud.get_users_books(user=user, shelf_type="Favorites")
+
+    return render_template(
+        "bookshelf.html",
+        to_read_books=to_read_books,
+        already_read_books=already_read_books,
+        favorite_books=favorite_books)
 
 
 if __name__ == "__main__":
