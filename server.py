@@ -80,6 +80,31 @@ def show_book(book_id):
     return render_template("book_details.html", book=book)
 
 
+@app.route("/books/<book_id>/bookshelf", methods=["POST"])
+def put_book_on_shelf(book_id):
+    """Create book_to_shelf assotiation."""
+
+    logged_in_email = session.get("user_email")
+    shelf_type = request.form.get("shelf")
+
+    if logged_in_email is None:
+        flash("You must log in to add a book to your bookshelf!")
+    else:
+        user = crud.get_user_by_email(logged_in_email)
+        if shelf_type == "read":
+            shelf_type = "To Read"
+        elif shelf_type == "already":
+            shelf_type = "Already Read"
+        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
+        book_shelf = crud.create_book_shelf(book_id, shelf.shelf_id)
+        db.session.add(book_shelf)
+        db.session.commit()
+
+        flash(f"You put this book on yor {shelf_type} bookshelf!")
+
+    return redirect(f"/books/{book_id}")
+
+
 @app.route("/login")
 def login_form():
     """Show user login form."""

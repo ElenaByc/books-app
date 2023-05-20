@@ -65,10 +65,10 @@ def create_book_author(book_id, author_id):
     return BookAuthor(book_id=book_id, author_id=author_id)
 
 
-def create_book_shelf(book, shelf):
+def create_book_shelf(book_id, shelf_id):
     """Create and return a new book-shelf association."""
 
-    return BookShelf(book=book, shelf=shelf)
+    return BookShelf(book_id=book_id, shelf_id=shelf_id)
 
 
 # Getting books
@@ -162,7 +162,22 @@ def get_shelf_by_id(shelf_id):
     return Shelf.query.get(shelf_id)
 
 
+def get_shelf_by_user(user_id, type):
+    """Return a shelf by user_id and type."""
+
+    return Shelf.query.filter(Shelf.user_id == user_id, Shelf.shelf_type == type).first()
+
+
+def get_book_shelf(book_id, shelf_id):
+    """Return a book_shelf by book_id and shelf_id."""
+
+    return BookShelf.query.filter(
+        BookShelf.book_id == book_id,
+        BookShelf.shelf_id == shelf_id).first()
+
+
 #  Getting lists
+
 
 def get_all_lists():
     """Return all lists."""

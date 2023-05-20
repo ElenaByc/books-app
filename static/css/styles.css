@@ -352,3 +352,27 @@ select {
     font-family: 'Literata Italic';
     color: var(--color-brown);
 }
+
+.to-shelf-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+    padding: 10px;
+}
+
+.to-shelf-form select {
+    padding: 5px;
+    width: 300px;
+}
+
+.to-shelf-form input[type=submit] {
+    padding: 7px;
+}
+
+.to-shelf-form div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 10px;
+}

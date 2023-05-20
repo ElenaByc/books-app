@@ -4,6 +4,20 @@
 {% block content %}
 <h2>Book Title: {{ book.title }}</h2>
 
+{% if session.get('user_email') %}
+<form class="to-shelf-form" action="/books/{{ book.book_id }}/bookshelf" method="POST">
+    <div>
+        <label for="shelf">Add this book to your shelf</label>
+        <select name="shelf" id="shelf">
+            <option disabled selected value> -- select shelf -- </option>
+            <option value="read">To Read</option>
+            <option value="already">Already Read</option>
+        </select>
+    </div>
+    <input type="submit" value="Add" disabled>
+</form>
+{% endif %}
+
 <div class="book_details">
     {% if book.covers|length > 0 %}
     <img class="book_details__cover" src="{{ book.covers[0].cover_url }}" alt="{{ book.title }} cover">
@@ -48,4 +62,8 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block js %}
+<script src="/static/js/script.js"></script>
 {% endblock %}
