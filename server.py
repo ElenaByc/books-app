@@ -76,8 +76,27 @@ def show_book(book_id):
     """Show details on a particular book."""
 
     book = crud.get_book_by_id(book_id)
+    display_message = False
+    shelf_type = ""
 
-    return render_template("book_details.html", book=book)
+    logged_in_email = session.get("user_email")
+    if logged_in_email:
+        user = crud.get_user_by_email(logged_in_email)
+        shelf_type = "To Read"
+        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
+        if crud.get_book_shelf(book_id, shelf.shelf_id):
+            display_message = True
+        else:
+            shelf_type = "Already Read"
+            shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
+            if crud.get_book_shelf(book_id, shelf.shelf_id):
+                display_message = True
+
+    return render_template(
+        "book_details.html",
+        book=book,
+        display_message=display_message,
+        shelf_type=shelf_type)
 
 
 @app.route("/books/<book_id>/bookshelf", methods=["POST"])
@@ -100,7 +119,7 @@ def put_book_on_shelf(book_id):
         db.session.add(book_shelf)
         db.session.commit()
 
-        flash(f"You put this book on yor {shelf_type} bookshelf!")
+        flash(f"You put this book on your {shelf_type} bookshelf!")
 
     return redirect(f"/books/{book_id}")
 

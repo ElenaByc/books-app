@@ -5,6 +5,9 @@
 <h2>Book Title: {{ book.title }}</h2>
 
 {% if session.get('user_email') %}
+{% if display_message %}
+<h4>This book is on your <span class="shelf-type">{{ shelf_type }}</span> bookshelf</h4>
+{% else %}
 <form class="to-shelf-form" action="/books/{{ book.book_id }}/bookshelf" method="POST">
     <div>
         <label for="shelf">Add this book to your shelf</label>
@@ -16,6 +19,7 @@
     </div>
     <input type="submit" value="Add" disabled>
 </form>
+{% endif %}
 {% endif %}
 
 <div class="book_details">
