@@ -37,6 +37,7 @@
 :root {
     --color-black: #000000;
     --color-gray: #676767;
+    --color-light-gray: #eeeeee;
     --color-white: #ffffff;
     --color-light: #F6F6F6;
     --color-dark: #302718;
@@ -109,6 +110,36 @@ p {
     max-width: 1440px;
     min-height: 100vh;
     margin: 0 auto;
+}
+
+/* ---------- Buttons ---------- */
+
+.remove-icon {
+    background-image: url(/static/img/remove-icon-dark.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+}
+
+.remove-icon:hover {
+    background-image: url(/static/img/remove-icon-brown.svg);
+    transform: scale(1.1);
+}
+
+.checkmark-icon {
+    background-image: url(/static/img/check-mark-icon-dark.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+}
+
+.checkmark-icon:hover {
+    background-image: url(/static/img/check-mark-icon-brown.svg);
+    transform: scale(1.1);
 }
 
 /* ---------- Header ---------- */
@@ -272,12 +303,14 @@ select {
     padding: 45px;
 }
 
+/* ---------- Book Card ---------- */
+
 .card {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 300px;
     height: 500px;
     background-color: var(--color-white);
@@ -307,6 +340,14 @@ select {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+}
+
+.card_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 
