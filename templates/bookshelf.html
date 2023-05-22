@@ -36,8 +36,12 @@
             {% endif %}
         </div>
         <div class="card_buttons">
-            <div class="remove-icon" title="Remove this book"></div>
-            <div class="checkmark-icon" title="Mark this book as Already Read"></div>
+            <a href="/remove_book/{{ book.book_id }}">
+                <div class="remove-icon" title="Remove this book"></div>
+            </a>
+            <a href="/update_book/{{ book.book_id }}">
+                <div class="checkmark-icon" title="Mark this book as Already Read"></div>
+            </a>
         </div>
     </div>
 
@@ -57,7 +61,6 @@
 
         <div class="card_content">
             <h3><a href="/books/{{ book.book_id }}">{{ book.title }}</a></h3>
-            <h4>Id = {{ book.book_id }}</h4>
             <h4>{% if book.authors|length > 1 -%}Authors:
                 {% else %}Author:{% endif %}
                 {% if book.authors|length == 2 -%}
@@ -74,16 +77,15 @@
             {% if book.contributor_note != "" %}
             <h4>{{ book.contributor_note }}</h4>
             {% endif %}
-            <h4>NEW YORK TIMES BESTSELLER in {{ book.lists|length }}
-                {% if book.lists|length > 1 -%} lists:
-                {% else -%}
-                list
-                {% endif %}</h4>
-            {% for l in book.lists %}
-            <div>{{ l.list_name }}</div>
-            {% endfor %}
         </div>
-
+        <div class="card_buttons">
+            <a href="/remove_book/{{ book.book_id }}">
+                <div class="remove-icon" title="Remove this book"></div>
+            </a>
+            <a href="/favorite/{{ book.book_id }}">
+                <div class="heart-icon" title="Mark this book as your favorite"></div>
+            </a>
+        </div>
     </div>
 
     {% endfor %}

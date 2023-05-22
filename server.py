@@ -119,9 +119,42 @@ def put_book_on_shelf(book_id):
         db.session.add(book_shelf)
         db.session.commit()
 
-        flash(f"You put this book on your {shelf_type} bookshelf!")
+        flash(
+            f"You put this book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf!")
 
     return redirect(f"/books/{book_id}")
+
+
+@app.route("/remove_book/<book_id>")
+def remove_book(book_id):
+    """Remove a book from user's bookshelf."""
+
+    shelf_type = ""
+
+    logged_in_email = session.get("user_email")
+    user = crud.get_user_by_email(logged_in_email)
+    shelf_type = "To Read"
+    shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
+    db_book_shelf = crud.get_book_shelf(book_id, shelf.shelf_id)
+    if db_book_shelf:
+        # the book on user's To read bookshelf
+        # remove this record from db
+        db.session.delete(db_book_shelf)
+        db.session.commit()
+        flash("The book was removed from your <span class=\"shelf-type\">To Read</span> bookshelf")
+    else:
+        shelf_type = "Already Read"
+        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
+        db_book_shelf = crud.get_book_shelf(book_id, shelf.shelf_id)
+        if db_book_shelf:
+            # the book on user's To read bookshelf
+            # remove this record from db
+            db.session.delete(db_book_shelf)
+            db.session.commit()
+            flash(
+                "The book was removed from your <span class=\"shelf-type\">Already Read</span> bookshelf")
+
+    return redirect("/bookshelf")
 
 
 @app.route("/login")
