@@ -35,13 +35,13 @@ def show_searching_result():
         header = f"Best Sellers List: {crud.get_list_by_id(list_id).list_name}"
     elif author != "":
         books = crud.get_books_by_author_name(author)
-        header = f"results for \'{author}\' in book's authors"
+        header = f"Results for \'{author}\' in book's authors"
     elif title != "":
         books = crud.get_books_by_title(title)
-        header = f"results for \'{title}\' in book's title"
+        header = f"Results for \'{title}\' in book's title"
     elif category != "":
         books = crud.get_books_by_category(category)
-        header = f"results for \'{category}\' in book's categories"
+        header = f"Results for \'{category}\' in book's categories"
     else:
         books = []
         header = ""
@@ -107,7 +107,7 @@ def put_book_on_shelf(book_id):
     shelf_type = request.form.get("shelf")
 
     if logged_in_email is None:
-        flash("You must log in to add a book to your bookshelf!")
+        flash("ERROR|You must log in to add a book to your bookshelf!")
     else:
         user = crud.get_user_by_email(logged_in_email)
         if shelf_type == "read":
@@ -120,7 +120,7 @@ def put_book_on_shelf(book_id):
         db.session.commit()
 
         flash(
-            f"You put this book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf!")
+            f"OK|You put this book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf!")
 
     return redirect(f"/books/{book_id}")
 
@@ -141,7 +141,7 @@ def remove_book(book_id):
         # remove this record from db
         db.session.delete(db_book_shelf)
         db.session.commit()
-        flash("The book was removed from your <span class=\"shelf-type\">To Read</span> bookshelf")
+        flash("OK|The book was removed from your <span class=\"shelf-type\">To Read</span> bookshelf")
     else:
         shelf_type = "Already Read"
         shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
@@ -152,7 +152,7 @@ def remove_book(book_id):
             db.session.delete(db_book_shelf)
             db.session.commit()
             flash(
-                "The book was removed from your <span class=\"shelf-type\">Already Read</span> bookshelf")
+                "OK|The book was removed from your <span class=\"shelf-type\">Already Read</span> bookshelf")
 
     return redirect("/bookshelf")
 
@@ -173,12 +173,12 @@ def process_login():
 
     user = crud.get_user_by_email(email)
     if not user or user.password != password:
-        flash("The email or password you entered was incorrect.")
+        flash("ERROR|The email or password you entered was incorrect.")
         return redirect("/login")
     else:
         # Log in user by storing the user's email in session
         session["user_email"] = user.email
-        flash(f"Welcome, {user.user_name}!")
+        flash(f"|Welcome, {user.user_name}!")
 
     return redirect("/")
 
@@ -200,7 +200,7 @@ def register_user():
 
     user = crud.get_user_by_email(email)
     if user:
-        flash("Cannot create an account with that email. Try again.")
+        flash("ERROR|Cannot create an account with that email. <br> Please try again with another email address.")
     else:
         user = crud.create_user(name, email, password)
         db.session.add(user)
@@ -214,7 +214,7 @@ def register_user():
         shelf = crud.create_shelf(user.user_id, "Favorites")
         db.session.add(shelf)
         db.session.commit()
-        flash("Account created! Please log in.")
+        flash("OK|Account created! Please log in.")
 
     return redirect("/login")
 
@@ -225,7 +225,7 @@ def process_logout():
 
     session.pop("user_email", None)
 
-    flash(f"Goodbye!")
+    flash(f"OK| You're now logged out<br> We look forward to serving your again soon!")
 
     return redirect("/")
 

@@ -43,11 +43,21 @@
             {% endif %}
         </header>
         <main class="main">
-            {% for msg in get_flashed_messages() %}
+            {% for message in get_flashed_messages() %}
             <div class="flash-msg">
-                {{ msg|safe }}
+                {% set status, msg = message.split('|')%}
+                {% if status == "OK" %}
+                <div class="success-icon"></div>
+                {% elif status == "ERROR" %}
+                <div class="error-icon"></div>
+                {% endif %}
+                <div>
+                    {{ msg|safe }}
+                </div>
+                <div class="close-icon"></div>
             </div>
             {% endfor %}
+
             {% block content %}{% endblock %}
         </main>
     </div>

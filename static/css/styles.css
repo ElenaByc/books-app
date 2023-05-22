@@ -110,7 +110,14 @@ p {
     font-family: 'Literata';
     font-size: 18px;
     line-height: 24px;
-    padding: 15px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    padding: 15px 40px 15px 15px;
     border-radius: 7px;
     border: solid 1px var(--color-brown);
 }
@@ -122,7 +129,7 @@ p {
     margin: 0 auto;
 }
 
-/* ---------- Buttons ---------- */
+/* ---------- Icons ---------- */
 
 .remove-icon {
     background-image: url(/static/img/remove-icon-dark.svg);
@@ -164,6 +171,41 @@ p {
 
 .heart-icon:hover {
     background-image: url(/static/img/heart-icon-brown.svg);
+    transform: scale(1.1);
+}
+
+.success-icon {
+    background-image: url(/static/img/tick-mark-icon.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.error-icon {
+    background-image: url(/static/img/error-icon.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.close-icon {
+    background-image: url(/static/img/cross-dark.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.close-icon:hover {
+    background-image: url(/static/img/cross-brown.svg);
     transform: scale(1.1);
 }
 
@@ -415,7 +457,7 @@ select {
 /* ---------- Bookshelf ---------- */
 
 .shelf-type {
-    font-family: 'Literata Italic';
+    font-family: 'Literata Bold Italic';
     color: var(--color-brown);
 }
 
