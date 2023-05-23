@@ -125,7 +125,7 @@ def put_book_on_shelf(book_id):
     return redirect(f"/books/{book_id}")
 
 
-@app.route("/remove_book/<book_id>")
+@app.route("/remove/<book_id>")
 def remove_book(book_id):
     """Remove a book from user's bookshelf."""
 
@@ -153,6 +153,22 @@ def remove_book(book_id):
             db.session.commit()
             flash(
                 "OK|The book was removed from your <span class=\"shelf-type\">Already Read</span> bookshelf")
+
+    return redirect("/bookshelf")
+
+
+@app.route("/read/<book_id>")
+def move_book(book_id):
+    """Move a book from user's To Read bookshelf to Already read bookshelf."""
+
+    logged_in_email = session.get("user_email")
+    user = crud.get_user_by_email(logged_in_email)
+    shelf_from = crud.get_shelf_by_user(user.user_id, "To Read")
+    shelf_to = crud.get_shelf_by_user(user.user_id, "Already Read")
+    db_book_shelf = crud.get_book_shelf(book_id, shelf_from.shelf_id)
+    db_book_shelf.shelf_id = shelf_to.shelf_id
+    db.session.commit()
+    flash("OK|The book was moved to your <span class=\"shelf-type\">Already Read</span> bookshelf")
 
     return redirect("/bookshelf")
 

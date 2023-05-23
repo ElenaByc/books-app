@@ -36,10 +36,10 @@
             {% endif %}
         </div>
         <div class="card_buttons">
-            <a href="/remove_book/{{ book.book_id }}">
+            <a href="/remove/{{ book.book_id }}">
                 <div class="remove-icon" title="Remove this book"></div>
             </a>
-            <a href="/update_book/{{ book.book_id }}">
+            <a href="/read/{{ book.book_id }}">
                 <div class="checkmark-icon" title="Mark this book as Already Read"></div>
             </a>
         </div>
@@ -79,7 +79,7 @@
             {% endif %}
         </div>
         <div class="card_buttons">
-            <a href="/remove_book/{{ book.book_id }}">
+            <a href="/remove/{{ book.book_id }}">
                 <div class="remove-icon" title="Remove this book"></div>
             </a>
             <a href="/favorite/{{ book.book_id }}">
