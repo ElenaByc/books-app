@@ -173,6 +173,24 @@ def move_book(book_id):
     return redirect("/bookshelf")
 
 
+@app.route("/favorite/<book_id>")
+def create_favorite(book_id):
+    """Mark a book from user's Already Read bookshelf to Favorites bookshelf."""
+
+    logged_in_email = session.get("user_email")
+    
+    user = crud.get_user_by_email(logged_in_email)
+    shelf = crud.get_shelf_by_user(user.user_id, "Favorites")
+    book_shelf = crud.create_book_shelf(book_id, shelf.shelf_id)
+    db.session.add(book_shelf)
+    db.session.commit()
+
+    flash(
+        f"OK|You put this book on your <span class=\"shelf-type\">Favorites</span> bookshelf!")
+
+    return redirect("/bookshelf")
+
+
 @app.route("/login")
 def login_form():
     """Show user login form."""
