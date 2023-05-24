@@ -22,37 +22,48 @@ def homepage():
 
 
 @app.route("/search-result")
-def show_searching_result():
-    """Show event search form"""
+def search_books():
+    """Search for books in the database"""
 
-    author = request.args.get("author", "")
-    title = request.args.get("title", "")
-    category = request.args.get("category", "")
-    list_id = request.args.get("list", "")
+    options = request.args.get("options", "")
     checkmark = request.args.get("bookshelf")
-    print("***********************************************")
-    print("checkmark = ", checkmark)
-    print("***********************************************")
 
-    if list_id != "":
-        books = crud.get_books_by_list(list_id)
-        header = f"Best Sellers List: {crud.get_list_by_id(list_id).list_name}"
-    elif author != "":
+    if options == "author":
+        author = request.args.get("author")
         books = crud.get_books_by_author_name(author)
         header = f"Results for \'{author}\' in book's authors"
-    elif title != "":
+    elif options == "title":
+        title = request.args.get("title")
         books = crud.get_books_by_title(title)
         header = f"Results for \'{title}\' in book's title"
-    elif category != "":
+    elif options == "category":
+        category = request.args.get("category")
         books = crud.get_books_by_category(category)
         header = f"Results for \'{category}\' in book's categories"
+    elif options == "list":
+        list_id = request.args.get("list")
+        books = crud.get_books_by_list(list_id)
+        header = f"Best Sellers List: {crud.get_list_by_id(list_id).list_name}"
     else:
         books = []
         header = ""
 
-        # print("!!!!!!!!!!!!!!!!!!!!!!!")
-        # if len(books) > 3:
-        #   print(sample(books, 3))
+    if len(books) != 0 and checkmark == "on":
+        # remove books that on users bookshelf
+        logged_in_email = session.get("user_email")
+        if logged_in_email: 
+            user = crud.get_user_by_email(logged_in_email)
+            shelf_books = crud.get_books_by_user(user)
+            books_new = []
+            for book in books:
+                if not book in shelf_books:
+                    books_new.append(book)
+            books = books_new
+
+
+    # print("!!!!!!!!!!!!!!!!!!!!!!!")
+    # if len(books) > 3:
+    #   print(sample(books, 3))
 
     return render_template("all_books.html", books=books, header=header)
 
@@ -105,7 +116,7 @@ def show_book(book_id):
 
 @app.route("/books/<book_id>/bookshelf", methods=["POST"])
 def put_book_on_shelf(book_id):
-    """Create book_to_shelf assotiation."""
+    """Create book_to_shelf association."""
 
     logged_in_email = session.get("user_email")
     shelf_type = request.form.get("shelf")
@@ -182,7 +193,7 @@ def create_favorite(book_id):
     """Mark a book from user's Already Read bookshelf to Favorites bookshelf."""
 
     logged_in_email = session.get("user_email")
-    
+
     user = crud.get_user_by_email(logged_in_email)
     shelf = crud.get_shelf_by_user(user.user_id, "Favorites")
     book_shelf = crud.create_book_shelf(book_id, shelf.shelf_id)

@@ -8,6 +8,8 @@
 <h2>{{ header }}</h2>
 {% endif %}
 
+<h3>Total: {{ books|length }} books</h3>
+
 <div class="books__cards-container">
     {% for book in books %}
     <div class="card">

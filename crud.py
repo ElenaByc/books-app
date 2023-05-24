@@ -154,6 +154,17 @@ def get_users_books(user, shelf_type):
     return None
 
 
+def get_books_by_user(user):
+    """Return all books by user."""
+
+    shelves = user.shelves
+    books = []
+    for shelf in shelves:
+        books.extend(get_books_by_shelf_id(shelf.shelf_id))
+
+    return list(set(books))
+
+
 # Getting shelves
 
 def get_shelf_by_id(shelf_id):
