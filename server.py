@@ -274,6 +274,8 @@ def process_logout():
     """Process user logout."""
 
     session.pop("user_email", None)
+    session.pop("user_name", None)
+
 
     flash(f"OK| You're now logged out<br> We look forward to serving your again soon!")
 
