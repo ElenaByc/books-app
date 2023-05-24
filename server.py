@@ -29,6 +29,10 @@ def show_searching_result():
     title = request.args.get("title", "")
     category = request.args.get("category", "")
     list_id = request.args.get("list", "")
+    checkmark = request.args.get("bookshelf")
+    print("***********************************************")
+    print("checkmark = ", checkmark)
+    print("***********************************************")
 
     if list_id != "":
         books = crud.get_books_by_list(list_id)
@@ -212,7 +216,8 @@ def process_login():
     else:
         # Log in user by storing the user's email in session
         session["user_email"] = user.email
-        flash(f"|Welcome, {user.user_name}!")
+        session["user_name"] = user.user_name
+        flash(f"OK|You logged in as {user.user_name}!")
 
     return redirect("/")
 
