@@ -4,15 +4,15 @@
 {% block content %}
 
 {% if session.get('user_name') %}
-<h2>Welcome, {{ session.get('user_name') }}!</h2>
+<h2>Let's pick a wonderful book for you to read, {{ session.get('user_name') }}!</h2>
 {% else %}
-<h2>Welcome!</h2>
+<h2>Let's pick a wonderful book for you to read!</h2>
 {% endif %}
-<!-- 
+
 <ul>
     <li><a href="/lists">View all The New York Times Best Sellers lists.</a></li>
     <li><a href="/books">View all books</a></li>
-</ul> -->
+</ul>
 
 <div class="search-container">
     <h3 class="search-header">Pick Me a Book</h3>

@@ -175,6 +175,20 @@ p {
     transform: scale(1.1);
 }
 
+.read-icon {
+    background-image: url(/static/img/open-book-hand-pointing-icon-dark.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+}
+
+.read-icon:hover {
+    background-image: url(/static/img/open-book-hand-pointing-icon-brown.svg);
+    transform: scale(1.1);
+}
+
 .success-icon {
     background-image: url(/static/img/tick-mark-icon.svg);
     background-position: center;
@@ -392,26 +406,26 @@ select {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 45px;
-    row-gap: 45px;
+    column-gap: 30px;
+    row-gap: 30px;
     flex-shrink: 0;
 
     width: 90%;
-    padding: 45px;
+    /* padding: 45px; */
 }
 
 
 .card {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    /* row-gap: 20px; */
     align-items: center;
     justify-content: space-between;
-    width: 300px;
+    width: 250px;
     height: 500px;
     background-color: var(--color-white);
     border-radius: 9px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .card:hover {
@@ -442,7 +456,7 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
 
