@@ -4,6 +4,8 @@
 {% block content %}
 <h2>Book Title: {{ book.title }}</h2>
 
+<!-- <a href={ url_for('.search_books', options=myOptions, checkmark=False) }></a> -->
+
 {% if session.get('user_email') %}
 {% if display_message %}
 <h4>This book is on your <span class="shelf-type">{{ shelf_type }}</span> bookshelf</h4>

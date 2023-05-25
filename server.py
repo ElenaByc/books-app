@@ -2,6 +2,7 @@
 
 from flask import (Flask, render_template, request, flash, session, redirect)
 from model import connect_to_db, db
+from utilites import (create_user_preferences_dict,  get_recommendations)
 import crud
 from jinja2 import StrictUndefined
 from random import sample
@@ -44,6 +45,26 @@ def search_books():
         list_id = request.args.get("list")
         books = crud.get_books_by_list(list_id)
         header = f"Best Sellers List: {crud.get_list_by_id(list_id).list_name}"
+    elif options == "favorites":
+        # analize user's Favorites
+
+        # get user and then user's favorite books
+        logged_in_email = session.get("user_email")
+        user = crud.get_user_by_email(logged_in_email)
+        shelf_type = "Favorites"
+        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
+        if len(shelf.books) == 0:
+            books = []
+            header = "Sorry, we cannot give you recommendations based on your favorites since your Favorites bookshelf is empty"
+        else:
+            fav_dict = create_user_preferences_dict(shelf.books)
+
+            # get all book and for each book give raiting based on the dictionary
+            # return TEN(?) best results
+            # most likelly, the result will include all the books from the user's Favorites
+            all_books = crud.get_all_books()
+            books = get_recommendations(all_books, fav_dict, 10 + len(shelf.books))
+            header = f"Books recommendations based on your Favorites bookshelf"
     else:
         books = []
         header = ""
@@ -51,7 +72,7 @@ def search_books():
     if len(books) != 0 and checkmark == "on":
         # remove books that on users bookshelf
         logged_in_email = session.get("user_email")
-        if logged_in_email: 
+        if logged_in_email:
             user = crud.get_user_by_email(logged_in_email)
             shelf_books = crud.get_books_by_user(user)
             books_new = []
@@ -59,7 +80,6 @@ def search_books():
                 if not book in shelf_books:
                     books_new.append(book)
             books = books_new
-
 
     # print("!!!!!!!!!!!!!!!!!!!!!!!")
     # if len(books) > 3:
@@ -276,7 +296,6 @@ def process_logout():
     session.pop("user_email", None)
     session.pop("user_name", None)
 
-
     flash(f"OK| You're now logged out<br> We look forward to serving your again soon!")
 
     return redirect("/")
@@ -298,6 +317,11 @@ def show_user_bookshelf():
         to_read_books=to_read_books,
         already_read_books=already_read_books,
         favorite_books=favorite_books)
+
+
+# @app.route("/test-redirect")
+# def test_redirect():
+#     return redirect(url_for('.search_books', options={}, checkmark=False))
 
 
 if __name__ == "__main__":

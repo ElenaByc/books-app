@@ -19,7 +19,7 @@
 
         <div class="card_content">
             <h3><a href="/books/{{ book.book_id }}">{{ book.title }}</a></h3>
-            <!-- <h4>Id = {{ book.book_id }}</h4> -->
+            <h4>Id = {{ book.book_id }}</h4>
             <h4>{% if book.authors|length > 1 -%}Authors:
                 {% else %}Author:{% endif %}
                 {% if book.authors|length == 2 -%}
