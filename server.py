@@ -1,6 +1,7 @@
 """Server for movie ratings app."""
 
-from flask import (Flask, render_template, request, flash, session, redirect)
+from flask import (Flask, render_template, request,
+                   flash, session, redirect, jsonify)
 from model import connect_to_db, db
 from utilites import (create_user_preferences_dict,  get_recommendations)
 import crud
@@ -63,7 +64,8 @@ def search_books():
             # return TEN(?) best results
             # most likelly, the result will include all the books from the user's Favorites
             all_books = crud.get_all_books()
-            books = get_recommendations(all_books, fav_dict, 10 + len(shelf.books))
+            books = get_recommendations(
+                all_books, fav_dict, 10 + len(shelf.books))
             header = f"Books recommendations based on your Favorites bookshelf"
     else:
         books = []
@@ -104,6 +106,29 @@ def all_books():
     books = crud.get_all_books()
 
     return render_template("all_books.html", books=books, header='')
+
+
+@app.route("/api/books")
+def api_books():
+    """View all books."""
+
+    books = crud.get_all_books()
+    # books = books[:3]
+    books_data = []
+    for book in books:
+        authors = []
+        for author in book.authors:
+            authors.append(author.name)
+        books_data.append({
+            "book_id": book.book_id,
+            "title": book.title,
+            "cover": book.covers[0].cover_url,
+            "authors": authors,
+        })
+
+    return jsonify(books_data)
+    # return jsonify(books)
+    # return jsonify({"books": books})
 
 
 @app.route("/books/<book_id>")
@@ -299,6 +324,13 @@ def process_logout():
     flash(f"OK| You're now logged out<br> We look forward to serving your again soon!")
 
     return redirect("/")
+
+
+@app.route("/bookshelf-react")
+def show_user_bookshelf_react():
+    """Show user bookshelf"""
+
+    return render_template("bookshelf-react.html")
 
 
 @app.route("/bookshelf")

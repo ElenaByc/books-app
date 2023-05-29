@@ -9,6 +9,17 @@
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/books.ico" />
     <link rel="stylesheet" href="/static/css/normalize.css" />
     <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- React imports -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script> -->
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- The versions above are only meant for development, and are not suitable for production. 
+    Minified and optimized production versions of React are available at: -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js">
+    </script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js">
+    </script> -->
 </head>
 
 <body>
@@ -61,7 +72,7 @@
             {% block content %}{% endblock %}
         </main>
     </div>
-    <script src="/static/js/closeFlashMsg.js"></script>
+    <!-- <script src="/static/js/closeFlashMsg.js"></script> -->
     {% block js %}
     {% endblock %}
 </body>
