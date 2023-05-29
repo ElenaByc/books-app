@@ -7,7 +7,11 @@ const BookCard = (props) => {
     } else {
       author_data = `Authors: ${book.authors[0]}`
       for (let i = 1; i < book.authors.length; i++) {
-        author_data += `, ${book.authors[i]}`
+        if (i === book.authors.length - 1) {
+          author_data += `, and ${book.authors[i]}`;
+        } else {
+          author_data += `, ${book.authors[i]}`;
+        }
       }
     }
   } else {
@@ -22,14 +26,7 @@ const BookCard = (props) => {
         <h3><a href={`/books/${book.book_id}`}>{book.title}</a></h3>
         <h4>{author_data}</h4>
       </div>
-      <div className="card_buttons">
-        <a href={`/remove/${book.book_id}`}>
-          <div className="remove-icon" title="Remove this book"></div>
-        </a>
-        <a href={`/read/${book.book_id}`}>
-          <div className="checkmark-icon" title="Mark this book as Already Read"></div>
-        </a>
-      </div>
+      {props.shelf !== "" && <CardButtons shelf={props.shelf} book={book} />}
     </div>
   )
 }

@@ -5,7 +5,7 @@ const BooksContainer = (props) => {
     fetch("/api/books")
       .then((response) => response.json())
       .then((books) => {
-        console.log(books)
+        // console.log(books);
         setBookData(books);
       })
   }, []);
@@ -13,7 +13,7 @@ const BooksContainer = (props) => {
   return (
     <div className="books__cards-container">
       {bookData.length > 0
-        ? (bookData.map((book) => <BookCard book={book} key={book.book_id} />))
+        ? (bookData.map((book) => <BookCard book={book} key={book.book_id} shelf={props.shelfType} />))
         // : <h4>Your <span className="shelf-type">{props.shelfType}</span> bookshelf is empty</h4>
         : <h4>Loading...</h4>
         // ??? want to show Loading while loading and then 
