@@ -1,5 +1,4 @@
-const BookCard = (props) => {
-  const book = props.book;
+const BookCard = ({ book, shelf, addToRead }) => {
   let author_data;
   if (book.authors.length > 1) {
     if (book.authors.length === 2) {
@@ -26,7 +25,13 @@ const BookCard = (props) => {
         <h3><a href={`/books/${book.book_id}`}>{book.title}</a></h3>
         <h4>{author_data}</h4>
       </div>
-      {props.shelf !== "" && <CardButtons shelf={props.shelf} book={book} />}
+      {shelf !== "" &&
+        <CardButtons
+          shelf={shelf}
+          book={book}
+          addToRead={addToRead}
+        />
+      }
     </div>
   )
 }

@@ -108,12 +108,28 @@ def all_books():
     return render_template("all_books.html", books=books, header='')
 
 
-@app.route("/api/books")
+@app.route("/api/bookshelf")
 def api_books():
-    """View all books."""
+    """Returns parsed json containing all books on the user's shelf """
 
-    books = crud.get_all_books()
-    # books = books[:3]
+    # get user
+    email = session.get("user_email")
+    user = crud.get_user_by_email(email)
+
+    # get bookshelf type
+    shelf_type = request.args.get("shelf")
+    if shelf_type == "read":
+        shelf_type = "To Read"
+    elif shelf_type == "already":
+        shelf_type = "Already Read"
+    else:
+        shelf_type = "Favorites"
+    books = crud.get_users_books(user=user, shelf_type=shelf_type)
+    # books = crud.get_all_books()
+
+    if books == None:
+        return jsonify({"status": "NO DATA", "books": []})
+
     books_data = []
     for book in books:
         authors = []
@@ -126,9 +142,40 @@ def api_books():
             "authors": authors,
         })
 
-    return jsonify(books_data)
-    # return jsonify(books)
-    # return jsonify({"books": books})
+    return jsonify({"status": "OK", "books": books_data})
+
+
+@app.route("/to-read", methods=["POST"])
+def add_to_read():
+    """Put a book on a user To read Bookshelf, create new book_to_shelf association."""
+
+    logged_in_email = session.get("user_email")
+    print(logged_in_email)
+    book_id = request.get_json().get("book_id")
+    print("book id = ", book_id)
+
+    if logged_in_email is None:
+        flash("ERROR|You must log in to add a book to your bookshelf!")
+        success = False
+    else:
+        user = crud.get_user_by_email(logged_in_email)
+        shelf_type = "To Read"
+        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
+
+        # check of the book is already on user's To Read Bookshelf
+        book_shelf = crud.get_book_shelf(book_id, shelf.shelf_id)
+        if book_shelf:
+            flash("ERROR|You already have this book on your To read bookshelf")
+            success = False
+        else:
+            # create book to shelf association
+            book_shelf = crud.create_book_shelf(book_id, shelf.shelf_id)
+            db.session.add(book_shelf)
+            db.session.commit()
+            flash(
+                f"OK|You put this book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf!")
+            success = True
+    return jsonify({"success": success})
 
 
 @app.route("/books/<book_id>")
@@ -337,7 +384,7 @@ def show_user_bookshelf_react():
 def show_user_bookshelf():
     """Show user bookshelf"""
 
-    email = session.get('user_email')
+    email = session.get("user_email")
     user = crud.get_user_by_email(email)
     to_read_books = crud.get_users_books(user=user, shelf_type="To Read")
     already_read_books = crud.get_users_books(
