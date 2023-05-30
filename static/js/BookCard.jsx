@@ -16,10 +16,18 @@ const BookCard = ({ book, shelf, addToRead }) => {
   } else {
     author_data = `Author: ${book.authors[0]}`;
   }
+
+  // let cover_data;
+  // if (book.covers.length > 0) { 
+  //   cover_data = 
+
   return (
     <div key={book.book_id} className="card">
       <div className="card_img">
-        <img src={book.cover} alt="book cover" />
+        {(book.covers.length > 0)
+          ? <img src={book.covers[0]} alt="book cover" />
+          : <img src="/static/img/no-cover.jpg" alt="book cover is not available" />
+        }
       </div>
       <div className="card_content">
         <h3><a href={`/books/${book.book_id}`}>{book.title}</a></h3>

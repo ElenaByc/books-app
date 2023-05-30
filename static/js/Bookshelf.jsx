@@ -45,13 +45,17 @@ const Bookshelf = () => {
   return (
     <>
       <h2>My bookshelf</h2>
-      <BooksContainer shelf="To Read" books={toReadBooks} status={status1} />
+      <BooksContainer 
+        shelf="To Read" 
+        books={toReadBooks} s
+        tatus={status1} />
       <BooksContainer shelf="Already Read" books={alreadyReadBooks} status={status1} />
       <BooksContainer
         shelf="Favorites"
         books={favoriteBooks}
+        status={status1} 
         handleAddToRead={addToRead}
-        status={status1} />
+        />
     </>
   );
 }

@@ -3,7 +3,9 @@
 from flask import (Flask, render_template, request,
                    flash, session, redirect, jsonify)
 from model import connect_to_db, db
-from utilites import (create_user_preferences_dict,  get_recommendations)
+from utilites import (create_user_preferences_dict,
+                      get_recommendations,
+                      sqlalchemy_book_obj_to_dict)
 import crud
 from jinja2 import StrictUndefined
 from random import sample
@@ -124,23 +126,19 @@ def api_books():
         shelf_type = "Already Read"
     else:
         shelf_type = "Favorites"
+
+    # get book on the user shelf
     books = crud.get_users_books(user=user, shelf_type=shelf_type)
     # books = crud.get_all_books()
 
     if books == None:
         return jsonify({"status": "NO DATA", "books": []})
 
+    # convert SQLAlchemy book obects to dictionaries
     books_data = []
     for book in books:
-        authors = []
-        for author in book.authors:
-            authors.append(author.name)
-        books_data.append({
-            "book_id": book.book_id,
-            "title": book.title,
-            "cover": book.covers[0].cover_url,
-            "authors": authors,
-        })
+        book_dict = sqlalchemy_book_obj_to_dict(book)
+        books_data.append(book_dict)
 
     return jsonify({"status": "OK", "books": books_data})
 

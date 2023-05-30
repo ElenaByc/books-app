@@ -111,5 +111,35 @@ def get_recommendations(all_books, fav_dict, limit):
     while idx >= 0 and len(books) < limit:
         books.extend(sd.peekitem(index=idx)[1])
         idx -= 1
-    
+
     return books
+
+
+def sqlalchemy_book_obj_to_dict(book_obj):
+    """Convert a SQLAlchemy Book object to a dictionary."""
+
+    book_dict = {}
+    for column in book_obj.__table__.columns:
+        book_dict[column.name] = getattr(book_obj, column.name)
+
+    authors = []
+    for author in book_obj.authors:
+        authors.append(author.name)
+    book_dict["authors"] = authors
+
+    covers = []
+    for cover in book_obj.covers:
+        covers.append(cover.cover_url)
+    book_dict["covers"] = covers
+
+    categories = []
+    for category in book_obj.categories:
+        categories.append(category.category_name)
+    book_dict["categories"] = categories
+
+    lists = []
+    for l in book_obj.lists:
+        lists.append(l.list_name)
+    book_dict["lists"] = lists
+
+    return book_dict
