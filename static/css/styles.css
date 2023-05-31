@@ -401,6 +401,10 @@ select {
 
 /* ---------- Book Card ---------- */
 
+#bookshelf {
+    width: 100%;
+}
+
 .shelf {
     display: flex;
     flex-direction: column;

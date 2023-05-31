@@ -131,7 +131,7 @@ def api_books():
     books = crud.get_users_books(user=user, shelf_type=shelf_type)
     # books = crud.get_all_books()
 
-    if books == None:
+    if books == None or len(books) == 0:
         return jsonify({"status": "NO DATA", "books": []})
 
     # convert SQLAlchemy book obects to dictionaries
@@ -148,9 +148,7 @@ def add_to_read():
     """Put a book on a user To read Bookshelf, create new book_to_shelf association."""
 
     logged_in_email = session.get("user_email")
-    print(logged_in_email)
     book_id = request.get_json().get("book_id")
-    print("book id = ", book_id)
 
     if logged_in_email is None:
         flash("ERROR|You must log in to add a book to your bookshelf!")
@@ -174,6 +172,38 @@ def add_to_read():
                 f"OK|You put this book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf!")
             success = True
     return jsonify({"success": success})
+
+
+@app.route("/remove", methods=["POST"])
+def remove_book_from_shelf():
+    """Remove a book from a shelf"""
+
+    logged_in_email = session.get("user_email")
+    book_id = request.get_json().get("book_id")
+    shelf_type = request.get_json().get("shelf")
+
+    if logged_in_email is None:
+        success = False
+        msg = "You must log in to remove a book from your bookshelf!"
+    else:
+        # get user
+        user = crud.get_user_by_email(logged_in_email)
+        # get user's shelf of shelf_type
+        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
+        # check if this book-to-shelf association exists in the db
+        db_book_shelf = crud.get_book_shelf(book_id, shelf.shelf_id)
+        if db_book_shelf:
+            # the book on user's bookshelf
+            # remove this record from db
+            db.session.delete(db_book_shelf)
+            db.session.commit()
+            success = True
+            msg = f"The book was successfully removed from your <span class=\"shelf-type\">{shelf_type}</span> bookshelf"
+        else:
+            success = True
+            msg = "There is no such book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf"
+
+    return jsonify({"success": success, "message": msg})
 
 
 @app.route("/books/<book_id>")

@@ -16,6 +16,7 @@ const BooksContainer = (props) => {
 
   return (
     <div className="shelf">
+       {console.log("Rendering BooksContainer", props.shelf)}
       <h3 className="shelf-header">{props.shelf}</h3>
       <div className="books__cards-container">
         {bookCards.length > 0
