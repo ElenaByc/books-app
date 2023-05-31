@@ -1,4 +1,4 @@
-const BookCard = ({ book, shelf, addToRead }) => {
+const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
   let author_data;
   if (book.authors.length > 1) {
     if (book.authors.length === 2) {
@@ -17,10 +17,6 @@ const BookCard = ({ book, shelf, addToRead }) => {
     author_data = `Author: ${book.authors[0]}`;
   }
 
-  // let cover_data;
-  // if (book.covers.length > 0) { 
-  //   cover_data = 
-
   return (
     <div key={book.book_id} className="card">
       <div className="card_img">
@@ -37,7 +33,8 @@ const BookCard = ({ book, shelf, addToRead }) => {
         <CardButtons
           shelf={shelf}
           book={book}
-          addToRead={addToRead}
+          handleLeftBtn={handleLeftBtn}
+          handleRightBtn={handleRightBtn}
         />
       }
     </div>

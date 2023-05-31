@@ -37,25 +37,48 @@ const Bookshelf = () => {
       })
   }, []);
 
+
+  const removeFromShelf = (book, shelf) => {
+
+  }
+
+  const addToAlreadyRead = (book) => {
+
+  }
+
+  const addToFavorites = (book) => {
+
+  }
+
   const addToRead = (book) => {
-    const currentBooks = [...toReadBooks];
-    setToReadBooks([...currentBooks, book]);
+    const currentToReadBooks = [...toReadBooks];
+    setToReadBooks([...currentToReadBooks, book]);
   }
 
   return (
     <>
       <h2>My bookshelf</h2>
-      <BooksContainer 
-        shelf="To Read" 
+      <BooksContainer
+        shelf="To Read"
         books={toReadBooks} s
-        tatus={status1} />
-      <BooksContainer shelf="Already Read" books={alreadyReadBooks} status={status1} />
+        tatus={status1}
+        handleLeftBtn={removeFromShelf}
+        handleRightBtn={addToAlreadyRead}
+      />
+      <BooksContainer
+        shelf="Already Read"
+        books={alreadyReadBooks}
+        status={status2}
+        handleLeftBtn={removeFromShelf}
+        handleRightBtn={addToFavorites}
+      />
       <BooksContainer
         shelf="Favorites"
         books={favoriteBooks}
-        status={status1} 
-        handleAddToRead={addToRead}
-        />
+        status={status3}
+        handleLeftBtn={removeFromShelf}
+        handleRightBtn={addToRead}
+      />
     </>
   );
 }

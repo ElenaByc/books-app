@@ -1,4 +1,4 @@
-const CardButtons = ({ book, shelf, addToRead }) => {
+const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
 
   const handleAddToRead = () => {
     // alert("add to read")
@@ -12,7 +12,7 @@ const CardButtons = ({ book, shelf, addToRead }) => {
       .then((response) => response.json())
       .then((jsonResponse) => {
         if (jsonResponse.success) {
-          addToRead(book);
+          handleRightBtn(book);
         }
       });
   }
