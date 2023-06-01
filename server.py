@@ -145,33 +145,66 @@ def api_books():
 
 @app.route("/to-read", methods=["POST"])
 def add_to_read():
-    """Put a book on a user To read Bookshelf, create new book_to_shelf association."""
+    """Put a book on a user's To Read Bookshelf, create new book_to_shelf association."""
 
     logged_in_email = session.get("user_email")
     book_id = request.get_json().get("book_id")
 
     if logged_in_email is None:
-        flash("ERROR|You must log in to add a book to your bookshelf!")
+        msg = "You must log in to add a book to your bookshelf!"
         success = False
     else:
+        # get user
         user = crud.get_user_by_email(logged_in_email)
+        # get To read shelf
         shelf_type = "To Read"
         shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
-
         # check of the book is already on user's To Read Bookshelf
         book_shelf = crud.get_book_shelf(book_id, shelf.shelf_id)
         if book_shelf:
-            flash("ERROR|You already have this book on your To read bookshelf")
+            msg = f"You already have this book on your <span class=\"shelf-type\">{shelf_type}</span>bookshelf"
             success = False
         else:
             # create book to shelf association
             book_shelf = crud.create_book_shelf(book_id, shelf.shelf_id)
             db.session.add(book_shelf)
             db.session.commit()
-            flash(
-                f"OK|You put this book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf!")
+            msg = f"You put this book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf!"
             success = True
-    return jsonify({"success": success})
+    return jsonify({"success": success, "message": msg})
+
+
+@app.route("/to-already-read", methods=["POST"])
+def add_to_already_read():
+    """Put a book on a user Already Read Bookshelf, create new book_to_shelf association."""
+
+    logged_in_email = session.get("user_email")
+    book_id = request.get_json().get("book_id")
+
+    if logged_in_email is None:
+        msg = "You must log in to add a book to your bookshelf!"
+        success = False
+    else:
+        # get user
+        user = crud.get_user_by_email(logged_in_email)
+        # get Already Read and To Read sheves
+        shelf_from = crud.get_shelf_by_user(user.user_id, "To Read")
+        shelf_to = crud.get_shelf_by_user(user.user_id, "Already Read")
+
+        # check of the book is already on user's Already Read Bookshelf
+        book_shelf = crud.get_book_shelf(book_id, shelf_to.shelf_id)
+        if book_shelf:
+            msg = f"You already have this book on your <span class=\"shelf-type\">Already Read</span>bookshelf"
+            success = False
+        else:
+            # get book to shelf association / record
+            db_book_shelf = crud.get_book_shelf(book_id, shelf_from.shelf_id)
+            # update = change shelf_id
+            db_book_shelf.shelf_id = shelf_to.shelf_id
+            db.session.commit()
+            msg = f"You put this book on your <span class=\"shelf-type\">Already Read</span> bookshelf!"
+            success = True
+    return jsonify({"success": success, "message": msg})
 
 
 @app.route("/remove", methods=["POST"])

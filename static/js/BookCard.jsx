@@ -18,7 +18,7 @@ const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
   }
 
   return (
-    <div key={book.book_id} className="card">
+    <div className="card">
       <div className="card_img">
         {(book.covers.length > 0)
           ? <img src={book.covers[0]} alt="book cover" />

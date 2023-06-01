@@ -1,7 +1,7 @@
 const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
 
   const handleAddToRead = () => {
-    // alert("add to read")
+    alert("add to read")
     fetch("/to-read", {
       method: "POST",
       headers: {
@@ -11,6 +11,43 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
     })
       .then((response) => response.json())
       .then((jsonResponse) => {
+        console.log(jsonResponse.message)
+        if (jsonResponse.success) {
+          handleRightBtn(book);
+        }
+      });
+  }
+
+  const handleAddToAlreadyRead = () => {
+    alert("move to Already Read")
+    fetch("/to-already-read", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ "book_id": book.book_id }),
+    })
+      .then((response) => response.json())
+      .then((jsonResponse) => {
+        console.log(jsonResponse.message)
+        if (jsonResponse.success) {
+          handleRightBtn(book);
+        }
+      });
+  }
+
+  const handleMarkAsFavorite = () => {
+    alert("move to Already Read")
+    fetch("/to-favorites", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ "book_id": book.book_id }),
+    })
+      .then((response) => response.json())
+      .then((jsonResponse) => {
+        console.log(jsonResponse.message)
         if (jsonResponse.success) {
           handleRightBtn(book);
         }
@@ -28,6 +65,7 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
     })
       .then((response) => response.json())
       .then((jsonResponse) => {
+        console.log(jsonResponse.message)
         if (jsonResponse.success) {
           handleLeftBtn(book, shelf);
         }
@@ -36,15 +74,31 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
 
   return (
     <div className="card_buttons">
-      <div className="remove-icon" title="Remove this book" onClick={handleRemoveFromShelf}></div>
+      <div
+        className="remove-icon"
+        title="Remove this book"
+        onClick={handleRemoveFromShelf}>
+      </div>
       {shelf === "To Read" &&
-        <div className="checkmark-icon" title="Mark this book as Already Read"></div>
+        <div
+          className="checkmark-icon"
+          title="Mark this book as Already Read"
+          onClick={handleAddToAlreadyRead}>
+        </div>
       }
       {shelf === "Already Read" &&
-        <div className="heart-icon" title="Mark this book as your favorite"></div>
+        <div
+          className="heart-icon"
+          title="Mark this book as your favorite"
+          onClick={handleMarkAsFavorite}>
+        </div>
       }
       {shelf === "Favorites" &&
-        <div className="read-icon" title="Want to read it again" onClick={handleAddToRead}></div>
+        <div
+          className="read-icon"
+          title="Want to read it again"
+          onClick={handleAddToRead}>
+        </div>
       }
     </div>
   )
