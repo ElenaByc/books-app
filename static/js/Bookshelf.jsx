@@ -6,6 +6,7 @@ const Bookshelf = () => {
   const [status1, setStatus1] = React.useState("LOADING");
   const [status2, setStatus2] = React.useState("LOADING");
   const [status3, setStatus3] = React.useState("LOADING");
+  const [msg, setMsg] = React.useState("")
 
   React.useEffect(() => {
     fetch("/api/bookshelf?shelf=read")
@@ -60,7 +61,7 @@ const Bookshelf = () => {
     }
   }
 
-  const addToAlreadyRead = (book) => {
+  const addToAlreadyRead = (book, message) => {
     removeFromShelf(book, "To Read");
     const currentAlreadyReadBooks = [...alreadyReadBooks];
     setAlreadyReadBooks([...currentAlreadyReadBooks, book]);
@@ -79,6 +80,7 @@ const Bookshelf = () => {
   return (
     <>
       <h2>My bookshelf</h2>
+      {msg !== "" && <MessageBox msg={msg} setMsg={setMsg} />}
       {console.log("Rendering Bookshelf!")}
       <BooksContainer
         shelf="To Read"
@@ -86,6 +88,7 @@ const Bookshelf = () => {
         status={status1}
         handleLeftBtn={removeFromShelf}
         handleRightBtn={addToAlreadyRead}
+        setMsg={setMsg}
       />
       <BooksContainer
         shelf="Already Read"
@@ -93,6 +96,7 @@ const Bookshelf = () => {
         status={status2}
         handleLeftBtn={removeFromShelf}
         handleRightBtn={addToFavorites}
+        setMsg={setMsg}
       />
       <BooksContainer
         shelf="Favorites"
@@ -100,6 +104,7 @@ const Bookshelf = () => {
         status={status3}
         handleLeftBtn={removeFromShelf}
         handleRightBtn={addToRead}
+        setMsg={setMsg}
       />
     </>
   );

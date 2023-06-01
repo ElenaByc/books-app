@@ -1,4 +1,4 @@
-const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
+const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
   let author_data;
   if (book.authors.length > 1) {
     if (book.authors.length === 2) {
@@ -35,6 +35,7 @@ const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
           book={book}
           handleLeftBtn={handleLeftBtn}
           handleRightBtn={handleRightBtn}
+          setMsg={setMsg}
         />
       }
     </div>

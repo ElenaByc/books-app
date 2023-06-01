@@ -1,4 +1,4 @@
-const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
+const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
 
   const handleAddToRead = () => {
     alert("add to read")
@@ -12,6 +12,7 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
       .then((response) => response.json())
       .then((jsonResponse) => {
         console.log(jsonResponse.message)
+        setMsg(jsonResponse.message)
         if (jsonResponse.success) {
           handleRightBtn(book);
         }

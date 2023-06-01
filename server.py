@@ -151,7 +151,7 @@ def add_to_read():
     book_id = request.get_json().get("book_id")
 
     if logged_in_email is None:
-        msg = "You must log in to add a book to your bookshelf!"
+        msg = "ERROR|You must log in to add a book to your bookshelf!"
         success = False
     else:
         # get user
@@ -162,14 +162,14 @@ def add_to_read():
         # check if the book is already on user's To Read Bookshelf
         book_shelf = crud.get_book_shelf(book_id, shelf.shelf_id)
         if book_shelf:
-            msg = f"You already have this book on your <span class=\"shelf-type\">{shelf_type}</span>bookshelf"
+            msg = f"ERROR|You already have this book on your <span class=\"shelf-type\">{shelf_type}</span>bookshelf"
             success = False
         else:
             # create book to shelf association
             book_shelf = crud.create_book_shelf(book_id, shelf.shelf_id)
             db.session.add(book_shelf)
             db.session.commit()
-            msg = f"You put this book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf!"
+            msg = f"OK|You put this book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf!"
             success = True
     return jsonify({"success": success, "message": msg})
 
@@ -182,7 +182,7 @@ def add_to_already_read():
     book_id = request.get_json().get("book_id")
 
     if logged_in_email is None:
-        msg = "You must log in to add a book to your bookshelf!"
+        msg = "ERROR|You must log in to add a book to your bookshelf!"
         success = False
     else:
         # get user
@@ -194,7 +194,7 @@ def add_to_already_read():
         # check if the book is already on user's Already Read Bookshelf
         book_shelf = crud.get_book_shelf(book_id, shelf_to.shelf_id)
         if book_shelf:
-            msg = f"You already have this book on your <span class=\"shelf-type\">Already Read</span>bookshelf"
+            msg = f"ERROR|You already have this book on your <span class=\"shelf-type\">Already Read</span>bookshelf"
             success = False
         else:
             # get book to shelf association / record
@@ -202,7 +202,7 @@ def add_to_already_read():
             # update = change shelf_id
             db_book_shelf.shelf_id = shelf_to.shelf_id
             db.session.commit()
-            msg = f"You put this book on your <span class=\"shelf-type\">Already Read</span> bookshelf!"
+            msg = f"OK|You put this book on your <span class=\"shelf-type\">Already Read</span> bookshelf!"
             success = True
     return jsonify({"success": success, "message": msg})
 
@@ -215,7 +215,7 @@ def add_to_favorites():
     book_id = request.get_json().get("book_id")
 
     if logged_in_email is None:
-        msg = "You must log in to add a book to your bookshelf!"
+        msg = "ERROR|You must log in to add a book to your bookshelf!"
         success = False
     else:
         # get user
@@ -226,14 +226,14 @@ def add_to_favorites():
         # check if the book is already on user's Favorites Bookshelf
         book_shelf = crud.get_book_shelf(book_id, shelf.shelf_id)
         if book_shelf:
-            msg = f"You already have this book on your <span class=\"shelf-type\">Favorites</span>bookshelf"
+            msg = f"ERROR|You already have this book on your <span class=\"shelf-type\">Favorites</span>bookshelf"
             success = False
         else:
             # create book to shelf association
             book_shelf = crud.create_book_shelf(book_id, shelf.shelf_id)
             db.session.add(book_shelf)
             db.session.commit()
-            msg = f"You put this book on your <span class=\"shelf-type\">Favorites</span> bookshelf!"
+            msg = f"OK|You put this book on your <span class=\"shelf-type\">Favorites</span> bookshelf!"
             success = True
     return jsonify({"success": success, "message": msg})
 
@@ -248,7 +248,7 @@ def remove_book_from_shelf():
 
     if logged_in_email is None:
         success = False
-        msg = "You must log in to remove a book from your bookshelf!"
+        msg = "ERROR|You must log in to remove a book from your bookshelf!"
     else:
         # get user
         user = crud.get_user_by_email(logged_in_email)
@@ -262,10 +262,10 @@ def remove_book_from_shelf():
             db.session.delete(db_book_shelf)
             db.session.commit()
             success = True
-            msg = f"The book was successfully removed from your <span class=\"shelf-type\">{shelf_type}</span> bookshelf"
+            msg = f"OK|The book was successfully removed from your <span class=\"shelf-type\">{shelf_type}</span> bookshelf"
         else:
-            success = True
-            msg = "There is no such book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf"
+            success = False
+            msg = "ERROR|There is no such book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf"
 
     return jsonify({"success": success, "message": msg})
 

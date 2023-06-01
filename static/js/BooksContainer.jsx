@@ -13,6 +13,7 @@ const BooksContainer = (props) => {
                 shelf={props.shelf}
                 handleLeftBtn={props.handleLeftBtn}
                 handleRightBtn={props.handleRightBtn}
+                setMsg={props.setMsg}
               />
             )
           })
