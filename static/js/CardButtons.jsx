@@ -1,7 +1,6 @@
 const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
 
   const handleAddToRead = () => {
-    alert("add to read")
     fetch("/to-read", {
       method: "POST",
       headers: {
@@ -12,7 +11,7 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
       .then((response) => response.json())
       .then((jsonResponse) => {
         console.log(jsonResponse.message)
-        setMsg(jsonResponse.message)
+        setMsg(jsonResponse)
         if (jsonResponse.success) {
           handleRightBtn(book);
         }
@@ -20,7 +19,6 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
   }
 
   const handleAddToAlreadyRead = () => {
-    alert("move to Already Read")
     fetch("/to-already-read", {
       method: "POST",
       headers: {
@@ -31,6 +29,7 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
       .then((response) => response.json())
       .then((jsonResponse) => {
         console.log(jsonResponse.message)
+        setMsg(jsonResponse)
         if (jsonResponse.success) {
           handleRightBtn(book);
         }
@@ -38,7 +37,6 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
   }
 
   const handleMarkAsFavorite = () => {
-    alert("mark as Favorite")
     fetch("/to-favorites", {
       method: "POST",
       headers: {
@@ -48,6 +46,7 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
     })
       .then((response) => response.json())
       .then((jsonResponse) => {
+        setMsg(jsonResponse)
         console.log(jsonResponse.message)
         if (jsonResponse.success) {
           handleRightBtn(book);
@@ -56,7 +55,6 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
   }
 
   const handleRemoveFromShelf = () => {
-    // alert("remove from " + shelf)
     fetch("/remove", {
       method: "POST",
       headers: {
@@ -67,6 +65,7 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
       .then((response) => response.json())
       .then((jsonResponse) => {
         console.log(jsonResponse.message)
+        setMsg(jsonResponse)
         if (jsonResponse.success) {
           handleLeftBtn(book, shelf);
         }
