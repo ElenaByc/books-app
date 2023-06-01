@@ -37,7 +37,7 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn }) => {
   }
 
   const handleMarkAsFavorite = () => {
-    alert("move to Already Read")
+    alert("mark as Favorite")
     fetch("/to-favorites", {
       method: "POST",
       headers: {
