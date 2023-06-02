@@ -17,9 +17,10 @@ const BooksContainer = (props) => {
               />
             )
           })
-          : props.status === "NO DATA"
-            ? <h4>Your <span className="shelf-type">{props.shelfType}</span> bookshelf is empty</h4>
-            : <h4>Loading...</h4>}
+          : props.status === "LOADING"
+            ? <h4>Loading...</h4>
+            : <h4>Your <span className="shelf-type">{props.shelf}</span> bookshelf is empty</h4>
+        }
       </div>
     </div>
   )

@@ -12,6 +12,11 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
       .then((jsonResponse) => {
         console.log(jsonResponse.message)
         setMsg(jsonResponse)
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
         if (jsonResponse.success) {
           handleRightBtn(book);
         }
@@ -30,6 +35,11 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
       .then((jsonResponse) => {
         console.log(jsonResponse.message)
         setMsg(jsonResponse)
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
         if (jsonResponse.success) {
           handleRightBtn(book);
         }
@@ -47,6 +57,11 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
       .then((response) => response.json())
       .then((jsonResponse) => {
         setMsg(jsonResponse)
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
         console.log(jsonResponse.message)
         if (jsonResponse.success) {
           handleRightBtn(book);
@@ -66,6 +81,11 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
       .then((jsonResponse) => {
         console.log(jsonResponse.message)
         setMsg(jsonResponse)
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
         if (jsonResponse.success) {
           handleLeftBtn(book, shelf);
         }

@@ -181,7 +181,6 @@ def add_to_already_read():
 
     logged_in_email = session.get("user_email")
     book_id = request.get_json().get("book_id")
-    print("!" * 30, book_id)
 
     if logged_in_email is None:
         msg = "You must log in to add a book to your bookshelf"
