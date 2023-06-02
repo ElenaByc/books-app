@@ -14,7 +14,11 @@
     {% for book in books %}
     <div class="card">
         <div class="card_img">
+            {% if book.covers|length > 0 -%}
             <img src="{{ book.covers[0].cover_url }}" alt="book cover">
+            {% else %}
+            <img src="/static/img/no-cover.jpg" alt="no book cover available">
+            {% endif %}
         </div>
 
         <div class="card_content">
@@ -36,14 +40,19 @@
             {% if book.contributor_note != "" %}
             <h4>{{ book.contributor_note }}</h4>
             {% endif %}
-            <h4>NEW YORK TIMES BESTSELLER in {{ book.lists|length }}
+            {% if book.walmart_link %}
+            <h4><a href={{ book.walmart_link }} target="_blank">Buy on Walmart</a></h4>
+            {% else %}
+            <h4 color="red">NO LINK</h4>
+            {% endif %}
+            <!-- <h4>NEW YORK TIMES BESTSELLER in {{ book.lists|length }}
                 {% if book.lists|length > 1 -%} lists:
                 {% else -%}
                 list
                 {% endif %}</h4>
             {% for l in book.lists %}
             <div>{{ l.list_name }}</div>
-            {% endfor %}
+            {% endfor %} -->
             <!-- <h4>Categories:</h4>
             <ul>
                 {% for category in book.categories %}

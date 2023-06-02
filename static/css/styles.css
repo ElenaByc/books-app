@@ -317,11 +317,19 @@ p {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    column-gap: 50px;
+    column-gap: 20px;
+}
+
+.book_details>div:first-child {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
 }
 
 .book_details__cover {
-    flex: 0 0 40%;
+    width: 100%;
 }
 
 .book_details__content {

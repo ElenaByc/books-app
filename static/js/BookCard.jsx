@@ -50,10 +50,15 @@ const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
         </ReactBootstrap.Modal.Header>
         <ReactBootstrap.Modal.Body>
           <div className="book_details">
-            {(book.covers.length > 0)
-              ? <img className="book_details__cover" src={book.covers[0]} alt="book cover" />
-              : <img src="/static/img/no-cover.jpg" alt="book cover is not available" />
-            }
+            <div>
+              {(book.covers.length > 0)
+                ? <img className="book_details__cover" src={book.covers[0]} alt="book cover" />
+                : <img src="/static/img/no-cover.jpg" alt="book cover is not available" />
+              }
+              {book.walmart_link &&
+                <h4><a href={book.walmart_link} target="_blank">Buy on Walmart</a></h4>
+              }
+            </div>
             <div class="book_details__content">
               <h4>{author_data}</h4>
               {book.contributor_note != "" && <h4>{book.contributor_note}</h4>}

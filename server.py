@@ -5,7 +5,8 @@ from flask import (Flask, render_template, request,
 from model import connect_to_db, db
 from utilites import (create_user_preferences_dict,
                       get_recommendations,
-                      sqlalchemy_book_obj_to_dict)
+                      sqlalchemy_book_obj_to_dict,
+                      get_book_walmart_link_by_isbn13)
 import crud
 from jinja2 import StrictUndefined
 from random import sample
@@ -129,7 +130,16 @@ def api_books():
 
     # get book on the user shelf
     books = crud.get_users_books(user=user, shelf_type=shelf_type)
-    # books = crud.get_all_books()
+
+    # update Walmart links
+    for book in books:
+        if book.walmart_link is None:
+            book.walmart_link = get_book_walmart_link_by_isbn13(
+                book.primary_isbn13)
+            print("!LINK "*10)
+            print(book.walmart_link)
+            if book.walmart_link:
+                db.session.commit()
 
     if books == None or len(books) == 0:
         return jsonify({"status": "NO DATA", "books": []})

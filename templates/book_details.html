@@ -27,6 +27,8 @@
 <div class="book_details">
     {% if book.covers|length > 0 %}
     <img class="book_details__cover" src="{{ book.covers[0].cover_url }}" alt="{{ book.title }} cover">
+    {% else %}
+    <img src="/static/img/no-cover.jpg" alt="no book cover available">
     {% endif %}
     <div class="book_details__content">
         <h4>{% if book.authors|length > 1 -%}Authors:
@@ -63,6 +65,11 @@
             <li>{{ category.category_name }}</li>
             {% endfor %}
         </ul>
+        {% if book.walmart_link %}
+        <h4><a href={{ book.walmart_link }} target="_blank">Buy on Walmart</a></h4>
+        {% else %}
+        <h4 color="red">NO LINK</h4>
+        {% endif %}
         <h4>Description:</h4>
         {{ book.description|safe }}
     </div>

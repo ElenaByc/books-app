@@ -9,7 +9,8 @@ from time import sleep
 from utilites import (
     format_uppercase_string,
     split_categories,
-    get_categories_for_list)
+    get_categories_for_list,
+    get_book_walmart_link_by_isbn13)
 
 import crud
 import model
@@ -141,8 +142,6 @@ def get_book_data_google_books_api(db_book):
         data2 = res.json()
         if "description" in data2["volumeInfo"]:
             db_book.description = data2["volumeInfo"]["description"]  # html
-            # https://stackoverflow.com/questions/3206344/passing-html-to-template-using-flask-jinja2
-            # https://css-tricks.com/snippets/javascript/inject-html-from-a-string-of-html/
             model.db.session.commit()
 
         # get categories from selflink
@@ -285,21 +284,24 @@ for db_list in lists_in_db:
         if db_book == None:
             description = book["description"]
             contributor_note = book["contributor_note"].capitalize()
+            walmart_link = get_book_walmart_link_by_isbn13(primary_isbn13)
             db_book = crud.create_book(
                 title=title,
                 isbn10=primary_isbn10,
                 isbn13=primary_isbn13,
                 description=description,
-                contributor_note=contributor_note)
+                contributor_note=contributor_note,
+                walmart_link=walmart_link)
             # Add the book to the SQLAlchemy session and commit it to db
             model.db.session.add(db_book)
             model.db.session.commit()
             # Get book cover
-            db_cover = crud.create_cover(
-                db_book.book_id, book["book_image"], 'NYT')
-            # Add the cover to the SQLAlchemy session and commit it to db
-            model.db.session.add(db_cover)
-            model.db.session.commit()
+            if book["book_image"]:
+                db_cover = crud.create_cover(
+                    db_book.book_id, book["book_image"], 'NYT')
+                # Add the cover to the SQLAlchemy session and commit it to db
+                model.db.session.add(db_cover)
+                model.db.session.commit()
             # Get book authors, description, and categories from Google Books API
             success = get_book_data_google_books_api(db_book)
             if not success:

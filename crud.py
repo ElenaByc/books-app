@@ -11,10 +11,10 @@ def create_user(name, email, password):
     return User(user_name=name, email=email, password=password)
 
 
-def create_book(title, isbn10, isbn13, description="", contributor_note=""):
+def create_book(title, isbn10, isbn13, description="", contributor_note="", walmart_link=None):
     """Create and return a new book."""
 
-    return Book(title=title, primary_isbn10=isbn10, primary_isbn13=isbn13, description=description, contributor_note=contributor_note)
+    return Book(title=title, primary_isbn10=isbn10, primary_isbn13=isbn13, description=description, contributor_note=contributor_note, walmart_link=walmart_link)
 
 
 def create_category(category_name):
