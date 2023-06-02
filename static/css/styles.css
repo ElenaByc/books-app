@@ -46,6 +46,9 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
     background-color: var(--color-light);
     font-family: 'Inter';
     font-style: normal;
@@ -93,6 +96,7 @@ h4 {
     line-height: 24px;
     color: var(--color-dark);
     margin: 0;
+    text-align: center;
 }
 
 p {
@@ -104,7 +108,6 @@ p {
     color: var(--color-dark);
     margin: 0;
 }
-
 
 
 .flash-msg {
@@ -139,8 +142,8 @@ p {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 
 .remove-icon:hover {
@@ -153,8 +156,8 @@ p {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 
 .checkmark-icon:hover {
@@ -168,8 +171,8 @@ p {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 
 .heart-icon:hover {
@@ -182,8 +185,8 @@ p {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
 }
 
 .read-icon:hover {
@@ -327,6 +330,10 @@ p {
     row-gap: 10px;
 }
 
+.book_details__content h4 {
+    text-align: left;
+}
+
 
 /* ---------- Search Form ---------- */
 
@@ -441,20 +448,31 @@ select {
     align-items: center;
     justify-content: space-between;
     width: 250px;
-    height: 500px;
+    height: 420px;
     background-color: var(--color-white);
     border-radius: 9px;
-    padding: 10px;
+    padding: 5px 10px 10px;
 }
 
 .card:hover {
     box-shadow: 0px 0px 20px 10px rgba(13, 13, 13, 0.1);
+}
+
+.card_popup {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.card_popup {
     cursor: pointer;
 }
 
 .card_img {
-    flex: 0 0 250px;
-    height: 250px;
+    flex: 0 0 230px;
+    height: 230px;
     width: 100%;
     display: flex;
     justify-content: center;
