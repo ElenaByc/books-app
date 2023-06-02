@@ -1,4 +1,7 @@
 from sortedcontainers import SortedDict
+from bs4 import BeautifulSoup
+import requests
+# from urllib.request import Request, urlopen
 
 
 def format_uppercase_string(str):
@@ -143,3 +146,17 @@ def sqlalchemy_book_obj_to_dict(book_obj):
     book_dict["lists"] = lists
 
     return book_dict
+
+
+def get_book_walmart_link_by_isbn13(isbn13):
+
+    url = f"https://www.walmart.com/search?q={isbn13}&facet=retailer_type%3AWalmart"
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    req = requests.get(url, headers=headers)
+    soup = BeautifulSoup(req.text, 'html.parser')
+
+    link_elem = soup.select_one(f"a[href*=\"{isbn13}\"]")
+    if link_elem == None:
+        return None
+    link = "https://www.walmart.com" + link_elem["href"].split("?")[0]
+    return (link)
