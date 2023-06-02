@@ -492,14 +492,14 @@ def process_logout():
     return redirect("/")
 
 
-@app.route("/bookshelf-react")
+@app.route("/bookshelf")
 def show_user_bookshelf_react():
     """Show user bookshelf"""
 
     return render_template("bookshelf-react.html")
 
 
-@app.route("/bookshelf")
+@app.route("/bookshelf-old")
 def show_user_bookshelf():
     """Show user bookshelf"""
 
