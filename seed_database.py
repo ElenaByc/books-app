@@ -3,6 +3,7 @@
 import os
 import requests
 from random import choice, randint
+from passlib.hash import pbkdf2_sha256
 from datetime import datetime
 from time import sleep
 
@@ -322,8 +323,9 @@ for n in range(10):
     email = f"user{n}@test.com"
     name = f"Test User {n}"
     password = f"testB00kUser{n}"
+    hash = pbkdf2_sha256.encrypt(password, rounds=200000, salt_size=16)
 
-    user = crud.create_user(name, email, password)
+    user = crud.create_user(name, email, hash)
     model.db.session.add(user)
     model.db.session.commit()
 
@@ -335,9 +337,6 @@ for n in range(10):
     shelf = crud.create_shelf(user.user_id, "Favorites")
     model.db.session.add(shelf)
 model.db.session.commit()
-
-
-# Create books to shelves random associations?
 
 
 print("NUM_OF_REQUESTS = ", NUM_OF_REQUESTS)

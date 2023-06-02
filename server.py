@@ -10,6 +10,7 @@ from utilites import (create_user_preferences_dict,
 import crud
 from jinja2 import StrictUndefined
 from random import sample
+from passlib.hash import pbkdf2_sha256
 
 app = Flask(__name__)
 app.app_context().push()
@@ -422,7 +423,15 @@ def process_login():
     password = request.form.get("password")
 
     user = crud.get_user_by_email(email)
-    if not user or user.password != password:
+    # correct = pbkdf2_sha256.verify(password, user.password)
+    # hash = pbkdf2_sha256.encrypt(password, rounds=200000, salt_size=16)
+    # print("CORRECT " * 5)
+    # print(correct)
+    # print("password ", user.password)
+    # print("hash ", hash)
+    # print("CORRECT " * 5)
+    # if not user or user.password != password:
+    if not user or not pbkdf2_sha256.verify(password, user.password):
         flash("ERROR|The email or password you entered was incorrect.")
         return redirect("/login")
     else:
@@ -448,12 +457,13 @@ def register_user():
     email = request.form.get("email")
     name = request.form.get("name")
     password = request.form.get("password")
+    hash = pbkdf2_sha256.encrypt(password, rounds=200000, salt_size=16)
 
     user = crud.get_user_by_email(email)
     if user:
         flash("ERROR|Cannot create an account with that email. <br> Please try again with another email address.")
     else:
-        user = crud.create_user(name, email, password)
+        user = crud.create_user(name, email, hash)
         db.session.add(user)
         db.session.commit()
 
