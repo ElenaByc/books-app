@@ -16,7 +16,7 @@
 
 <div class="search-container">
     <h3 class="search-header">Pick Me a Book</h3>
-    <form class="search-form" action="/search-result" method="GET">
+    <!-- <form class="search-form" action="/search-result" method="GET">
         <div>
             <div class="show">
                 <label for="options">Choose books</label>
@@ -66,11 +66,20 @@
         {% endif%}
 
         <input type="submit" value="Get Recommendations!" />
-    </form>
+    </form> -->
 
 </div>
+
+<div id="search">
+</div>
+
 {% endblock %}
 
 {% block js %}
+<script src="/static/js/CardButtons.jsx" type="text/jsx"></script>
+<script src="/static/js/BookCard.jsx" type="text/jsx"></script>
+<script src="/static/js/BooksContainer.jsx" type="text/jsx"></script>
+<script src="/static/js/MessageBox.jsx" type="text/jsx"></script>
+<script src="/static/js/SearchForm.jsx" type="text/jsx"></script>
 <script src="/static/js/script.js"></script>
 {% endblock %}
