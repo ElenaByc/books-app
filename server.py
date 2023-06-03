@@ -112,9 +112,22 @@ def all_books():
     return render_template("all_books.html", books=books, header='')
 
 
+@app.route("/api/logged-in")
+def is_user_logged_in():
+    """Determines whether the current visitor is a logged in user."""
+
+    email = session.get("user_email")
+    if email:
+        is_logged_in = True
+    else:
+        is_logged_in = False
+
+    return jsonify(is_logged_in)
+
+
 @app.route("/api/bookshelf")
 def api_books():
-    """Returns parsed json containing all books on the user's shelf """
+    """Return parsed json containing all books on the user's shelf """
 
     # get user
     email = session.get("user_email")
