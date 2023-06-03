@@ -6,6 +6,7 @@ from model import connect_to_db, db
 from utilites import (create_user_preferences_dict,
                       get_recommendations,
                       sqlalchemy_book_obj_to_dict,
+                      sqlalchemy_list_obj_to_dict,
                       get_book_walmart_link_by_isbn13)
 import crud
 from jinja2 import StrictUndefined
@@ -125,8 +126,24 @@ def is_user_logged_in():
     return jsonify(is_logged_in)
 
 
+@app.route("/api/lists")
+def api_lists():
+    """Return parsed json containing all The New York Times Best Sellers lists."""
+
+    lists = crud.get_all_lists()
+
+    # convert SQLAlchemy list obects to dictionaries
+    lists_data = []
+    for l in lists:
+        list_dict = sqlalchemy_list_obj_to_dict(l)
+        lists_data.append(list_dict)
+
+
+    return jsonify({"lists": lists_data})
+
+
 @app.route("/api/bookshelf")
-def api_books():
+def api_bookshelf():
     """Return parsed json containing all books on the user's shelf """
 
     # get user

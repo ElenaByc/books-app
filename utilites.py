@@ -148,7 +148,18 @@ def sqlalchemy_book_obj_to_dict(book_obj):
     return book_dict
 
 
+def sqlalchemy_list_obj_to_dict(list_obj):
+    """Convert a SQLAlchemy List object to a dictionary."""
+
+    list_dict = {}
+    for column in list_obj.__table__.columns:
+        list_dict[column.name] = getattr(list_obj, column.name)
+
+    return list_dict
+
+
 def get_book_walmart_link_by_isbn13(isbn13):
+    """Get link to buy a book on Walmart using Beautiful Soup library."""
 
     url = f"https://www.walmart.com/search?q={isbn13}&facet=retailer_type%3AWalmart"
     headers = {'User-Agent': 'Mozilla/5.0'}
