@@ -59,7 +59,7 @@ const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
                 <h4><a href={book.walmart_link} target="_blank">Buy on Walmart</a></h4>
               }
             </div>
-            <div class="book_details__content">
+            <div className="book_details__content">
               <h4>{author_data}</h4>
               {book.contributor_note != "" && <h4>{book.contributor_note}</h4>}
               <h4>ISBN10 = {book.primary_isbn10}</h4>
