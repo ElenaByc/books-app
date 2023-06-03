@@ -138,8 +138,86 @@ def api_lists():
         list_dict = sqlalchemy_list_obj_to_dict(l)
         lists_data.append(list_dict)
 
-
     return jsonify({"lists": lists_data})
+
+
+@app.route("/api/books")
+def api_books():
+    """Return parsed json containing all books from search results"""
+
+    option = request.args.get("option", "")
+    checkmark = request.args.get("checkmark")
+
+    print("SEARCHING!!!!!!!!!!!!!!!!!!!")
+    print("option ", option)
+    print("checkmark ", checkmark)
+
+    if option == "author":
+        author = request.args.get("author")
+        books = crud.get_books_by_author_name(author)
+        header = f"Results for \'{author}\' in book's authors"
+    elif option == "title":
+        title = request.args.get("title")
+        books = crud.get_books_by_title(title)
+        header = f"Results for \'{title}\' in book's title"
+    elif option == "category":
+        category = request.args.get("category")
+        books = crud.get_books_by_category(category)
+        print("SEARCHING!!!!!!!!!!!!!!!!!!!")
+        print("category ", category)
+        print("books: ", books)
+        header = f"Results for \'{category}\' in book's categories"
+    elif option == "list":
+        list_id = request.args.get("list")
+        books = crud.get_books_by_list(list_id)
+        header = f"Best Sellers List: {crud.get_list_by_id(list_id).list_name}"
+    elif option == "favorites":
+        # analize user's Favorites
+
+        # get user and then user's favorite books
+        logged_in_email = session.get("user_email")
+        user = crud.get_user_by_email(logged_in_email)
+        shelf_type = "Favorites"
+        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
+        if len(shelf.books) == 0:
+            books = []
+            header = "Sorry, we cannot give you recommendations based on your favorites since your Favorites bookshelf is empty"
+        else:
+            fav_dict = create_user_preferences_dict(shelf.books)
+
+            # get all book and for each book give raiting based on the dictionary
+            # return TEN(?) best results
+            # most likelly, the result will include all the books from the user's Favorites
+            all_books = crud.get_all_books()
+            books = get_recommendations(
+                all_books, fav_dict, 10 + len(shelf.books))
+            header = f"Books recommendations based on your Favorites bookshelf"
+    else:
+        books = []
+        header = ""
+
+    if len(books) != 0 and checkmark == "true":
+        # remove books that on users bookshelf
+        logged_in_email = session.get("user_email")
+        if logged_in_email:
+            user = crud.get_user_by_email(logged_in_email)
+            shelf_books = crud.get_books_by_user(user)
+            books_new = []
+            for book in books:
+                if not book in shelf_books:
+                    books_new.append(book)
+            books = books_new
+
+    if books == None or len(books) == 0:
+        return jsonify({"status": "NO DATA", "header": header, "books": []})
+
+    # convert SQLAlchemy book obects to dictionaries
+    books_data = []
+    for book in books:
+        book_dict = sqlalchemy_book_obj_to_dict(book)
+        books_data.append(book_dict)
+
+    return jsonify({"status": "OK", "header": header, "books": books_data})
 
 
 @app.route("/api/bookshelf")
