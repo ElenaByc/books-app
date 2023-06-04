@@ -19,7 +19,10 @@ const BooksContainer = (props) => {
           })
           : props.status === "LOADING"
             ? <h4>Loading...</h4>
-            : <h4>Your <span className="shelf-type">{props.shelf}</span> bookshelf is empty</h4>
+            : props.shelf !== ""
+              ? <h4>Your <span className="shelf-type">{props.shelf}</span> bookshelf is empty</h4>
+              : <h4>Sorry, there is no books matching your request.<br></br>
+                Plase try another search parameters</h4>
         }
       </div>
     </div>
