@@ -25,7 +25,6 @@ const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
 
   return (
     <div className="card">
-      {/* <Example book = {book}/> */}
       <div className="card_popup" onClick={handleShowDetails}>
         <div className="card_img" title="View book details">
           {(book.covers.length > 0)

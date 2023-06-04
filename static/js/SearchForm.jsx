@@ -5,6 +5,7 @@ const SearchForm = () => {
   const [checkmark, setCheckmark] = React.useState(true);
   const [searchQuery, setSearchQuery] = React.useState("");
   const [searchResults, setSearchResults] = React.useState([]);
+  const [searchHeader, setSearchHeader] = React.useState("");
   const [searchStatus, setSearchStatus] = React.useState("");
   const [search, setSearch] = React.useState(false);
   const [msg, setMsg] = React.useState("")
@@ -34,6 +35,7 @@ const SearchForm = () => {
         .then((resp) => {
           setSearchResults(resp.books);
           setSearchStatus(resp.status);
+          setSearchHeader(resp.header);
           setSearch(false)
         })
     }
@@ -44,11 +46,6 @@ const SearchForm = () => {
   function handleOptionSelect(evt) {
     console.log(evt.target.value);
     setOption(evt.target.value);
-    setAuthor("");
-    setTitle("")
-    setCategory("");
-    setList("");
-    setSearchQuery("");
   }
 
   function handleListSelect(evt) {
@@ -146,6 +143,7 @@ const SearchForm = () => {
       {searchStatus !== "" &&
         <BooksContainer
           shelf=""
+          header={searchHeader}
           books={searchResults}
           status={searchStatus}
           handleLeftBtn={addToRead}

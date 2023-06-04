@@ -1,8 +1,11 @@
 const BooksContainer = (props) => {
   return (
-    <div className="shelf">
+    <section className="books">
       {console.log("Rendering BooksContainer", props.shelf, props.status)}
-      <h3 className="shelf-header">{props.shelf}</h3>
+      {props.shelf !== ""
+        ? <h3 className="books__header">{props.shelf}</h3>
+        : <h3 className="books__header">{props.header}</h3>
+      }
       <div className="books__cards-container">
         {props.books.length > 0
           ? props.books.map((book) => {
@@ -21,10 +24,9 @@ const BooksContainer = (props) => {
             ? <h4>Loading...</h4>
             : props.shelf !== ""
               ? <h4>Your <span className="shelf-type">{props.shelf}</span> bookshelf is empty</h4>
-              : <h4>Sorry, there is no books matching your request.<br></br>
-                Plase try another search parameters</h4>
+              : <h4>Sorry, no books matching your request. Please try different search parameters.</h4>
         }
       </div>
-    </div>
+    </section>
   )
 }

@@ -165,7 +165,7 @@ def api_books():
         books = crud.get_books_by_category(category)
         print("SEARCHING!!!!!!!!!!!!!!!!!!!")
         print("category ", category)
-        print("books: ", books)
+        print("books len: ", len(books))
         header = f"Results for \'{category}\' in book's categories"
     elif option == "list":
         list_id = request.args.get("list")
@@ -194,7 +194,7 @@ def api_books():
             header = f"Books recommendations based on your Favorites bookshelf"
     else:
         books = []
-        header = ""
+        header = "Sorry, no books matching your request. Please try different search parameters."
 
     if len(books) != 0 and checkmark == "true":
         # remove books that on users bookshelf
@@ -211,6 +211,7 @@ def api_books():
     if books == None or len(books) == 0:
         return jsonify({"status": "NO DATA", "header": header, "books": []})
 
+    print("books len: ", len(books))
     # convert SQLAlchemy book obects to dictionaries
     books_data = []
     for book in books:
