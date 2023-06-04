@@ -41,6 +41,13 @@ const SearchForm = () => {
     }
   }, [search]);
 
+  React.useEffect(() => {
+    if (searchQuery !== "") {
+      const newSearchQuery = `${searchQuery.slice(0, searchQuery.indexOf("checkmark="))}checkmark=${checkmark}`;
+      setSearchQuery(newSearchQuery);
+    }
+  }, [checkmark]);
+
 
 
   function handleOptionSelect(evt) {
@@ -50,7 +57,7 @@ const SearchForm = () => {
 
   function handleListSelect(evt) {
     console.log("list selected ", evt.target.value);
-    setList(evt.target.value);
+    setSearchQuery(`option=${option}&list=${evt.target.value}&checkmark=${checkmark}`);
   }
 
   function handleCategoryChange(evt) {
@@ -60,6 +67,11 @@ const SearchForm = () => {
     } else {
       setSearchQuery("");
     }
+  }
+
+  const handleCheckmarkChange = () => {
+    console.log("checkmark ", checkmark);
+    setCheckmark(!checkmark);
   }
 
   function handleSubmit(evt) {
@@ -130,7 +142,7 @@ const SearchForm = () => {
 
         {isLoggedIn &&
           <div>
-            <input type="checkbox" id="checkmark" name="checkmark" value="on" defaultChecked />
+            <input type="checkbox" id="checkmark" onChange={handleCheckmarkChange} defaultChecked />
             <label htmlFor="checkmark" className="label">Do not recommend me books that already on my bookshelf</label>
           </div>
         }
