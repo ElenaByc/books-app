@@ -79,16 +79,13 @@ const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
           </div>
         </ReactBootstrap.Modal.Body>
       </ReactBootstrap.Modal>
-      {
-        shelf !== "" &&
-        <CardButtons
-          shelf={shelf}
-          book={book}
-          handleLeftBtn={handleLeftBtn}
-          handleRightBtn={handleRightBtn}
-          setMsg={setMsg}
-        />
-      }
+      <CardButtons
+        shelf={shelf}
+        book={book}
+        handleLeftBtn={handleLeftBtn}
+        handleRightBtn={handleRightBtn}
+        setMsg={setMsg}
+      />
     </div >
   )
 }

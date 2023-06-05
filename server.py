@@ -277,7 +277,7 @@ def add_to_read():
     else:
         # get user
         user = crud.get_user_by_email(logged_in_email)
-        # get To read shelf
+        # get To Read shelf
         shelf_type = "To Read"
         shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
         # check if the book is already on user's To Read Bookshelf
@@ -321,9 +321,16 @@ def add_to_already_read():
             shelf_type = "Already Read"
         else:
             # get book to shelf association / record
+            # if the book is on the user's To Read bookshelf
             db_book_shelf = crud.get_book_shelf(book_id, shelf_from.shelf_id)
-            # update = change shelf_id
-            db_book_shelf.shelf_id = shelf_to.shelf_id
+            if db_book_shelf:
+                # update = change shelf_id
+                db_book_shelf.shelf_id = shelf_to.shelf_id
+            else:
+                # The book is not on the user's To Read bookshelf
+                # create book to shelf association
+                db_book_shelf = crud.create_book_shelf(book_id, shelf_to.shelf_id)
+                db.session.add(db_book_shelf)
             db.session.commit()
             msg = "You successfully put this book on your bookshelf"
             success = True

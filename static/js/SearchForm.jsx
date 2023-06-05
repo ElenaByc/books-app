@@ -178,6 +178,7 @@ const SearchForm = () => {
 
       <br></br>
       <br></br>
+      {msg !== "" && <MessageBox msg={msg} setMsg={setMsg} />}
       {searchStatus !== "" &&
         <BooksContainer
           shelf=""

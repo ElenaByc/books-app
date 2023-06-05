@@ -94,11 +94,13 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
 
   return (
     <div className="card_buttons">
-      <div
-        className="remove-icon"
-        title="Remove this book"
-        onClick={handleRemoveFromShelf}>
-      </div>
+      {shelf !== "" &&
+        <div
+          className="remove-icon"
+          title="Remove this book"
+          onClick={handleRemoveFromShelf}>
+        </div>
+      }
       {shelf === "To Read" &&
         <div
           className="checkmark-icon"
@@ -118,6 +120,20 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
           className="read-icon"
           title="Want to read it again"
           onClick={handleAddToRead}>
+        </div>
+      }
+      {shelf === "" &&
+        <div
+          className="read-icon"
+          title="Want to read"
+          onClick={handleAddToRead}>
+        </div>
+      }
+      {shelf === "" &&
+        <div
+          className="checkmark-icon"
+          title="Mark this book as Already Read"
+          onClick={handleAddToAlreadyRead}>
         </div>
       }
     </div>
