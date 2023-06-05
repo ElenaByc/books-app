@@ -48,7 +48,15 @@ const SearchForm = () => {
     }
   }, [checkmark]);
 
-
+  React.useEffect(() => {
+    if (option !== "") {
+      if (option !== "favorites") {
+        setSearchQuery("");
+      } else {
+        setSearchQuery(`option=${option}&checkmark=${checkmark}`);
+      }
+    }
+  }, [option]);
 
   function handleOptionSelect(evt) {
     console.log(evt.target.value);
@@ -60,8 +68,26 @@ const SearchForm = () => {
     setSearchQuery(`option=${option}&list=${evt.target.value}&checkmark=${checkmark}`);
   }
 
+  function handleAuthorChange(evt) {
+    console.log("author: ", evt.target.value);
+    if (evt.target.value !== "") {
+      setSearchQuery(`option=${option}&author=${evt.target.value}&checkmark=${checkmark}`);
+    } else {
+      setSearchQuery("");
+    }
+  }
+
+  function handleTitleChange(evt) {
+    console.log("title: ", evt.target.value);
+    if (evt.target.value !== "") {
+      setSearchQuery(`option=${option}&title=${evt.target.value}&checkmark=${checkmark}`);
+    } else {
+      setSearchQuery("");
+    }
+  }
+
   function handleCategoryChange(evt) {
-    console.log("category selected ", evt.target.value);
+    console.log("category: ", evt.target.value);
     if (evt.target.value !== "") {
       setSearchQuery(`option=${option}&category=${evt.target.value}&checkmark=${checkmark}`);
     } else {
@@ -111,13 +137,13 @@ const SearchForm = () => {
         {option === "author" &&
           <div>
             <label htmlFor="author">Author</label>
-            <input id="author" type="text" name="author" />
+            <input id="author" type="text" onChange={handleAuthorChange} />
           </div>
         }
         {option === "title" &&
           <div>
             <label htmlFor="title">Title</label>
-            <input id="title" type="text" name="title" />
+            <input id="title" type="text" onChange={handleTitleChange} />
           </div>
         }
         {option === "category" &&
