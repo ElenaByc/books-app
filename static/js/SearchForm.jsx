@@ -108,12 +108,8 @@ const SearchForm = () => {
     setSearch(true)
   }
 
-  const addToAlreadyRead = () => {
-    console.log("addToAlreadyRead");
-  }
-
-  const addToRead = () => {
-    console.log("addToRead");
+  const handleBtn = (book) => {
+    console.log(book, "was added to the user's bookshelf")
   }
 
   return (
@@ -185,8 +181,8 @@ const SearchForm = () => {
           header={searchHeader}
           books={searchResults}
           status={searchStatus}
-          handleLeftBtn={addToRead}
-          handleRightBtn={addToAlreadyRead}
+          handleLeftBtn={handleBtn}
+          handleRightBtn={handleBtn}
           setMsg={setMsg}
         />
       }
