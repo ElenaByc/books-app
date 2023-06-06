@@ -173,7 +173,7 @@ const SearchForm = () => {
           <input type="submit" value="Get Recommendations!" disabled={!searchQuery} />
         </form>
       </div>
-      {msg !== "" && <MessageBox msg={msg} setMsg={setMsg} />}
+      {msg !== "" && <MessageBox msg={msg} setMsg={setMsg} location="home"/>}
       {searchStatus !== "" &&
         <BooksContainer
           shelf=""

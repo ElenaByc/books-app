@@ -80,7 +80,7 @@ const Bookshelf = () => {
   return (
     <>
       <h2>My bookshelf</h2>
-      {msg !== "" && <MessageBox msg={msg} setMsg={setMsg} />}
+      {msg !== "" && <MessageBox msg={msg} setMsg={setMsg} location="bookshelf"/>}
       {console.log("Rendering Bookshelf!")}
       <BooksContainer
         shelf="To Read"
