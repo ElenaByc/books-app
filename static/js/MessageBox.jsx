@@ -12,10 +12,9 @@ const MessageBox = ({ msg, setMsg }) => {
       {msg.shelf === ""
         ? <div>{msg.message}</div>
         : <div>{msg.message.slice(0, msg.message.indexOf("bookshelf"))}
-          <span className="shelf-type">{msg.shelf}</span>&nbsp;bookshelf</div>
+          <a href={`/bookshelf#${msg.shelf.slice(0,2)}`} ><span className="shelf-type">{msg.shelf}</span></a>&nbsp;bookshelf</div>
       }
 
-      {/* <div dangerouslySetInnerHTML={{__html: message}} /> */}
       <div className="close-icon" title="Close" onClick={closeMessageBox}></div>
     </div >
   )

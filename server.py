@@ -136,17 +136,14 @@ def api_books():
     if books == None or len(books) == 0:
         return jsonify({"status": "NO DATA", "header": header, "books": []})
     
-    # update Walmart links
-    for book in books:
-        if book.walmart_link is None:
-            book.walmart_link = get_book_walmart_link_by_isbn13(
-                book.primary_isbn13)
-            print("!LINK "*10)
-            print(book.walmart_link)
-            if book.walmart_link:
-                db.session.commit()
+    # # update Walmart links
+    # for book in books:
+    #     if book.walmart_link is None:
+    #         book.walmart_link = get_book_walmart_link_by_isbn13(
+    #             book.primary_isbn13)
+    #         if book.walmart_link:
+    #             db.session.commit()
 
-    print("books len: ", len(books))
     # convert SQLAlchemy book obects to dictionaries
     books_data = []
     for book in books:
@@ -181,8 +178,6 @@ def api_bookshelf():
         if book.walmart_link is None:
             book.walmart_link = get_book_walmart_link_by_isbn13(
                 book.primary_isbn13)
-            print("!LINK "*10)
-            print(book.walmart_link)
             if book.walmart_link:
                 db.session.commit()
 
@@ -383,14 +378,7 @@ def process_login():
     password = request.form.get("password")
 
     user = crud.get_user_by_email(email)
-    # correct = pbkdf2_sha256.verify(password, user.password)
-    # hash = pbkdf2_sha256.encrypt(password, rounds=200000, salt_size=16)
-    # print("CORRECT " * 5)
-    # print(correct)
-    # print("password ", user.password)
-    # print("hash ", hash)
-    # print("CORRECT " * 5)
-    # if not user or user.password != password:
+    
     if not user or not pbkdf2_sha256.verify(password, user.password):
         flash("ERROR|The email or password you entered was incorrect.")
         return redirect("/login")

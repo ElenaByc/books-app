@@ -104,6 +104,7 @@ const SearchForm = () => {
     evt.preventDefault();
     console.log("searchQuery: ", searchQuery);
     setSearchResults([])
+    setMsg("")
     setSearchStatus("LOADING")
     setSearch(true)
   }
@@ -134,13 +135,13 @@ const SearchForm = () => {
           {option === "author" &&
             <div>
               <label htmlFor="author">Author</label>
-              <input id="author" type="text" onChange={handleAuthorChange} />
+              <input id="author" type="text" placeholder="example: Pilkey" onChange={handleAuthorChange} />
             </div>
           }
           {option === "title" &&
             <div>
               <label htmlFor="title">Title</label>
-              <input id="title" type="text" onChange={handleTitleChange} />
+              <input id="title" type="text" placeholder="example: games" onChange={handleTitleChange} />
             </div>
           }
           {option === "category" &&
@@ -161,7 +162,6 @@ const SearchForm = () => {
               </select>
             </div>
           }
-
 
           {isLoggedIn &&
             <div>
