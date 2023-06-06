@@ -10,7 +10,6 @@ from utilites import (create_user_preferences_dict,
                       get_book_walmart_link_by_isbn13)
 import crud
 from jinja2 import StrictUndefined
-from random import sample
 from passlib.hash import pbkdf2_sha256
 
 app = Flask(__name__)
@@ -26,73 +25,6 @@ def homepage():
     lists = crud.get_all_lists()
 
     return render_template("homepage.html", lists=lists)
-
-
-@app.route("/search-result")
-def search_books():
-    """Search for books in the database"""
-
-    options = request.args.get("options", "")
-    checkmark = request.args.get("bookshelf")
-
-    if options == "author":
-        author = request.args.get("author")
-        books = crud.get_books_by_author_name(author)
-        header = f"Results for \'{author}\' in book's authors"
-    elif options == "title":
-        title = request.args.get("title")
-        books = crud.get_books_by_title(title)
-        header = f"Results for \'{title}\' in book's title"
-    elif options == "category":
-        category = request.args.get("category")
-        books = crud.get_books_by_category(category)
-        header = f"Results for \'{category}\' in book's categories"
-    elif options == "list":
-        list_id = request.args.get("list")
-        books = crud.get_books_by_list(list_id)
-        header = f"Best Sellers List: {crud.get_list_by_id(list_id).list_name}"
-    elif options == "favorites":
-        # analize user's Favorites
-
-        # get user and then user's favorite books
-        logged_in_email = session.get("user_email")
-        user = crud.get_user_by_email(logged_in_email)
-        shelf_type = "Favorites"
-        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
-        if len(shelf.books) == 0:
-            books = []
-            header = "Sorry, we cannot give you recommendations based on your favorites since your Favorites bookshelf is empty"
-        else:
-            fav_dict = create_user_preferences_dict(shelf.books)
-
-            # get all book and for each book give raiting based on the dictionary
-            # return TEN(?) best results
-            # most likelly, the result will include all the books from the user's Favorites
-            all_books = crud.get_all_books()
-            books = get_recommendations(
-                all_books, fav_dict, 10 + len(shelf.books))
-            header = f"Books recommendations based on your Favorites bookshelf"
-    else:
-        books = []
-        header = ""
-
-    if len(books) != 0 and checkmark == "on":
-        # remove books that on users bookshelf
-        logged_in_email = session.get("user_email")
-        if logged_in_email:
-            user = crud.get_user_by_email(logged_in_email)
-            shelf_books = crud.get_books_by_user(user)
-            books_new = []
-            for book in books:
-                if not book in shelf_books:
-                    books_new.append(book)
-            books = books_new
-
-    # print("!!!!!!!!!!!!!!!!!!!!!!!")
-    # if len(books) > 3:
-    #   print(sample(books, 3))
-
-    return render_template("all_books.html", books=books, header=header)
 
 
 @app.route("/lists")
@@ -148,10 +80,6 @@ def api_books():
     option = request.args.get("option", "")
     checkmark = request.args.get("checkmark")
 
-    print("SEARCHING!!!!!!!!!!!!!!!!!!!")
-    print("option ", option)
-    print("checkmark ", checkmark)
-
     if option == "author":
         author = request.args.get("author")
         books = crud.get_books_by_author_name(author)
@@ -163,9 +91,6 @@ def api_books():
     elif option == "category":
         category = request.args.get("category")
         books = crud.get_books_by_category(category)
-        print("SEARCHING!!!!!!!!!!!!!!!!!!!")
-        print("category ", category)
-        print("books len: ", len(books))
         header = f"Results for \'{category}\' in book's categories"
     elif option == "list":
         list_id = request.args.get("list")
@@ -186,7 +111,7 @@ def api_books():
             fav_dict = create_user_preferences_dict(shelf.books)
 
             # get all book and for each book give raiting based on the dictionary
-            # return TEN(?) best results
+            # return TEN(about ten) best results
             # most likelly, the result will include all the books from the user's Favorites
             all_books = crud.get_all_books()
             books = get_recommendations(
@@ -329,7 +254,8 @@ def add_to_already_read():
             else:
                 # The book is not on the user's To Read bookshelf
                 # create book to shelf association
-                db_book_shelf = crud.create_book_shelf(book_id, shelf_to.shelf_id)
+                db_book_shelf = crud.create_book_shelf(
+                    book_id, shelf_to.shelf_id)
                 db.session.add(db_book_shelf)
             db.session.commit()
             msg = "You successfully put this book on your bookshelf"
@@ -432,98 +358,6 @@ def show_book(book_id):
         shelf_type=shelf_type)
 
 
-@app.route("/books/<book_id>/bookshelf", methods=["POST"])
-def put_book_on_shelf(book_id):
-    """Create book_to_shelf association."""
-
-    logged_in_email = session.get("user_email")
-    shelf_type = request.form.get("shelf")
-
-    if logged_in_email is None:
-        flash("ERROR|You must log in to add a book to your bookshelf")
-    else:
-        user = crud.get_user_by_email(logged_in_email)
-        if shelf_type == "read":
-            shelf_type = "To Read"
-        elif shelf_type == "already":
-            shelf_type = "Already Read"
-        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
-        book_shelf = crud.create_book_shelf(book_id, shelf.shelf_id)
-        db.session.add(book_shelf)
-        db.session.commit()
-
-        flash(
-            f"OK|You put this book on your <span class=\"shelf-type\">{shelf_type}</span> bookshelf")
-
-    return redirect(f"/books/{book_id}")
-
-
-@app.route("/remove/<book_id>")
-def remove_book(book_id):
-    """Remove a book from user's bookshelf."""
-
-    shelf_type = ""
-
-    logged_in_email = session.get("user_email")
-    user = crud.get_user_by_email(logged_in_email)
-    shelf_type = "To Read"
-    shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
-    db_book_shelf = crud.get_book_shelf(book_id, shelf.shelf_id)
-    if db_book_shelf:
-        # the book on user's To read bookshelf
-        # remove this record from db
-        db.session.delete(db_book_shelf)
-        db.session.commit()
-        flash("OK|The book was removed from your <span class=\"shelf-type\">To Read</span> bookshelf")
-    else:
-        shelf_type = "Already Read"
-        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
-        db_book_shelf = crud.get_book_shelf(book_id, shelf.shelf_id)
-        if db_book_shelf:
-            # the book on user's To read bookshelf
-            # remove this record from db
-            db.session.delete(db_book_shelf)
-            db.session.commit()
-            flash(
-                "OK|The book was removed from your <span class=\"shelf-type\">Already Read</span> bookshelf")
-
-    return redirect("/bookshelf")
-
-
-@app.route("/read/<book_id>")
-def move_book(book_id):
-    """Move a book from user's To Read bookshelf to Already read bookshelf."""
-
-    logged_in_email = session.get("user_email")
-    user = crud.get_user_by_email(logged_in_email)
-    shelf_from = crud.get_shelf_by_user(user.user_id, "To Read")
-    shelf_to = crud.get_shelf_by_user(user.user_id, "Already Read")
-    db_book_shelf = crud.get_book_shelf(book_id, shelf_from.shelf_id)
-    db_book_shelf.shelf_id = shelf_to.shelf_id
-    db.session.commit()
-    flash("OK|The book was moved to your <span class=\"shelf-type\">Already Read</span> bookshelf")
-
-    return redirect("/bookshelf")
-
-
-@app.route("/favorite/<book_id>")
-def create_favorite(book_id):
-    """Mark a book from user's Already Read bookshelf to Favorites bookshelf."""
-
-    logged_in_email = session.get("user_email")
-
-    user = crud.get_user_by_email(logged_in_email)
-    shelf = crud.get_shelf_by_user(user.user_id, "Favorites")
-    book_shelf = crud.create_book_shelf(book_id, shelf.shelf_id)
-    db.session.add(book_shelf)
-    db.session.commit()
-
-    flash(
-        f"OK|You put this book on your <span class=\"shelf-type\">Favorites</span> bookshelf")
-
-    return redirect("/bookshelf")
-
-
 @app.route("/login")
 def login_form():
     """Show user login form."""
@@ -613,29 +447,6 @@ def show_user_bookshelf_react():
     """Show user bookshelf"""
 
     return render_template("bookshelf-react.html")
-
-
-@app.route("/bookshelf-old")
-def show_user_bookshelf():
-    """Show user bookshelf"""
-
-    email = session.get("user_email")
-    user = crud.get_user_by_email(email)
-    to_read_books = crud.get_users_books(user=user, shelf_type="To Read")
-    already_read_books = crud.get_users_books(
-        user=user, shelf_type="Already Read")
-    favorite_books = crud.get_users_books(user=user, shelf_type="Favorites")
-
-    return render_template(
-        "bookshelf.html",
-        to_read_books=to_read_books,
-        already_read_books=already_read_books,
-        favorite_books=favorite_books)
-
-
-# @app.route("/test-redirect")
-# def test_redirect():
-#     return redirect(url_for('.search_books', options={}, checkmark=False))
 
 
 if __name__ == "__main__":
