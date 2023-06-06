@@ -2,7 +2,7 @@
 
 import os
 import requests
-from random import choice, randint
+from random import randint
 from passlib.hash import pbkdf2_sha256
 from datetime import datetime
 from time import sleep
@@ -284,8 +284,11 @@ for db_list in lists_in_db:
         db_book = crud.get_book_by_isbn13(primary_isbn13)
         if db_book == None:
             description = book["description"]
-            contributor_note = book["contributor_note"].capitalize()
+            contributor_note = book["contributor_note"]
+            if len(contributor_note) > 0:
+                contributor_note = contributor_note[0].upper() + contributor_note[1:]
             walmart_link = get_book_walmart_link_by_isbn13(primary_isbn13)
+            sleep(randint(3, 9))
             db_book = crud.create_book(
                 title=title,
                 isbn10=primary_isbn10,
