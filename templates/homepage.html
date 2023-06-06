@@ -9,67 +9,6 @@
 <h2>Let's pick a wonderful book for you to read!</h2>
 {% endif %}
 
-<!-- <ul>
-    <li><a href="/lists">View all The New York Times Best Sellers lists.</a></li>
-    <li><a href="/books">View all books</a></li>
-</ul> -->
-
-<div class="search-container">
-    <h3 class="search-header">Pick Me a Book</h3>
-    <!-- <form class="search-form" action="/search-result" method="GET">
-        <div>
-            <div class="show">
-                <label for="options">Choose books</label>
-                <select id="options" name="options" required>
-                    <option disabled selected value> -- select an option -- </option>
-                    <option value="author">by author</option>
-                    <option value="title">by title</option>
-                    <option value="category">by category</option>
-                    <option value="list">by NYT best sellers list</option>
-                    {% if session.get('user_email') %}
-                    <option value="favorites">based on my Favorites</option>
-                    {% endif %}
-                </select>
-            </div>
-
-            <div class="author form-field">
-                <label for="author">Author</label>
-                <input id="author" type="text" name="author">
-            </div>
-
-            <div class="title form-field">
-                <label for="title">Title</label>
-                <input id="title" type="text" name="title">
-            </div>
-
-            <div class="category form-field">
-                <label for="category">Category</label>
-                <input id="category" type="text" name="category">
-            </div>
-
-            <div class="list form-field">
-                <label for="list">Best Sellers List</label>
-                <select name="list" id="list">
-                    <option disabled selected value> -- select a list -- </option>
-                    {% for l in lists %}
-                    <option value="{{ l.list_id }}">{{ l.list_name }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-        </div>
-
-        {% if session.get('user_email') %}
-        <div>
-            <input type="checkbox" id="bookshelf" name="bookshelf" value="on" checked>
-            <label for="bookshelf" class="label">Do not recommend me books that already on my bookshelf</label>
-        </div>
-        {% endif%}
-
-        <input type="submit" value="Get Recommendations!" />
-    </form> -->
-
-</div>
-
 <div id="search">
 </div>
 
@@ -81,6 +20,5 @@
 <script src="/static/js/BooksContainer.jsx" type="text/jsx"></script>
 <script src="/static/js/MessageBox.jsx" type="text/jsx"></script>
 <script src="/static/js/SearchForm.jsx" type="text/jsx"></script>
-<script src="/static/js/script.js"></script>
 <script src="/static/js/closeFlashMsg.js"></script>
 {% endblock %}

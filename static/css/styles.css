@@ -311,42 +311,17 @@ p {
     row-gap: 20px;
 }
 
-/* ---------- Book Details ---------- */
+/* ---------- Search Form ---------- */
 
-.book_details {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    column-gap: 20px;
-}
-
-.book_details>div:first-child {
-    flex: 0 0 40%;
+#search {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 30px;
-}
-
-.book_details__cover {
+    row-gap: 10px;
     width: 100%;
 }
 
-.book_details__content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.book_details__content h4 {
-    text-align: left;
-}
-
-
-/* ---------- Search Form ---------- */
-
-.search-container,
-.login-container {
+.search-container {
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -354,15 +329,22 @@ p {
     border: 2px solid var(--color-brown);
     border-radius: 7px;
     width: fit-content;
-    margin: auto;
 }
 
 .search-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     row-gap: 10px;
-    padding: 10px;
+    padding: 15px;
+}
+
+.search-form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 15px;
 }
 
 .search-form input[type=text],
@@ -377,15 +359,6 @@ select {
 
 .form-field {
     display: none;
-}
-
-.search-form>div>div.show {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    column-gap: 15px;
-    margin-bottom: 15px;
 }
 
 .search-form input[type="checkbox"] {
@@ -506,6 +479,38 @@ select {
 }
 
 
+/* ---------- Book Details ---------- */
+
+.book_details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 20px;
+}
+
+.book_details>div:first-child {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.book_details__cover {
+    width: 100%;
+}
+
+.book_details__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.book_details__content h4 {
+    text-align: left;
+}
+
+
 /* ---------- Login Form ---------- */
 
 .login-form {
@@ -571,4 +576,17 @@ select {
     align-items: center;
     justify-content: flex-end;
     column-gap: 10px;
+}
+
+/* ---------- Login - Register ---------- */
+
+.login-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--color-brown);
+    border-radius: 7px;
+    width: fit-content;
+    margin: auto;
 }
