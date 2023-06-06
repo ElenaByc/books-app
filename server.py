@@ -135,6 +135,16 @@ def api_books():
 
     if books == None or len(books) == 0:
         return jsonify({"status": "NO DATA", "header": header, "books": []})
+    
+    # update Walmart links
+    for book in books:
+        if book.walmart_link is None:
+            book.walmart_link = get_book_walmart_link_by_isbn13(
+                book.primary_isbn13)
+            print("!LINK "*10)
+            print(book.walmart_link)
+            if book.walmart_link:
+                db.session.commit()
 
     print("books len: ", len(books))
     # convert SQLAlchemy book obects to dictionaries

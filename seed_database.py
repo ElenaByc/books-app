@@ -288,7 +288,7 @@ for db_list in lists_in_db:
             if len(contributor_note) > 0:
                 contributor_note = contributor_note[0].upper() + contributor_note[1:]
             walmart_link = get_book_walmart_link_by_isbn13(primary_isbn13)
-            sleep(randint(3, 9))
+            # sleep(randint(3, 9))
             db_book = crud.create_book(
                 title=title,
                 isbn10=primary_isbn10,
