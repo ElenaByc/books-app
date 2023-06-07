@@ -2255,8 +2255,25 @@ COPY public.books_lists (book_list_id, book_id, list_id) FROM stdin;
 
 COPY public.books_shelves (book_shelf_id, book_id, shelf_id) FROM stdin;
 1	121	4
-2	122	4
-3	124	4
+3	124	5
+4	98	5
+8	103	5
+11	103	6
+12	149	5
+13	17	5
+14	103	4
+2	122	5
+15	149	6
+17	5	4
+18	3	5
+5	101	5
+20	17	6
+21	82	4
+16	61	5
+9	23	5
+22	122	6
+24	99	5
+26	149	4
 \.
 
 
@@ -2804,7 +2821,7 @@ SELECT pg_catalog.setval('public.books_lists_book_list_id_seq', 200, true);
 -- Name: books_shelves_book_shelf_id_seq; Type: SEQUENCE SET; Schema: public; Owner: linuxuser
 --
 
-SELECT pg_catalog.setval('public.books_shelves_book_shelf_id_seq', 3, true);
+SELECT pg_catalog.setval('public.books_shelves_book_shelf_id_seq', 30, true);
 
 
 --
@@ -2832,14 +2849,14 @@ SELECT pg_catalog.setval('public.lists_list_id_seq', 16, true);
 -- Name: shelves_shelf_id_seq; Type: SEQUENCE SET; Schema: public; Owner: linuxuser
 --
 
-SELECT pg_catalog.setval('public.shelves_shelf_id_seq', 30, true);
+SELECT pg_catalog.setval('public.shelves_shelf_id_seq', 36, true);
 
 
 --
 -- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: linuxuser
 --
 
-SELECT pg_catalog.setval('public.users_user_id_seq', 10, true);
+SELECT pg_catalog.setval('public.users_user_id_seq', 12, true);
 
 
 --
