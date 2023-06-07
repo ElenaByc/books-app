@@ -529,6 +529,17 @@ select {
 
 /* ---------- Login Form ---------- */
 
+.login-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--color-brown);
+    border-radius: 7px;
+    width: fit-content;
+    margin: auto;
+}
+
 .login-form {
     display: flex;
     flex-direction: column;
@@ -546,6 +557,28 @@ select {
 
 .login-form input[type=submit] {
     padding: 7px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.login-form input[type=submit]:enabled {
+    border: 2px solid var(--color-brown);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-form input[type=submit]:enabled:hover {
+    background-color: var(--color-btn-bg);
+    box-shadow:
+        0 0 0 1px var(--color-brown) inset,
+        0 0 0 3px var(--color-light) inset;
+    color: var(--color-brown);
+}
+
+.login-form input[type=submit]:enabled:active {
+    transform: scale(0.98);
 }
 
 .login-form div {
@@ -592,17 +625,4 @@ select {
     align-items: center;
     justify-content: flex-end;
     column-gap: 10px;
-}
-
-/* ---------- Login - Register ---------- */
-
-.login-container {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid var(--color-brown);
-    border-radius: 7px;
-    width: fit-content;
-    margin: auto;
 }
