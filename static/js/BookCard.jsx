@@ -81,7 +81,7 @@ const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
                 {book.categories.map((category_name) => <li key={category_name}>{category_name}</li>)}
               </ul>
               <h4>Description:</h4>
-              <div dangerouslySetInnerHTML={{ __html: book.description }} />
+              <div className="book_details__description" dangerouslySetInnerHTML={{ __html: book.description }} />
             </div>
           </div>
         </ReactBootstrap.Modal.Body>

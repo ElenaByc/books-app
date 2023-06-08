@@ -238,8 +238,8 @@ p {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 /* ---------- Header ---------- */
@@ -581,6 +581,11 @@ select {
     text-align: left;
 }
 
+.book_details__description br {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+}
 
 /* ---------- Login Form ---------- */
 
