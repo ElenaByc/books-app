@@ -6,7 +6,7 @@ const BooksContainer = (props) => {
         ? <h3 className="books__header">{props.shelf}</h3>
         : <h3 className="books__header">{props.header}</h3>
       }
-      {props.books.length > 1 && <h3 className="books__header">{props.books.length} books</h3>}
+      {props.books.length > 1 && <h3 className="books__subheader">{props.books.length} books</h3>}
       <div className="books__cards-container">
         {props.books.length > 0
           ? props.books.map((book) => {

@@ -5,22 +5,27 @@ const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
   const handleCloseDetails = () => setShow(false);
   const handleShowDetails = () => setShow(true);
 
-  let author_data;
+  let author_data, authors_data_details;
   if (book.authors.length > 1) {
     if (book.authors.length === 2) {
-      author_data = `Authors: ${book.authors[0]} and ${book.authors[1]}`;
+      author_data = `${book.authors[0]} and ${book.authors[1]}`;
+      authors_data_details = `Authors: ${book.authors[0]} and ${book.authors[1]}`;
     } else {
-      author_data = `Authors: ${book.authors[0]}`
+      author_data = `${book.authors[0]}`;
+      authors_data_details = `Authors: ${book.authors[0]}`;
       for (let i = 1; i < book.authors.length; i++) {
         if (i === book.authors.length - 1) {
           author_data += `, and ${book.authors[i]}`;
+          authors_data_details += `, and ${book.authors[i]}`;
         } else {
           author_data += `, ${book.authors[i]}`;
+          authors_data_details += `, and ${book.authors[i]}`;
         }
       }
     }
   } else {
-    author_data = `Author: ${book.authors[0]}`;
+    author_data = `${book.authors[0]}`;
+    authors_data_details = `Author: ${book.authors[0]}`;
   }
 
   return (
@@ -59,7 +64,7 @@ const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
               }
             </div>
             <div className="book_details__content">
-              <h4>{author_data}</h4>
+              <h4>{authors_data_details}</h4>
               {book.contributor_note != "" && <h4>{book.contributor_note}</h4>}
               <h4>ISBN10 = {book.primary_isbn10}</h4>
               <h4>ISBN13 = {book.primary_isbn13}</h4>
