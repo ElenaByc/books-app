@@ -233,6 +233,15 @@ p {
     transform: scale(1.1);
 }
 
+.walmart-icon {
+    background-image: url(/static/img/walmart-logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
 /* ---------- Header ---------- */
 
 .header {
@@ -542,6 +551,25 @@ select {
 .book_details__cover {
     width: 100%;
 }
+
+.buy {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.buy:hover h4 {
+    color: var(--color-brown);
+}
+
+.buy:hover .walmart-icon {
+    transform: scale(1.1);
+}
+
 
 .book_details__content {
     display: flex;

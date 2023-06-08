@@ -60,7 +60,9 @@ const BookCard = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => {
                 : <img src="/static/img/no-cover.jpg" alt="book cover is not available" />
               }
               {book.walmart_link &&
-                <h4><a href={book.walmart_link} target="_blank">Buy on Walmart</a></h4>
+                <a className="buy" href={book.walmart_link} target="_blank">
+                  <div className="walmart-icon"></div><h4>Buy on Walmart</h4>
+                </a>
               }
             </div>
             <div className="book_details__content">
