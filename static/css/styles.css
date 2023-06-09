@@ -262,6 +262,7 @@ p {
 }
 
 .header__logo {
+    flex: 0 0 45%;
     display: flex;
     column-gap: 20px;
     align-items: center;
@@ -279,6 +280,14 @@ p {
     line-height: 40px;
     letter-spacing: 0.02em;
     text-align: center;
+}
+
+.nav {
+    flex: 0 0 45%;
+    display: flex;
+    column-gap: 20%;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
 }
 
 .header__bookshelf {
@@ -699,6 +708,10 @@ select {
         line-height: 24px;
     }
 
+    .nav {
+        column-gap: 40px;
+    }
+
     .header__bookshelf {
         column-gap: 10px;
     }
@@ -731,7 +744,6 @@ select {
 
     .header {
         flex-wrap: wrap;
-        column-gap: 120px;
         row-gap: 20px;
         justify-content: center;
     }
@@ -741,4 +753,14 @@ select {
         justify-content: center;
     }
 
+    .nav {
+        flex: 0 0 100%;
+        justify-content: center;
+        column-gap: 200px;
+    }
+
 }
+
+/* ---------- max-width: 520px ---------- */
+
+@media screen and (max-width: 520.98px) {}

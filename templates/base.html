@@ -34,30 +34,29 @@
             <div class="header__logo">
                 <a href="/"><img class="header__logo-img" src="/static/img/books.svg"></a>
                 <div class="header__title">
-                    <h1>Pick Me a Book App</h1>
-                    <h3>Read... So you never feel alone</h3>
+                    <h1>Pick&nbsp;Me&nbsp;a&nbsp;Book&nbsp;App</h1>
+                    <h3>Read...&nbsp;So&nbsp;you&nbsp;never&nbsp;feel&nbsp;alone</h3>
                 </div>
             </div>
-            <nav>
+            <nav class="nav">
                 {% if session.get('user_email') %}
                 <a href="/bookshelf" class="header__bookshelf">
-                    <!-- <img class="header__bookshelf-icon" src="/static/img/books-on-bookshelf.svg"> -->
                     <img class="header__bookshelf-icon" src="/static/img/bookshelf1.png">
                     <h3>My Bookshelf</h3>
                 </a>
                 {% endif %}
+                {% if session.get('user_email') %}
+                <a href="/logout" class="header__login">
+                    <img class="header__login-icon" src="/static/img/exit-icon.svg">
+                    <h3>Log Out</h3>
+                </a>
+                {% else %}
+                <a href="/login" class="header__login">
+                    <img class="header__login-icon" src="/static/img/enter-icon.svg">
+                    <h3>Log In</h3>
+                </a>
+                {% endif %}
             </nav>
-            {% if session.get('user_email') %}
-            <a href="/logout" class="header__login">
-                <img class="header__login-icon" src="/static/img/exit-icon.svg">
-                <h3>Log Out</h3>
-            </a>
-            {% else %}
-            <a href="/login" class="header__login">
-                <img class="header__login-icon" src="/static/img/enter-icon.svg">
-                <h3>Log In</h3>
-            </a>
-            {% endif %}
         </header>
         <main class="main">
             {% for message in get_flashed_messages() %}
