@@ -120,7 +120,7 @@ const SearchForm = () => {
 
         <form className="search-form" onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="options">Choose books</label>
+            <label htmlFor="options">Choose&nbsp;books</label>
             <select defaultValue={"DEFAULT"} onChange={handleOptionSelect}>
               <option value="DEFAULT" disabled> -- select an option -- </option>
               <option value="author">by author</option>

@@ -118,8 +118,6 @@ p {
 
 .flash-msg {
     font-family: 'Literata';
-    font-size: 18px;
-    line-height: 24px;
     position: relative;
 
     display: flex;
@@ -525,6 +523,7 @@ select {
 
 .card_content h3 {
     font-family: "Literata Italic";
+    font-size: 20px;
     line-height: 22px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -536,6 +535,8 @@ select {
 
 .card_content h4 {
     font-family: 'Inter';
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .card_buttons {
@@ -634,7 +635,7 @@ select {
 }
 
 .login-form input[type=submit] {
-    padding: 7px;
+    padding: 7px 12px;
     width: fit-content;
     margin: auto;
     border-radius: 10px;
@@ -665,6 +666,10 @@ select {
     justify-content: flex-end;
     column-gap: 20px;
     width: 100%;
+}
+
+.login-container p {
+    text-align: center;
 }
 
 #register-link,
@@ -736,6 +741,7 @@ select {
         align-items: center;
         column-gap: 20px;
     }
+
 }
 
 /* ---------- max-width: 760px ---------- */
@@ -761,6 +767,159 @@ select {
 
 }
 
+/* ---------- max-width: 600px ---------- */
+
+@media screen and (max-width: 600.98px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header__title h1 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .header__logo {
+        column-gap: 10px;
+    }
+
+    .header__logo-img {
+        flex: 0 0 40px;
+        height: 40px;
+        width: 40px;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .header__bookshelf-icon {
+        flex: 0 0 50px;
+        width: 50px;
+    }
+
+    .header__login-icon {
+        flex: 0 0 25px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .header__login {
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    .header__login h3 {
+        margin-bottom: 5px;
+    }
+
+    .main {
+        padding: 20px 10px;
+    }
+
+    .search-form {
+        padding: 0;
+    }
+
+    .search-form input[type=text],
+    select {
+        padding: 2px;
+        width: 250px;
+    }
+
+}
+
 /* ---------- max-width: 520px ---------- */
 
-@media screen and (max-width: 520.98px) {}
+@media screen and (max-width: 520.98px) {
+
+    .nav {
+        column-gap: 50px;
+    }
+
+    .login-form {
+        padding: 10px 0;
+    }
+
+    .login-form input[type=text],
+    .login-form input[type=password],
+    .login-form input[type=email] {
+        padding: 2px;
+        width: 200px;
+    }
+
+}
+
+/* ---------- max-width: 410px ---------- */
+
+@media screen and (max-width: 410.98px) {
+
+    .nav {
+        column-gap: 30px;
+    }
+
+    .search-form div,
+    .login-form div {
+        flex-direction: column;
+    }
+
+}
+
+/* ---------- max-width: 320px ---------- */
+
+@media screen and (max-width: 320.98px) {
+
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header__title h1 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header__logo {
+        column-gap: 7px;
+    }
+
+    .header__logo-img {
+        flex: 0 0 35px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .header h3 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .header__bookshelf-icon {
+        flex: 0 0 40px;
+        width: 40px;
+    }
+
+    .header__login-icon {
+        flex: 0 0 20px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .header__login {
+        flex-direction: row;
+        column-gap: 5px;
+    }
+
+}
