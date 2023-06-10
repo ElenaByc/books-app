@@ -14,7 +14,6 @@ const Bookshelf = () => {
       .then((resp) => {
         setToReadBooks(resp.books);
         setStatus1(resp.status);
-        console.log("Inside fetch: status1 = ", status1);
       })
   }, []);
 
@@ -24,7 +23,6 @@ const Bookshelf = () => {
       .then((resp) => {
         setAlreadyReadBooks(resp.books);
         setStatus2(resp.status);
-        console.log("Inside fetch status2: ", status2);
       })
   }, []);
 
@@ -34,26 +32,22 @@ const Bookshelf = () => {
       .then((resp) => {
         setFavoriteBooks(resp.books);
         setStatus3(resp.status);
-        console.log("Inside fetch status3:", status3);
       })
   }, []);
 
 
   const removeFromShelf = (book, shelf) => {
     if (shelf === "To Read") {
-      console.log("removing from To Read shelf");
       const currentToReadBooks = [...toReadBooks];
       const index = currentToReadBooks.indexOf(book);
       currentToReadBooks.splice(index, 1);
       setToReadBooks([...currentToReadBooks]);
     } else if (shelf === "Already Read") {
-      console.log("removing from Already Read shelf");
       const currentAlreadyReadBooks = [...alreadyReadBooks];
       const index = currentAlreadyReadBooks.indexOf(book);
       currentAlreadyReadBooks.splice(index, 1);
       setAlreadyReadBooks([...currentAlreadyReadBooks]);
     } else if (shelf === "Favorites") {
-      console.log("removing from Favorites shelf");
       const currentFavoriteBooks = [...favoriteBooks];
       const index = currentFavoriteBooks.indexOf(book);
       currentFavoriteBooks.splice(index, 1);
@@ -80,8 +74,7 @@ const Bookshelf = () => {
   return (
     <>
       <h2>My bookshelf</h2>
-      {msg !== "" && <MessageBox msg={msg} setMsg={setMsg} location="bookshelf"/>}
-      {console.log("Rendering Bookshelf!")}
+      {msg !== "" && <MessageBox msg={msg} setMsg={setMsg} location="bookshelf" />}
       <BooksContainer
         shelf="To Read"
         books={toReadBooks}

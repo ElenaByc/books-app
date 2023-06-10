@@ -10,8 +10,7 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
     })
       .then((response) => response.json())
       .then((jsonResponse) => {
-        console.log(jsonResponse.message)
-        setMsg(jsonResponse)
+        setMsg(jsonResponse);
         window.scrollTo({
           top: 0,
           left: 0,
@@ -33,8 +32,7 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
     })
       .then((response) => response.json())
       .then((jsonResponse) => {
-        console.log(jsonResponse.message)
-        setMsg(jsonResponse)
+        setMsg(jsonResponse);
         window.scrollTo({
           top: 0,
           left: 0,
@@ -56,13 +54,12 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
     })
       .then((response) => response.json())
       .then((jsonResponse) => {
-        setMsg(jsonResponse)
+        setMsg(jsonResponse);
         window.scrollTo({
           top: 0,
           left: 0,
           behavior: "smooth",
         });
-        console.log(jsonResponse.message)
         if (jsonResponse.success) {
           handleRightBtn(book);
         }
@@ -79,8 +76,7 @@ const CardButtons = ({ book, shelf, handleLeftBtn, handleRightBtn, setMsg }) => 
     })
       .then((response) => response.json())
       .then((jsonResponse) => {
-        console.log(jsonResponse.message)
-        setMsg(jsonResponse)
+        setMsg(jsonResponse);
         window.scrollTo({
           top: 0,
           left: 0,

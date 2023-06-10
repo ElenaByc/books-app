@@ -14,7 +14,6 @@ const SearchForm = () => {
     fetch("/api/logged-in")
       .then((response) => response.json())
       .then((resp) => {
-        console.log("Inside fetch1: resp = ", resp);
         setIsLoggedIn(resp);
       })
   }, []);
@@ -23,7 +22,6 @@ const SearchForm = () => {
     fetch("/api/lists")
       .then((response) => response.json())
       .then((resp) => {
-        console.log("Inside fetch2: resp = ", resp);
         setListsArray(resp.lists);
       })
   }, []);
@@ -59,17 +57,14 @@ const SearchForm = () => {
   }, [option]);
 
   function handleOptionSelect(evt) {
-    console.log(evt.target.value);
     setOption(evt.target.value);
   }
 
   function handleListSelect(evt) {
-    console.log("list selected ", evt.target.value);
     setSearchQuery(`option=${option}&list=${evt.target.value}&checkmark=${checkmark}`);
   }
 
   function handleAuthorChange(evt) {
-    console.log("author: ", evt.target.value);
     if (evt.target.value !== "") {
       setSearchQuery(`option=${option}&author=${evt.target.value}&checkmark=${checkmark}`);
     } else {
@@ -78,7 +73,6 @@ const SearchForm = () => {
   }
 
   function handleTitleChange(evt) {
-    console.log("title: ", evt.target.value);
     if (evt.target.value !== "") {
       setSearchQuery(`option=${option}&title=${evt.target.value}&checkmark=${checkmark}`);
     } else {
@@ -87,7 +81,6 @@ const SearchForm = () => {
   }
 
   function handleCategoryChange(evt) {
-    console.log("category: ", evt.target.value);
     if (evt.target.value !== "") {
       setSearchQuery(`option=${option}&category=${evt.target.value}&checkmark=${checkmark}`);
     } else {
@@ -96,13 +89,11 @@ const SearchForm = () => {
   }
 
   const handleCheckmarkChange = () => {
-    console.log("checkmark ", checkmark);
     setCheckmark(!checkmark);
   }
 
   function handleSubmit(evt) {
     evt.preventDefault();
-    console.log("searchQuery: ", searchQuery);
     setSearchResults([])
     setMsg("")
     setSearchStatus("LOADING")
@@ -173,7 +164,7 @@ const SearchForm = () => {
           <input type="submit" value="Get Recommendations!" disabled={!searchQuery} />
         </form>
       </div>
-      {msg !== "" && <MessageBox msg={msg} setMsg={setMsg} location="home"/>}
+      {msg !== "" && <MessageBox msg={msg} setMsg={setMsg} location="home" />}
       {searchStatus !== "" &&
         <BooksContainer
           shelf=""
