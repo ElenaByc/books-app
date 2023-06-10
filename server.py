@@ -27,24 +27,6 @@ def homepage():
     return render_template("homepage.html", lists=lists)
 
 
-@app.route("/lists")
-def all_lists():
-    """View all The New York Times Best Sellers lists"""
-
-    lists = crud.get_all_lists()
-
-    return render_template("all_lists.html", lists=lists)
-
-
-@app.route("/books")
-def all_books():
-    """View all books."""
-
-    books = crud.get_all_books()
-
-    return render_template("all_books.html", books=books, header='')
-
-
 @app.route("/api/logged-in")
 def is_user_logged_in():
     """Determines whether the current visitor is a logged in user."""
@@ -135,7 +117,7 @@ def api_books():
 
     if books == None or len(books) == 0:
         return jsonify({"status": "NO DATA", "header": header, "books": []})
-    
+
     # # update Walmart links
     # for book in books:
     #     if book.walmart_link is None:
@@ -335,34 +317,6 @@ def remove_book_from_shelf():
     return jsonify({"success": success, "message": msg, "shelf": shelf_type})
 
 
-@app.route("/books/<book_id>")
-def show_book(book_id):
-    """Show details on a particular book."""
-
-    book = crud.get_book_by_id(book_id)
-    display_message = False
-    shelf_type = ""
-
-    logged_in_email = session.get("user_email")
-    if logged_in_email:
-        user = crud.get_user_by_email(logged_in_email)
-        shelf_type = "To Read"
-        shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
-        if crud.get_book_shelf(book_id, shelf.shelf_id):
-            display_message = True
-        else:
-            shelf_type = "Already Read"
-            shelf = crud.get_shelf_by_user(user.user_id, shelf_type)
-            if crud.get_book_shelf(book_id, shelf.shelf_id):
-                display_message = True
-
-    return render_template(
-        "book_details.html",
-        book=book,
-        display_message=display_message,
-        shelf_type=shelf_type)
-
-
 @app.route("/login")
 def login_form():
     """Show user login form."""
@@ -378,7 +332,7 @@ def process_login():
     password = request.form.get("password")
 
     user = crud.get_user_by_email(email)
-    
+
     if not user or not pbkdf2_sha256.verify(password, user.password):
         flash("ERROR|The email or password you entered was incorrect.")
         return redirect("/login")
@@ -444,7 +398,7 @@ def process_logout():
 def show_user_bookshelf_react():
     """Show user bookshelf"""
 
-    return render_template("bookshelf-react.html")
+    return render_template("bookshelf.html")
 
 
 if __name__ == "__main__":

@@ -44,7 +44,6 @@ def get_book_authors_ol(isbn13, book_id):
         print(f"ERROR! NO AUTHORS DATA! book_id = {book_id} isbn13 = {isbn13}")
         return False
     authors_keys = data["authors"]
-    print(authors_keys)
     for author_key in authors_keys:
         # check if this author is already in db
         author_ol_id = author_key["key"]
@@ -82,22 +81,15 @@ def get_book_authors_ol(isbn13, book_id):
 
 def add_categories_to_db(categories, book_id):
     for category in categories:
-        print("***********************************************")
-        print("category: ", category)
-        print("***********************************************")
         if category.isupper():
             category = format_uppercase_string(category)
         db_category = crud.get_category_by_name(category)
-        print("db_category: ", db_category)
-        print("***********************************************")
         if db_category == None:
             # create db_category
             db_category = crud.create_category(category)
-            print("CREATING DB CATEGORY - ", category)
             model.db.session.add(db_category)
             model.db.session.commit()
             # create book to category assotiation
-            print("CREATE BOOK+CATEGORY, BOOK_ID=", book_id)
             db_book_category = crud.create_book_category(
                 book_id, db_category.category_id)
             model.db.session.add(db_book_category)
@@ -108,13 +100,10 @@ def add_categories_to_db(categories, book_id):
                 book_id, db_category.category_id)
             if db_book_category == None:
                 # create book to category assotiation
-                print("CREATE BOOK+CATEGORY, BOOK_ID=", book_id)
                 db_book_category = crud.create_book_category(
                     book_id, db_category.category_id)
                 model.db.session.add(db_book_category)
                 model.db.session.commit()
-            else:
-                print("ATTENTION! ALREADY EXISTS", db_book_category)
 
 
 def get_book_data_google_books_api(db_book):
@@ -147,9 +136,7 @@ def get_book_data_google_books_api(db_book):
 
         # get categories from selflink
         if "categories" in data2["volumeInfo"]:
-            print("??????? categories = ", data2["volumeInfo"]["categories"])
             categories = split_categories(data2["volumeInfo"]["categories"])
-            print("!!!!!!! categories = ", categories)
             add_categories_to_db(categories, db_book.book_id)
 
     elif "description" in data["items"][0]["volumeInfo"]:
@@ -264,8 +251,6 @@ for db_list in lists_in_db:
     url = f"https://api.nytimes.com/svc/books/v3/lists/current/{db_list.nyt_list_name_encoded}.json"
     payload = {"api-key": NYT_API_KEY}
     res = requests.get(url, params=payload)
-    print(res.url)
-    print("res:", res)
     data = res.json()
     total_items = data["num_results"]
     if total_items != 0:
@@ -286,7 +271,8 @@ for db_list in lists_in_db:
             description = book["description"]
             contributor_note = book["contributor_note"]
             if len(contributor_note) > 0:
-                contributor_note = contributor_note[0].upper() + contributor_note[1:]
+                contributor_note = contributor_note[0].upper(
+                ) + contributor_note[1:]
             walmart_link = get_book_walmart_link_by_isbn13(primary_isbn13)
             # sleep(randint(3, 9))
             db_book = crud.create_book(
@@ -340,6 +326,3 @@ for n in range(10):
     shelf = crud.create_shelf(user.user_id, "Favorites")
     model.db.session.add(shelf)
 model.db.session.commit()
-
-
-print("NUM_OF_REQUESTS = ", NUM_OF_REQUESTS)

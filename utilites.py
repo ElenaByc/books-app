@@ -1,12 +1,13 @@
 from sortedcontainers import SortedDict
 from bs4 import BeautifulSoup
 import requests
-# from urllib.request import Request, urlopen
 
 
 def format_uppercase_string(str):
+    """Convert uppercase string to capitalized string"""
+
     if str.isupper():
-        # Capitalize each word in category
+        # Capitalize each word in string
         words = str.split()
         if len(words) > 1:
             result = []
@@ -20,6 +21,9 @@ def format_uppercase_string(str):
 
 
 def split_categories(categories):
+    """Convert a string with categories formatted 
+    as category1/category2/category3/... into list of categories"""
+
     result = []
     for c_str in categories:
         result.extend(c_str.split(" / "))
@@ -30,6 +34,8 @@ def split_categories(categories):
 
 
 def get_categories_for_list(list_name):
+    """"Get books categories by the NYT best sellers list name"""
+
     categories_dict = {
         "Fiction": "Fiction",
         "Nonfiction": "Nonfiction",
@@ -92,21 +98,10 @@ def get_recommendations(all_books, fav_dict, limit):
             if category in fav_dict["categories"]:
                 book_raiting += fav_dict["categories"][category]
 
-        # sd[book_raiting] = sd.get(book_raiting, []).append(book)
         if book_raiting in sd:
             sd[book_raiting].append(book)
         else:
             sd[book_raiting] = [book]
-
-    # for testing purpose
-    # print sorted dictionary with raitings and books
-    for key, value in sd.items():
-        print(key, ":")
-        for book in value:
-            print("    ", book)
-        print()
-
-    print(len(sd))
 
     # return top limit number of books from sd
     number_of_records = len(sd)
@@ -175,4 +170,3 @@ def get_book_walmart_link_by_isbn13(isbn13):
     except:
         print("An exception occurred")
         return None
-
