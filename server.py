@@ -364,6 +364,7 @@ def register_user():
     user = crud.get_user_by_email(email)
     if user:
         flash("ERROR|Cannot create an account with that email. <br> Please try again with another email address.")
+        return redirect("/register")
     else:
         user = crud.create_user(name, email, hash)
         db.session.add(user)
