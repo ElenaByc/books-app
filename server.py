@@ -1,5 +1,6 @@
 """Server for movie ratings app."""
 
+import os
 from flask import (Flask, render_template, request,
                    flash, session, redirect, jsonify)
 from model import connect_to_db, db
@@ -14,7 +15,7 @@ from passlib.hash import pbkdf2_sha256
 
 app = Flask(__name__)
 app.app_context().push()
-app.secret_key = "book_app_secret_key"
+app.secret_key = os.environ["APP_KEY"]
 app.jinja_env.undefined = StrictUndefined
 
 
