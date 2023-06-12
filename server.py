@@ -64,15 +64,15 @@ def api_books():
     checkmark = request.args.get("checkmark")
 
     if option == "author":
-        author = request.args.get("author")
+        author = request.args.get("author").strip()
         books = crud.get_books_by_author_name(author)
         header = f"Results for \'{author}\' in book's authors"
     elif option == "title":
-        title = request.args.get("title")
+        title = request.args.get("title").strip()
         books = crud.get_books_by_title(title)
         header = f"Results for \'{title}\' in book's title"
     elif option == "category":
-        category = request.args.get("category")
+        category = request.args.get("category").strip()
         books = crud.get_books_by_category(category)
         header = f"Results for \'{category}\' in book's categories"
     elif option == "list":
