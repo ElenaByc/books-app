@@ -1,5 +1,4 @@
 # <a name="top"></a> Pick Me a Book App 
-<html style="scroll-behavior: smooth;">
  
 **Pick Me a Book App** is a full-stack web application that allows users to get book recommendations based on their personal preferences. 
 Users can choose to get recommendations by author, title, category, or the New York Time best sellers list. 
@@ -53,13 +52,13 @@ Pick Me a Book App was deployed on AWS using LightSail, public static IP address
 
 
 
-
+<p align="right"><a href="#top">back to top</a></p>
 
 ## <a name="features"></a>Features
 
 
 
-
+<p align="right"><a href="#top">back to top</a></p>
 
 ## <a name="install"></a>Installation
 
@@ -129,5 +128,9 @@ python3 server.py
 
 You can now navigate to 'localhost:5000/' to access the Pick Me a Book App app.
 
+<p align="right"><a href="#top">back to top</a></p>
+
 ## <a name="contactme"></a>Contact Me
  [LinkedIn](https://www.linkedin.com/in/elena-bychenkova/).
+
+ <p align="right"><a href="#top">back to top</a></p>
