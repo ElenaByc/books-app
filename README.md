@@ -1,5 +1,4 @@
-# Pick Me a Book App
-
+# <img src="/static/img/books.svg" width="30"> Pick Me a Book App
 **Pick Me a Book App** is a full-stack web application that allows users to get book recommendations based on their personal preferences. 
 Users can choose to get recommendations by author, title, category, or the New York Time best sellers list. 
 Registered users can also request recommendations based on their favorite books. 
@@ -11,6 +10,9 @@ Users can edit their bookshelf by removing books or moving them from one shelf t
 
 ## Deployment
 Pick Me a Book App was deployed on AWS using LightSail, public static IP address: [54.244.13.163](http://54.244.13.163)
+
+## Demo video
+[youtu.be/0xMmzJnSzEE]( https://youtu.be/0xMmzJnSzEE)
 
 ## Contents
 * [Tech Stack](#technologies)
