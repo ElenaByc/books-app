@@ -1,5 +1,7 @@
-# <a name="top"></a> Pick Me a Book App 
- 
+# <a name="top"></a> Pick Me a Book App <br> Hackbright Academy Capstone Project
+
+
+Don't know what to read next? Find your next favorite book, series, or author with this recommendation app!  
 **Pick Me a Book App** is a full-stack web application that allows users to get book recommendations based on their personal preferences. 
 Users can choose to get recommendations by author, title, category, or the New York Time best sellers list. 
 Registered users can also request recommendations based on their favorite books. 
@@ -20,7 +22,7 @@ Pick Me a Book App was deployed on AWS using LightSail, public static IP address
 * [Data Model](#model)
 * [Features](#features)
 * [Installation](#install)
-* [Contact Me](#contactme)
+* [Contact Me & Contact Me](#contactme)
 
 ## <a name="technologies"></a>Tech Stack
 - **Backend**
@@ -130,7 +132,16 @@ You can now navigate to 'localhost:5000/' to access the Pick Me a Book App app.
 
 <p align="right"><a href="#top">back to top</a></p>
 
-## <a name="contactme"></a>Contact Me
- [LinkedIn](https://www.linkedin.com/in/elena-bychenkova/).
+## <a name="contactme"></a>About Me & Contact Me
+
+Pick Me a Book App was created by me, Elena Bychenkova.  
+Passionate software engineer with strong mathematical background.  
+Learn more about me on [LinkedIn](https://www.linkedin.com/in/elena-bychenkova/).
+
+Thank you for your interest in my project!  
+I would love to connect and hear your feedback!  
+GitHub: [github.com/ElenaByc](https://github.com/ElenaByc)  
+email: [elena.bychenkova@gmail.com](mailto:elena.bychenkova@gmail.com)
+
 
  <p align="right"><a href="#top">back to top</a></p>
