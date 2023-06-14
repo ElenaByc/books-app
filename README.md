@@ -1,4 +1,5 @@
-# <img src="/static/img/books.svg" width="30"> Pick Me a Book App
+# <a name="top"></a> Pick Me a Book App 
+ 
 **Pick Me a Book App** is a full-stack web application that allows users to get book recommendations based on their personal preferences. 
 Users can choose to get recommendations by author, title, category, or the New York Time best sellers list. 
 Registered users can also request recommendations based on their favorite books. 
@@ -16,29 +17,35 @@ Pick Me a Book App was deployed on AWS using LightSail, public static IP address
 
 ## Contents
 * [Tech Stack](#technologies)
+* [Data Model](#model)
 * [Features](#features)
 * [Installation](#install)
 * [Contact Me](#contactme)
 
-## <a name="technologies"></a>Technologies
-- Python
-- Flask
-- PostgreSQL
-- SQLAlchemy
-- Jinja2
-- JavaScript
-- React
-- AJAX
-- JSON
-- HTML
-- CSS
-- React-Bootstrap
-- Beautiful Soup Python library
-- Passlib Python library
-- SortedDict Python library
-- New York Times Books API
-- Google Books API
+## <a name="technologies"></a>Tech Stack
+- **Backend**
+  - Python
+  - Flask
+  - PostgreSQL
+  - SQLAlchemy
+- **Frontend**
+  - Jinja2
+  - JavaScript
+  - React
+  - React-Bootstrap
+  - AJAX
+  - JSON
+  - HTML5
+  - CSS3
+- **Python Libraries**
+  - Beautiful Soup
+  - Passlib
+  - SortedDict
+- **APIs**
+  - New York Times Books API
+  - Google Books API
 
+<p align="right">[back to top](#top)</p>
 
 ## <a name="features"></a>Features
 
@@ -48,9 +55,9 @@ Pick Me a Book App was deployed on AWS using LightSail, public static IP address
 
 ## <a name="install"></a>Installation
 
-To run Pick Me a Book App:
+To run the Pick Me a Book App:
 
-1. Install PostgreSQL, Python 3.9 and [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html)
+1. Install PostgreSQL, Python 3.9, and [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html)
 
 2. Clone or fork this repo:
 
@@ -112,7 +119,7 @@ Run the app:
 python3 server.py
 ```
 
-You can now navigate to 'localhost:5000/' to access Pick Me a Book App app.
+You can now navigate to 'localhost:5000/' to access the Pick Me a Book App app.
 
 ## <a name="contactme"></a>Contact Me
  [LinkedIn](https://www.linkedin.com/in/elena-bychenkova/).
