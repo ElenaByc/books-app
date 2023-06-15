@@ -1,7 +1,7 @@
 # <a name="top"></a> Pick Me a Book App <br> Hackbright Academy Capstone Project
 
 
-Don't know what to read next? Find your next favorite book, series, or author with this recommendation app!  
+Don't know what to read next? Find your next favorite book, series, or author with this book recommendation app!  
 **Pick Me a Book App** is a full-stack web application allowing users to get book recommendations based on their preferences. 
 Users can choose to get recommendations by author, title, category, or the New York Times best sellers list. 
 Registered users can also request recommendations based on their favorite books. 
@@ -22,7 +22,7 @@ Pick Me a Book App was deployed on AWS using LightSail, public static IP address
 * [Data Model](#model)
 * [Features](#features)
 * [Installation](#install)
-* [Contact Me & Contact Me](#contactme)
+* [About Me & Contact Me](#contactme)
 
 ## <a name="technologies"></a>Tech Stack
 - **Backend**
@@ -59,7 +59,7 @@ Pick Me a Book App was deployed on AWS using LightSail, public static IP address
 ## <a name="features"></a>Features
 Users can get recommendations by author, title, category, or the New York Times best sellers list
 <p align="center">
-<img src="/static/img/demo1.gif" alt="searching books demo"/>
+<img src="/static/img/demo1.gif" alt="searching books demo" width="800"/>
 </p>
 
 Users can view a book's details by clicking on the book's card
@@ -76,6 +76,40 @@ Registered users can put a book on their "Already Read" shelf in case they have 
 <p align="center">
 <img src="/static/img/demo4.gif" alt="put a book on the Already Read shelf demo"/>
 </p>
+
+Registered users can see all the books on their shelves on the Bookshelf page
+<p align="center">
+<img src="/static/img/demo5.gif" alt="bookshelf demo"/>
+</p>
+
+Registered users can mark a book on their "To Read" shelf as already read  
+and move the book to their "Already Read" shelf
+<p align="center">
+<img src="/static/img/demo6.gif" alt="mark as already read demo"/>
+</p>
+
+Registered users can mark a book on their "Already Read" shelf as their favorite  
+and put the book on their "Favorites" shelf
+<p align="center">
+<img src="/static/img/demo7.gif" alt="mark as favorite demo"/>
+</p>
+
+Registered users can mark a book on their "Favorites" shelf as "Want To Read Again"  
+and put the book on their "To Read" shelf
+<p align="center">
+<img src="/static/img/demo8.gif" alt="mark as want to read again demo"/>
+</p>
+
+Registered users can delete any book from any of their three shelves 
+<p align="center">
+<img src="/static/img/demo9.gif" alt="remove a book demo"/>
+</p>
+
+Registered users can request book recommendations based on their "Favorites" shelf 
+<p align="center">
+<img src="/static/img/demo10.gif" alt="search by favorites demo"/>
+</p>
+
 
 <p align="right"><a href="#top">back to top</a></p>
 
