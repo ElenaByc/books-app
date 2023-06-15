@@ -57,7 +57,10 @@ Pick Me a Book App was deployed on AWS using LightSail, public static IP address
 <p align="right"><a href="#top">back to top</a></p>
 
 ## <a name="features"></a>Features
-
+Users can get recommendations by author, title, category, or the New York Time best sellers list
+<p align="center">
+<img src="/static/img/demo1.gif" alt="searching books demo"/>
+</p>
 
 
 <p align="right"><a href="#top">back to top</a></p>
