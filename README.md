@@ -2,13 +2,13 @@
 
 
 Don't know what to read next? Find your next favorite book, series, or author with this recommendation app!  
-**Pick Me a Book App** is a full-stack web application that allows users to get book recommendations based on their personal preferences. 
-Users can choose to get recommendations by author, title, category, or the New York Time best sellers list. 
+**Pick Me a Book App** is a full-stack web application allowing users to get book recommendations based on their preferences. 
+Users can choose to get recommendations by author, title, category, or the New York Times best sellers list. 
 Registered users can also request recommendations based on their favorite books. 
 Users can view recommended book details and decide whether to read this book. 
 A registered user can put a book on their "To Read" bookshelf if they plan to read it later, 
 or they can put a book on their "Already Read" shelf in case they have read the book before. 
-On the bookshelf page, registered users can see all the books they put on their "To read" and " Already Read" shelves. 
+Registered users can see all the books they put on their "To read" and " Already Read" shelves on the bookshelf page. 
 Users can edit their bookshelf by removing books or moving them from one shelf to another.
 
 ## Deployment
@@ -57,11 +57,25 @@ Pick Me a Book App was deployed on AWS using LightSail, public static IP address
 <p align="right"><a href="#top">back to top</a></p>
 
 ## <a name="features"></a>Features
-Users can get recommendations by author, title, category, or the New York Time best sellers list
+Users can get recommendations by author, title, category, or the New York Times best sellers list
 <p align="center">
 <img src="/static/img/demo1.gif" alt="searching books demo"/>
 </p>
 
+Users can view a book's details by clicking on the book's card
+<p align="center">
+<img src="/static/img/demo2.gif" alt="book's details demo"/>
+</p>
+
+Registered users can put a book on their "To Read" bookshelf if they plan to read it later
+<p align="center">
+<img src="/static/img/demo3.gif" alt="put a book on the To Read shelf demo"/>
+</p>
+
+Registered users can put a book on their "Already Read" shelf in case they have read the book before
+<p align="center">
+<img src="/static/img/demo4.gif" alt="put a book on the Already Read shelf demo"/>
+</p>
 
 <p align="right"><a href="#top">back to top</a></p>
 
