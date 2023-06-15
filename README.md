@@ -51,9 +51,9 @@ Pick Me a Book App was deployed on AWS using LightSail, public static IP address
 
 
 ## <a name="model"></a>Data Model
-
-
-
+<p align="center">
+<img src="/static/img/data-model.jpg" alt="Data Model Diagram"/>
+</p>
 <p align="right"><a href="#top">back to top</a></p>
 
 ## <a name="features"></a>Features
