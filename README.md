@@ -61,55 +61,63 @@ Users can get recommendations by author, title, category, or the New York Times 
 <p align="center">
 <img src="/static/img/demo1.gif" alt="searching books demo" width="800"/>
 </p>
+<br/><br/>
 
 Users can view a book's details by clicking on the book's card
 <p align="center">
 <img src="/static/img/demo2.gif" alt="book's details demo"/>
 </p>
+<br/><br/>
 
 Registered users can put a book on their "To Read" bookshelf if they plan to read it later
 <p align="center">
 <img src="/static/img/demo3.gif" alt="put a book on the To Read shelf demo"/>
 </p>
+<br/><br/>
 
 Registered users can put a book on their "Already Read" shelf in case they have read the book before
 <p align="center">
 <img src="/static/img/demo4.gif" alt="put a book on the Already Read shelf demo"/>
 </p>
+<br/><br/>
 
 Registered users can see all the books on their shelves on the Bookshelf page
 <p align="center">
 <img src="/static/img/demo5.gif" alt="bookshelf demo"/>
 </p>
+<br/><br/>
 
 Registered users can mark a book on their "To Read" shelf as already read  
 and move the book to their "Already Read" shelf
 <p align="center">
 <img src="/static/img/demo6.gif" alt="mark as already read demo"/>
 </p>
+<br/><br/>
 
 Registered users can mark a book on their "Already Read" shelf as their favorite  
 and put the book on their "Favorites" shelf
 <p align="center">
 <img src="/static/img/demo7.gif" alt="mark as favorite demo"/>
 </p>
+<br/><br/>
 
 Registered users can mark a book on their "Favorites" shelf as "Want To Read Again"  
 and put the book on their "To Read" shelf
 <p align="center">
 <img src="/static/img/demo8.gif" alt="mark as want to read again demo"/>
 </p>
+<br/><br/>
 
 Registered users can delete any book from any of their three shelves 
 <p align="center">
 <img src="/static/img/demo9.gif" alt="remove a book demo"/>
 </p>
+<br/><br/>
 
 Registered users can request book recommendations based on their "Favorites" shelf 
 <p align="center">
 <img src="/static/img/demo10.gif" alt="search by favorites demo"/>
 </p>
-
 
 <p align="right"><a href="#top">back to top</a></p>
 
