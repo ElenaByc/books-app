@@ -136,6 +136,7 @@ https://github.com/ElenaByc/books-app.git
 3. Create and activate a virtual environment inside the books-app directory:
 
 ```
+cd books-app
 virtualenv env
 source env/bin/activate
 ```
@@ -148,43 +149,57 @@ pip3 install -r requirements.txt
 
 5. Create credentials  
   5.1. New York Times Books API  
-  5.2. Google Books API
-
-6. Save your credentials in a file called <kbd>secrets.sh</kbd> using this format:
+    &nbsp;&nbsp;&nbsp;&nbsp;[Here](https://developer.nytimes.com/get-started) is the detailed instruction on how to get the New York Times Books API key.  
+  5.2. Google Books API  
+    &nbsp;&nbsp;&nbsp;&nbsp;To acquire Google Books API Key open the [Credentials page](https://console.cloud.google.com/apis/credentials) in the API Console.  
+    &nbsp;&nbsp;&nbsp;&nbsp;Then create an API key in the Console by clicking Create credentials > API key.
+    
+7. Save your credentials in a file called <kbd>secrets.sh</kbd> using this format:
 
 ```
 export GOOGLE_BOOKS_KEY="YOUR_KEY_HERE"
 export NYT_KEY="YOUR_KEY_HERE"
 ```
 
-Also add a secret key for flask app to <kbd>secrets.sh</kbd>:
+7. Also add a secret key for flask app to <kbd>secrets.sh</kbd>:
 
 ```
 export APP_KEY="YOUR_KEY_HERE"
 ```
 
-Source your keys from your secrets.sh file into your virtual environment:
+8. Source your keys from your secrets.sh file into your virtual environment:
 
 ```
 source secrets.sh
 ```
 
-Set up the database:
+9. Set up the database
+    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  9.1 Create database <kbd>books</kbd>:
+   
+  ```
+  createdb books
+  ```
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  9.2 Seed the database with current The New-York Times best sellers data:
+  
+  ```
+  python seed_database.py
+  ```
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Or you can get the data from  <kbd>books.sql</kbd> (last updated on June 11, 2023)
+  
+  ```
+  psql books < books.sql
+  ```
+
+10. Run the app:
 
 ```
-createdb books
-```
-
-To seed database with demo data:
-
-```
-python3 seed_database.py
-```
-
-Run the app:
-
-```
-python3 server.py
+python server.py
 ```
 
 You can now navigate to 'localhost:5000/' to access the Pick Me a Book App app.
