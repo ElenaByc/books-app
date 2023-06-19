@@ -183,7 +183,7 @@ source secrets.sh
   ```
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  9.2 Seed the database with current The New-York Times best sellers data:
+  9.2 Seed the database with current The New York Times best sellers data:
   
   ```
   python seed_database.py
