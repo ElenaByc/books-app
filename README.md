@@ -12,7 +12,7 @@ Registered users can see all the books they put on their "To read" and " Already
 Users can edit their bookshelf by removing books or moving them from one shelf to another.
 
 ## Deployment
-Pick Me a Book App was deployed on AWS using LightSail, public static IP address: [34.219.24.69](http://34.219.24.69/)
+Pick Me a Book App was deployed on AWS using LightSail, public static IP address: [44.235.141.240](http://44.235.141.240/)
 
 ## Demo Video
 [youtu.be/0xMmzJnSzEE]( https://youtu.be/0xMmzJnSzEE)
